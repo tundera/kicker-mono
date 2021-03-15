@@ -1,6 +1,6 @@
 {
   "name": "tunderadev",
-  "description": "Monorepo for JAMStack development",
+  "description": "Main monorepo for JAMStack development",
   "author": {
     "name": "Philip Johnston",
     "email": "tunderadev@gmail.com",

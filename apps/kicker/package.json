@@ -1,6 +1,6 @@
 {
   "name": "@tunderadev/kicker",
-  "description": "Kicker App template website",
+  "description": "Kicker App template",
   "version": "0.1.0",
   "private": true,
   "prisma": {

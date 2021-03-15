@@ -1,6 +1,6 @@
 {
   "name": "@tunderadev/website",
-  "description": "Website for Kicker Monorepo",
+  "description": "Website for tunderadev monorepo",
   "version": "0.1.0",
   "private": true,
   "author": {

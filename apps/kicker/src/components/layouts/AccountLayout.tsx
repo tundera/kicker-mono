@@ -13,7 +13,7 @@ const AccountLayout: FC = ({ children, ...props }) => {
 
   return (
     <Flex direction="column" align="center" flexDirection="column" {...props}>
-      <NProgress color={color} options={{ trickleSpeed: 50 }} showAfterMs={300} spinner />
+      <NProgress color={color} showAfterMs={300} spinner />
       <Header />
       <Subheader />
       <Container>{children}</Container>

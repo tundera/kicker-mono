@@ -4,7 +4,7 @@ import * as Fathom from 'fathom-client';
 
 const Config = {
   siteId: process.env.NEXT_PUBLIC_ANALYTICS_ID!,
-  domains: process.env.NEXT_PUBLIC_ANALYTICS_DOMAINS!.split(','),
+  domains: process.env.NEXT_PUBLIC_ANALYTICS_DOMAINS?.split(','),
 };
 
 export const useAnalytics = () => {

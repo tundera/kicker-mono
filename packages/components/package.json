@@ -1,5 +1,6 @@
 {
   "name": "@tunderadev/components",
+  "description": "Components for tunderadev monorepo",
   "version": "0.1.0",
   "main": "dist/tunderadev-components.cjs.js",
   "module": "dist/tunderadev-components.esm.js",
