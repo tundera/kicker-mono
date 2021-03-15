@@ -31,6 +31,9 @@
     "@tunderadev/kicker": {
       "implicitDependencies": []
     },
+    "@tunderadev/ecommerce": {
+      "implicitDependencies": []
+    },
     "@tunderadev/components": {
       "implicitDependencies": []
     },
@@ -38,6 +41,9 @@
       "implicitDependencies": []
     },
     "@tunderadev/website": {
+      "implicitDependencies": []
+    },
+    "@tunderadev/studio": {
       "implicitDependencies": []
     }
   },

@@ -27,6 +27,7 @@ module.exports = function (api) {
     "packages/*",
     "apps/*",
     "sites/*",
+    "backends/*",
     "cli",
     "docs",
     "scripts",

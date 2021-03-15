@@ -6,6 +6,11 @@
       "sourceRoot": "apps/kicker",
       "projectType": "application"
     },
+    "@tunderadev/ecommerce": {
+      "root": "apps/ecommerce",
+      "sourceRoot": "apps/ecommerce",
+      "projectType": "application"
+    },
     "@tunderadev/components": {
       "root": "packages/components",
       "sourceRoot": "packages/components",
@@ -19,6 +24,11 @@
     "@tunderadev/website": {
       "root": "sites/website",
       "sourceRoot": "sites/website",
+      "projectType": "application"
+    },
+    "@tunderadev/studio": {
+      "root": "backends/studio",
+      "sourceRoot": "backends/studio",
       "projectType": "application"
     }
   }

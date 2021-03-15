@@ -5,6 +5,10 @@
 			"path": "."
 		},
 		{
+			"name": "🚀 @tunderadev/ecommerce",
+			"path": "apps/ecommerce"
+		},
+		{
 			"name": "🚀 @tunderadev/kicker",
 			"path": "apps/kicker"
 		},

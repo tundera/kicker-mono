@@ -17,6 +17,7 @@
       "packages/*",
       "apps/*",
       "sites/*",
+      "backends/*",
       "cli",
       "docs",
       "scripts"
@@ -29,6 +30,9 @@
       "**/@prisma",
       "**/@prisma/**"
     ]
+  },
+  "resolutions": {
+    "framer-motion": "3.10.3"
   },
   "scripts": {
     "postinstall": "preconstruct dev && manypkg check",

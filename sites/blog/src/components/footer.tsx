@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
           </div>
           <div className="mt-8 md:mt-0 md:order-1">
             <p className="text-center text-base leading-6 text-gray-500">
-              &copy; 2020 Bartosz Jarocki
+              &copy; 2020 Philip Johnston
             </p>
           </div>
         </div>
