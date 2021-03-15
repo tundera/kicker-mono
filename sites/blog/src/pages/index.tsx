@@ -52,8 +52,23 @@ const Index = ({ allPosts }: Props) => {
             <ExternalLink href="https://twitter.com/messages/compose?recipient_id=512460212">
               hit me up me on Twitter
             </ExternalLink>{' '}
-            or just <ExternalLink href="mailto:bartosz.jarocki@icloud.com">email me.</ExternalLink>{' '}
-            If you're curious, you can read more about me{' '}
+            or just <ExternalLink href="mailto:tunderadev@gmail.com">email me.</ExternalLink> If
+            you're curious, you can read more about me{' '}
+            <Link href={'/about'} passHref={true}>
+              <a className="underline cursor-pointer">here.</a>
+            </Link>
+          </p>
+          <p className="prose lg:prose-lg">
+            I'm a software developer focused on React, GraphQL, and Jamstack architecture. For over
+            a decade, I've worked as a software developer. Currently, I'm most skilled in full stack
+            Javascript/Typescript development and especially enjoy working with React. This is my
+            personal slice of internet, so please enjoy exploring. If you have any questions or just
+            want to say hello -{' '}
+            <ExternalLink href="https://twitter.com/messages/compose?recipient_id=512460212">
+              hit me up me on Twitter
+            </ExternalLink>{' '}
+            or just <ExternalLink href="mailto:tunderadev@gmail.com">email me.</ExternalLink> If
+            you're curious, you can read more about me{' '}
             <Link href={'/about'} passHref={true}>
               <a className="underline cursor-pointer">here.</a>
             </Link>

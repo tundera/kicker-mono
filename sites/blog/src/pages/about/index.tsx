@@ -75,7 +75,7 @@ const AboutMe = () => {
             <ExternalLink href="https://twitter.com/messages/compose?recipient_id=512460212">
               DM me on Twitter
             </ExternalLink>{' '}
-            or just <ExternalLink href="mailto:bartosz.jarocki@icloud.com">email me.</ExternalLink>
+            or just <ExternalLink href="mailto:tunderadev@gmail.com">email me.</ExternalLink>
           </p>
         </Section>
         <Section title={'Books'}>
