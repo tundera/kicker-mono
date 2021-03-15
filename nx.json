@@ -1,0 +1,47 @@
+{
+  "npmScope": "tunderadev",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "test",
+          "lint",
+          "package",
+          "prepare"
+        ],
+        "strictlyOrderedTargets": [
+          "build",
+          "package",
+          "prepare"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "@tunderadev/kicker": {
+      "implicitDependencies": []
+    },
+    "@tunderadev/components": {
+      "implicitDependencies": []
+    },
+    "@tunderadev/blog": {
+      "implicitDependencies": []
+    },
+    "@tunderadev/website": {
+      "implicitDependencies": []
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
+  }
+}

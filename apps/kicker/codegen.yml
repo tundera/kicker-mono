@@ -1,0 +1,14 @@
+schema: './src/lib/graphql/generated/schema.graphql'
+documents: './src/lib/graphql/operations/**/*.graphql'
+generates:
+  ./src/lib/graphql/codegen.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-query
+    config:
+      fetcher: graphql-request
+      useTypeImports: true
+hooks:
+  afterAllFileWrite:
+    - eslint --fix

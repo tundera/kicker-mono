@@ -1,0 +1,10 @@
+{
+  "post": {
+    "contentPath": "content/posts",
+    "basePath": "/blog/posts"
+  },
+  "category": {
+    "contentPath": "content/categories",
+    "basePath": "/blog/categories"
+  }
+}

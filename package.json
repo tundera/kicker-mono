@@ -1,0 +1,103 @@
+{
+  "name": "tunderadev",
+  "description": "Monorepo for JAMStack development",
+  "author": {
+    "name": "Philip Johnston",
+    "email": "tunderadev@gmail.com",
+    "url": "https://github.com/tundera"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tundera/tunderadev-mono.git"
+  },
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "apps/*",
+      "sites/*",
+      "cli",
+      "docs",
+      "scripts"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/prisma",
+      "**/prisma/**",
+      "**/@prisma",
+      "**/@prisma/**"
+    ]
+  },
+  "scripts": {
+    "postinstall": "preconstruct dev && manypkg check",
+    "build:packages": "yarn --cwd packages/components build",
+    "build:kicker": "yarn --cwd apps/kicker build",
+    "build:website": "yarn --cwd sites/website build",
+    "build:all": "yarn nx run-many --target=build --all --parallel",
+    "build": "preconstruct build && nx affected:build",
+    "start:server": "yarn --cwd services/graphql dev",
+    "version": "changeset version",
+    "version:canary": "changeset version --snapshot canary",
+    "release": "yarn build && yarn changeset publish",
+    "release:canary": "yarn build && changeset publish --tag canary",
+    "commit": "gacp"
+  },
+  "dependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@changesets/changelog-github": "^0.3.0",
+    "@changesets/cli": "^2.14.1",
+    "@manypkg/cli": "0.17.0",
+    "@nrwl/cli": "latest",
+    "@nrwl/cypress": "11.5.1",
+    "@nrwl/next": "11.5.1",
+    "@nrwl/nx-cloud": "latest",
+    "@nrwl/react": "11.5.1",
+    "@nrwl/storybook": "11.5.1",
+    "@nrwl/tao": "latest",
+    "@nrwl/workspace": "latest",
+    "@preconstruct/cli": "2.0.6",
+    "@types/node": "^14.14.34",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "cypress": "^6.6.0",
+    "dotenv-cli": "^4.0.0",
+    "eslint": "^7.21.0",
+    "eslint-plugin-mdx": "^1.9.1",
+    "jest": "^26.6.3",
+    "patch-package": "6.4.7",
+    "postinstall-postinstall": "^2.1.0",
+    "prettier": "^2.2.1",
+    "sync-dotenv": "2.6.2",
+    "ts-node": "^9.1.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3"
+  },
+  "gacp": {
+    "add": true,
+    "push": true,
+    "emoji": "emoji",
+    "editor": false,
+    "hooks": {
+      "precommit": "sync-dotenv --env .env.local && tsc && lint-staged && pretty-quick --staged",
+      "prepush": "yarn lint && yarn test",
+      "postrebase": "yarn install"
+    }
+  },
+  "volta": {
+    "node": "14.16.0",
+    "yarn": "1.22.10"
+  },
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

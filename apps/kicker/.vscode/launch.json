@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Debug Backend",
+      "skipFiles": ["<node_internals>/**"],
+      "port": 9229
+    },
+    {
+      "type": "browser-preview",
+      "request": "launch",
+      "name": "Debug Frontend (Browser Preview)",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug Frontend (Chrome)",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Debug Fullstack (Browser Preview)",
+      "configurations": ["Debug Backend", "Debug Frontend (Browser Preview)"]
+    },
+    {
+      "name": "Debug Fullstack (Chrome)",
+      "configurations": ["Debug Backend", "Debug Frontend (Chrome)"]
+    }
+  ]
+}
