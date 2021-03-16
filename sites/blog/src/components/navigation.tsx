@@ -1,11 +1,11 @@
-import React from 'react';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
-import { SecondaryButton } from './secondary-button';
+import React from 'react'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+import { SecondaryButton } from './secondary-button'
 
 export const Navigation: React.FC = () => {
-  const router = useRouter();
-  const isBackButtonVisible = router.pathname !== '/';
+  const router = useRouter()
+  const isBackButtonVisible = router.pathname !== '/'
 
   return (
     <nav className="navigation flex flex-row items-center justify-center top-background">
@@ -61,5 +61,5 @@ export const Navigation: React.FC = () => {
         }
       `}</style>
     </nav>
-  );
-};
+  )
+}

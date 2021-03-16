@@ -45,6 +45,9 @@
     },
     "@tunderadev/studio": {
       "implicitDependencies": []
+    },
+    "@tunderadev/hoop": {
+      "implicitDependencies": []
     }
   },
   "affected": {

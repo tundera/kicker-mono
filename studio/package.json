@@ -2,9 +2,18 @@
   "name": "@tunderadev/studio",
   "private": true,
   "version": "0.0.0",
-  "description": "",
+  "description": "Backend studio built with Sanity",
   "main": "package.json",
-  "author": "Knut Melvær <knut@sanity.io>",
+  "author": {
+    "name": "Philip Johnston",
+    "email": "stackshuffle@gmail.com",
+    "url": "https://github.com/tundera"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tundera/tunderadev.git",
+    "directory": "studio"
+  },
   "license": "MIT",
   "scripts": {
     "start": "sanity start",

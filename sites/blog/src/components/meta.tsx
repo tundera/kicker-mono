@@ -1,11 +1,11 @@
-import React from 'react';
-import Head from 'next/head';
+import React from 'react'
+import Head from 'next/head'
 
 type Props = {
-  title?: string;
-  description?: string;
-  ogImageUrl?: string;
-};
+  title?: string
+  description?: string
+  ogImageUrl?: string
+}
 
 export const Meta: React.FC<Props> = ({ title, description, ogImageUrl }) => {
   return (
@@ -17,5 +17,5 @@ export const Meta: React.FC<Props> = ({ title, description, ogImageUrl }) => {
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
       <meta name="theme-color" content="#6B46C1" />
     </Head>
-  );
-};
+  )
+}

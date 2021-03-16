@@ -1,0 +1,56 @@
+{
+  "name": "@tunderadev/hoop",
+  "version": "0.1.0",
+  "main": "dist/tunderadev-hoop.cjs.js",
+  "module": "dist/tunderadev-hoop.esm.js",
+  "typings": "dist/tunderadev-hoop.cjs.d.ts",
+  "author": {
+    "name": "Philip Johnston",
+    "email": "stackshuffle@gmail.com",
+    "url": "https://github.com/tundera"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tundera/tunderadev.git",
+    "directory": "services/hoop"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "postinstall": "yarn generate:prisma",
+    "dev": "ts-node-dev --no-notify --respawn --transpile-only src/index",
+    "start": "node dist/tunderadev-hoop.cjs",
+    "build": "yarn generate && tsc",
+    "generate": "yarn generate:prisma && yarn generate:nexus",
+    "generate:prisma": "prisma generate",
+    "generate:nexus": "ts-node --transpile-only src/schema"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-typescript": "^7.13.0",
+    "@babel/runtime": "7.13.10",
+    "@prisma/client": "^2.18.0",
+    "apollo-server": "2.21.1",
+    "graphql": "^15.5.0",
+    "graphql-iso-date": "^3.6.1",
+    "nexus": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/graphql-iso-date": "^3.4.0",
+    "@types/node": "^14.14.34",
+    "postinstall-postinstall": "^2.1.0",
+    "prettier": "^2.2.1",
+    "prisma": "^2.18.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all"
+  }
+}

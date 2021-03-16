@@ -27,8 +27,13 @@
       "projectType": "application"
     },
     "@tunderadev/studio": {
-      "root": "backends/studio",
-      "sourceRoot": "backends/studio",
+      "root": "studio",
+      "sourceRoot": "studio",
+      "projectType": "application"
+    },
+    "@tunderadev/hoop": {
+      "root": "services/hoop",
+      "sourceRoot": "services/hoop",
       "projectType": "application"
     }
   }

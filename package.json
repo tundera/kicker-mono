@@ -17,7 +17,8 @@
       "packages/*",
       "apps/*",
       "sites/*",
-      "backends/*",
+      "services/*",
+      "studio",
       "cli",
       "docs",
       "scripts"
@@ -101,7 +102,8 @@
   },
   "preconstruct": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "services/*"
     ]
   }
 }
