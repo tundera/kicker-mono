@@ -67,7 +67,7 @@
     "react-hook-form": "^6.15.4",
     "react-icons": "^4.2.0",
     "react-live": "^2.2.3",
-    "react-query": "^3.12.2",
+    "react-query": "^3.12.3",
     "rss": "^1.2.2",
     "stripe": "^8.138.0",
     "superjson": "^1.7.3"
@@ -113,7 +113,7 @@
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
     "babel-plugin-module-resolver": "^4.1.0",
-    "cypress": "^6.6.0",
+    "cypress": "^6.7.1",
     "eslint": "7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-config-react-app": "^6.0.0",
