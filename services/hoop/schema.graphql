@@ -38,7 +38,7 @@ type ColorScheme {
   primary: String!
   secondary: String!
   team: Team
-  teamId: Int
+  teamId: Int!
   updatedAt: DateTime!
 }
 
@@ -138,7 +138,7 @@ type Team {
     take: Int
     where: CoachWhereInput
   ): [Coach!]!
-  colorScheme: [ColorScheme!]!
+  colorScheme: ColorScheme
   conference: String!
   createdAt: DateTime!
   division: String!

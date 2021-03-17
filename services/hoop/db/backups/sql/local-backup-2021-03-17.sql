@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 13.1 (Debian 13.1-1.pgdg100+1)
--- Dumped by pg_dump version 13.1
+-- Dumped from database version 13.2
+-- Dumped by pg_dump version 13.2
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -1262,7 +1262,7 @@ COPY public."Team" (id, "createdAt", "updatedAt", handle, name, slug, city, abbr
 --
 
 COPY public._prisma_migrations (id, checksum, finished_at, migration_name, logs, rolled_back_at, started_at, applied_steps_count) FROM stdin;
-33013222-631c-4b53-834e-69bd9216a048	62afe054b89259735f63805a1848b14fe4dd3f1cfc9b0dafb7332e404d52ac	2021-02-11 15:59:45.496523+00	20210211155945_init_migration	\N	\N	2021-02-11 15:59:45.222403+00	1
+33013222-631c-4b53-834e-69bd9216a048	62afe054b89259735f63805a1848b14fe4dd3f1cfc9b0dafb7332e404d52ac	2021-02-11 08:59:45.496523-07	20210211155945_init_migration	\N	\N	2021-02-11 08:59:45.222403-07	1
 \.
 
 
