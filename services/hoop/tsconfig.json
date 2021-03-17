@@ -4,11 +4,12 @@
     "target": "es2019",
     "module": "commonjs",
     "noEmit": true,
+    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["dom", "dom.iterable", "esnext"],
     "strict": true
   },
-  "include": ["src/**/*"]
+  "include": ["**/*.ts"]
 }

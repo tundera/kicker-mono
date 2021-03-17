@@ -1,13 +1,16 @@
 import { ApolloServer } from 'apollo-server'
 import { schema } from './schema'
-import { context } from './context'
+import { createContext } from './context'
 
 const isDev = process.env.TS_NODE_DEV === 'true'
 
 const server = new ApolloServer({
   schema: schema,
-  context: context,
+  context: createContext,
+  playground: true,
   tracing: isDev,
+  introspection: true,
+  debug: isDev,
 })
 
 server.listen().then(async ({ url }) => {
