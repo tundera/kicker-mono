@@ -33,9 +33,6 @@
       "**/@prisma/**"
     ]
   },
-  "resolutions": {
-    "framer-motion": "3.10.3"
-  },
   "scripts": {
     "postinstall": "preconstruct dev && manypkg check",
     "build:packages": "yarn --cwd packages/components build",
