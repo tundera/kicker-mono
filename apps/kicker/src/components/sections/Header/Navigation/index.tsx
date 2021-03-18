@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Session, signOut } from 'next-auth/client'
+import { Session } from 'next-auth'
 
 import NextLink from 'next/link'
 import { Menu } from 'react-feather'

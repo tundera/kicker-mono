@@ -1,11 +1,11 @@
 import { FC } from 'react'
-import { SessionProvider } from 'next-auth/client'
+import { AppProvider } from 'next-auth/providers'
 import { Stack } from '@chakra-ui/react'
 
 import ProviderButton from '@components/ui/forms/LoginForm/ProviderButton'
 
 interface Props {
-  providers: SessionProvider[]
+  providers: AppProvider[]
 }
 
 const OAuthLogins: FC<Props> = ({ providers }) => {

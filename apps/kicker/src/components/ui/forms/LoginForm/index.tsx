@@ -1,30 +1,13 @@
 import { FC } from 'react'
 
-import { signIn, SessionProvider } from 'next-auth/client'
-import { useForm } from 'react-hook-form'
-import {
-  useColorModeValue,
-  chakra,
-  Divider,
-  Flex,
-  Box,
-  Link,
-  Stack,
-  Text,
-  Button,
-  Icon,
-  FormControl,
-  Input,
-  FormLabel,
-  FormErrorMessage,
-  VisuallyHidden,
-} from '@chakra-ui/react'
-import CredentialsLogin from './CredentialsLogin'
+import { AppProvider } from 'next-auth/providers'
+import { useColorModeValue, Divider, Flex, Box, Stack, Text } from '@chakra-ui/react'
+
 import OAuthLogins from './OAuthLogins'
 import EmailLogin from './EmailLogin'
 
 interface Props {
-  providers: SessionProvider[]
+  providers: AppProvider[]
 }
 
 const LoginForm: FC<Props> = ({ providers }) => {
