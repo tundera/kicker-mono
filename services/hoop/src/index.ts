@@ -2,6 +2,8 @@ import { ApolloServer } from 'apollo-server'
 import { schema } from './schema'
 import { createContext } from './context'
 
+export * from '../db'
+
 const isDev = process.env.TS_NODE_DEV === 'true'
 
 const server = new ApolloServer({
