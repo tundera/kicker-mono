@@ -1,11 +1,12 @@
 import NextLink from 'next/link'
 import Head from 'next/head'
+import { Team } from '@tunderadev/hoop'
 
 import DarkModeToggle from 'src/components/dark-mode-toggle'
 import { getTeams } from 'src/lib/teams'
 
 interface TeamsPageProps {
-  teams: any[]
+  teams: Team[]
 }
 
 export default function TeamsPage({ teams }: TeamsPageProps) {

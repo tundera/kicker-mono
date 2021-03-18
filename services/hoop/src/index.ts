@@ -3,6 +3,7 @@ import { schema } from './schema'
 import { createContext } from './context'
 
 export * from '../db'
+export * from './generated/nexus'
 
 const isDev = process.env.TS_NODE_DEV === 'true'
 

@@ -2,12 +2,15 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
 import Head from 'next/head'
+import { Team, Player } from '@tunderadev/hoop'
 
 import DarkModeToggle from 'src/components/dark-mode-toggle'
 import { getTeams, getTeamBySlug } from 'src/lib/teams'
 
 interface TeamPageProps {
-  team: any
+  team: Team & {
+    players: Player[]
+  }
 }
 
 export default function TeamPage({ team }: TeamPageProps) {
@@ -46,7 +49,7 @@ export default function TeamPage({ team }: TeamPageProps) {
         <section>
           <h2 className="py-4">Players</h2>
           <ul className="space-y-4">
-            {team.players.map((player: any) => (
+            {team.players.map((player) => (
               <li key={player.slug} className="space-y-4">
                 <article>
                   <h3 className="font-bold text-2xl">
