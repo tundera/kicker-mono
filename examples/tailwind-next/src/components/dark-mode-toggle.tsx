@@ -1,10 +1,10 @@
-import * as React from 'react'
-import {useTheme} from 'next-themes'
+import { FC, useState, useEffect } from 'react'
+import { useTheme } from 'next-themes'
 
-const DarkModeToggle: React.FC = () => {
-  const [mounted, setMounted] = React.useState(false)
-  const {theme, setTheme} = useTheme()
-  React.useEffect(() => setMounted(true), [])
+const DarkModeToggle: FC = () => {
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
+  useEffect(() => setMounted(true), [])
 
   return (
     <button

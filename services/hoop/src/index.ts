@@ -7,9 +7,13 @@ const isDev = process.env.TS_NODE_DEV === 'true'
 const server = new ApolloServer({
   schema: schema,
   context: createContext,
-  playground: true,
+  playground: {
+    settings: {
+      'editor.theme': 'light',
+    },
+  },
   tracing: isDev,
-  introspection: true,
+  introspection: isDev,
   debug: isDev,
 })
 

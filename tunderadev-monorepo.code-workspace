@@ -13,8 +13,16 @@
 			"path": "apps/kicker"
 		},
 		{
+			"name": "@examples/tailwind-next",
+			"path": "examples/tailwind-next"
+		},
+		{
 			"name": "📦 @tunderadev/components",
 			"path": "packages/components"
+		},
+		{
+			"name": "@tunderadev/hoop",
+			"path": "services/hoop"
 		},
 		{
 			"name": "@tunderadev/blog",
@@ -23,6 +31,10 @@
 		{
 			"name": "🚀 @tunderadev/website",
 			"path": "sites/website"
+		},
+		{
+			"name": "@tunderadev/studio",
+			"path": "studio"
 		}
 	],
 	"settings": {

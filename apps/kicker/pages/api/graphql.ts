@@ -5,9 +5,13 @@ import { createContext, isDev } from '@lib/graphql/helpers'
 const server = new ApolloServer({
   schema,
   context: createContext,
-  playground: true,
+  playground: {
+    settings: {
+      'editor.theme': 'light',
+    },
+  },
   tracing: isDev(),
-  introspection: true,
+  introspection: isDev(),
   debug: isDev(),
 })
 

@@ -1,21 +1,21 @@
-import React from 'react';
+import React from 'react'
 
-import { Layout } from '../../components/layout';
-import { NextSeo } from 'next-seo';
-import { BlogSiteDescription, BlogSiteTitle, BlogSiteUrl } from '../../_data/about';
-import { Navigation } from '../../components/navigation';
-import { Container } from '../../components/container';
-import { Section } from '../../components/section';
-import { LinkOutlinedCard } from '../../components/outlined-card';
-import { OutlinedCardTitle } from '../../components/outlined-card-title';
-import { OutlinedCardDescription } from '../../components/outlined-card-description';
-import { blogApi } from '../../lib/blog/fs-blog-api';
-import { Post } from '../../lib/blog/blog-api';
+import { NextSeo } from 'next-seo'
+import { Layout } from '../../components/layout'
+import { BlogSiteDescription, BlogSiteTitle, BlogSiteUrl } from '../../_data/about'
+import { Navigation } from '../../components/navigation'
+import { Container } from '../../components/container'
+import { Section } from '../../components/section'
+import { LinkOutlinedCard } from '../../components/outlined-card'
+import { OutlinedCardTitle } from '../../components/outlined-card-title'
+import { OutlinedCardDescription } from '../../components/outlined-card-description'
+import { blogApi } from '../../lib/blog/fs-blog-api'
+import { Post } from '../../lib/blog/blog-api'
 
 type Props = {
-  tag: string;
-  relatedPosts: Post[];
-};
+  tag: string
+  relatedPosts: Post[]
+}
 
 const Tag = ({ tag, relatedPosts }: Props) => {
   return (
@@ -41,21 +41,21 @@ const Tag = ({ tag, relatedPosts }: Props) => {
                 <OutlinedCardTitle>{post.title}</OutlinedCardTitle>
                 <OutlinedCardDescription>{post.description}</OutlinedCardDescription>
               </LinkOutlinedCard>
-            );
+            )
           })}
         </Section>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
-export default Tag;
+export default Tag
 
 type Params = {
   params: {
-    tag: string;
-  };
-};
+    tag: string
+  }
+}
 
 export async function getStaticProps({ params: { tag } }: Params) {
   return {
@@ -72,7 +72,7 @@ export async function getStaticProps({ params: { tag } }: Params) {
         'tags',
       ]),
     },
-  };
+  }
 }
 
 export async function getStaticPaths() {
@@ -82,8 +82,8 @@ export async function getStaticPaths() {
         params: {
           tag,
         },
-      };
+      }
     }),
     fallback: false,
-  };
+  }
 }

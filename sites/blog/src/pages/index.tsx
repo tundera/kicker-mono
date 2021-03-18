@@ -1,28 +1,28 @@
-import React from 'react';
-import Link from 'next/link';
-import { NextSeo } from 'next-seo';
+import React from 'react'
+import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
-import { Projects } from '../_data/projects';
-import { Travel } from '../_data/travel';
-import { SiteDescription, SiteTitle } from '../_data/about';
+import { Projects } from '../_data/projects'
+import { Travel } from '../_data/travel'
+import { SiteDescription, SiteTitle } from '../_data/about'
 
-import { Badge } from '../components/badge';
-import { Section } from '../components/section';
-import { Layout } from '../components/layout';
-import { Container } from '../components/container';
-import { LinkOutlinedCard, OutlinedCard } from '../components/outlined-card';
-import { OutlinedCardTitle } from '../components/outlined-card-title';
-import { OutlinedCardDescription } from '../components/outlined-card-description';
-import { PhotoCard } from '../components/photo-card';
-import { ExternalLink } from '../components/external-link';
-import { Navigation } from '../components/navigation';
-import { Title } from '../components/title';
-import { Post } from '../lib/blog/blog-api';
-import { blogApi } from '../lib/blog/fs-blog-api';
+import { Badge } from '../components/badge'
+import { Section } from '../components/section'
+import { Layout } from '../components/layout'
+import { Container } from '../components/container'
+import { LinkOutlinedCard, OutlinedCard } from '../components/outlined-card'
+import { OutlinedCardTitle } from '../components/outlined-card-title'
+import { OutlinedCardDescription } from '../components/outlined-card-description'
+import { PhotoCard } from '../components/photo-card'
+import { ExternalLink } from '../components/external-link'
+import { Navigation } from '../components/navigation'
+import { Title } from '../components/title'
+import { Post } from '../lib/blog/blog-api'
+import { blogApi } from '../lib/blog/fs-blog-api'
 
 type Props = {
-  allPosts: Post[];
-};
+  allPosts: Post[]
+}
 
 const Index = ({ allPosts }: Props) => {
   return (
@@ -81,7 +81,7 @@ const Index = ({ allPosts }: Props) => {
                 <OutlinedCardTitle>{post.title}</OutlinedCardTitle>
                 <OutlinedCardDescription>{post.description}</OutlinedCardDescription>
               </LinkOutlinedCard>
-            );
+            )
           })}
         </Section>
         <Section title={'Projects'}>
@@ -93,14 +93,14 @@ const Index = ({ allPosts }: Props) => {
                     {project.title}
                     <div className="flex space-x-2 sm:ml-auto my-2 sm:my-0">
                       {project.techStack.map((tech) => {
-                        return <Badge key={tech}>{tech}</Badge>;
+                        return <Badge key={tech}>{tech}</Badge>
                       })}
                     </div>
                   </OutlinedCardTitle>
                   <OutlinedCardDescription>{project.description}</OutlinedCardDescription>
                 </OutlinedCard>
               </ExternalLink>
-            );
+            )
           })}
         </Section>
         <Section title={'Travel'}>
@@ -113,21 +113,21 @@ const Index = ({ allPosts }: Props) => {
                   title={dest.title}
                   subTitle={dest.placesVisited}
                 />
-              );
+              )
             })}
           </div>
         </Section>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
 
 export const getStaticProps = async () => {
-  const allPosts = blogApi.getAllPosts(['title', 'slug', 'description', 'date']);
+  const allPosts = blogApi.getAllPosts(['title', 'slug', 'description', 'date'])
 
   return {
     props: { allPosts },
-  };
-};
+  }
+}
