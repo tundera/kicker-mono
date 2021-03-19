@@ -30,7 +30,6 @@ module.exports = function (api) {
     "sites/*",
     "services/*",
     "studio",
-    "cli",
     "docs",
     "scripts",
   ];

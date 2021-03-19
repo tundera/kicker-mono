@@ -38,7 +38,7 @@ export class Start extends Command {
     const { flags } = this.parse(Start)
 
     const config = {
-      port: flags.port,
+      port: flags.port ?? 4000,
     }
 
     try {

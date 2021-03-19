@@ -12,9 +12,9 @@
       "projectType": "application"
     },
     "@tunderadev/cli": {
-      "root": "cli",
-      "sourceRoot": "cli",
-      "projectType": "application"
+      "root": "packages/cli",
+      "sourceRoot": "packages/cli",
+      "projectType": "library"
     },
     "@tunderadev/components": {
       "root": "packages/components",
