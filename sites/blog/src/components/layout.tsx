@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import { Footer } from './footer';
-import { Meta } from './meta';
+import { Footer } from './footer'
+import { Meta } from './meta'
 
 type Props = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 export const Layout: React.FC<Props> = ({ children }) => {
   return (
@@ -16,5 +16,5 @@ export const Layout: React.FC<Props> = ({ children }) => {
         <Footer />
       </div>
     </>
-  );
-};
+  )
+}
