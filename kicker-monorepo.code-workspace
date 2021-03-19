@@ -21,10 +21,6 @@
 			"path": "packages/components"
 		},
 		{
-			"name": "📦 @tunderadev/layouts",
-			"path": "packages/layouts"
-		},
-		{
 			"name": "@tunderadev/hoop",
 			"path": "services/hoop"
 		},

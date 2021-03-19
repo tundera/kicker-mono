@@ -37,9 +37,6 @@
     "@tunderadev/components": {
       "implicitDependencies": []
     },
-    "@tunderadev/layouts": {
-      "implicitDependencies": []
-    },
     "@tunderadev/blog": {
       "implicitDependencies": []
     },

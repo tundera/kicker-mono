@@ -3,10 +3,10 @@ import type { FC } from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
-import theme from './theme'
+import { theme } from './theme'
 import fonts from './font-face'
 
-const ThemeProvider: FC = ({ children }) => {
+export const ThemeProvider: FC = ({ children }) => {
   return (
     <ChakraProvider theme={theme}>
       <Global styles={fonts} />
@@ -14,5 +14,3 @@ const ThemeProvider: FC = ({ children }) => {
     </ChakraProvider>
   )
 }
-
-export default ThemeProvider

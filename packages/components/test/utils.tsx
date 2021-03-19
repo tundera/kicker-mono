@@ -1,6 +1,6 @@
 import { render as defaultRender } from '@testing-library/react'
 import { renderHook as defaultRenderHook } from '@testing-library/react-hooks'
-import ThemeProvider from '../src/ThemeProvider'
+import { ThemeProvider } from '../src/ThemeProvider'
 
 export * from '@testing-library/react'
 
