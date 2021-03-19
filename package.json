@@ -35,6 +35,8 @@
   },
   "scripts": {
     "postinstall": "preconstruct dev && manypkg check",
+    "link-cli": "yarn --cwd cli link",
+    "unlink-cli": "yarn --cwd cli unlink",
     "build:packages": "yarn --cwd packages/components build",
     "build:kicker": "yarn --cwd apps/kicker build",
     "build:website": "yarn --cwd sites/website build",

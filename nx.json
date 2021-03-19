@@ -34,7 +34,7 @@
     "@tunderadev/ecommerce": {
       "implicitDependencies": []
     },
-    "@tunderadev/mobile": {
+    "@tunderadev/cli": {
       "implicitDependencies": []
     },
     "@tunderadev/components": {

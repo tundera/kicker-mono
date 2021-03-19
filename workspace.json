@@ -11,9 +11,9 @@
       "sourceRoot": "apps/ecommerce",
       "projectType": "application"
     },
-    "@tunderadev/mobile": {
-      "root": "apps/mobile",
-      "sourceRoot": "apps/mobile",
+    "@tunderadev/cli": {
+      "root": "cli",
+      "sourceRoot": "cli",
       "projectType": "application"
     },
     "@tunderadev/components": {
