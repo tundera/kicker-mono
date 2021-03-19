@@ -79,7 +79,7 @@
     "next": "10.0.9",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-hook-form": "^6.15.4",
+    "react-hook-form": "^6.15.5",
     "react-is": "17.0.1",
     "react-test-renderer": "^17.0.1",
     "storybook-addon-designs": "^6.0.0-alpha.3",
