@@ -15,7 +15,6 @@
     "sourceMap": true,
     "noEmit": true,
     "rootDir": ".",
-    "baseUrl": ".",
-    "paths": {}
+    "baseUrl": "."
   }
 }
