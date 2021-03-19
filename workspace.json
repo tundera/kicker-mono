@@ -16,6 +16,11 @@
       "sourceRoot": "packages/components",
       "projectType": "library"
     },
+    "@tunderadev/layouts": {
+      "root": "packages/components",
+      "sourceRoot": "packages/components",
+      "projectType": "library"
+    },
     "@tunderadev/blog": {
       "root": "sites/blog",
       "sourceRoot": "sites/blog",

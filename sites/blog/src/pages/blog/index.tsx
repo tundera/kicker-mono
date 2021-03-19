@@ -1,26 +1,27 @@
-import React from 'react';
+import React from 'react'
 
-import { Section } from '../../components/section';
-import { Container } from '../../components/container';
-import { Layout } from '../../components/layout';
-import { NextSeo } from 'next-seo';
-import { BlogSiteDescription, BlogSiteTitle, BlogSiteUrl } from '../../_data/about';
-import { LinkOutlinedCard } from '../../components/outlined-card';
-import { OutlinedCardTitle } from '../../components/outlined-card-title';
-import { OutlinedCardDescription } from '../../components/outlined-card-description';
-import { Navigation } from '../../components/navigation';
-import { blogApi } from '../../lib/blog/fs-blog-api';
-import { Post } from '../../lib/blog/blog-api';
-import { Badge } from '../../components/badge';
-import { useRouter } from 'next/router';
+import { NextSeo } from 'next-seo'
+import { useRouter } from 'next/router'
+
+import { Section } from '../../components/section'
+import { Container } from '../../components/container'
+import { Layout } from '../../components/layout'
+import { BlogSiteDescription, BlogSiteTitle, BlogSiteUrl } from '../../_data/about'
+import { LinkOutlinedCard } from '../../components/outlined-card'
+import { OutlinedCardTitle } from '../../components/outlined-card-title'
+import { OutlinedCardDescription } from '../../components/outlined-card-description'
+import { Navigation } from '../../components/navigation'
+import { blogApi } from '../../lib/blog/fs-blog-api'
+import { Post } from '../../lib/blog/blog-api'
+import { Badge } from '../../components/badge'
 
 type Props = {
-  posts: Post[];
-  tags: Array<string>;
-};
+  posts: Post[]
+  tags: Array<string>
+}
 
 const Blog = ({ posts, tags }: Props) => {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <Layout>
@@ -45,7 +46,7 @@ const Blog = ({ posts, tags }: Props) => {
                 key={tag}
                 className="cursor-pointer"
                 onClick={() => {
-                  router.push(`/tags/${tag}`);
+                  router.push(`/tags/${tag}`)
                 }}
               >
                 #{tag}
@@ -60,27 +61,21 @@ const Blog = ({ posts, tags }: Props) => {
                 <OutlinedCardTitle>{post.title}</OutlinedCardTitle>
                 <OutlinedCardDescription>{post.description}</OutlinedCardDescription>
               </LinkOutlinedCard>
-            );
+            )
           })}
         </Section>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog
 
 export const getStaticProps = async () => {
   return {
     props: {
-      posts: blogApi.getAllPosts([
-        'title',
-        'date',
-        'slug',
-        'author',
-        'description',
-      ]),
+      posts: blogApi.getAllPosts(['title', 'date', 'slug', 'author', 'description']),
       tags: blogApi.getAllTags(),
     },
-  };
-};
+  }
+}
