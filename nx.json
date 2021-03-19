@@ -34,10 +34,10 @@
     "@tunderadev/ecommerce": {
       "implicitDependencies": []
     },
-    "@tunderadev/components": {
+    "@tunderadev/mobile": {
       "implicitDependencies": []
     },
-    "@tunderadev/blog": {
+    "@tunderadev/components": {
       "implicitDependencies": []
     },
     "@tunderadev/website": {
