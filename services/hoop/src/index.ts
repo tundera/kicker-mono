@@ -3,11 +3,11 @@ import { schema } from './schema'
 import { createContext } from './context'
 
 export * from '../db'
-export * from './generated/nexus'
+export * from './types'
 
 const isDev = process.env.TS_NODE_DEV === 'true'
 
-const server = new ApolloServer({
+export const server = new ApolloServer({
   schema: schema,
   context: createContext,
   playground: {
@@ -18,11 +18,4 @@ const server = new ApolloServer({
   tracing: isDev,
   introspection: isDev,
   debug: isDev,
-})
-
-server.listen().then(async ({ url }) => {
-  console.log(`\
-🚀 Server ready at: ${url}
-⭐️ See sample queries: http://pris.ly/e/ts/graphql#using-the-graphql-api
-  `)
 })

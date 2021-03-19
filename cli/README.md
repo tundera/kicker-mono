@@ -1,5 +1,4 @@
-cli
-===
+# cli
 
 Kicker CLI
 
@@ -9,11 +8,15 @@ Kicker CLI
 [![License](https://img.shields.io/npm/l/cli.svg)](https://github.com/tundera/cli/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g cli
 $ kicker COMMAND
@@ -25,11 +28,15 @@ USAGE
   $ kicker COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`kicker hello [FILE]`](#kicker-hello-file)
-* [`kicker help [COMMAND]`](#kicker-help-command)
+
+- [`kicker hello [FILE]`](#kicker-hello-file)
+- [`kicker help [COMMAND]`](#kicker-help-command)
 
 ## `kicker hello [FILE]`
 
@@ -67,4 +74,5 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
+
 <!-- commandsstop -->

@@ -15,7 +15,7 @@ export const schema = makeSchema({
     typegen: join(cwd, 'src/generated', 'nexus.ts'),
   },
   contextType: {
-    module: require.resolve(join(cwd, 'src', 'context.ts')),
+    module: require.resolve(join(cwd, 'src', 'types.ts')),
     export: 'Context',
     alias: 'ctx',
   },
