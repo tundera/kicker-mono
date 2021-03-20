@@ -1,20 +1,20 @@
-import { server, ServerConfig } from '@tunderadev/hoop'
 import { Command, flags } from '@oclif/command'
-
+import { spawn } from 'cross-spawn'
+import { join } from 'path'
 export class Start extends Command {
   static description = 'Start the production server'
 
   static aliases = ['s']
+
+  static args = [
+    { name: 'service', required: true, description: 'target service in the `services` directory', options: ['hoop'] },
+  ]
 
   static flags = {
     help: flags.help({ char: 'h' }),
     port: flags.integer({
       char: 'p',
       description: 'Set port number',
-    }),
-    hostname: flags.string({
-      char: 'H',
-      description: 'Set server hostname',
     }),
     inspect: flags.boolean({
       description: 'Enable the Node.js inspector',
@@ -28,21 +28,32 @@ export class Start extends Command {
   `)
   }
 
-  async start(config: ServerConfig) {
-    server.listen(config).then(({ url }) => {
-      this.logStatus(url)
+  async startService(name: string) {
+    return spawn('yarn', ['start'], {
+      cwd: join(process.cwd(), 'services', name),
     })
   }
 
   async run() {
-    const { flags } = this.parse(Start)
-
-    const config = {
-      port: flags.port ?? 4000,
-    }
+    const { args, flags } = this.parse(Start)
 
     try {
-      await this.start(config)
+      const child = await this.startService(args.service)
+
+      child.on('close', (code: number) => {
+        const message = code ? 'Failed to run develop script! ❌' : 'Done running develop script! ✅'
+        console.log(message)
+        return process.exit(code)
+      })
+
+      child.on('SIGINT', (code: number) => {
+        console.log('Interrupted develop script!')
+        return process.exit(code)
+      })
+      child.on('SIGTERM', (code: number) => {
+        console.log('Terminated develop script!')
+        return process.exit(code)
+      })
     } catch (err) {
       console.error(err)
       process.exit(1)
