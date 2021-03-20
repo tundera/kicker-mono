@@ -1,4 +1,28 @@
-export interface CommonTeamInfo {
+export interface TeamInfo {
+  teamInfoCommon: TeamInfoCommon[];
+  teamSeasonRanks: TeamSeasonRank[];
+  availableSeasons: AvailableSeason[];
+}
+
+export interface AvailableSeason {
+  seasonId: string;
+}
+
+export interface TeamSeasonRank {
+  leagueId: string;
+  seasonId: string;
+  teamId: number;
+  ptsRank: number;
+  ptsPg: number;
+  rebRank: number;
+  rebPg: number;
+  astRank: number;
+  astPg: number;
+  oppPtsRank: number;
+  oppPtsPg: number;
+}
+
+export interface TeamInfoCommon {
   teamId: number;
   seasonYear: string;
   teamCity: string;

@@ -2,11 +2,12 @@
 
 import nba from 'nba'
 
-const logTeamData = async (teamId: number) => {
-  const {teamInfoCommon: team} = await nba.stats.teamInfoCommon({ TeamID: teamId })
+import {TeamInfo} from '../types'
 
-  console.dir(team,         {colors: true, depth: null})
-  console.log('TEAM NAME:', team[0].teamName)
+const logTeamData = async (teamId: number) => {
+  const teamInfo: TeamInfo = await nba.stats.teamInfoCommon({ TeamID: teamId })
+
+  console.dir(teamInfo, {colors: true, depth: null})
 }
 
 const main = async () => {
