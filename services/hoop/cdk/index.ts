@@ -84,7 +84,7 @@ export class AppSyncCdkStack extends cdk.Stack {
       handler: 'main',
       entry: path.join(__dirname, process.env.HANDLER_FUNCTION_PATH || ''),
       memorySize: 512,
-      depsLockFilePath: path.join(__dirname, '../yarn.lock'),
+      depsLockFilePath: path.join(__dirname, '../../../yarn.lock'),
       bundling: {
         minify: true,
         commandHooks: {
