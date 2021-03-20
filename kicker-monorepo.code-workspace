@@ -37,10 +37,6 @@
 			"path": "services/hoop"
 		},
 		{
-			"name": "@tunderadev/blog",
-			"path": "sites/blog"
-		},
-		{
 			"name": "🚀 @tunderadev/website",
 			"path": "sites/website"
 		},

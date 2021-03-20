@@ -28340,6 +28340,11 @@ prism-react-renderer@^1.0.1, prism-react-renderer@^1.2.0:
   resolved "https://registry.npmjs.org/prism-react-renderer/-/prism-react-renderer-1.2.0.tgz#5ad4f90c3e447069426c8a53a0eafde60909cdf4"
   integrity sha512-GHqzxLYImx1iKN1jJURcuRoA/0ygCcNhfGw1IT8nPIMzarmKQ3Nc+JcG0gi8JXQzuh0C5ShE4npMIoqNin40hg==
 
+prisma-appsync@1.0.0-beta.49:
+  version "1.0.0-beta.49"
+  resolved "https://registry.npmjs.org/prisma-appsync/-/prisma-appsync-1.0.0-beta.49.tgz#6c2d0a1ceaba71818756df825c5a77d46fc75374"
+  integrity sha512-g9lwLxoxw3RzbL19whIGA4V2QHE6UjvcZeCCRLtJ5u5+rhV41rwMO0cObAaBN5fLVpYw/lHRhS7ehNuzbXeMkg==
+
 prisma@^2.18.0:
   version "2.18.0"
   resolved "https://registry.npmjs.org/prisma/-/prisma-2.18.0.tgz#b19a2d4a487b8b62759777be55506567af41f6ae"

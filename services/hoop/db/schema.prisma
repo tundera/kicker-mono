@@ -8,6 +8,10 @@ generator nexusPrisma {
   provider = "nexus-prisma"
 }
 
+generator appsync {
+  provider = "prisma-appsync"
+}
+
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
