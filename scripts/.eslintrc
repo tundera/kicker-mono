@@ -1,0 +1,54 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "import"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "global-require": "off",
+    "consistent-return": "off",
+    "import/prefer-default-export": "off",
+    "import/no-useless-path-segments": "off",
+    "no-param-reassign": "off",
+    "import/no-cycle": "off",
+    "no-multi-assign": "off",
+    "no-underscore-dangle": "off",
+    "no-nested-ternary": "off",
+    "import/imports-first": ["error", "absolute-first"],
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "semi": ["error", "never"]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".js", ".ts"]
+    },
+    "import/resolver": {
+      "babel-module": {},
+      "typescript": {}
+    }
+  },
+  "parserOptions": {
+    // Allows for the parsing of modern ECMAScript features
+    "ecmaVersion": 2020,
+    // Allows for the use of imports
+    "sourceType": "module"
+    // https://blog.geographer.fr/eslint-parser-services, https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
+  }
+}

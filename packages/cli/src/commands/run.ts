@@ -28,8 +28,8 @@ export class Run extends Command {
   }
 
   async runScript(name: string) {
-    console.log(`Running script at "scripts/${name}"`)
-    return spawn('node', ['--loader', 'ts-node/esm', `${name}.ts`], {
+    console.log(`Running script at "scripts/src/${name}"`)
+    return spawn('node', ['--loader', 'ts-node/esm', `src/${name}.ts`], {
       cwd: join(process.cwd(), 'scripts'),
     }).stdout.pipe(process.stdout)
   }
