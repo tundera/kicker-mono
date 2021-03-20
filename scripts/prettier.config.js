@@ -2,5 +2,6 @@ module.exports = {
   singleQuote: true,
   semi: false,
   trailingComma: 'all',
-  printWidth: 120,
+  printWidth: 100,
+  proseWrap: 'always',
 }
