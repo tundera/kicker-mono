@@ -1,0 +1,19 @@
+{
+  "name": "@tunderadev/scripts",
+  "version": "0.1.0",
+  "type": "module",
+  "author": {
+    "name": "Philip Johnston",
+    "email": "stackshuffle@gmail.com",
+    "url": "https://github.com/tundera"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tundera/kicker-mono.git",
+    "directory": "scripts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "nba": "4.15.0"
+  }
+}

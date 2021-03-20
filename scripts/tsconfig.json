@@ -1,9 +1,12 @@
 {
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
-    "module": "commonjs",
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext"],
     "moduleResolution": "node",
     "isolatedModules": false,
+    "esModuleInterop": true,
     "noEmit": true
   },
   "include": ["."]
