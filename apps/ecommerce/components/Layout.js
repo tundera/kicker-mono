@@ -130,7 +130,7 @@ function Layout({ children }) {
             href="#"
             className="text-xl font-bold text-gray-500 hover:text-gray-400"
           >
-            Pulp Inc.
+            Tundera
           </a>
           <p className="py-2 text-gray-500 sm:py-0">All rights reserved</p>
         </div>

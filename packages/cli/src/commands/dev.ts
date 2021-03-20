@@ -1,10 +1,10 @@
 import { Command, flags } from '@oclif/command'
 import { spawn } from 'cross-spawn'
 import { join } from 'path'
-export class Start extends Command {
+export class Dev extends Command {
   static description = 'Start the production server'
 
-  static aliases = ['s']
+  static aliases = ['d']
 
   static args = [
     {
@@ -33,30 +33,30 @@ export class Start extends Command {
   `)
   }
 
-  async startServiceProd(name: string) {
-    return spawn('yarn', ['start'], {
+  async startServiceDev(name: string) {
+    return spawn('yarn', ['dev'], {
       cwd: join(process.cwd(), 'services', name),
     }).stdout.pipe(process.stdout)
   }
 
   async run() {
-    const { args, flags } = this.parse(Start)
+    const { args, flags } = this.parse(Dev)
 
     try {
-      const child = await this.startServiceProd(args.service)
+      const child = await this.startServiceDev(args.service)
 
       child.on('close', (code: number) => {
-        const message = code ? 'Failed to run start script! ❌' : 'Done running start script! ✅'
+        const message = code ? 'Failed to run develop script! ❌' : 'Done running develop script! ✅'
         console.log(message)
         return process.exit(code)
       })
 
       child.on('SIGINT', (code: number) => {
-        console.log('Interrupted start script!')
+        console.log('Interrupted develop script!')
         return process.exit(code)
       })
       child.on('SIGTERM', (code: number) => {
-        console.log('Terminated start script!')
+        console.log('Terminated develop script!')
         return process.exit(code)
       })
     } catch (err) {
