@@ -5,7 +5,8 @@ import nba from 'nba'
 const logTeamData = async (teamId: number) => {
   const {teamInfoCommon: team} = await nba.stats.teamInfoCommon({ TeamID: teamId })
 
-  console.dir(team[0].teamName, {colors: true, depth: null})
+  console.dir(team,         {colors: true, depth: null})
+  console.log('TEAM NAME:', team[0].teamName)
 }
 
 const main = async () => {
