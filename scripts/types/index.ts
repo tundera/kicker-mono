@@ -40,3 +40,38 @@ export interface TeamInfoCommon {
   minYear: string;
   maxYear: string;
 }
+
+export interface TeamRoster {
+  commonTeamRoster: CommonTeamRoster[];
+  coaches: Coach[];
+}
+
+export interface Coach {
+  teamId: number;
+  season: string;
+  coachId: number;
+  firstName: string;
+  lastName: string;
+  coachName: string;
+  isAssistant: number;
+  coachType: string;
+  sortSequence?: any;
+  subSortSequence: number;
+}
+
+export interface CommonTeamRoster {
+  teamID: number;
+  season: string;
+  leagueID: string;
+  player: string;
+  playerSlug: string;
+  num: string;
+  position: string;
+  height: string;
+  weight: string;
+  birthDate: string;
+  age: number;
+  exp: string;
+  school: string;
+  playerId: number;
+}

@@ -4,6 +4,8 @@
     "target": "esnext",
     "module": "esnext",
     "lib": ["esnext"],
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "moduleResolution": "node",
     "isolatedModules": false,
     "esModuleInterop": true,
