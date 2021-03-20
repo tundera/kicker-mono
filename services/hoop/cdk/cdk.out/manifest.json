@@ -18,13 +18,13 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7b",
-              "id": "5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7b",
+              "path": "asset.e5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9",
+              "id": "e5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9",
               "packaging": "zip",
-              "sourceHash": "5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7b",
-              "s3BucketParameter": "AssetParameters5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7bS3Bucket2F07A978",
-              "s3KeyParameter": "AssetParameters5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7bS3VersionKey9ED711A0",
-              "artifactHashParameter": "AssetParameters5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7bArtifactHash15F57A98"
+              "sourceHash": "e5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9",
+              "s3BucketParameter": "AssetParameterse5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9S3Bucket9FCA78D5",
+              "s3KeyParameter": "AssetParameterse5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9S3VersionKey669AA762",
+              "artifactHashParameter": "AssetParameterse5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9ArtifactHash7B56C31F"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/philip.johnston/Tundera/monorepos/kicker-mono/services/hoop/cdk/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
@@ -264,10 +264,10 @@
             ]
           }
         ],
-        "/PrismaAppSync/AssetParameters/5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7b/S3Bucket": [
+        "/PrismaAppSync/AssetParameters/e5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7bS3Bucket2F07A978",
+            "data": "AssetParameterse5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9S3Bucket9FCA78D5",
             "trace": [
               "new FileAssetParameters (/Users/philip.johnston/Tundera/monorepos/kicker-mono/services/hoop/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/philip.johnston/Tundera/monorepos/kicker-mono/services/hoop/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
@@ -298,10 +298,10 @@
             ]
           }
         ],
-        "/PrismaAppSync/AssetParameters/5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7b/S3VersionKey": [
+        "/PrismaAppSync/AssetParameters/e5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7bS3VersionKey9ED711A0",
+            "data": "AssetParameterse5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9S3VersionKey669AA762",
             "trace": [
               "new FileAssetParameters (/Users/philip.johnston/Tundera/monorepos/kicker-mono/services/hoop/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/philip.johnston/Tundera/monorepos/kicker-mono/services/hoop/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
@@ -332,10 +332,10 @@
             ]
           }
         ],
-        "/PrismaAppSync/AssetParameters/5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7b/ArtifactHash": [
+        "/PrismaAppSync/AssetParameters/e5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters5ce0cf14b83e85765a36e03bab75df9547d74d2f113184e75ba030b97a188a7bArtifactHash15F57A98",
+            "data": "AssetParameterse5613f7422be772a3d644fab9246369607e7090a04890418783c5da323116fa9ArtifactHash7B56C31F",
             "trace": [
               "new FileAssetParameters (/Users/philip.johnston/Tundera/monorepos/kicker-mono/services/hoop/cdk/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/philip.johnston/Tundera/monorepos/kicker-mono/services/hoop/cdk/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
