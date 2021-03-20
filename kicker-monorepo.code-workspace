@@ -1,10 +1,6 @@
 {
 	"folders": [
 		{
-			"name": "@tunderadev/cli",
-			"path": "cli"
-		},
-		{
 			"name": "✨ tunderadev",
 			"path": "."
 		},
@@ -27,6 +23,10 @@
 		{
 			"name": "📦 @tunderadev/components",
 			"path": "packages/components"
+		},
+		{
+			"name": "📦 @tunderadev/theme",
+			"path": "packages/theme"
 		},
 		{
 			"name": "⚙️ @tunderadev/scripts",

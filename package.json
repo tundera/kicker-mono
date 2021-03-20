@@ -33,7 +33,7 @@
     ]
   },
   "scripts": {
-    "bootstrap": "yarn install && yarn cli:link",
+    "bootstrap": "lerna bootstrap && yarn cli:link",
     "cli:link": "yarn workspace @tunderadev/cli link",
     "cli:unlink": "yarn workspace @tunderadev/cli unlink",
     "postinstall": "preconstruct dev && manypkg check",

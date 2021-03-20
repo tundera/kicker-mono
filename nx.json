@@ -40,6 +40,9 @@
     "@tunderadev/components": {
       "implicitDependencies": []
     },
+    "@tunderadev/theme": {
+      "implicitDependencies": []
+    },
     "@tunderadev/website": {
       "implicitDependencies": []
     },

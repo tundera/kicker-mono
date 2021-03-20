@@ -21,6 +21,11 @@
       "sourceRoot": "packages/components",
       "projectType": "library"
     },
+    "@tunderadev/theme": {
+      "root": "packages/theme",
+      "sourceRoot": "packages/theme",
+      "projectType": "library"
+    },
     "@tunderadev/website": {
       "root": "sites/website",
       "sourceRoot": "sites/website",
