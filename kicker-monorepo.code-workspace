@@ -1,6 +1,10 @@
 {
 	"folders": [
 		{
+			"name": "@tunderadev/cli",
+			"path": "cli"
+		},
+		{
 			"name": "✨ tunderadev",
 			"path": "."
 		},
@@ -13,20 +17,28 @@
 			"path": "apps/kicker"
 		},
 		{
-			"name": "@tunderadev/cli",
-			"path": "cli"
-		},
-		{
 			"name": "@examples/tailwind-next",
 			"path": "examples/tailwind-next"
+		},
+		{
+			"name": "📦 @tunderadev/cli",
+			"path": "packages/cli"
 		},
 		{
 			"name": "📦 @tunderadev/components",
 			"path": "packages/components"
 		},
 		{
+			"name": "⚙️ @tunderadev/scripts",
+			"path": "scripts"
+		},
+		{
 			"name": "@tunderadev/hoop",
 			"path": "services/hoop"
+		},
+		{
+			"name": "@tunderadev/blog",
+			"path": "sites/blog"
 		},
 		{
 			"name": "🚀 @tunderadev/website",
