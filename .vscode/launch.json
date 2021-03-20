@@ -4,67 +4,25 @@
     {
       "type": "node",
       "request": "attach",
-      "name": "Launch Node (blog)",
+      "name": "Launch Node (kicker)",
       "skipFiles": ["<node_internals>/**"],
       "port": 9229
     },
     {
       "type": "chrome",
       "request": "launch",
-      "name": "Launch Chrome (blog)",
-      "url": "http://localhost:3001",
+      "name": "Launch Chrome (kicker)",
+      "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}",
       "sourceMapPathOverrides": {
-        "webpack:///./*": "${workspaceRoot}/examples/blog/*"
-      }
-    },
-    {
-      "type": "node",
-      "request": "attach",
-      "name": "Launch Node (home)",
-      "skipFiles": ["<node_internals>/**"],
-      "port": 9229
-    },
-    {
-      "type": "chrome",
-      "request": "launch",
-      "name": "Launch Chrome (home)",
-      "url": "http://localhost:3002",
-      "webRoot": "${workspaceFolder}",
-      "sourceMapPathOverrides": {
-        "webpack:///./*": "${workspaceRoot}/examples/home/*"
-      }
-    },
-    {
-      "type": "node",
-      "request": "attach",
-      "name": "Launch Node (store)",
-      "skipFiles": ["<node_internals>/**"],
-      "port": 9229
-    },
-    {
-      "type": "chrome",
-      "request": "launch",
-      "name": "Launch Chrome (store)",
-      "url": "http://localhost:3003",
-      "webRoot": "${workspaceFolder}",
-      "sourceMapPathOverrides": {
-        "webpack:///./*": "${workspaceRoot}/examples/store/*"
+        "webpack:///./*": "${workspaceRoot}/apps/kicker/*"
       }
     }
   ],
   "compounds": [
     {
-      "name": "Debug Fullstack (blog)",
-      "configurations": ["Launch Node (blog)", "Launch Chrome (blog)"]
-    },
-    {
-      "name": "Debug Fullstack (home)",
-      "configurations": ["Launch Node (home)", "Launch Chrome (home)"]
-    },
-    {
-      "name": "Debug Fullstack (store)",
-      "configurations": ["Launch Node (store)", "Launch Chrome (store)"]
+      "name": "Debug Fullstack (kicker)",
+      "configurations": ["Launch Node (kicker)", "Launch Chrome (kicker)"]
     }
   ]
 }
