@@ -1,4 +1,5 @@
 {
+  "extends": "../../tsconfig.react.json",
   "compilerOptions": {
     "declaration": true,
     "sourceMap": true,
