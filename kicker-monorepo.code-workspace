@@ -1,6 +1,10 @@
 {
 	"folders": [
 		{
+			"name": "@examples/tailwind-next",
+			"path": "examples/tailwind-next"
+		},
+		{
 			"name": "✨ tunderadev",
 			"path": "."
 		},
@@ -13,8 +17,8 @@
 			"path": "apps/kicker"
 		},
 		{
-			"name": "@examples/tailwind-next",
-			"path": "examples/tailwind-next"
+			"name": "@examples/tailwind",
+			"path": "examples/tailwind"
 		},
 		{
 			"name": "📦 @tunderadev/cli",

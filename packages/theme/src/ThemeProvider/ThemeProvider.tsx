@@ -3,8 +3,8 @@ import type { FC } from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
-import { theme } from './theme'
-import fonts from './font-face'
+import { theme } from '../theme'
+import fonts from '../font-face'
 
 export const ThemeProvider: FC = ({ children }) => {
   return (
