@@ -23,6 +23,6 @@
       "test-utils": ["./test/utils"]
     }
   },
-  "include": ["**/*.ts", "**/.tsx", "types"],
+  "include": ["src", "types"],
   "exclude": ["node_modules"]
 }

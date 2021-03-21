@@ -7,7 +7,7 @@ module.exports = {
     '^.+\\.mdx$': '@storybook/addon-docs/jest-transform-mdx',
     '^.+\\.css$': '<rootDir>/test/transforms/cssTransform.js',
   },
-  transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
+  transformIgnorePatterns: ['<rootDir>/node_modules', '^.+\\.module\\.(css|sass|scss)$'],
   moduleNameMapper: {
     'test-utils': '<rootDir>/test/utils.tsx',
     '^styles/(.*)$': '<rootDir>/styles/$1',
@@ -16,12 +16,12 @@ module.exports = {
   coveragePathIgnorePatterns: ['/node_modules/'],
   globals: {
     'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.jest.json',
+      tsconfig: 'tsconfig.jest.json',
       babelConfig: true,
       diagnostics: false,
     },
   },
-  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', '.mdx'],
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   testMatch: ['**/*.test.(js|jsx|ts|tsx)'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/', '/storybook-static/', '/.vercel/'],
 }
