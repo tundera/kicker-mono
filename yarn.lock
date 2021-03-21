@@ -5879,7 +5879,7 @@
   resolved "https://registry.npmjs.org/@panva/asn1.js/-/asn1.js-1.0.0.tgz#dd55ae7b8129e02049f009408b97c61ccf9032f6"
   integrity sha512-UdkG3mLEqXgnlKsWanWcgb6dOjUzJ+XC5f+aWw30qrtjxeNUSfKX1cd5FBzOaXQumoe9nIqeZUvrRJS03HCCtw==
 
-"@pmmmwh/react-refresh-webpack-plugin@^0.4.3":
+"@pmmmwh/react-refresh-webpack-plugin@^0.4.2", "@pmmmwh/react-refresh-webpack-plugin@^0.4.3":
   version "0.4.3"
   resolved "https://registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz#1eec460596d200c0236bf195b078a5d1df89b766"
   integrity sha512-br5Qwvh8D2OQqSXpd1g/xqXKnK0r+Jz6qVKBbWmpUcrbGOxUrf39V5oZ1876084CGn18uMdR5uvPqBv9UqtBjQ==
@@ -7333,7 +7333,7 @@
     prop-types "^15.7.2"
     regenerator-runtime "^0.13.7"
 
-"@storybook/addons@6.1.21", "@storybook/addons@^6.1.11":
+"@storybook/addons@6.1.21", "@storybook/addons@^6.1.11", "@storybook/addons@^6.1.21":
   version "6.1.21"
   resolved "https://registry.npmjs.org/@storybook/addons/-/addons-6.1.21.tgz#94bb66fc51d1dfee80d0fe84f5b83c10045651b5"
   integrity sha512-xo5TGu9EZVCqgh3D1veVnfuGzyKDWWsvOMo18phVqRxj21G3/+hScVyfIYwNTv7Ys5/Ahp9JxJUMXL3V3ny+tw==
@@ -7647,7 +7647,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/client-api@6.1.21":
+"@storybook/client-api@6.1.21", "@storybook/client-api@^6.1.21":
   version "6.1.21"
   resolved "https://registry.npmjs.org/@storybook/client-api/-/client-api-6.1.21.tgz#c9f72bbc9bf9d12cc931eb824f6912173c73b0b3"
   integrity sha512-uLFXQ5z1LLWYnw1w+YUJPzIPRVlwCCvM2Si37aHDZn1F3fnbMg+huEhEqIQ1TTTw3wiJoTeGuShYvqyaiNwq/w==
@@ -8113,6 +8113,33 @@
   dependencies:
     core-js "^3.8.2"
 
+"@storybook/react@^6.1.21":
+  version "6.1.21"
+  resolved "https://registry.npmjs.org/@storybook/react/-/react-6.1.21.tgz#1c4d01dba8d8f130f9b7da4038a380eeb9c61f38"
+  integrity sha512-j3gq/ssWxRCCH5iCHbP3ihXSGS7lVWh1HpmBmGbbhHGHgdmSPsRjwDXiQGE81EmE7bzbC8NECBhU3zHJ6h1TvA==
+  dependencies:
+    "@babel/preset-flow" "^7.12.1"
+    "@babel/preset-react" "^7.12.1"
+    "@pmmmwh/react-refresh-webpack-plugin" "^0.4.2"
+    "@storybook/addons" "6.1.21"
+    "@storybook/core" "6.1.21"
+    "@storybook/node-logger" "6.1.21"
+    "@storybook/semver" "^7.3.2"
+    "@types/webpack-env" "^1.15.3"
+    babel-plugin-add-react-displayname "^0.0.5"
+    babel-plugin-named-asset-import "^0.3.1"
+    babel-plugin-react-docgen "^4.2.1"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    lodash "^4.17.15"
+    prop-types "^15.7.2"
+    react-dev-utils "^11.0.3"
+    react-docgen-typescript-plugin "^0.6.2"
+    react-refresh "^0.8.3"
+    regenerator-runtime "^0.13.7"
+    ts-dedent "^2.0.0"
+    webpack "^4.44.2"
+
 "@storybook/react@^6.2.0-beta.12":
   version "6.2.0-beta.15"
   resolved "https://registry.npmjs.org/@storybook/react/-/react-6.2.0-beta.15.tgz#aeb5d6a4ca1ef7e9b78d6cfd101baf388e32b395"
@@ -8225,6 +8252,15 @@
     lodash "^4.17.20"
     prettier "~2.2.1"
     regenerator-runtime "^0.13.7"
+
+"@storybook/testing-react@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@storybook/testing-react/-/testing-react-0.0.5.tgz#9bdc01fc7f43d71e29fee061fed93a8746c47143"
+  integrity sha512-I3q9P/XLP1D7IsiJkm2TvHAr3lt00/e1NNFzQ+520eSyLjSJqa3Ro8rbiUroFs4lSUHuhhlQlzKXbyDTF5Df3Q==
+  dependencies:
+    "@storybook/addons" "^6.1.21"
+    "@storybook/client-api" "^6.1.21"
+    "@storybook/react" "^6.1.21"
 
 "@storybook/theming@5.3.21":
   version "5.3.21"

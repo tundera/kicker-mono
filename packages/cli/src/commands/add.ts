@@ -1,8 +1,8 @@
 import { Command, flags } from '@oclif/command'
 import { spawn } from 'cross-spawn'
 
-export class Dev extends Command {
-  static description = 'Add dependency to workspace package'
+export class Add extends Command {
+  static description = 'Add dependency to project'
 
   static aliases = ['a']
 
@@ -21,24 +21,37 @@ export class Dev extends Command {
 
   static flags = {
     help: flags.help({ char: 'h' }),
-    port: flags.integer({
-      char: 'p',
-      description: 'Set port number',
+    dev: flags.boolean({
+      char: 'D',
+      description: 'Install module as dev dependency',
     }),
-    inspect: flags.boolean({
-      description: 'Enable the Node.js inspector',
+    exact: flags.boolean({
+      char: 'E',
+      description: 'Install module with exact version',
+    }),
+    peer: flags.boolean({
+      char: 'P',
+      description: 'Install module as peer dependency',
     }),
   }
 
-  async addModule(module: string, workspace: string) {
-    return spawn('yarn', ['lerna', 'add', module, '--scope', `@tunderadev/${workspace}`]).stdout.pipe(process.stdout)
+  async addModule(module: string, workspace: string, options: string[]) {
+    return spawn('yarn', ['lerna', 'add', module, '--scope', `@tunderadev/${workspace}`].concat(options)).stdout.pipe(
+      process.stdout,
+    )
   }
 
   async run() {
-    const { args, flags } = this.parse(Dev)
+    const { args, flags } = this.parse(Add)
+
+    const options = []
+
+    if (flags.dev) options.push('--dev')
+    if (flags.exact) options.push('--exact')
+    if (flags.peer) options.push('--peer')
 
     try {
-      const child = await this.addModule(args.module, args.workspace)
+      const child = await this.addModule(args.module, args.workspace, options)
 
       child.on('close', (code: number) => {
         const message = code
