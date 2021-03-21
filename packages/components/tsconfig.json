@@ -20,7 +20,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "test-utils": ["./test/utils"]
+      "test-utils": ["test/utils"]
     }
   },
   "include": ["src", "types"],

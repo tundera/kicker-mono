@@ -1,7 +1,7 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
 
-import SimpleList, { SimpleListProps } from '@components/ui/lists/SimpleList'
+import { SimpleList, SimpleListProps } from './SimpleList'
 // import * as DependentStories from './Dependent.stories'
 
 export default {

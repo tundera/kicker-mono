@@ -4,7 +4,7 @@ import type { CustomNextPage } from 'types'
 import { Flex, Heading } from '@chakra-ui/react'
 
 import { getLayout } from '@components/layouts/AccountLayout'
-import SimpleList from '@components/ui/lists/SimpleList'
+import { SimpleList } from '@components/ui/lists/SimpleList'
 import { getSession } from 'next-auth/client'
 
 interface AccountPageProps {

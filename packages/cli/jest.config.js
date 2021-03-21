@@ -1,11 +1,13 @@
-module.exports = {
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { merge } = require('merge-anything')
+
+const baseConfig = require('../../jest.config')
+
+module.exports = merge(baseConfig, {
   testEnvironment: 'node',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
-  testMatch: ['<rootDir>/test/jest/**/*.ts'],
-  transform: { '\\.ts$': 'ts-jest/preprocessor' },
   mapCoverage: true,
   coverageReporters: ['lcov', 'text-summary'],
-  // collectCoverage: !!`Boolean(process.env.CI)`,
   collectCoverageFrom: ['src/**/*.ts'],
   coveragePathIgnorePatterns: ['/templates/'],
   coverageThreshold: {
@@ -16,4 +18,4 @@ module.exports = {
       statements: 100,
     },
   },
-}
+})

@@ -1,17 +1,22 @@
-const cwd = process.cwd();
+const cwd = process.cwd()
 
 module.exports = function (api) {
-  api.cache(true);
+  api.cache(true)
 
   const presets = [
-    "@babel/preset-env",
-    "@babel/preset-react",
-    "@babel/preset-typescript",
-  ];
+    '@babel/preset-env',
+    [
+      '@babel/preset-react',
+      {
+        runtime: 'automatic',
+      },
+    ],
+    '@babel/preset-typescript',
+  ]
 
   const plugins = [
     [
-      "module-resolver",
+      'module-resolver',
       {
         root: cwd,
         alias: {
@@ -19,24 +24,24 @@ module.exports = function (api) {
         },
       },
     ],
-    "@babel/plugin-proposal-class-properties",
-    "@babel/plugin-transform-runtime",
-  ];
+    '@babel/plugin-proposal-class-properties',
+    '@babel/plugin-transform-runtime',
+  ]
 
   const babelrcRoots = [
-    "packages/*",
-    "apps/*",
-    "examples/*",
-    "sites/*",
-    "services/*",
-    "studio",
-    "docs",
-    "scripts",
-  ];
+    'packages/*',
+    'apps/*',
+    'examples/*',
+    'sites/*',
+    'services/*',
+    'studio',
+    'docs',
+    'scripts',
+  ]
 
   return {
     presets,
     plugins,
     babelrcRoots,
-  };
-};
+  }
+}

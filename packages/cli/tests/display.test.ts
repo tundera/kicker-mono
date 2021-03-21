@@ -1,3 +1,3 @@
-it('should do nothing', () => {
+test('should do nothing', () => {
   expect(true).toBe(true)
 })

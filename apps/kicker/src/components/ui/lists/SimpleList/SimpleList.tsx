@@ -33,7 +33,7 @@ interface Props {
   items: ListItemType[]
 }
 
-const SimpleList: FC<Props> = ({ heading, subheading, items }) => {
+export const SimpleList: FC<Props> = ({ heading, subheading, items }) => {
   const bg = useColorModeValue('white', 'gray.800')
   const headingColor = useColorModeValue('gray.900', 'white')
   const subheadingColor = useColorModeValue('gray.500', 'gray.200')
@@ -120,7 +120,5 @@ const SimpleList: FC<Props> = ({ heading, subheading, items }) => {
     </Box>
   )
 }
-
-export default SimpleList
 
 export type { Props as SimpleListProps }
