@@ -1,3 +1,1 @@
-import { theme } from '../../../../../packages/components';
-
-export { theme as default };
+export { theme as default } from '@tunderadev/theme';
