@@ -36,7 +36,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
-    "react-moveable": "^0.27.0",
+    "react-moveable": "^0.27.2",
     "resize-observer": "^1.0.0"
   },
   "devDependencies": {}
