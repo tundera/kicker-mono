@@ -1,0 +1,84 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["groupBy"]
+  binaryTargets   = ["native", "rhel-openssl-1.0.x"]
+}
+
+generator nexusPrisma {
+  provider = "nexus-prisma"
+}
+
+generator appsync {
+  provider = "prisma-appsync"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// NBA coach
+model Coach {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime
+  handle      String   @unique
+  name        String   @unique
+  teamId      Int?
+  type        String?
+  isAssistant String?
+  team        Team?    @relation(fields: [teamId], references: [id])
+}
+
+/// NBA player
+model Player {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime
+  handle    String   @unique
+  name      String   @unique
+  slug      String   @unique
+  teamId    Int?
+  height    String
+  weight    String
+  number    String?
+  position  String?
+  team      Team?    @relation(fields: [teamId], references: [id])
+}
+
+/// Team color scheme
+model ColorScheme {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime
+  primary   String
+  secondary String
+  team      Team     @relation(fields: [teamId], references: [id])
+  teamId    Int
+
+}
+
+/// NBA team
+model Team {
+  id             Int          @id @default(autoincrement())
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime
+  handle         String       @unique
+  name           String       @unique
+  slug           String       @unique
+  city           String
+  abbreviation   String       @unique
+  logo           String       @unique
+  logoSlug       String       @unique
+  wins           Int?
+  losses         Int?
+  winPercentage  Float?
+  conference     String
+  division       String
+  established    String
+  primaryColor   String
+  secondaryColor String
+  coaches        Coach[]
+  colorScheme    ColorScheme?
+  players        Player[]
+}
