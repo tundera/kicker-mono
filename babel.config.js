@@ -29,6 +29,7 @@ module.exports = function (api) {
   ]
 
   const babelrcRoots = [
+    '.',
     'packages/*',
     'apps/*',
     'examples/*',
