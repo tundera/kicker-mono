@@ -1,10 +1,6 @@
 {
   "folders": [
     {
-      "name": "@examples/tailwind-next",
-      "path": "examples/tailwind-next"
-    },
-    {
       "name": "✨ tunderadev",
       "path": "."
     },
