@@ -11,10 +11,12 @@ export default {
 
 const Template: Story<CardWithEvalProps> = (args) => <CardWithEval {...args} />
 
-export const Default = Template.bind({})
-Default.args = {
-  title: 'Tomorrow',
-  description: "You can't buy your future, but you can do it. Money is nothing, you're everything.",
-  price: '$220',
-  bgImage: '/images/tailwind/landscape/2.jpg',
+export const Primary = Template.bind({})
+
+Primary.args = {
+  title: 'CardWithEval',
+  description: 'Test description',
+  price: '$0.00',
+  slug: '/slug',
+  bgImage: '/images/tailwind/landscape/3.jpg',
 }

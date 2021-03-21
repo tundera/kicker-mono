@@ -11,6 +11,7 @@ import { Flex, Box, IconButton, useColorMode, useColorModeValue } from '@chakra-
 import { Sun, Moon } from 'react-feather'
 
 import { ThemeProvider } from '@tunderadev/theme'
+import { StorySortMethod } from '@storybook/addons'
 
 // Adapted from https://github.com/UnlyEd/next-right-now/blob/e5aba8eaf02918d9506008ee1f11c38954fedc86/.storybook/preview.js
 
@@ -21,7 +22,7 @@ export const parameters = {
   },
   options: {
     storySort: {
-      method: 'alphabetical',
+      method: 'alphebetical' as StorySortMethod,
       order: [
         'App', // Should be first
         'Kicker', // Should be second, if kept around
@@ -91,6 +92,7 @@ const withProviders = (StoryFn: Function, context: StoryContext) => {
     </ThemeProvider>
   )
 }
+
 export const decorators = [withProviders]
 
 addDecorator(withPerformance)

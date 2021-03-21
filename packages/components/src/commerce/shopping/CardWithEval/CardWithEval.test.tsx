@@ -1,17 +1,11 @@
 import { render } from '../../../../test/utils'
+import { composeStories } from '@storybook/testing-react'
+import * as stories from './CardWithEval.stories'
 
-import { CardWithEval } from './CardWithEval'
+const { Primary } = composeStories(stories)
 
 test('renders CardWithEval component with title', () => {
-  const { getByText } = render(
-    <CardWithEval
-      title="CardWithEval"
-      description="Test description"
-      price="$0.00"
-      slug="/slug"
-      bgImage="/images/tailwind/landscape/3.jpg"
-    />,
-  )
+  const { getByText } = render(<Primary />)
   const title = getByText(/CardWithEval/)
   expect(title).toBeInTheDocument()
 })

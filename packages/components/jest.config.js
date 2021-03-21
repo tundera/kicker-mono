@@ -9,6 +9,7 @@ module.exports = {
   },
   transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
   moduleNameMapper: {
+    'test-utils': '<rootDir>/test/utils.tsx',
     '^styles/(.*)$': '<rootDir>/styles/$1',
     '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
   },
