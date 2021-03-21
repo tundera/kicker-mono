@@ -2,20 +2,20 @@ import { Command, flags } from '@oclif/command'
 import { spawn } from 'cross-spawn'
 
 export class Dev extends Command {
-  static description = 'Start the production server'
+  static description = 'Add dependency to workspace package'
 
   static aliases = ['a']
 
   static args = [
     {
-      name: 'module',
-      required: true,
-      description: 'Module name',
-    },
-    {
       name: 'workspace',
       required: true,
       description: 'target workspace to install module',
+    },
+    {
+      name: 'module',
+      required: true,
+      description: 'module name',
     },
   ]
 
