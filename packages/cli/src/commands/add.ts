@@ -4,14 +4,18 @@ import { spawn } from 'cross-spawn'
 export class Dev extends Command {
   static description = 'Start the production server'
 
-  static aliases = ['d']
+  static aliases = ['a']
 
   static args = [
     {
-      name: 'service',
+      name: 'module',
       required: true,
-      description: 'target service in the `services` directory',
-      options: ['hoop'],
+      description: 'Module name',
+    },
+    {
+      name: 'workspace',
+      required: true,
+      description: 'target workspace to install module',
     },
   ]
 
@@ -26,37 +30,30 @@ export class Dev extends Command {
     }),
   }
 
-  async logStatus(url: string) {
-    console.log(`\
-🚀 Server ready at: ${url}
-⭐️ See sample queries: http://pris.ly/e/ts/graphql#using-the-graphql-api
-  `)
-  }
-
-  async startServiceDev(name: string) {
-    return spawn('yarn', ['lerna', 'run', 'dev', '--scope', `@tunderadev/${name}`, '--stream']).stdout.pipe(
-      process.stdout,
-    )
+  async addModule(module: string, workspace: string) {
+    return spawn('yarn', ['lerna', 'add', module, '--scope', `@tunderadev/${workspace}`]).stdout.pipe(process.stdout)
   }
 
   async run() {
     const { args, flags } = this.parse(Dev)
 
     try {
-      const child = await this.startServiceDev(args.service)
+      const child = await this.addModule(args.module, args.workspace)
 
       child.on('close', (code: number) => {
-        const message = code ? 'Failed to run develop script! ❌' : 'Done running develop script! ✅'
+        const message = code
+          ? `Failed to add module ${args.module}! ❌`
+          : `Added module ${args.module} to workspace ${args.workspace}! ✅`
         console.log(message)
         return process.exit(code)
       })
 
       child.on('SIGINT', (code: number) => {
-        console.log('Interrupted develop script!')
+        console.log('Interrupted add script!')
         return process.exit(code)
       })
       child.on('SIGTERM', (code: number) => {
-        console.log('Terminated develop script!')
+        console.log('Terminated add script!')
         return process.exit(code)
       })
     } catch (err) {

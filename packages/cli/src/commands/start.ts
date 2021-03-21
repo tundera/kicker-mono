@@ -34,9 +34,9 @@ export class Start extends Command {
   }
 
   async startServiceProd(name: string) {
-    return spawn('yarn', ['start'], {
-      cwd: join(process.cwd(), 'services', name),
-    }).stdout.pipe(process.stdout)
+    return spawn('yarn', ['lerna', 'run', 'start', '--scope', `@tunderadev/${name}`, '--stream']).stdout.pipe(
+      process.stdout,
+    )
   }
 
   async run() {
