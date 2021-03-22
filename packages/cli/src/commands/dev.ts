@@ -1,5 +1,5 @@
 import { Command, flags } from '@oclif/command'
-import { spawn } from 'cross-spawn'
+import execa from 'execa'
 
 export class Dev extends Command {
   static description = 'Start the production server'
@@ -33,7 +33,7 @@ export class Dev extends Command {
   }
 
   async startServiceDev(name: string) {
-    return spawn('yarn', ['lerna', 'run', 'dev', '--scope', `@kicker/${name}`, '--stream']).stdout.pipe(process.stdout)
+    return execa('yarn', ['lerna', 'run', 'dev', '--scope', `@kicker/${name}`, '--stream']).stdout?.pipe(process.stdout)
   }
 
   async run() {
@@ -42,17 +42,17 @@ export class Dev extends Command {
     try {
       const child = await this.startServiceDev(args.service)
 
-      child.on('close', (code: number) => {
+      child?.on('close', (code: number) => {
         const message = code ? 'Failed to run develop script! ❌' : 'Done running develop script! ✅'
         console.log(message)
         return process.exit(code)
       })
 
-      child.on('SIGINT', (code: number) => {
+      child?.on('SIGINT', (code: number) => {
         console.log('Interrupted develop script!')
         return process.exit(code)
       })
-      child.on('SIGTERM', (code: number) => {
+      child?.on('SIGTERM', (code: number) => {
         console.log('Terminated develop script!')
         return process.exit(code)
       })

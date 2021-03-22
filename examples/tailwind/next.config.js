@@ -1,9 +1,17 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const withPreconstruct = require('@preconstruct/next')
 const withPlugins = require('next-compose-plugins')
 const withMDX = require('@next/mdx')()
 
 const nextConfig = {
+  target: 'experimental-serverless-trace',
   reactStrictMode: true,
+  future: {
+    webpack5: true,
+  },
+  // experimental: {
+  //   reactMode: 'concurrent',
+  // },
   images: {
     domains: ['res.cloudinary.com'],
   },

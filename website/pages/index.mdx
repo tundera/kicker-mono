@@ -4,21 +4,55 @@ name: Getting started
 
 import { Playground } from 'dokz'
 
-# Main Heading
+# Kicker Project
 
-Officia do eu reprehenderit laborum exercitation eu nisi deserunt aliqua consequat eiusmod.
+These are your official project documentation site. It's built with with
+[Next.js](https://nextjs.org/) using [Dokz](https://dokz.site/) and styled with
+[Chakra UI](https://chakra-ui.com/).
 
-Duis incididunt fugiat est aliqua deserunt do aliquip laboris in exercitation laboris nulla minim
-incididunt.
+Here you can keep documentation for developers working in the codebase or instructions for consumers
+of your product(s)/service(s). All your content here is written in MDX (`.mdx`) and simple Markdown
+files (`.md`). You can even add a blog if you'd like to record changes you make to your codebase so
+other stay in the loop. Learn more at the Dokz documentation site [here](https://dokz.site/docs).
 
-## Second Heading
+Writing documentation is much easier when you have a template to start from. On this site you'll
+find all the important info on Kicker and how to work efficiently in the monorepo. Instead of
+creating a new site, it's recommended to overwrite these docs to get you moving a bit faster. The
+default docs are all available in a GitHub repository [here]() and available to download via PDF
+[here]().
 
-Quis ullamco id duis sit ipsum laborum fugiat occaecat. Commodo aliqua adipisicing non nisi. Dolore
-aute magna cupidatat qui quis laboris. Irure veniam deserunt veniam ullamco anim pariatur deserunt.
-Amet commodo aliqua ut fugiat sunt pariatur ullamco cillum duis ipsum amet anim incididunt. Ut esse
-dolore in ullamco enim sit cillum eu labore consectetur labore sunt.
+## Monorepo Codebase
 
-### Third Heading
+Kicker is an advanced codebase with a monorepo architecture. A monorepo is essentially a parent
+project with centralized dependency management for multiple child projects. All code is managed from
+a single source control repository that can trigger multiple deploys in CI/CD. This is advantageous
+from a development and deployment standpoint, as many applications and APIs can consume common
+dependencies from a single source as opposed to being duplicated across their respective projects.
+
+To illustrate this design, imagine you have several Next.js apps that all require `next`, `react`
+and `react-dom` as dependencies. You could manage all those projects separately in their own
+repositories, but then you would need to install those packages in each your projects. This takes up
+disk space, adds to install times, and can lead to versioning discrepancies between your
+applications. Additonally, monorepos are perfect for scaling your platform and since your projects
+can depend on one another. Seems like monorepos are a great option...but why aren't they more
+common?
+
+In the JavaScript/TypeScript ecosystem, monorepos are notoriously difficult to build and can be
+tricky to maintain when proper tooling is not available. For this reason alone, many find it easier
+to and more productive to separate their projects despite the aformentioned tradeoffs. Luckily, you
+can easily bypass most of these difficulties by applying the correct tooling to a monorepo.
+
+Kicker does this for you, so you can benefit from all the perks of a monorepo architecture without
+needing to worry about how well your codebase will scale.
+
+## Tooling and Enhancements
+
+This monorepo is built using [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/),
+[Preconstruct](https://preconstruct.tools/), and [Lerna](https://lerna.js.org/). These are standard
+tools for the majority of monorepos focused on React, Node, and GraphQL (although not exclusive to
+this ecosystem).
+
+### Commands
 
 Here is some code
 

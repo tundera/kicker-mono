@@ -1,5 +1,4 @@
 import { Command, flags } from '@oclif/command'
-import { spawn } from 'cross-spawn'
 import execa from 'execa'
 
 export class Jest extends Command {
@@ -23,7 +22,12 @@ export class Jest extends Command {
       opts.push('--watch')
     }
 
-    return spawn('yarn', ['test', ...opts]).stdout.pipe(process.stdout)
+    return execa('yarn', ['test', ...opts], {
+      cwd: process.cwd(),
+      stdio: 'inherit',
+    })
+      .stdout?.pipe(process.stdout)
+      .on('close', (code: number) => process.exit(code))
   }
 
   async run() {
@@ -32,17 +36,17 @@ export class Jest extends Command {
     try {
       const child = await this.runJestTests(flags.watch)
 
-      child.on('close', (code: number) => {
+      child?.on('close', (code: number) => {
         const message = code ? 'Failed to run develop script! ❌' : 'Done running develop script! ✅'
         console.log(message)
         return process.exit(code)
       })
 
-      child.on('SIGINT', (code: number) => {
+      child?.on('SIGINT', (code: number) => {
         console.log('Interrupted develop script!')
         return process.exit(code)
       })
-      child.on('SIGTERM', (code: number) => {
+      child?.on('SIGTERM', (code: number) => {
         console.log('Terminated develop script!')
         return process.exit(code)
       })
