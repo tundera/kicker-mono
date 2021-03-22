@@ -133,3 +133,6 @@ yalc.lock
 
 # vercel
 **/.vercel
+
+# cypress
+cypress.env.json

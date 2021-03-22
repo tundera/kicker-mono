@@ -1,1 +1,5 @@
-{ "$schema": "https://on.cypress.io/cypress.schema.json", "video": false }
+{
+  "chromeWebSecurity": false,
+  "supportFile": "cypress/support/index.ts",
+  "experimentalComponentTesting": true
+}

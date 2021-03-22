@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "strict": false,
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["node", "cypress", "@testing-library/cypress"],
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@tunderadev/components": ["../packages/components/src"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "files": ["support/index.d.ts"]
+}
