@@ -15,6 +15,11 @@
     "sourceMap": true,
     "noEmit": true,
     "rootDir": ".",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@kicker/components": ["packages/components/src"],
+      "@kicker/theme": ["packages/theme/src"],
+      "@kicker/hoop": ["services/hoop"]
+    }
   }
 }

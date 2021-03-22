@@ -20,7 +20,9 @@ module.exports = function (api) {
       {
         root: cwd,
         alias: {
-          // module aliases for test files
+          '@kicker/components': './packages/components',
+          '@kicker/theme': './packages/theme',
+          '@kicker/hoop': './services/hoop',
         },
       },
     ],
