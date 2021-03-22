@@ -11,7 +11,6 @@ export class Dev extends Command {
       name: 'service',
       required: true,
       description: 'target service in the `services` directory',
-      options: ['hoop'],
     },
   ]
 
