@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import Head from 'next/head'
-import { Team } from '@tunderadev/hoop'
+import { Team } from '@kicker/hoop'
 
 import DarkModeToggle from 'src/components/dark-mode-toggle'
 import { getTeams } from 'src/lib/teams'

@@ -10,7 +10,7 @@ import '@storybook/addon-console' // Automatically forwards all logs in the "Act
 import { Flex, Box, IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { Sun, Moon } from 'react-feather'
 
-import { ThemeProvider } from '@tunderadev/theme'
+import { ThemeProvider } from '@kicker/theme'
 import { StorySortMethod } from '@storybook/addons'
 
 // Adapted from https://github.com/UnlyEd/next-right-now/blob/e5aba8eaf02918d9506008ee1f11c38954fedc86/.storybook/preview.js

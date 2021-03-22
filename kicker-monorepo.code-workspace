@@ -1,48 +1,44 @@
 {
   "folders": [
     {
-      "name": "✨ tunderadev",
+      "name": "✨ kicker",
       "path": "."
     },
     {
-      "name": "🚀 @tunderadev/ecommerce",
-      "path": "apps/ecommerce"
-    },
-    {
-      "name": "🚀 @tunderadev/kicker",
-      "path": "apps/kicker"
+      "name": "🚀 @kicker/app",
+      "path": "app"
     },
     {
       "name": "@examples/tailwind",
       "path": "examples/tailwind"
     },
     {
-      "name": "📦 @tunderadev/cli",
+      "name": "📦 @kicker/cli",
       "path": "packages/cli"
     },
     {
-      "name": "📦 @tunderadev/components",
+      "name": "📦 @kicker/components",
       "path": "packages/components"
     },
     {
-      "name": "📦 @tunderadev/theme",
+      "name": "📦 @kicker/theme",
       "path": "packages/theme"
     },
     {
-      "name": "⚙️ @tunderadev/scripts",
+      "name": "⚙️ @kicker/scripts",
       "path": "scripts"
     },
     {
-      "name": "@tunderadev/hoop",
+      "name": "@kicker/hoop",
       "path": "services/hoop"
     },
     {
-      "name": "🚀 @tunderadev/website",
-      "path": "sites/website"
+      "name": "@kicker/studio",
+      "path": "studio"
     },
     {
-      "name": "@tunderadev/studio",
-      "path": "studio"
+      "name": "🚀 @kicker/docs",
+      "path": "website"
     }
   ],
   "settings": {}

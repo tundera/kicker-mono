@@ -1,42 +1,37 @@
 {
   "version": 2,
   "projects": {
-    "@tunderadev/kicker": {
-      "root": "apps/kicker",
-      "sourceRoot": "apps/kicker",
+    "@kicker/app": {
+      "root": "app",
+      "sourceRoot": "app",
       "projectType": "application"
     },
-    "@tunderadev/ecommerce": {
-      "root": "apps/ecommerce",
-      "sourceRoot": "apps/ecommerce",
-      "projectType": "application"
-    },
-    "@tunderadev/cli": {
+    "@kicker/cli": {
       "root": "packages/cli",
       "sourceRoot": "packages/cli",
       "projectType": "library"
     },
-    "@tunderadev/components": {
+    "@kicker/components": {
       "root": "packages/components",
       "sourceRoot": "packages/components",
       "projectType": "library"
     },
-    "@tunderadev/theme": {
+    "@kicker/theme": {
       "root": "packages/theme",
       "sourceRoot": "packages/theme",
       "projectType": "library"
     },
-    "@tunderadev/website": {
-      "root": "sites/website",
-      "sourceRoot": "sites/website",
+    "@kicker/docs": {
+      "root": "website",
+      "sourceRoot": "website",
       "projectType": "application"
     },
-    "@tunderadev/studio": {
+    "@kicker/studio": {
       "root": "studio",
       "sourceRoot": "studio",
       "projectType": "application"
     },
-    "@tunderadev/hoop": {
+    "@kicker/hoop": {
       "root": "services/hoop",
       "sourceRoot": "services/hoop",
       "projectType": "application"

@@ -2,7 +2,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
 import Head from 'next/head'
-import { Team, Player } from '@tunderadev/hoop'
+import { Team, Player } from '@kicker/hoop'
 
 import DarkModeToggle from 'src/components/dark-mode-toggle'
 import { getTeams, getTeamBySlug } from 'src/lib/teams'

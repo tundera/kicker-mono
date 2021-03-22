@@ -1,10 +1,10 @@
 {
-  "name": "@tunderadev/theme",
+  "name": "@kicker/theme",
   "description": "Chakra UI custom theme",
   "version": "0.1.0",
-  "main": "dist/tunderadev-theme.cjs.js",
-  "module": "dist/tunderadev-theme.esm.js",
-  "typings": "dist/tunderadev-theme.d.ts",
+  "main": "dist/kicker-theme.cjs.js",
+  "module": "dist/kicker-theme.esm.js",
+  "typings": "dist/kicker-theme.d.ts",
   "license": "MIT",
   "author": {
     "name": "Philip Johnston",

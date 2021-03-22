@@ -1,5 +1,5 @@
 {
-  "npmScope": "tunderadev",
+  "npmScope": "kicker",
   "implicitDependencies": {
     "workspace.json": "*",
     "package.json": {
@@ -12,44 +12,31 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "test",
-          "lint",
-          "package",
-          "prepare"
-        ],
-        "strictlyOrderedTargets": [
-          "build",
-          "package",
-          "prepare"
-        ]
+        "cacheableOperations": ["build", "test", "lint", "package", "prepare"],
+        "strictlyOrderedTargets": ["build", "package", "prepare"]
       }
     }
   },
   "projects": {
-    "@tunderadev/kicker": {
+    "@kicker/app": {
       "implicitDependencies": []
     },
-    "@tunderadev/ecommerce": {
+    "@kicker/cli": {
       "implicitDependencies": []
     },
-    "@tunderadev/cli": {
+    "@kicker/components": {
       "implicitDependencies": []
     },
-    "@tunderadev/components": {
+    "@kicker/theme": {
       "implicitDependencies": []
     },
-    "@tunderadev/theme": {
+    "@kicker/docs": {
       "implicitDependencies": []
     },
-    "@tunderadev/website": {
+    "@kicker/studio": {
       "implicitDependencies": []
     },
-    "@tunderadev/studio": {
-      "implicitDependencies": []
-    },
-    "@tunderadev/hoop": {
+    "@kicker/hoop": {
       "implicitDependencies": []
     }
   },

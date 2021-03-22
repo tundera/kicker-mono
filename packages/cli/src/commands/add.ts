@@ -36,7 +36,7 @@ export class Add extends Command {
   }
 
   async addModule(module: string, workspace: string, options: string[]) {
-    return spawn('yarn', ['lerna', 'add', module, '--scope', `@tunderadev/${workspace}`].concat(options)).stdout.pipe(
+    return spawn('yarn', ['lerna', 'add', module, '--scope', `@kicker/${workspace}`].concat(options)).stdout.pipe(
       process.stdout,
     )
   }

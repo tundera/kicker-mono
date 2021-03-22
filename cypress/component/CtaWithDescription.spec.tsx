@@ -1,5 +1,5 @@
 import { mount } from '@cypress/react'
-import { CtaWithDescription } from '@tunderadev/components'
+import { CtaWithDescription } from '@kicker/components'
 
 describe('CTA w/ Description component (CtaWithDescription.tsx)', () => {
   it('works', () => {

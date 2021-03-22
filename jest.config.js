@@ -21,8 +21,8 @@ module.exports = {
   },
   transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
   moduleNameMapper: {
-    '^@tunderadev/components/(.*)$': '<rootDir>/packages/components/$1',
-    '^@tunderadev/theme/(.*)$': '<rootDir>/packages/theme/$1',
+    '^@kicker/components/(.*)$': '<rootDir>/packages/components/$1',
+    '^@kicker/theme/(.*)$': '<rootDir>/packages/theme/$1',
     '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
   },
   coveragePathIgnorePatterns: ['/node_modules/'],

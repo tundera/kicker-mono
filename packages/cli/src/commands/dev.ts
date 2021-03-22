@@ -34,9 +34,7 @@ export class Dev extends Command {
   }
 
   async startServiceDev(name: string) {
-    return spawn('yarn', ['lerna', 'run', 'dev', '--scope', `@tunderadev/${name}`, '--stream']).stdout.pipe(
-      process.stdout,
-    )
+    return spawn('yarn', ['lerna', 'run', 'dev', '--scope', `@kicker/${name}`, '--stream']).stdout.pipe(process.stdout)
   }
 
   async run() {

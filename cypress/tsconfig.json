@@ -1,5 +1,5 @@
 {
-  "extends": "../tsconfig.base.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "strict": false,
     "target": "es5",
@@ -8,7 +8,7 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@tunderadev/components": ["../packages/components/src"]
+      "@kicker/components": ["../packages/components/src"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],

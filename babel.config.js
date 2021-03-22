@@ -31,10 +31,10 @@ module.exports = function (api) {
   const babelrcRoots = [
     '.',
     'packages/*',
-    'apps/*',
     'examples/*',
-    'sites/*',
     'services/*',
+    'app',
+    'website',
     'studio',
     'docs',
     'scripts',

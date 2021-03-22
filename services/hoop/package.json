@@ -1,9 +1,9 @@
 {
-  "name": "@tunderadev/hoop",
+  "name": "@kicker/hoop",
   "version": "0.1.0",
-  "main": "dist/tunderadev-hoop.cjs.js",
-  "module": "dist/tunderadev-hoop.esm.js",
-  "typings": "dist/tunderadev-hoop.cjs.d.ts",
+  "main": "dist/kicker-hoop.cjs.js",
+  "module": "dist/kicker-hoop.esm.js",
+  "typings": "dist/kicker-hoop.cjs.d.ts",
   "author": {
     "name": "Philip Johnston",
     "email": "stackshuffle@gmail.com",
@@ -24,7 +24,7 @@
   "scripts": {
     "postinstall": "yarn generate:prisma",
     "dev": "ts-node-dev --no-notify --respawn --transpile-only src/index",
-    "start": "node dist/tunderadev-hoop.cjs",
+    "start": "node dist/kicker-hoop.cjs",
     "build": "yarn generate && tsc",
     "generate": "yarn generate:prisma && yarn generate:nexus",
     "generate:prisma": "prisma generate",

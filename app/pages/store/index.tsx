@@ -4,7 +4,7 @@ import type { CustomNextPage } from 'types'
 
 import { useState } from 'react'
 import { getLayout } from '@components/layouts/SiteLayout'
-import { ProductsGrid } from '@tunderadev/components'
+import { ProductsGrid } from '@kicker/components'
 import { formatCurrencyValue } from '@lib/graphcms/helpers'
 import { graphCmsClient } from '@lib/graphcms/client'
 import { Search } from 'react-feather'
