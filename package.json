@@ -39,6 +39,8 @@
     "postinstall": "preconstruct dev && manypkg check",
     "test": "jest",
     "test:watch": "jest --watch",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "build:packages": "yarn --cwd packages/components build",
     "build:app": "yarn --cwd app build",
     "build:docs": "yarn --cwd website build",
