@@ -7,9 +7,9 @@ import { gql } from 'graphql-request'
 import { loadStripe } from '@stripe/stripe-js'
 import { Flex, Button, Box, Grid, GridItem, Text, Heading } from '@chakra-ui/react'
 
-import { formatCurrencyValue } from '@lib/graphcms/helpers'
-import { graphCmsClient } from '@lib/graphcms/client'
-import { getLayout } from '@components/layouts/SiteLayout'
+import { formatCurrencyValue } from 'src/lib/graphcms/helpers'
+import { graphCmsClient } from 'src/lib/graphcms/client'
+import { getLayout } from 'src/components/layouts/SiteLayout'
 
 interface Props {
   product: any

@@ -1,4 +1,4 @@
-import ResponsiveImage from '@lib/datocms/fragments/ResponsiveImage'
+import ResponsiveImage from 'src/lib/datocms/fragments/ResponsiveImage'
 
 const BlogPostsQuery = `
   query BlogPostsQuery($limit: IntType) {

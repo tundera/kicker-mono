@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react'
 
-import ColorfulCard, { ColorfulCardProps } from '@components/ui/commerce/shopping/ColorfulCard'
+import ColorfulCard, { ColorfulCardProps } from 'src/components/ui/commerce/shopping/ColorfulCard'
 
 export default {
   title: 'ColorfulCard',

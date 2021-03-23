@@ -5,7 +5,7 @@ to: "<%= location ? `src/components/${location}` : 'src/components' %>/<%= h.cam
 <% formattedPath = location ? `${location}/${component}` : component -%>
 import { render } from 'test/utils'
 
-import <%= component %> from '@components/<%= formattedPath %>'
+import <%= component %> from 'src/components/<%= formattedPath %>'
 
 test('renders <%= component %> component with title', () => {
   const { getByText } = render(<<%= component %> title="<%= component %>" />)

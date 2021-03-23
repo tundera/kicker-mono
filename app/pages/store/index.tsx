@@ -3,10 +3,10 @@ import type { GetStaticProps } from 'next'
 import type { CustomNextPage } from 'types'
 
 import { useState } from 'react'
-import { getLayout } from '@components/layouts/SiteLayout'
+import { getLayout } from 'src/components/layouts/SiteLayout'
 import { ProductsGrid } from '@kicker/components'
-import { formatCurrencyValue } from '@lib/graphcms/helpers'
-import { graphCmsClient } from '@lib/graphcms/client'
+import { formatCurrencyValue } from 'src/lib/graphcms/helpers'
+import { graphCmsClient } from 'src/lib/graphcms/client'
 import { Search } from 'react-feather'
 
 import {

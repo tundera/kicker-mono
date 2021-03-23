@@ -2,7 +2,7 @@ import { FC } from 'react'
 import type { Post } from 'types'
 
 import { Grid } from '@chakra-ui/react'
-import BlogPostCard from '@components/ui/cards/BlogWithAuthor'
+import BlogPostCard from 'src/components/ui/cards/BlogWithAuthor'
 
 interface Props {
   posts?: Post[]

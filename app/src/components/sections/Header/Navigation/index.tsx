@@ -15,10 +15,10 @@ import {
   CloseButton,
 } from '@chakra-ui/react'
 
-import SettingsButton from '@components/ui/buttons/SettingsButton'
-import NavButton from '@components/ui/buttons/NavButton'
-import DarkModeToggle from '@components/utility/DarkModeToggle'
-import LocaleButton from '@components/utility/LocaleButton'
+import SettingsButton from 'src/components/ui/buttons/SettingsButton'
+import NavButton from 'src/components/ui/buttons/NavButton'
+import DarkModeToggle from 'src/components/utility/DarkModeToggle'
+import LocaleButton from 'src/components/utility/LocaleButton'
 
 interface Props {
   session: Session

@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import { Grid, GridItem } from '@chakra-ui/react'
-import SimpleCard from '@components/ui/commerce/shopping/SimpleCard'
+import SimpleCard from 'src/components/ui/commerce/shopping/SimpleCard'
 
 interface Props {
   products: any

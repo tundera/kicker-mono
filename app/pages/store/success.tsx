@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { gql } from 'graphql-request'
 import { Heading, Text, Flex, Box } from '@chakra-ui/react'
-import { graphCmsClient } from '@lib/graphcms/client'
-import OrderSummary from '@components/ui/commerce/OrderSummary'
-import { getLayout } from '@components/layouts/SiteLayout'
+import { graphCmsClient } from 'src/lib/graphcms/client'
+import OrderSummary from 'src/components/ui/commerce/OrderSummary'
+import { getLayout } from 'src/components/layouts/SiteLayout'
 
 const SuccessPage: CustomNextPage = () => {
   const router = useRouter()

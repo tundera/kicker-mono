@@ -6,7 +6,7 @@ to: "<%= location ? `src/components/${location}` : 'src/components' %>/<%= h.cam
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
 
-import <%= component %> from '@components/<%= formattedPath %>'
+import <%= component %> from 'src/components/<%= formattedPath %>'
 // import * as DependentStories from './Dependent.stories'
 
 export default {

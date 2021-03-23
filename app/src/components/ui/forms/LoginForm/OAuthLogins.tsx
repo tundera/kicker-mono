@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { AppProvider } from 'next-auth/providers'
 import { Stack } from '@chakra-ui/react'
 
-import ProviderButton from '@components/ui/forms/LoginForm/ProviderButton'
+import ProviderButton from 'src/components/ui/forms/LoginForm/ProviderButton'
 
 interface Props {
   providers: AppProvider[]

@@ -13,13 +13,6 @@
     "lib": ["esnext"],
     "importHelpers": true,
     "sourceMap": true,
-    "noEmit": true,
-    "rootDir": ".",
-    "baseUrl": ".",
-    "paths": {
-      "@kicker/components": ["packages/components/src"],
-      "@kicker/theme": ["packages/theme/src"],
-      "@kicker/hoop": ["services/hoop"]
-    }
+    "noEmit": true
   }
 }

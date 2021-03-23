@@ -3,7 +3,7 @@ import { FC } from 'react'
 import { Flex, useColorModeValue, Text, Box } from '@chakra-ui/react'
 import { Twitter, GitHub, Youtube, Mail } from 'react-feather'
 import Emoji from 'a11y-react-emoji'
-import MediaIconLink from '@components/sections/Footer/MediaIconLink'
+import MediaIconLink from 'src/components/sections/Footer/MediaIconLink'
 
 const Footer: FC = () => {
   const bg = useColorModeValue('whiteAlpha.900', 'brand.800')

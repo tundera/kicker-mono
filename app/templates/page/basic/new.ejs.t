@@ -9,7 +9,7 @@ import type { CustomNextPage } from 'types'
 
 import { Flex, Heading } from '@chakra-ui/react'
 
-import { getLayout } from '@components/layouts/SiteLayout'
+import { getLayout } from 'src/components/layouts/SiteLayout'
 
 function <%= pageName %>: CustomNextPage = () => {
   return (

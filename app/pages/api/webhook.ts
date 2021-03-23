@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import Stripe from 'stripe'
 import { gql } from 'graphql-request'
 
-import { graphCmsMutationClient } from '@lib/graphcms/client'
+import { graphCmsMutationClient } from 'src/lib/graphcms/client'
 
 interface Price extends Stripe.Price {
   product: Stripe.Product

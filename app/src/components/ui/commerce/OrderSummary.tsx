@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import Image from 'next/image'
 
-import { formatCurrencyValue } from '@lib/graphcms/helpers'
+import { formatCurrencyValue } from 'src/lib/graphcms/helpers'
 import { Box, Flex, Grid, GridItem, Text } from '@chakra-ui/react'
 
 type Order = any

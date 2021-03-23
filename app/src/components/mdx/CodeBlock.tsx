@@ -7,7 +7,7 @@ import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 import shadesOfPurple from 'prism-react-renderer/themes/shadesOfPurple'
 import { chakra, Flex, Text } from '@chakra-ui/react'
 
-import CopyButton from '@components/ui/buttons/CopyButton'
+import CopyButton from 'src/components/ui/buttons/CopyButton'
 import { copyToClipboard } from 'src/utils/copyToClipboard'
 import confetti from 'styles/animations/confetti'
 

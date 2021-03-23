@@ -6,10 +6,10 @@ import { ErrorBoundary } from 'react-error-boundary'
 import { Provider as AuthProvider } from 'next-auth/client'
 import splitbee from '@splitbee/web'
 
-import FormProvider from '@components/providers/FormProvider'
-import QueryProvider from '@components/providers/QueryProvider'
-import ThemeProvider from '@components/providers/ThemeProvider'
-import RootErrorFallback from '@components/utility/RootErrorFallback'
+import FormProvider from 'src/components/providers/FormProvider'
+import QueryProvider from 'src/components/providers/QueryProvider'
+import ThemeProvider from 'src/components/providers/ThemeProvider'
+import RootErrorFallback from 'src/components/utility/RootErrorFallback'
 
 const queryClient = new QueryClient()
 

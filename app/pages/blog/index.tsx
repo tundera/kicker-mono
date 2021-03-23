@@ -15,9 +15,9 @@ import {
   Text,
   Icon,
 } from '@chakra-ui/react'
-import { mdxComponents } from '@components/mdx'
-import { getLayout } from '@components/layouts/SiteLayout'
-import PostsList from '@components/ui/lists/PostsList'
+import { mdxComponents } from 'src/components/mdx'
+import { getLayout } from 'src/components/layouts/SiteLayout'
+import PostsList from 'src/components/ui/lists/PostsList'
 import { Search } from 'react-feather'
 
 export interface BlogPageProps {

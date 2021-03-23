@@ -1,5 +1,5 @@
 import { GraphQLClient } from 'graphql-request'
-import { getGraphCmsTokens } from '@utils/decrypt'
+import { getGraphCmsTokens } from 'src/utils/decrypt'
 
 const { GRAPH_CMS_TOKEN, GRAPH_CMS_MUTATION_TOKEN } = getGraphCmsTokens()
 const graphCmsClient = new GraphQLClient(process.env.NEXT_PUBLIC_GRAPH_CMS_ENDPOINT)

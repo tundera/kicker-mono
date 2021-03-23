@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import Stripe from 'stripe'
 import { gql } from 'graphql-request'
 
-import { graphCmsClient } from '@lib/graphcms/client'
+import { graphCmsClient } from 'src/lib/graphcms/client'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: '2020-08-27',

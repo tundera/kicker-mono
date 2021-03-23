@@ -18,10 +18,7 @@
     "skipLibCheck": true,
     "noEmit": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
-    "paths": {
-      "test-utils": ["test/utils"]
-    }
+    "baseUrl": "."
   },
   "include": ["src", "types"],
   "exclude": ["node_modules"]

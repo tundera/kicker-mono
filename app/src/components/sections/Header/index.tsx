@@ -3,7 +3,7 @@ import { useSession } from 'next-auth/client'
 import { chakra, Flex, useColorModeValue, VisuallyHidden, useDisclosure } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
-import Navigation from '@components/sections/Header/Navigation'
+import Navigation from 'src/components/sections/Header/Navigation'
 
 import { createBrandLogoIcon } from 'src/utils/createBrandIcons'
 

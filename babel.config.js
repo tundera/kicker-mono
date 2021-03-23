@@ -20,9 +20,9 @@ module.exports = function (api) {
       {
         root: cwd,
         alias: {
-          '@kicker/components': './packages/components',
-          '@kicker/theme': './packages/theme',
-          '@kicker/hoop': './services/hoop',
+          // resolve modules here
+          '@kicker/components': './packages/components/src',
+          '@kicker/theme': './packages/theme/src',
         },
       },
     ],
@@ -38,7 +38,6 @@ module.exports = function (api) {
     'app',
     'website',
     'studio',
-    'docs',
     'scripts',
   ]
 

@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react'
 
-import SimpleCard, { SimpleCardProps } from '@components/ui/commerce/shopping/SimpleCard'
+import SimpleCard, { SimpleCardProps } from 'src/components/ui/commerce/shopping/SimpleCard'
 
 export default {
   title: 'SimpleCard',

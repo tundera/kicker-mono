@@ -4,10 +4,10 @@ import NProgress from 'next-nprogress-emotion'
 import { useSession } from 'next-auth/client'
 import { useColorModeValue, Flex } from '@chakra-ui/react'
 
-import Header from '@components/sections/Header'
-import Subheader from '@components/sections/Header/SubHeader'
-import Footer from '@components/sections/Footer'
-import Container from '@components/sections/Container'
+import Header from 'src/components/sections/Header'
+import Subheader from 'src/components/sections/Header/SubHeader'
+import Footer from 'src/components/sections/Footer'
+import Container from 'src/components/sections/Container'
 
 const SiteLayout: FC = ({ children, ...props }) => {
   const [session] = useSession()

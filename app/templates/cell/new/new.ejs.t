@@ -7,7 +7,7 @@ to: src/cells/<%= [h.inflection.camelize(h.dirName(name)), h.camelizedBaseName(n
 import gql from 'graphql-tag'
 import { Spinner, Text } from '@chakra-ui/react'
 
-import LoadingSpinner from '@components/utility/LoadingSpinner'
+import LoadingSpinner from 'src/components/utility/LoadingSpinner'
 
 import { <%= queryHook %>, MyProfileQuery } from '../types'
 

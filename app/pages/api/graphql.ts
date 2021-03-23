@@ -1,6 +1,6 @@
 import { ApolloServer } from 'apollo-server-micro'
-import { schema } from '@lib/graphql/schema'
-import { createContext, isDev } from '@lib/graphql/helpers'
+import { schema } from 'src/lib/graphql/schema'
+import { createContext, isDev } from 'src/lib/graphql/helpers'
 
 const server = new ApolloServer({
   schema,

@@ -4,9 +4,9 @@ import type { GetServerSideProps } from 'next'
 import { providers } from 'next-auth/client'
 import { Flex } from '@chakra-ui/react'
 
-import { getLayout } from '@components/layouts/SiteLayout'
+import { getLayout } from 'src/components/layouts/SiteLayout'
 
-import LoginForm from '@components/ui/forms/LoginForm'
+import LoginForm from 'src/components/ui/forms/LoginForm'
 
 interface Props {
   providers: any
