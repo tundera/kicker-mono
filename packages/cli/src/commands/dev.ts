@@ -8,9 +8,9 @@ export class Dev extends Command {
 
   static args = [
     {
-      name: 'service',
+      name: 'workspace',
       required: true,
-      description: 'target service in the `services` directory',
+      description: 'target workspace in monorepo',
     },
   ]
 
@@ -33,7 +33,14 @@ export class Dev extends Command {
   }
 
   async startServiceDev(name: string) {
-    return execa('yarn', ['lerna', 'run', 'dev', '--scope', `@kicker/${name}`, '--stream']).stdout?.pipe(process.stdout)
+    return execa('yarn', [
+      'lerna',
+      'run',
+      'dev',
+      '--scope',
+      `@kicker/${name}`,
+      '--stream',
+    ]).stdout?.pipe(process.stdout)
   }
 
   async run() {
@@ -43,7 +50,9 @@ export class Dev extends Command {
       const child = await this.startServiceDev(args.service)
 
       child?.on('close', (code: number) => {
-        const message = code ? 'Failed to run develop script! ❌' : 'Done running develop script! ✅'
+        const message = code
+          ? 'Failed to run develop script! ❌'
+          : 'Done running develop script! ✅'
         console.log(message)
         return process.exit(code)
       })

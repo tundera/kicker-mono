@@ -1,5 +1,5 @@
 import { Command, flags } from '@oclif/command'
-import { spawn } from 'cross-spawn'
+import execa from 'execa'
 import { join } from 'path'
 
 import { getWorkspaceDir } from '../utils/workspaces'
@@ -21,17 +21,21 @@ export class Build extends Command {
   }
 
   async buildAllWorkspaces() {
-    await spawn('yarn', ['build'], {
+    await execa('yarn', ['build'], {
       cwd: process.cwd(),
-    }).stdout.pipe(process.stdout)
+      env: {
+        FORCE_COLOR: 'true',
+      },
+    }).stdout?.pipe(process.stdout)
   }
 
   async buildWorkspace(name: string) {
-    const workspaceDir = await getWorkspaceDir(name)
-
-    return spawn('yarn', ['build'], {
-      cwd: join(process.cwd(), workspaceDir),
-    }).stdout.pipe(process.stdout)
+    return execa('yarn', ['workspace', `@kicker/${name}`, 'build'], {
+      cwd: process.cwd(),
+      env: {
+        FORCE_COLOR: 'true',
+      },
+    }).stdout?.pipe(process.stdout)
   }
 
   async run() {
@@ -39,7 +43,22 @@ export class Build extends Command {
 
     try {
       if (args.workspace) {
-        await this.buildWorkspace(args.workspace)
+        const child = await this.buildWorkspace(args.workspace)
+
+        child?.on('close', (code: number) => {
+          const message = code ? 'Failed to run build script! ❌' : 'Done running build script! ✅'
+          console.log(message)
+          return process.exit(code)
+        })
+
+        child?.on('SIGINT', (code: number) => {
+          console.log('Interrupted build script!')
+          return process.exit(code)
+        })
+        child?.on('SIGTERM', (code: number) => {
+          console.log('Terminated build script!')
+          return process.exit(code)
+        })
       } else {
         await this.buildAllWorkspaces()
       }

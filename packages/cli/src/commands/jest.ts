@@ -37,17 +37,17 @@ export class Jest extends Command {
       const child = await this.runJestTests(flags.watch)
 
       child?.on('close', (code: number) => {
-        const message = code ? 'Failed to run develop script! ❌' : 'Done running develop script! ✅'
+        const message = code ? 'Failed to run jest script! ❌' : 'Done running jest script! ✅'
         console.log(message)
         return process.exit(code)
       })
 
       child?.on('SIGINT', (code: number) => {
-        console.log('Interrupted develop script!')
+        console.log('Interrupted jest script!')
         return process.exit(code)
       })
       child?.on('SIGTERM', (code: number) => {
-        console.log('Terminated develop script!')
+        console.log('Terminated jest script!')
         return process.exit(code)
       })
     } catch (err) {

@@ -1,5 +1,5 @@
 import { Command, flags } from '@oclif/command'
-import { spawn } from 'cross-spawn'
+import execa from 'execa'
 import { join } from 'path'
 export class Start extends Command {
   static description = 'Start the production server'
@@ -34,9 +34,9 @@ export class Start extends Command {
   }
 
   async startServiceProd(name: string) {
-    return spawn('yarn', ['lerna', 'run', 'start', '--scope', `@kicker/${name}`, '--stream']).stdout.pipe(
-      process.stdout,
-    )
+    return execa('yarn', ['lerna', 'run', 'start', '--scope', `@kicker/${name}`, '--stream'], {
+      cwd: process.cwd(),
+    }).stdout?.pipe(process.stdout)
   }
 
   async run() {
