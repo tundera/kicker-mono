@@ -8,7 +8,7 @@ export class Start extends Command {
 
   static args = [
     {
-      name: 'service',
+      name: 'workspace',
       required: true,
       description: 'target service in the `services` directory',
       options: ['hoop'],
@@ -33,8 +33,8 @@ export class Start extends Command {
   `)
   }
 
-  async startServiceProd(name: string) {
-    return execa('yarn', ['lerna', 'run', 'start', '--scope', `@kicker/${name}`, '--stream'], {
+  async startServiceProd(workspace: string) {
+    return execa('yarn', ['lerna', 'run', 'start', '--scope', `@kicker/${workspace}`, '--stream'], {
       cwd: process.cwd(),
       env: {
         FORCE_COLOR: 'true',
@@ -46,7 +46,7 @@ export class Start extends Command {
     const { args, flags } = this.parse(Start)
 
     try {
-      const child = await this.startServiceProd(args.service)
+      const child = await this.startServiceProd(args.workspace)
 
       child?.on('close', (code: number) => {
         const message = code ? 'Failed to run start script! ❌' : 'Done running start script! ✅'
