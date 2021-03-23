@@ -1,10 +1,11 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const compose = require('compose-function')
+const withPlugins = require('next-compose-plugins')
+const withPreconstruct = require('@preconstruct/next')
 const { withDokz } = require('dokz/dist/plugin')
 
-const composed = compose(withDokz)
+const plugins = [withDokz]
 
-module.exports = composed({
+const nextConfig = {
   target: 'experimental-serverless-trace',
   reactStrictMode: true,
   future: {
@@ -14,4 +15,6 @@ module.exports = composed({
   //     reactMode: 'concurrent',
   //   },
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-})
+}
+
+module.exports = withPreconstruct(withPlugins([...plugins], nextConfig))
