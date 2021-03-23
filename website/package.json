@@ -14,7 +14,7 @@
     "@emotion/styled": "latest",
     "@preconstruct/next": "^2.0.0",
     "dokz": "latest",
-    "framer-motion": "latest",
+    "framer-motion": "4.0.2",
     "next": "latest",
     "next-compose-plugins": "^2.2.1",
     "react": "^17.0.1",
