@@ -1,7 +1,6 @@
 import { Command, flags } from '@oclif/command'
-import { spawn } from 'cross-spawn'
 import execa from 'execa'
-import { getProjectWorkspaces, getWorkspaceNames } from '../utils/workspaces'
+import { workspaceRoot, getProjectWorkspaces, getWorkspaceNames } from '../utils/workspaces'
 
 export class List extends Command {
   static description = 'Add dependency to project'
@@ -33,10 +32,16 @@ export class List extends Command {
   }
 
   async listWorkspaces(module: string, workspace: string, options: string[]) {
-    return spawn(
+    return execa(
       'yarn',
       ['lerna', 'add', module, '--scope', `@kicker/${workspace}`].concat(options),
-    ).stdout.pipe(process.stdout)
+      {
+        cwd: workspaceRoot,
+        env: {
+          FORCE_COLOR: 'true',
+        },
+      },
+    ).stdout?.pipe(process.stdout)
   }
 
   async run() {
@@ -45,7 +50,7 @@ export class List extends Command {
     try {
       // const workspaces = getProjectWorkspaces()
 
-      const workspaces = getProjectWorkspaces('@kicker')
+      const workspaces = getProjectWorkspaces()
 
       console.dir(
         workspaces.map((workspace) => workspace.packageJSON.name),

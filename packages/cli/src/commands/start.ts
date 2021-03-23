@@ -1,6 +1,6 @@
 import { Command, flags } from '@oclif/command'
 import execa from 'execa'
-import { getWorkspaceNames } from '../utils/workspaces'
+import { workspaceRoot, getWorkspaceNames } from '../utils/workspaces'
 
 export class Start extends Command {
   static description = 'Start the production server'
@@ -36,7 +36,7 @@ export class Start extends Command {
 
   async startServiceProd(workspace: string) {
     return execa('yarn', ['lerna', 'run', 'start', '--scope', `@kicker/${workspace}`, '--stream'], {
-      cwd: process.cwd(),
+      cwd: workspaceRoot,
       env: {
         FORCE_COLOR: 'true',
       },

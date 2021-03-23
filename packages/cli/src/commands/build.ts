@@ -1,6 +1,6 @@
 import { Command, flags } from '@oclif/command'
 import execa from 'execa'
-import { getWorkspaceNames } from '../utils/workspaces'
+import { workspaceRoot, getWorkspaceNames } from '../utils/workspaces'
 
 export class Build extends Command {
   static description = 'Creates a production build'
@@ -21,7 +21,7 @@ export class Build extends Command {
 
   async buildAllWorkspaces() {
     await execa('yarn', ['build'], {
-      cwd: process.cwd(),
+      cwd: workspaceRoot,
       env: {
         FORCE_COLOR: 'true',
       },

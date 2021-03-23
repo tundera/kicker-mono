@@ -51,6 +51,7 @@
     "cross-spawn": "7.0.3",
     "eslint-plugin-mdx": "1.11.1",
     "execa": "5.0.0",
+    "find-yarn-workspace-root": "^2.0.0",
     "listr": "0.14.3",
     "ora": "5.4.0",
     "prettier": "^2.2.1",

@@ -1,16 +1,17 @@
 import path from 'path'
 import { readJSON } from 'fs-extra'
 import { getPackages } from '@monorepo-utils/package-utils'
+import findWorkspaceRoot from 'find-yarn-workspace-root'
 
-const root = process.cwd()
+export const workspaceRoot = findWorkspaceRoot(process.cwd()) ?? process.cwd()
 
 const getRootName = async () => {
-  const manifest = await readJSON(path.resolve(root, 'package.json'))
+  const manifest = await readJSON(path.resolve(workspaceRoot, 'package.json'))
   return manifest.name
 }
 
 export const getWorkspaceDir = async (workspace: string): Promise<string> => {
-  const workspaces = await readJSON(path.resolve(root, 'workspace.json'))
+  const workspaces = await readJSON(path.resolve(workspaceRoot, 'workspace.json'))
 
   const rootName = await getRootName()
   const workspaceName = `@${rootName}/${workspace}`
@@ -19,11 +20,11 @@ export const getWorkspaceDir = async (workspace: string): Promise<string> => {
     return workspaces.projects[workspaceName].root
   }
 
-  return root
+  return rootName
 }
 
 export const getProjectWorkspaces = () => {
-  return getPackages(root).filter(
+  return getPackages(workspaceRoot).filter(
     (workspace) => path.dirname(workspace.packageJSON.name) === '@kicker',
   )
 }

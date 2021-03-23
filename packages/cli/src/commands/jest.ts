@@ -1,5 +1,6 @@
 import { Command, flags } from '@oclif/command'
 import execa from 'execa'
+import { workspaceRoot } from '../utils/workspaces'
 
 export class Jest extends Command {
   static description = 'Start the production server'
@@ -23,7 +24,7 @@ export class Jest extends Command {
     }
 
     return execa('yarn', ['test', ...opts], {
-      cwd: process.cwd(),
+      cwd: workspaceRoot,
       stdio: 'inherit',
     })
       .stdout?.pipe(process.stdout)

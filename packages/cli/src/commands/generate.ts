@@ -1,6 +1,8 @@
 import { Command, flags } from '@oclif/command'
 import execa from 'execa'
+import findWorkspaceRoot from 'find-yarn-workspace-root'
 import { join } from 'path'
+import { workspaceRoot } from '../utils/workspaces'
 
 export class Generate extends Command {
   static description = 'Generate code from template'
@@ -21,7 +23,7 @@ export class Generate extends Command {
 
   async generateFromTemplate(resource: string) {
     return execa('yarn', ['hygen', resource, 'new'], {
-      cwd: join(process.cwd(), 'app'),
+      cwd: join(workspaceRoot, 'app'),
       env: {
         FORCE_COLOR: 'true',
       },

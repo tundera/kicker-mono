@@ -1,7 +1,9 @@
 import { Command, flags } from '@oclif/command'
 import execa from 'execa'
+import { getWorkspaceNames, workspaceRoot } from '../utils/workspaces'
 
 export class Dev extends Command {
+  static strict = false
   static description = 'Start the production server'
 
   static aliases = ['d']
@@ -11,6 +13,7 @@ export class Dev extends Command {
       name: 'workspace',
       required: true,
       description: 'target workspace in monorepo',
+      options: getWorkspaceNames(),
     },
   ]
 
@@ -32,9 +35,17 @@ export class Dev extends Command {
   `)
   }
 
-  async startServiceDev(name: string) {
-    return execa('yarn', ['lerna', 'run', 'dev', '--scope', `@kicker/${name}`, '--stream'], {
-      cwd: process.cwd(),
+  async startWorkspaceDev(workspaces: string[]) {
+    let scriptArgs = ['lerna', 'run', 'dev', '--stream']
+
+    workspaces.forEach((workspace) => {
+      scriptArgs = scriptArgs.concat(['--scope', `@kicker/${workspace}`])
+    })
+
+    console.log(scriptArgs)
+
+    return execa('yarn', scriptArgs, {
+      cwd: workspaceRoot,
       env: {
         FORCE_COLOR: 'true',
       },
@@ -42,10 +53,10 @@ export class Dev extends Command {
   }
 
   async run() {
-    const { args, flags } = this.parse(Dev)
+    const { argv, flags } = this.parse(Dev)
 
     try {
-      const child = await this.startServiceDev(args.workspace)
+      const child = await this.startWorkspaceDev(argv)
 
       child?.on('close', (code: number) => {
         const message = code
