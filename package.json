@@ -64,6 +64,7 @@
     "@changesets/cli": "^2.14.1",
     "@cypress/react": "^4.16.4",
     "@manypkg/cli": "0.17.0",
+    "@monorepo-utils/package-utils": "2.4.4",
     "@nrwl/cli": "11.5.2",
     "@nrwl/cypress": "11.5.2",
     "@nrwl/next": "11.5.2",

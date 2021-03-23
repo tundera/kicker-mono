@@ -1,6 +1,7 @@
 import { Command, flags } from '@oclif/command'
 import execa from 'execa'
-import { join } from 'path'
+import { getWorkspaceNames } from '../utils/workspaces'
+
 export class Start extends Command {
   static description = 'Start the production server'
 
@@ -10,8 +11,8 @@ export class Start extends Command {
     {
       name: 'workspace',
       required: true,
-      description: 'target service in the `services` directory',
-      options: ['hoop'],
+      description: 'target workspace to start in monorepo',
+      options: getWorkspaceNames(),
     },
   ]
 

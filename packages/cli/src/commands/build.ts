@@ -1,8 +1,6 @@
 import { Command, flags } from '@oclif/command'
 import execa from 'execa'
-import { join } from 'path'
-
-import { getWorkspaceDir } from '../utils/workspaces'
+import { getWorkspaceNames } from '../utils/workspaces'
 
 export class Build extends Command {
   static description = 'Creates a production build'
@@ -13,6 +11,7 @@ export class Build extends Command {
       name: 'workspace',
       required: false,
       description: 'target workspace to build',
+      options: getWorkspaceNames(),
     },
   ]
 
