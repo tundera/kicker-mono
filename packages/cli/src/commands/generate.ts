@@ -1,7 +1,6 @@
 import { Command, flags } from '@oclif/command'
 import execa from 'execa'
 import { join } from 'path'
-import { generateFromTemplate } from '../utils/generator'
 
 export class Generate extends Command {
   static description = 'Generate code from template'
