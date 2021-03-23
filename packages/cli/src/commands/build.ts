@@ -30,7 +30,7 @@ export class Build extends Command {
   }
 
   async buildWorkspace(name: string) {
-    return execa('yarn', ['workspace', `@kicker/${name}`, 'build'], {
+    return execa('yarn', ['lerna', 'run', 'build', '--scope', `@kicker/${name}`, '--stream'], {
       cwd: process.cwd(),
       env: {
         FORCE_COLOR: 'true',

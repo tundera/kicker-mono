@@ -33,21 +33,19 @@ export class Dev extends Command {
   }
 
   async startServiceDev(name: string) {
-    return execa('yarn', [
-      'lerna',
-      'run',
-      'dev',
-      '--scope',
-      `@kicker/${name}`,
-      '--stream',
-    ]).stdout?.pipe(process.stdout)
+    return execa('yarn', ['lerna', 'run', 'dev', '--scope', `@kicker/${name}`, '--stream'], {
+      cwd: process.cwd(),
+      env: {
+        FORCE_COLOR: 'true',
+      },
+    }).stdout?.pipe(process.stdout)
   }
 
   async run() {
     const { args, flags } = this.parse(Dev)
 
     try {
-      const child = await this.startServiceDev(args.service)
+      const child = await this.startServiceDev(args.workspace)
 
       child?.on('close', (code: number) => {
         const message = code

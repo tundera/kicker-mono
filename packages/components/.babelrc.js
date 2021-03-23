@@ -1,3 +1,5 @@
+const cwd = process.cwd()
+
 module.exports = {
   presets: [
     '@babel/preset-env',
@@ -9,5 +11,16 @@ module.exports = {
     ],
     '@babel/preset-typescript',
   ],
-  plugins: [],
+  plugins: [
+    [
+      'module-resolver',
+      {
+        root: cwd,
+        alias: {
+          // resolve modules here
+          test: './packages/components/test',
+        },
+      },
+    ],
+  ],
 }
