@@ -36,6 +36,9 @@ export class Start extends Command {
   async startServiceProd(name: string) {
     return execa('yarn', ['lerna', 'run', 'start', '--scope', `@kicker/${name}`, '--stream'], {
       cwd: process.cwd(),
+      env: {
+        FORCE_COLOR: 'true',
+      },
     }).stdout?.pipe(process.stdout)
   }
 
@@ -45,17 +48,17 @@ export class Start extends Command {
     try {
       const child = await this.startServiceProd(args.service)
 
-      child.on('close', (code: number) => {
+      child?.on('close', (code: number) => {
         const message = code ? 'Failed to run start script! ❌' : 'Done running start script! ✅'
         console.log(message)
         return process.exit(code)
       })
 
-      child.on('SIGINT', (code: number) => {
+      child?.on('SIGINT', (code: number) => {
         console.log('Interrupted start script!')
         return process.exit(code)
       })
-      child.on('SIGTERM', (code: number) => {
+      child?.on('SIGTERM', (code: number) => {
         console.log('Terminated start script!')
         return process.exit(code)
       })

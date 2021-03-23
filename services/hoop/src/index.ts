@@ -21,7 +21,7 @@ export const server = new ApolloServer({
     },
   },
   tracing: isDev,
-  introspection: isDev,
+  introspection: true,
   debug: isDev,
 })
 
