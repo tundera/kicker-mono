@@ -1,5 +1,6 @@
 export * from './animations'
 export * from './commerce'
+export * from './utils'
 
 export * from './LandingCta'
 export * from './SimpleCTA'

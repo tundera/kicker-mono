@@ -97,6 +97,7 @@
     "@babel/preset-react": "^7.12.13",
     "@babel/preset-typescript": "^7.13.0",
     "@babel/runtime": "7.13.10",
+    "@chakra-ui/icons": "^1.0.7",
     "@chakra-ui/react": "^1.4.0",
     "@chakra-ui/theme-tools": "^1.1.1",
     "@emotion/react": "^11.1.5",
