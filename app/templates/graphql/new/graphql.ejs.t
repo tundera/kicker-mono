@@ -1,37 +1,30 @@
 ---
-to: graphql/modules/<%= name %>.ts
+to: graphql/modules/<%= h.camelizedBaseName(name) %>.ts
 ---
-<% camelized = h.inflection.camelize(name) -%>
-<% plural = h.inflection.pluralize(camelized) -%>
-import { objectType, extendType } from 'nexus';
-import { UserInputError, /*ForbiddenError*/ } from 'apollo-server-micro';
+<% model = h.camelizedBaseName(name) -%>
+<% plural = h.inflection.pluralize(model) -%>
+import { objectType, extendType, list, intArg } from 'nexus'
 
-// import { isAdmin } from '../services/permissions';
-
-// <%= camelized %> Type
-export const <%= camelized %> = objectType({
-  name: '<%= camelized %>',
-  description: 'A <%= camelized %>',
+/**
+ * <%= model %> Object Type
+ */
+export const <%= model %> = objectType({
+  name: <%= model %>.$name,
+  description: <%= model %>.$description,
   definition(t) {
-    t.model.id();
-    t.model.createdAt();
-    t.model.updatedAt();
+    t.field('id', <%= model %>.id)
+    t.field('createdAt', <%= model %>.createdAt)
+    t.field('updatedAt', <%= model %>.updatedAt)
   },
 });
 
-/*
-// Enums
-export const CallPreference = enumType({
-  name: 'CallPreference',
-  members: ['WEEKDAY', 'WEEKEND', 'WEEKNIGHT'],
-});
-
-// Queries
-export const <%= camelized %>Queries = extendType({
+/**
+ * <%= model %> Query Types
+ */
+export const <%= model %>Queries = extendType({
   type: 'Query',
   definition: (t) => {
-    // List <%= plural %> Query (admin only)
-    t.crud.<%= plural.toLowerCase() %>({
+    t.field('<%= plural.toLowerCase() %>')({
       filtering: true,
       ordering: true,
       // use resolve for permission checks or to remove fields
