@@ -6,8 +6,8 @@ import { useColorModeValue, ChakraProvider } from '@chakra-ui/react'
 import { createBrandLogoIcon } from '@kicker/components'
 
 export default function App({ Component, pageProps }: AppProps) {
-  const iconColor = useColorModeValue('#000000', '#FFFFFF')
-  const BrandIcon = createBrandLogoIcon(iconColor)
+  const logoColor = useColorModeValue('#000000', '#FFFFFF')
+  const BrandLogoIcon = createBrandLogoIcon(logoColor)
 
   return (
     <ChakraProvider resetCSS>
@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
             'another.mdx': true,
           },
         }}
-        headerLogo={<BrandIcon w="16" h="16" />}
+        headerLogo={<BrandLogoIcon w="16" h="16" />}
       >
         <Component {...pageProps} />
       </DokzProvider>
