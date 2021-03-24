@@ -56,9 +56,9 @@ export class Dev extends Command {
     const { argv, flags } = this.parse(Dev)
 
     try {
-      const child = await this.startWorkspaceDev(argv)
+      const subprocess = await this.startWorkspaceDev(argv)
 
-      child?.on('close', (code: number) => {
+      subprocess?.on('close', (code: number) => {
         const message = code
           ? 'Failed to run develop script! ❌'
           : 'Done running develop script! ✅'
@@ -66,11 +66,11 @@ export class Dev extends Command {
         return process.exit(code)
       })
 
-      child?.on('SIGINT', (code: number) => {
+      subprocess?.on('SIGINT', (code: number) => {
         console.log('Interrupted develop script!')
         return process.exit(code)
       })
-      child?.on('SIGTERM', (code: number) => {
+      subprocess?.on('SIGTERM', (code: number) => {
         console.log('Terminated develop script!')
         return process.exit(code)
       })

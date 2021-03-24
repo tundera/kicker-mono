@@ -1,5 +1,6 @@
 import { Command, flags } from '@oclif/command'
 import execa from 'execa'
+import { workspaceRoot } from '../utils/workspaces'
 
 export class Add extends Command {
   static description = 'Add dependency to project'
@@ -35,11 +36,26 @@ export class Add extends Command {
     }),
   }
 
+  async watchPackages() {
+    return execa('yarn', ['preconstruct', 'watch'], {
+      cwd: workspaceRoot,
+      env: {
+        FORCE_COLOR: 'true',
+      },
+    }).stdout?.pipe(process.stdout)
+  }
+
   async addModule(module: string, workspace: string, options: string[]) {
-    return execa(
-      'yarn',
-      ['workspace', `@kicker/${workspace}`, 'add', module].concat(options),
-    ).stdout?.pipe(process.stdout)
+    let args = ['workspace', `@kicker/${workspace}`, 'add', module]
+
+    args = args.concat(options)
+
+    return execa('yarn', args, {
+      cwd: workspaceRoot,
+      env: {
+        FORCE_COLOR: 'true',
+      },
+    }).stdout?.pipe(process.stdout)
   }
 
   async run() {
@@ -52,9 +68,9 @@ export class Add extends Command {
     if (flags.peer) options.push('--peer')
 
     try {
-      const child = await this.addModule(args.module, args.workspace, options)
+      const subprocess = await this.addModule(args.module, args.workspace, options)
 
-      child?.on('close', (code: number) => {
+      subprocess?.on('close', (code: number) => {
         const message = code
           ? `Failed to add module ${args.module}! ❌`
           : `Added module ${args.module} to workspace ${args.workspace}! ✅`
@@ -62,11 +78,11 @@ export class Add extends Command {
         return process.exit(code)
       })
 
-      child?.on('SIGINT', (code: number) => {
+      subprocess?.on('SIGINT', (code: number) => {
         console.log('Interrupted add script!')
         return process.exit(code)
       })
-      child?.on('SIGTERM', (code: number) => {
+      subprocess?.on('SIGTERM', (code: number) => {
         console.log('Terminated add script!')
         return process.exit(code)
       })
