@@ -1,6 +1,6 @@
 {
   "name": "@kicker/app",
-  "description": "Kicker App template",
+  "description": "Kicker app template",
   "version": "0.1.0",
   "private": true,
   "prisma": {

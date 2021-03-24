@@ -19,8 +19,8 @@ module.exports = function (api) {
         root: './',
         alias: {
           // resolve modules here
-          '@kicker/components': './packages/components',
-          '@kicker/theme': './packages/theme',
+          '@kicker/components': './packages/components/src',
+          '@kicker/theme': './packages/theme/src',
         },
       },
     ],

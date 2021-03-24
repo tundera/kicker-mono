@@ -5,22 +5,12 @@ import findWorkspaceRoot from 'find-yarn-workspace-root'
 
 export const workspaceRoot = findWorkspaceRoot(process.cwd()) ?? process.cwd()
 
-const getRootName = async () => {
+export const getRootInfo = async () => {
   const manifest = await readJSON(path.resolve(workspaceRoot, 'package.json'))
-  return manifest.name
-}
-
-export const getWorkspaceDir = async (workspace: string): Promise<string> => {
-  const workspaces = await readJSON(path.resolve(workspaceRoot, 'workspace.json'))
-
-  const rootName = await getRootName()
-  const workspaceName = `@${rootName}/${workspace}`
-
-  if (workspaces && Object.keys(workspaces.projects || {}).includes(workspaceName)) {
-    return workspaces.projects[workspaceName].root
+  return {
+    name: manifest.name,
+    workspaces: [...manifest.workspaces.packages],
   }
-
-  return rootName
 }
 
 export const getProjectWorkspaces = () => {
