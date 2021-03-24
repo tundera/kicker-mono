@@ -53,10 +53,6 @@ export class List extends Command {
         { colors: true, depth: null },
       )
 
-      const names = getWorkspaceNames()
-
-      console.dir(names, { colors: true, depth: null })
-
       // const child = await this.addModule(args.module, args.workspace)
       // child.on('close', (code: number) => {
       //   const message = code
