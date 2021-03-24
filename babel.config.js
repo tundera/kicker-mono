@@ -1,5 +1,3 @@
-const cwd = process.cwd()
-
 module.exports = function (api) {
   api.cache(true)
 
@@ -18,7 +16,7 @@ module.exports = function (api) {
     [
       'module-resolver',
       {
-        root: cwd,
+        root: './',
         alias: {
           // resolve modules here
           '@kicker/components': './packages/components/src',
