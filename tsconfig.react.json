@@ -5,8 +5,8 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@kicker/components": ["packages/components/src"],
-      "@kicker/theme": ["packages/theme/src"]
+      "@kicker/components": ["packages/components"],
+      "@kicker/theme": ["packages/theme"]
     }
   }
 }

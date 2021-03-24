@@ -6,7 +6,7 @@ export interface SimpleCardProps {
   description: string
   price: string
   image: {
-    src: string
+    url: string
     alt: string
   }
   href: string
@@ -31,11 +31,11 @@ export const SimpleCard = ({ title, description, price, image, href }: SimpleCar
         transitionDuration="200ms"
         _hover={{ bg: hoverBg }}
       >
-        <Image alt={image.alt} src={image.src} position="absolute" right="-20" bottom="-8" h="40" w="40" mb="4" />
+        <Image alt={image.alt} src={image.url} position="absolute" right="-20" bottom="-8" h="40" w="40" mb="4" />
         <NextLink href={href} passHref>
           <Box w="66.666667%">
             <Text color="gray.800" fontSize="lg" fontWeight="medium" mb="2">
-              <LinkOverlay>{title}</LinkOverlay>
+              <LinkOverlay>{title.toUpperCase()}</LinkOverlay>
             </Text>
             <Text color="gray.400" fontSize="xs">
               {description}

@@ -42,8 +42,6 @@ export class Dev extends Command {
       scriptArgs = scriptArgs.concat(['--scope', `@kicker/${workspace}`])
     })
 
-    console.log(scriptArgs)
-
     return execa('yarn', scriptArgs, {
       cwd: workspaceRoot,
       env: {

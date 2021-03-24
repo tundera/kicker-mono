@@ -29,6 +29,12 @@ export const getProjectWorkspaces = () => {
   )
 }
 
+export const getProjectExamples = () => {
+  return getPackages(workspaceRoot).filter(
+    (workspace) => path.dirname(workspace.packageJSON.name) === '@examples',
+  )
+}
+
 export const getWorkspaceNames = () => {
   const workspaces = getProjectWorkspaces()
   return workspaces.map(({ packageJSON }) => packageJSON.name.split(path.sep).pop())
