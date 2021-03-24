@@ -36,13 +36,15 @@ export class Dev extends Command {
   }
 
   async startWorkspaceDev(workspaces: string[]) {
-    let scriptArgs = ['lerna', 'run', 'dev', '--stream']
+    let args = ['wsrun']
 
     workspaces.forEach((workspace) => {
-      scriptArgs = scriptArgs.concat(['--scope', `@kicker/${workspace}`])
+      args = args.concat(['-p', `@kicker/${workspace}`])
     })
 
-    return execa('yarn', scriptArgs, {
+    args = args.concat(['-c', 'dev'])
+
+    return execa('yarn', args, {
       cwd: workspaceRoot,
       env: {
         FORCE_COLOR: 'true',

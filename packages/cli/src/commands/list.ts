@@ -32,16 +32,12 @@ export class List extends Command {
   }
 
   async listWorkspaces(module: string, workspace: string, options: string[]) {
-    return execa(
-      'yarn',
-      ['lerna', 'add', module, '--scope', `@kicker/${workspace}`].concat(options),
-      {
-        cwd: workspaceRoot,
-        env: {
-          FORCE_COLOR: 'true',
-        },
+    return execa('yarn', ['workspace', `@kicker/${workspace}`, 'add', module].concat(options), {
+      cwd: workspaceRoot,
+      env: {
+        FORCE_COLOR: 'true',
       },
-    ).stdout?.pipe(process.stdout)
+    }).stdout?.pipe(process.stdout)
   }
 
   async run() {

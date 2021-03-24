@@ -35,7 +35,7 @@ export class Start extends Command {
   }
 
   async startServiceProd(workspace: string) {
-    return execa('yarn', ['lerna', 'run', 'start', '--scope', `@kicker/${workspace}`, '--stream'], {
+    return execa('yarn', ['workspace', `@kicker/${workspace}`, 'start'], {
       cwd: workspaceRoot,
       env: {
         FORCE_COLOR: 'true',

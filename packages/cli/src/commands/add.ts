@@ -1,5 +1,5 @@
 import { Command, flags } from '@oclif/command'
-import { spawn } from 'cross-spawn'
+import execa from 'execa'
 
 export class Add extends Command {
   static description = 'Add dependency to project'
@@ -36,9 +36,10 @@ export class Add extends Command {
   }
 
   async addModule(module: string, workspace: string, options: string[]) {
-    return spawn('yarn', ['lerna', 'add', module, '--scope', `@kicker/${workspace}`].concat(options)).stdout.pipe(
-      process.stdout,
-    )
+    return execa(
+      'yarn',
+      ['workspace', `@kicker/${workspace}`, 'add', module].concat(options),
+    ).stdout?.pipe(process.stdout)
   }
 
   async run() {
@@ -53,7 +54,7 @@ export class Add extends Command {
     try {
       const child = await this.addModule(args.module, args.workspace, options)
 
-      child.on('close', (code: number) => {
+      child?.on('close', (code: number) => {
         const message = code
           ? `Failed to add module ${args.module}! ❌`
           : `Added module ${args.module} to workspace ${args.workspace}! ✅`
@@ -61,11 +62,11 @@ export class Add extends Command {
         return process.exit(code)
       })
 
-      child.on('SIGINT', (code: number) => {
+      child?.on('SIGINT', (code: number) => {
         console.log('Interrupted add script!')
         return process.exit(code)
       })
-      child.on('SIGTERM', (code: number) => {
+      child?.on('SIGTERM', (code: number) => {
         console.log('Terminated add script!')
         return process.exit(code)
       })

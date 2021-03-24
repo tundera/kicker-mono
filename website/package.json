@@ -12,6 +12,7 @@
     "@chakra-ui/react": "latest",
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
+    "@kicker/components": "^0.1.0",
     "@preconstruct/next": "^2.0.0",
     "dokz": "latest",
     "framer-motion": "4.0.2",
