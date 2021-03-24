@@ -10,7 +10,7 @@ import { getLayout } from 'src/components/layouts/SiteLayout'
 
 const SuccessPage: CustomNextPage = () => {
   const router = useRouter()
-  const [order, setOrder] = useState(null)
+  const [order, setOrder] = useState<any>(null)
   const [working, setWorking] = useState(true)
 
   const stripeCheckoutId = router.query.id
@@ -63,7 +63,7 @@ const SuccessPage: CustomNextPage = () => {
             </Heading>
             {order && (
               <Text color="gray.500" size="sm">
-                {order.id}
+                {order?.id}
               </Text>
             )}
           </Box>

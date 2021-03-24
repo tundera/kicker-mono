@@ -36,9 +36,10 @@ const BlogPage: CustomNextPage<BlogPageProps> = ({ posts }) => {
   const filteredBlogPosts = posts
     .sort(
       (a, b) =>
-        Number(new Date(b.frontMatter.publishedAt)) - Number(new Date(a.frontMatter.publishedAt)),
+        Number(new Date(b.frontMatter?.publishedAt as string)) -
+        Number(new Date(a.frontMatter?.publishedAt as string)),
     )
-    .filter((post) => post.frontMatter.title.toLowerCase().includes(searchValue.toLowerCase()))
+    .filter((post) => post.frontMatter?.title.toLowerCase().includes(searchValue.toLowerCase()))
 
   return (
     <>

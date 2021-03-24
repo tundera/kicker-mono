@@ -9,21 +9,7 @@ import { formatCurrencyValue } from 'src/lib/graphcms/helpers'
 import { graphCmsClient } from 'src/lib/graphcms/client'
 import { Search } from 'react-feather'
 
-import {
-  useColorModeValue,
-  Stack,
-  Grid,
-  HStack,
-  Input,
-  Icon,
-  Flex,
-  GridItem,
-  Text,
-  Heading,
-  Box,
-  LinkBox,
-  LinkOverlay,
-} from '@chakra-ui/react'
+import { useColorModeValue, Stack, HStack, Input, Icon, Flex, Text, Box } from '@chakra-ui/react'
 
 interface Props {
   products: any

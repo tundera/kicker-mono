@@ -37,15 +37,21 @@ const BlogCardWithAuthor: FC<Props> = ({ post }) => {
       _hover={{ opacity: '0.7' }}
     >
       <LinkBox as="article" w="full" display="block">
-        <Image alt="blog photo" src={post.frontMatter.image} maxH="40" w="full" objectFit="cover" />
+        <Image
+          alt="blog photo"
+          src={post.frontMatter?.image}
+          maxH="40"
+          w="full"
+          objectFit="cover"
+        />
         <Box bg={bg} w="full" h="full" p="4">
           <NextLink href={`/blog/posts/${post.slug}`} passHref>
             <LinkOverlay>
               <Text color={color} fontSize="xl" fontWeight="medium" mb="2">
-                {post.frontMatter.title}
+                {post.frontMatter?.title}
               </Text>
               <Text color={altColor} fontWeight="light" fontSize="md" height="20" overflow="hidden">
-                {post.frontMatter.excerpt}
+                {post.frontMatter?.excerpt}
               </Text>
               <Flex align="center" mt="4">
                 <Link display="block" position="relative" href="#">
@@ -60,12 +66,12 @@ const BlogCardWithAuthor: FC<Props> = ({ post }) => {
                   />
                 </Link>
                 <Flex direction="column" justify="space-between" ml="4" fontSize="sm">
-                  <Text color={color}>{post.frontMatter.author}</Text>
-                  <Text color={altColor}>{post.frontMatter.publishedAt} - 6 min read</Text>
+                  <Text color={color}>{post.frontMatter?.author}</Text>
+                  <Text color={altColor}>{post.frontMatter?.publishedAt} - 6 min read</Text>
                 </Flex>
               </Flex>
               <HStack mt="2">
-                {post.frontMatter.category.map((item) => (
+                {post.frontMatter?.category?.map((item) => (
                   <Text
                     key={item}
                     textTransform="capitalize"

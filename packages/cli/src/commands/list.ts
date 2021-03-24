@@ -1,6 +1,7 @@
-import { Command, flags } from '@oclif/command'
+import { flags } from '@oclif/command'
 import execa from 'execa'
-import { workspaceRoot, getProjectWorkspaces, getWorkspaceNames } from '../utils/workspaces'
+import { Command } from '../command'
+import { getProjectWorkspaces } from '../utils/workspaces'
 
 export class List extends Command {
   static description = 'Add dependency to project'
@@ -33,7 +34,7 @@ export class List extends Command {
 
   async listWorkspaces(module: string, workspace: string, options: string[]) {
     return execa('yarn', ['workspace', `@kicker/${workspace}`, 'add', module].concat(options), {
-      cwd: workspaceRoot,
+      cwd: this.project.root,
       env: {
         FORCE_COLOR: 'true',
       },

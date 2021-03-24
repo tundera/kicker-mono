@@ -13,7 +13,7 @@ interface LineItem extends Stripe.LineItem {
   price: Price
 }
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
   apiVersion: '2020-08-27',
 })
 
@@ -23,7 +23,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const session = await stripe.checkout.sessions.retrieve(event.data.object.id, {
     expand: ['line_items.data.price.product', 'customer'],
   })
-  const line_items = session.line_items.data as LineItem[]
+  const line_items = session.line_items?.data as LineItem[]
   const customer = session.customer as Stripe.Customer
 
   const orderItems = line_items.map((li) => ({

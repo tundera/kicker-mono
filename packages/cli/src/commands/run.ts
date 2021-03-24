@@ -1,7 +1,8 @@
 import c from 'chalk'
-import { Command, flags } from '@oclif/command'
+import { flags } from '@oclif/command'
 import execa from 'execa'
 import { join } from 'path'
+import { Command } from '../command'
 import { workspaceRoot } from '../utils/workspaces'
 
 export class Run extends Command {

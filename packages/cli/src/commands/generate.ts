@@ -1,7 +1,7 @@
-import { Command, flags } from '@oclif/command'
+import { flags } from '@oclif/command'
 import execa from 'execa'
-import findWorkspaceRoot from 'find-yarn-workspace-root'
 import { join } from 'path'
+import { Command } from '../command'
 import { workspaceRoot } from '../utils/workspaces'
 
 export class Generate extends Command {

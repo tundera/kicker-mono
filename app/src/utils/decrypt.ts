@@ -5,8 +5,8 @@ import { encrypted } from 'graphcms-tokens.enc'
 const algorithm = 'aes-128-cbc'
 const decipherGraphCmsTokens = crypto.createDecipheriv(
   algorithm,
-  process.env.GRAPH_CMS_ENCRYPTION_KEY,
-  process.env.GRAPH_CMS_ENCRYPTION_IV,
+  process.env.GRAPH_CMS_ENCRYPTION_KEY as string,
+  process.env.GRAPH_CMS_ENCRYPTION_IV as string,
 )
 
 export const getGraphCmsTokens = () => {

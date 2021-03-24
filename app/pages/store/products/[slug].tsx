@@ -15,7 +15,7 @@ interface Props {
   product: any
 }
 
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY)
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY as string)
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const { products } = await graphCmsClient.request(
@@ -59,7 +59,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       }
     `,
     {
-      slug: params.slug,
+      slug: pageSlug,
     },
   )
   return {
@@ -92,7 +92,7 @@ const PayBtn = ({ formattedPrice, slug }) => {
       }),
     }).then((resp) => resp.json())
 
-    await stripe.redirectToCheckout({
+    await stripe?.redirectToCheckout({
       sessionId: session.id,
     })
 
@@ -117,8 +117,8 @@ const PayBtn = ({ formattedPrice, slug }) => {
       bg="blue.600"
       _hover={{ bg: 'blue.700' }}
       _focus={{ boxShadow: '0 0 0 2px', opacity: '0.5' }}
-      cursor={working && 'not-allowed'}
-      opacity={working && '0.5'}
+      cursor={working ? 'not-allowed' : undefined}
+      opacity={working ? '0.5' : undefined}
       onClick={handleClick}
       disabled={working}
     >

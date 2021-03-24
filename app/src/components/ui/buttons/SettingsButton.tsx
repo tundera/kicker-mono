@@ -50,7 +50,11 @@ const SettingsButton: FC = () => {
           >
             <Flex justify="space-between" w="full">
               <Text>Dashboard</Text>
-              <Avatar size="sm" name={session.user.name} src={session.user.image} />
+              <Avatar
+                size="sm"
+                name={session?.user.name as string}
+                src={session?.user.image as string}
+              />
             </Flex>
           </MenuItem>
           <MenuItem

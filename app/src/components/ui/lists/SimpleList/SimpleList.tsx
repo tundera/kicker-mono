@@ -109,7 +109,9 @@ export const SimpleList: FC<Props> = ({ heading, subheading, items }) => {
                     icon={<ChevronRight size="20" />}
                     variant="ghost"
                     aria-label="Link button"
-                    onClick={null}
+                    onClick={() => {
+                      console.log('clicked')
+                    }}
                   />
                 )}
               </Flex>

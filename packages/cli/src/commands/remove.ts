@@ -2,7 +2,7 @@ import { flags } from '@oclif/command'
 import execa from 'execa'
 import { Command } from '../command'
 
-export class Add extends Command {
+export class Remove extends Command {
   static description = 'Add dependency to project'
 
   static aliases = ['a']
@@ -22,24 +22,23 @@ export class Add extends Command {
 
   static flags = {
     help: flags.help({ char: 'h' }),
-    dev: flags.boolean({
-      char: 'D',
-      description: 'Install module as dev dependency',
-    }),
-    exact: flags.boolean({
-      char: 'E',
-      description: 'Install module with exact version',
-    }),
-    peer: flags.boolean({
-      char: 'P',
-      description: 'Install module as peer dependency',
+    root: flags.boolean({
+      char: 'W',
+      description: 'Remove module from project root',
     }),
   }
 
-  async addModule(module: string, workspace: string, options: string[]) {
-    let args = ['workspace', `@kicker/${workspace}`, 'add', module]
+  async watchPackages() {
+    return execa('yarn', ['preconstruct', 'watch'], {
+      cwd: this.project.root,
+      env: {
+        FORCE_COLOR: 'true',
+      },
+    }).stdout?.pipe(process.stdout)
+  }
 
-    args = args.concat(options)
+  async runRemove(module: string, workspace: string) {
+    const args = ['workspace', `@kicker/${workspace}`, 'remove', module]
 
     return execa('yarn', args, {
       cwd: this.project.root,
@@ -50,16 +49,10 @@ export class Add extends Command {
   }
 
   async run() {
-    const { args, flags } = this.parse(Add)
-
-    const options = []
-
-    if (flags.dev) options.push('--dev')
-    if (flags.exact) options.push('--exact')
-    if (flags.peer) options.push('--peer')
+    const { args, flags } = this.parse(Remove)
 
     try {
-      const subprocess = await this.addModule(args.module, args.workspace, options)
+      const subprocess = await this.runRemove(args.module, args.workspace)
 
       subprocess?.on('close', (code: number) => {
         const message = code

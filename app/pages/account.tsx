@@ -1,5 +1,6 @@
 import type { GetServerSideProps } from 'next'
 import type { CustomNextPage } from 'types'
+import type { Session } from 'next-auth'
 
 import { Flex, Heading } from '@chakra-ui/react'
 
@@ -8,7 +9,7 @@ import { SimpleList } from 'src/components/ui/lists/SimpleList'
 import { getSession } from 'next-auth/client'
 
 interface AccountPageProps {
-  session: any
+  session: Session
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ req }) => {
@@ -35,7 +36,7 @@ const AccountPage: CustomNextPage<AccountPageProps> = ({ session }) => {
     <>
       <Flex flexDir="column" alignItems="center">
         <Heading as="h1">Account Page</Heading>
-        <Heading as="h2">Hi, {session.name}!</Heading>
+        <Heading as="h2">Hi, {session.user.name}!</Heading>
         <SimpleList
           heading="Meetings"
           subheading="Meetings scheduled with co-workers"

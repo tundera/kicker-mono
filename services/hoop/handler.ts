@@ -3,7 +3,7 @@ import { PrismaAppSync } from './db/generated/prisma-appsync/client'
 
 // Initialise client
 const app = new PrismaAppSync({
-  connectionUrl: process.env.CONNECTION_URL ?? '',
+  connectionUrl: process.env.CONNECTION_URL as string,
   debug: true,
 })
 

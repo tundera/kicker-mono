@@ -33,10 +33,6 @@
       "path": "services/hoop"
     },
     {
-      "name": "@kicker/studio",
-      "path": "studio"
-    },
-    {
       "name": "🚀 @kicker/docs",
       "path": "website"
     }

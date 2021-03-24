@@ -13,13 +13,13 @@ export default function CategoryPage({ category, posts }: CategoryPageProps) {
   return (
     <SiteLayout>
       <Box>
-        <Heading as="h1">{category.frontMatter.name}</Heading>
-        {posts.length ? (
+        <Heading as="h1">{category.frontMatter?.name}</Heading>
+        {posts?.length ? (
           <List>
             {posts.map((post) => (
               <ListItem key={post.slug}>
                 <Link as={NextLink} href={post.url}>
-                  {post.frontMatter.title}
+                  {post.frontMatter?.title}
                 </Link>
               </ListItem>
             ))}
@@ -54,7 +54,7 @@ export async function getStaticProps(context) {
     props: {
       category,
       posts: posts.filter((post) =>
-        post.relationships.category.some(({ slug }) => slug === category.slug),
+        post.relationships?.category.some(({ slug }) => slug === category.slug),
       ),
     },
   }

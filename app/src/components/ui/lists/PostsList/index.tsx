@@ -19,7 +19,7 @@ const PostsList: FC<Props> = ({ posts }) => {
       alignItems="stretch"
       gap="12"
     >
-      {posts.map((post) => (
+      {posts?.map((post) => (
         <BlogPostCard key={post.slug} post={post} />
       ))}
     </Grid>

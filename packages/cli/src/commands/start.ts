@@ -1,17 +1,20 @@
-import { Command, flags } from '@oclif/command'
+import { flags } from '@oclif/command'
 import execa from 'execa'
-import { workspaceRoot, getWorkspaceNames } from '../utils/workspaces'
+import { Command } from '../command'
+import { getWorkspaceNames } from '../utils/workspaces'
+import { startWorkspaces } from '../utils/start-workspaces'
 
 export class Start extends Command {
+  static strict = false
   static description = 'Start the production server'
 
   static aliases = ['s']
 
   static args = [
     {
-      name: 'workspace',
+      name: 'workspaces',
       required: true,
-      description: 'target workspace to start in monorepo',
+      description: 'target workspacs to start in monorepo',
       options: getWorkspaceNames(),
     },
   ]
@@ -34,35 +37,11 @@ export class Start extends Command {
   `)
   }
 
-  async startServiceProd(workspace: string) {
-    return execa('yarn', ['workspace', `@kicker/${workspace}`, 'start'], {
-      cwd: workspaceRoot,
-      env: {
-        FORCE_COLOR: 'true',
-      },
-    }).stdout?.pipe(process.stdout)
-  }
-
   async run() {
-    const { args, flags } = this.parse(Start)
+    const { argv, flags } = this.parse(Start)
 
     try {
-      const child = await this.startServiceProd(args.workspace)
-
-      child?.on('close', (code: number) => {
-        const message = code ? 'Failed to run start script! ❌' : 'Done running start script! ✅'
-        console.log(message)
-        return process.exit(code)
-      })
-
-      child?.on('SIGINT', (code: number) => {
-        console.log('Interrupted start script!')
-        return process.exit(code)
-      })
-      child?.on('SIGTERM', (code: number) => {
-        console.log('Terminated start script!')
-        return process.exit(code)
-      })
+      await startWorkspaces(argv, false)
     } catch (err) {
       console.error(err)
       process.exit(1)

@@ -1,4 +1,6 @@
-import { FC } from 'react'
+import type { FC } from 'react'
+import type { Session } from 'next-auth'
+
 import { useSession } from 'next-auth/client'
 import { chakra, Flex, useColorModeValue, VisuallyHidden, useDisclosure } from '@chakra-ui/react'
 import styled from '@emotion/styled'
@@ -47,7 +49,7 @@ const Header: FC = ({ ...props }) => {
             kicker
           </chakra.h1>
         </Flex>
-        <Navigation session={session} disclosure={mobileNav} />
+        <Navigation session={session as Session} disclosure={mobileNav} />
       </Flex>
     </StickyFlex>
   )
