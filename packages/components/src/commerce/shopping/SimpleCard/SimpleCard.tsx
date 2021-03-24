@@ -35,7 +35,7 @@ export const SimpleCard = ({ title, description, price, image, href }: SimpleCar
         <NextLink href={href} passHref>
           <Box w="66.666667%">
             <Text color="gray.800" fontSize="lg" fontWeight="medium" mb="2">
-              <LinkOverlay>{title.toUpperCase()}</LinkOverlay>
+              <LinkOverlay>{title}</LinkOverlay>
             </Text>
             <Text color="gray.400" fontSize="xs">
               {description}
