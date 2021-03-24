@@ -30,20 +30,8 @@ module.exports = function (api) {
     '@babel/plugin-transform-runtime',
   ]
 
-  const babelrcRoots = [
-    '.',
-    'packages/*',
-    'examples/*',
-    'services/*',
-    'app',
-    'website',
-    'studio',
-    'scripts',
-  ]
-
   return {
     presets,
     plugins,
-    babelrcRoots,
   }
 }
