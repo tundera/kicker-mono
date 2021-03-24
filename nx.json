@@ -33,9 +33,6 @@
     "@kicker/docs": {
       "implicitDependencies": []
     },
-    "@kicker/studio": {
-      "implicitDependencies": []
-    },
     "@kicker/hoop": {
       "implicitDependencies": []
     }

@@ -26,11 +26,6 @@
       "sourceRoot": "website",
       "projectType": "application"
     },
-    "@kicker/studio": {
-      "root": "studio",
-      "sourceRoot": "studio",
-      "projectType": "application"
-    },
     "@kicker/hoop": {
       "root": "services/hoop",
       "sourceRoot": "services/hoop",
