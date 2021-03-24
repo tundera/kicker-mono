@@ -1,8 +1,9 @@
 import { flags } from '@oclif/command'
 import execa from 'execa'
+import { watchPackages } from '../utils/packages'
 import { Command } from '../command'
 import { getWorkspaceNames } from '../utils/workspaces'
-import { startWorkspaces } from '../utils/start-workspaces'
+import { startWorkspaces } from '../utils/workspaces'
 
 export class Start extends Command {
   static strict = false

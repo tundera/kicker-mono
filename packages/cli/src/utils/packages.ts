@@ -1,6 +1,6 @@
 import execa from 'execa'
 
-import { workspaceRoot } from '../utils/workspaces'
+import { workspaceRoot } from './workspaces'
 
 export const watchPackages = async () => {
   return execa('yarn', ['preconstruct', 'watch'], {
@@ -8,6 +8,7 @@ export const watchPackages = async () => {
     env: {
       FORCE_COLOR: 'true',
     },
-    stdio: 'inherit',
+    stdio: ['ignore', 'inherit', 'inherit'],
+    detached: true,
   })
 }

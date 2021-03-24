@@ -1,10 +1,10 @@
 import { flags } from '@oclif/command'
 import execa from 'execa'
 import Listr from 'listr'
-import { watchPackages } from '../utils/watch-packages'
+import { watchPackages } from '../utils/packages'
 import { Command } from '../command'
 import { getWorkspaceNames, workspaceRoot } from '../utils/workspaces'
-import { startWorkspaces } from '../utils/start-workspaces'
+import { startWorkspaces } from '../utils/workspaces'
 
 export class Dev extends Command {
   static strict = false
