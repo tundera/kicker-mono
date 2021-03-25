@@ -8,7 +8,6 @@ export const watchPackages = async () => {
     env: {
       FORCE_COLOR: 'true',
     },
-    stdio: ['ignore', 'inherit', 'inherit'],
-    detached: true,
+    stdio: 'ignore',
   })
 }

@@ -20,24 +20,6 @@ export class Build extends Command {
     help: flags.help({ char: 'h' }),
   }
 
-  async buildAllWorkspaces() {
-    await execa('yarn', ['build'], {
-      cwd: this.project.root,
-      env: {
-        FORCE_COLOR: 'true',
-      },
-    }).stdout?.pipe(process.stdout)
-  }
-
-  async buildWorkspace(name: string) {
-    return execa('yarn', ['workspace', `@kicker/${name}`, 'build'], {
-      cwd: process.cwd(),
-      env: {
-        FORCE_COLOR: 'true',
-      },
-    }).stdout?.pipe(process.stdout)
-  }
-
   async run() {
     const { args, flags } = this.parse(Build)
 

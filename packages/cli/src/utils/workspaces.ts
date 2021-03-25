@@ -48,3 +48,23 @@ export const startWorkspaces = async (workspaces: string[], development = false)
     stdio: 'inherit',
   })
 }
+
+export const buildWorkspace = async (workspace: string) => {
+  return execa('yarn', ['workspace', `@kicker/${workspace}`, 'build'], {
+    cwd: workspaceRoot,
+    env: {
+      FORCE_COLOR: 'true',
+    },
+    stdio: 'inherit',
+  })
+}
+
+const buildAllWorkspaces = async () => {
+  await execa('yarn', ['build'], {
+    cwd: workspaceRoot,
+    env: {
+      FORCE_COLOR: 'true',
+    },
+    stdio: 'inherit',
+  })
+}
