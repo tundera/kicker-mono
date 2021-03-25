@@ -1,11 +1,11 @@
 import { flags } from '@oclif/command'
 import execa from 'execa'
+import ora from 'ora'
 import Listr from 'listr'
 import { watchPackages } from '../utils/packages'
 import { Command } from '../command'
 import { devPackages, getWorkspaceNames, workspaceRoot } from '../utils/workspaces'
 import { buildPackages, startWorkspaces } from '../utils/workspaces'
-import ora from 'ora'
 
 export class Dev extends Command {
   static strict = false
