@@ -57,7 +57,7 @@
   },
   "settings": {
     "import/parsers": {
-      "@typescript-eslint/parser": [".js", ".jsx", ".ts", ".tsx", ".mdx"]
+      "@typescript-eslint/parser": [".js", ".jsx", ".ts", ".tsx", ".mdx", ".json"]
     },
     "import/resolver": {
       "babel-module": {},

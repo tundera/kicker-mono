@@ -118,6 +118,7 @@
     "patch-package": "6.4.7",
     "postinstall-postinstall": "^2.1.0",
     "prettier": "^2.2.1",
+    "prettier-plugin-prisma": "^0.6.0",
     "storybook-addon-designs": "^6.0.0-alpha.3",
     "storybook-addon-next-router": "^2.0.4",
     "storybook-addon-performance": "^0.14.0",
