@@ -4,7 +4,10 @@ const toPath = (_path) => path.join(process.cwd(), _path)
 
 // Adapted from https://github.com/UnlyEd/next-right-now/blob/e5aba8eaf02918d9506008ee1f11c38954fedc86/.storybook/main.js
 module.exports = {
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(ts|tsx)'],
+  stories: [
+    '../packages/components/src/**/*.stories.mdx',
+    '../packages/components/src/**/*.stories.@(ts|tsx)',
+  ],
   addons: [
     '@storybook/addon-links',
     {
@@ -57,9 +60,9 @@ module.exports = {
            *
            * @see https://github.com/storybookjs/storybook/issues/13277#issuecomment-751747964
            */
-          '@emotion/core': toPath('../../node_modules/@emotion/react'),
-          '@emotion/styled': toPath('../../node_modules/@emotion/styled'),
-          'emotion-theming': toPath('../../node_modules/@emotion/react'),
+          '@emotion/core': toPath('./node_modules/@emotion/react'),
+          '@emotion/styled': toPath('./node_modules/@emotion/styled'),
+          'emotion-theming': toPath('./node_modules/@emotion/react'),
         },
       },
     }
