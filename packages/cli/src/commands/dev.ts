@@ -3,8 +3,9 @@ import execa from 'execa'
 import Listr from 'listr'
 import { watchPackages } from '../utils/packages'
 import { Command } from '../command'
-import { getWorkspaceNames, workspaceRoot } from '../utils/workspaces'
-import { startWorkspaces } from '../utils/workspaces'
+import { devPackages, getWorkspaceNames, workspaceRoot } from '../utils/workspaces'
+import { buildPackages, startWorkspaces } from '../utils/workspaces'
+import ora from 'ora'
 
 export class Dev extends Command {
   static strict = false
@@ -36,7 +37,15 @@ export class Dev extends Command {
     const { argv, flags } = this.parse(Dev)
 
     try {
-      await startWorkspaces(argv, true)
+      const spinner = ora().start('Preparing packages for development')
+
+      await devPackages()
+
+      spinner.stopAndPersist({
+        symbol: '✅',
+      })
+
+      await Promise.all([watchPackages(), startWorkspaces(argv, true)])
     } catch (err) {
       console.error(err)
       process.exit(1)

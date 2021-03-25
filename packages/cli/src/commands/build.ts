@@ -1,7 +1,6 @@
 import { flags } from '@oclif/command'
-import execa from 'execa'
 import { Command } from '../command'
-import { getWorkspaceNames } from '../utils/workspaces'
+import { buildWorkspace, buildAllWorkspaces, getWorkspaceNames } from '../utils/workspaces'
 
 export class Build extends Command {
   static description = 'Creates a production build'
@@ -25,24 +24,9 @@ export class Build extends Command {
 
     try {
       if (args.workspace) {
-        const child = await this.buildWorkspace(args.workspace)
-
-        child?.on('close', (code: number) => {
-          const message = code ? 'Failed to run build script! ❌' : 'Done running build script! ✅'
-          console.log(message)
-          return process.exit(code)
-        })
-
-        child?.on('SIGINT', (code: number) => {
-          console.log('Interrupted build script!')
-          return process.exit(code)
-        })
-        child?.on('SIGTERM', (code: number) => {
-          console.log('Terminated build script!')
-          return process.exit(code)
-        })
+        await buildWorkspace(args.workspace)
       } else {
-        await this.buildAllWorkspaces()
+        await buildAllWorkspaces()
       }
     } catch (err) {
       console.error(err)

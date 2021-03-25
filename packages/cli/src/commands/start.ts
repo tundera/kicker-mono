@@ -1,8 +1,15 @@
 import { flags } from '@oclif/command'
 import execa from 'execa'
+import c from 'chalk'
+import ora from 'ora'
 import { watchPackages } from '../utils/packages'
 import { Command } from '../command'
-import { workspaceRoot, startWorkspaces, getWorkspaceNames } from '../utils/workspaces'
+import {
+  buildPackages,
+  buildWorkspaces,
+  startWorkspaces,
+  getWorkspaceNames,
+} from '../utils/workspaces'
 
 export class Start extends Command {
   static strict = false
@@ -41,7 +48,25 @@ export class Start extends Command {
     const { argv, flags } = this.parse(Start)
 
     try {
-      await Promise.all([watchPackages(), startWorkspaces(argv, false)])
+      const spinner = ora({
+        text: c.blue`Building packages`,
+      }).start()
+
+      await buildPackages()
+
+      spinner
+        .stopAndPersist({
+          symbol: '✅',
+        })
+        .start(c.blue`Building workspaces`)
+
+      await buildWorkspaces(argv)
+
+      spinner.stopAndPersist({
+        symbol: '✅',
+      })
+
+      await startWorkspaces(argv, false)
     } catch (err) {
       console.error(err)
       process.exit(1)

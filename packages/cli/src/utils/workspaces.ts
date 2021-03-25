@@ -49,17 +49,45 @@ export const startWorkspaces = async (workspaces: string[], development = false)
   })
 }
 
-export const buildWorkspace = async (workspace: string) => {
-  return execa('yarn', ['workspace', `@kicker/${workspace}`, 'build'], {
+export const buildWorkspaces = async (workspaces: string[]) => {
+  let args = ['wsrun']
+
+  workspaces.forEach((workspace) => {
+    args = args.concat(['-p', `@kicker/${workspace}`])
+  })
+
+  args = args.concat(['-c', 'build'])
+
+  return execa('yarn', args, {
     cwd: workspaceRoot,
     env: {
       FORCE_COLOR: 'true',
     },
-    stdio: 'inherit',
+    stdio: 'ignore',
   })
 }
 
-const buildAllWorkspaces = async () => {
+export const devPackages = async () => {
+  return execa('yarn', ['preconstruct', 'dev'], {
+    cwd: workspaceRoot,
+    env: {
+      FORCE_COLOR: 'true',
+    },
+    stdio: 'ignore',
+  })
+}
+
+export const buildPackages = async () => {
+  return execa('yarn', ['preconstruct', 'build'], {
+    cwd: workspaceRoot,
+    env: {
+      FORCE_COLOR: 'true',
+    },
+    stdio: 'ignore',
+  })
+}
+
+export const buildAllWorkspaces = async () => {
   await execa('yarn', ['build'], {
     cwd: workspaceRoot,
     env: {
