@@ -3314,10 +3314,10 @@
   dependencies:
     purgecss "^3.1.3"
 
-"@gqless/cli@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/@gqless/cli/-/cli-2.0.3.tgz#80d7cdc2dbff9735d0478eb61bd369907e970c24"
-  integrity sha512-Z/6W4Zi4T6wyllUP1KaYrLwTlLJ0ujnjz0t8xLTSuan7sDn0LFs/Hk27Q8Luek4gchAiY2+/KjqMH7udZ4DW4g==
+"@gqless/cli@2.0.4":
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/@gqless/cli/-/cli-2.0.4.tgz#21a2839ebd599a9c1321ca41482553f9e7264e26"
+  integrity sha512-GXwNsCNVbyNS+CA6Xweum4HU3unRI5Eo+7N5v+vcVsNmdN6y5nDgOHrGu/MpXp6j081raIjPFcgPm4ksj4l3Dg==
   dependencies:
     "@graphql-codegen/core" "^1.17.9"
     "@graphql-codegen/typescript" "^1.21.1"
@@ -3327,22 +3327,21 @@
     commander "^7.2.0"
     cosmiconfig "^7.0.0"
     cross-fetch "^3.1.2"
-    gqless "^2.0.3"
+    gqless "^2.0.4"
     mkdirp "^1.0.4"
     prettier "^2.2.1"
-    runtypes "^5.1.0"
 
-"@gqless/react@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/@gqless/react/-/react-2.0.4.tgz#4134a5618f74b781a97fd35115174ce7f34ae201"
-  integrity sha512-2K4ZWn+OXu9Txu/qV9vTwMxoznI4L53tc1IMxRTWhkAuYGZAJaFhtq/SdnibCnzsZp9j3gri6GXAHS66vhPzBg==
+"@gqless/react@2.0.5":
+  version "2.0.5"
+  resolved "https://registry.npmjs.org/@gqless/react/-/react-2.0.5.tgz#805c765ee57342ceb0c1c68e281ffa417aebe889"
+  integrity sha512-W0vNhIygMGwbIYVGGU7n7KcUnYQDDMhRutVq95t/97lvfAR3TLLmiRmc/rGdT8A0bWw2+Os+OwiNZL+xTwdGlw==
   dependencies:
     react-ssr-prepass "^1.4.0"
 
-"@gqless/subscriptions@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/@gqless/subscriptions/-/subscriptions-1.0.3.tgz#c7a681e5dea7086b2fbef07a2c5d44638fb03546"
-  integrity sha512-h0StkWh35TWbr2cCOeWnc2I9NkXQ0wPFmGzoK+/ZbTUEZ81CPdLDQ6FAzFeBKHZ5Yf9HtzMtvMOJ0k8ePFdcsQ==
+"@gqless/subscriptions@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/@gqless/subscriptions/-/subscriptions-1.0.4.tgz#bf2eed5c23669ad06781963207315aca59911460"
+  integrity sha512-gdvGbxdPwQ73byhdwBD8xYbh/qH9d8Nzrk+89VpHMw8xhMub6Fo+SVsuDaKUHYrKBCVUHP88ovynxczlMDJM0A==
   dependencies:
     isomorphic-ws "^4.0.1"
     ws "^7.4.4"
@@ -6972,10 +6971,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tailwindcss/jit@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.npmjs.org/@tailwindcss/jit/-/jit-0.1.7.tgz#9916a53e13937346912285faaea05d151d12f1e2"
-  integrity sha512-v2TtFXvecPQ105ko2aaXp26VMtaBudpwB0039rxYy/yg6c34IX91HAmOEuotUwcwNvSW6I97YtzNg9ps3blr0A==
+"@tailwindcss/jit@0.1.8":
+  version "0.1.8"
+  resolved "https://registry.npmjs.org/@tailwindcss/jit/-/jit-0.1.8.tgz#0fb2a1319918d5fabdc0349ef71d7d3811da60cb"
+  integrity sha512-YNzq0mUimcJldY0u2B475u7fnyOWQkWbQvHcEftkf7VqQIwQrBvSRM7Cycg0MAU42IMgT14MGOmmV8ObUXzNMQ==
   dependencies:
     chokidar "^3.5.1"
     dlv "^1.1.3"
@@ -15052,10 +15051,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@4.0.2:
-  version "4.0.2"
-  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-4.0.2.tgz#1d62c8c2138fdc97f1c93d0313d93609760fd681"
-  integrity sha512-zA/WTEyrJkymmP78/vXf2wCXxofe93CmvaNVG4cA53HNMISW1vbt9lZ9OBiE7KyJR1CWc8agokjr8jmer8JNgQ==
+framer-motion@4.0.3:
+  version "4.0.3"
+  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-4.0.3.tgz#e20a32c6825dc08c98e130640cb6441ec2920b7d"
+  integrity sha512-5p9VPpgPctMJuNW8CqHSk9k/v3xAUpReWzlgKl1a1fsvqzcFgNGENZPfBwHuukanvMmh3trzO5jZNX0Kc8/pAA==
   dependencies:
     framesync "5.2.3"
     hey-listen "^1.0.8"
@@ -15742,15 +15741,7 @@ got@^9.6.0:
     to-readable-stream "^1.0.0"
     url-parse-lax "^3.0.0"
 
-gqless@2.0.3:
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/gqless/-/gqless-2.0.3.tgz#28aa8b8316a6e9fe735d080059a07f2aca46cb8b"
-  integrity sha512-0ZuRIbYEvY45CGaS5Apl9YztE0Ieeil97piaPtpTtlRJUPix4oBAKsYQz/TgbNSTtLMcNbnKSYcC5nuoQeHPUw==
-  dependencies:
-    lodash "^4.17.21"
-    lodash-es "^4.17.21"
-
-gqless@^2.0.3:
+gqless@2.0.4, gqless@^2.0.4:
   version "2.0.4"
   resolved "https://registry.npmjs.org/gqless/-/gqless-2.0.4.tgz#c9f5a26f64922be92ef128dc7f04a1c03e145ff5"
   integrity sha512-nqktvETjYdSFiPrfH/Rf7CpyBNj6H4FUfSmfJ6uaq8WT0LGqzSltIn6h35wJ2RNBzKyc2S5IP1/lIwXK5WRdiA==
@@ -16899,10 +16890,10 @@ invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
   dependencies:
     loose-envify "^1.0.0"
 
-ioredis@4.24.3:
-  version "4.24.3"
-  resolved "https://registry.npmjs.org/ioredis/-/ioredis-4.24.3.tgz#ba14c3621f751727f1b6c41c55ab26a7794018d5"
-  integrity sha512-ANE2YT2fCa+KE0EUmx8VMZuJ+LaTNVXhjyAUDAxom9nqJGAXzCbNBMcujrUSJbz6xc2ZMaMxGB5y10cfYo/0IA==
+ioredis@4.24.4:
+  version "4.24.4"
+  resolved "https://registry.npmjs.org/ioredis/-/ioredis-4.24.4.tgz#2f3cc03c5bfc75e13141459418bb1bd64ba1c7cf"
+  integrity sha512-v28xxBENyTmReC6lVTL7EkAPjVF8cuGtDEjGDi1Z2n7htsC2WdiDceZrCIPeuPiLa6kDFWHb1Y8O0upZROsMgA==
   dependencies:
     cluster-key-slot "^1.1.0"
     debug "^4.3.1"
@@ -25362,11 +25353,6 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   integrity sha1-6Eg5bwV9Ij8kOGkkYY4laUFh7Ec=
   dependencies:
     aproba "^1.1.1"
-
-runtypes@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.npmjs.org/runtypes/-/runtypes-5.1.0.tgz#a1f2501b5ca8fda47d51ea15b6ccca45e924a8c3"
-  integrity sha512-OMHkz6dxysXj4E8Fj/HCGjtdJUhapQUN7puvqzuzvjaX28pd52PZmEMqQlkIzCfKdhXdM0ghx8PpvELprEnOLQ==
 
 rxjs-for-await@0.0.2:
   version "0.0.2"

@@ -50,7 +50,7 @@
     "graphql-upload": "^11.0.0",
     "gray-matter": "^4.0.2",
     "icomoon-react": "^2.0.19",
-    "ioredis": "4.24.3",
+    "ioredis": "4.24.4",
     "mdx-utils": "^0.2.0",
     "merge-anything": "^4.0.1",
     "next": "10.0.9",

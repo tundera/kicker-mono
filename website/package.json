@@ -15,7 +15,7 @@
     "@kicker/components": "^0.1.0",
     "@preconstruct/next": "^2.0.0",
     "dokz": "latest",
-    "framer-motion": "4.0.2",
+    "framer-motion": "4.0.3",
     "next": "latest",
     "next-compose-plugins": "^2.2.1",
     "react": "^17.0.1",
