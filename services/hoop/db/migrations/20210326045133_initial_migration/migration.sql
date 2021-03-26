@@ -59,8 +59,6 @@ CREATE TABLE "Team" (
     "conference" TEXT NOT NULL,
     "division" TEXT NOT NULL,
     "established" TEXT NOT NULL,
-    "primaryColor" TEXT NOT NULL,
-    "secondaryColor" TEXT NOT NULL,
 
     PRIMARY KEY ("id")
 );

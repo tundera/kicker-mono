@@ -126,6 +126,7 @@
     "sync-dotenv": "2.6.2",
     "ts-jest": "^26.5.4",
     "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.6",
     "tslib": "^2.1.0",
     "typescript": "^4.2.3",
     "wsrun": "5.2.4"

@@ -70,8 +70,6 @@ export const seedTeamData = async (team: Team) => {
       city: team.city,
       established: team.established,
       abbreviation: team.abbreviation,
-      primaryColor: team.primaryColor,
-      secondaryColor: team.secondaryColor,
       logo: team.logo,
       logoSlug: team.logoSlug,
       wins: team.wins,

@@ -2,6 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Seed database",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["--loader", "ts-node/esm"],
+      "args": ["./db/scripts/update.ts"],
+      "cwd": "${workspaceFolder}/services/hoop",
+      "internalConsoleOptions": "openOnSessionStart",
+      "sourceMaps": true,
+      "skipFiles": ["<node_internals>/**", "node_modules/**"],
+      "env": {
+        "TS_NODE_PROJECT": "${workspaceFolder}/services/hoop/tsconfig.json"
+      }
+    },
+    {
       "type": "node",
       "request": "attach",
       "name": "Launch Node (kicker)",

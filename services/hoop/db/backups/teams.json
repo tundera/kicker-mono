@@ -1,8 +1,8 @@
 [
   {
     "id": 1610612738,
-    "createdAt": "2021-03-26 04:08:51.212",
-    "updatedAt": "2021-03-26 04:09:17.499",
+    "createdAt": "2021-03-26 04:41:01.224",
+    "updatedAt": "2021-03-26 04:41:01.224",
     "handle": 1610612738,
     "name": "Celtics",
     "slug": "celtics",
@@ -15,14 +15,12 @@
     "winPercentage": 0.477,
     "conference": "East",
     "division": "Atlantic",
-    "established": 1946,
-    "primaryColor": "#007A33",
-    "secondaryColor": "#BA9653"
+    "established": 1946
   },
   {
     "id": 1610612751,
-    "createdAt": "2021-03-26 04:08:51.201",
-    "updatedAt": "2021-03-26 04:09:18.883",
+    "createdAt": "2021-03-26 04:41:01.325",
+    "updatedAt": "2021-03-26 04:41:01.325",
     "handle": 1610612751,
     "name": "Nets",
     "slug": "nets",
@@ -35,14 +33,12 @@
     "winPercentage": 0.667,
     "conference": "East",
     "division": "Atlantic",
-    "established": 1976,
-    "primaryColor": "#000000",
-    "secondaryColor": "#FFFFFF"
+    "established": 1976
   },
   {
     "id": 1610612741,
-    "createdAt": "2021-03-26 04:08:51.195",
-    "updatedAt": "2021-03-26 04:09:21.642",
+    "createdAt": "2021-03-26 04:41:01.329",
+    "updatedAt": "2021-03-26 04:41:01.329",
     "handle": 1610612741,
     "name": "Bulls",
     "slug": "bulls",
@@ -55,14 +51,12 @@
     "winPercentage": 0.442,
     "conference": "East",
     "division": "Central",
-    "established": 1966,
-    "primaryColor": "#CE1141",
-    "secondaryColor": "#000000"
+    "established": 1966
   },
   {
     "id": 1610612739,
-    "createdAt": "2021-03-26 04:08:51.209",
-    "updatedAt": "2021-03-26 04:09:22.914",
+    "createdAt": "2021-03-26 04:41:01.336",
+    "updatedAt": "2021-03-26 04:41:01.336",
     "handle": 1610612739,
     "name": "Cavaliers",
     "slug": "cavaliers",
@@ -75,14 +69,12 @@
     "winPercentage": 0.386,
     "conference": "East",
     "division": "Central",
-    "established": 1970,
-    "primaryColor": "#860038",
-    "secondaryColor": "#041E42"
+    "established": 1970
   },
   {
     "id": 1610612742,
-    "createdAt": "2021-03-26 04:08:51.169",
-    "updatedAt": "2021-03-26 04:09:24.321",
+    "createdAt": "2021-03-26 04:41:01.341",
+    "updatedAt": "2021-03-26 04:41:01.341",
     "handle": 1610612742,
     "name": "Mavericks",
     "slug": "mavericks",
@@ -95,14 +87,12 @@
     "winPercentage": 0.548,
     "conference": "West",
     "division": "Southwest",
-    "established": 1980,
-    "primaryColor": "#00538C",
-    "secondaryColor": "#B8C4CA"
+    "established": 1980
   },
   {
     "id": 1610612743,
-    "createdAt": "2021-03-26 04:08:51.18",
-    "updatedAt": "2021-03-26 04:09:25.613",
+    "createdAt": "2021-03-26 04:41:01.345",
+    "updatedAt": "2021-03-26 04:41:01.345",
     "handle": 1610612743,
     "name": "Nuggets",
     "slug": "nuggets",
@@ -115,14 +105,12 @@
     "winPercentage": 0.591,
     "conference": "West",
     "division": "Northwest",
-    "established": 1976,
-    "primaryColor": "#0E2240",
-    "secondaryColor": "#FEC524"
+    "established": 1976
   },
   {
     "id": 1610612765,
-    "createdAt": "2021-03-26 04:08:51.189",
-    "updatedAt": "2021-03-26 04:09:26.901",
+    "createdAt": "2021-03-26 04:41:01.348",
+    "updatedAt": "2021-03-26 04:41:01.348",
     "handle": 1610612765,
     "name": "Pistons",
     "slug": "pistons",
@@ -135,14 +123,12 @@
     "winPercentage": 0.27899999999999997,
     "conference": "East",
     "division": "Central",
-    "established": 1948,
-    "primaryColor": "#C8102E",
-    "secondaryColor": "#1D42BA"
+    "established": 1948
   },
   {
     "id": 1610612744,
-    "createdAt": "2021-03-26 04:08:51.191",
-    "updatedAt": "2021-03-26 04:09:28.253",
+    "createdAt": "2021-03-26 04:41:01.352",
+    "updatedAt": "2021-03-26 04:41:01.352",
     "handle": 1610612744,
     "name": "Warriors",
     "slug": "warriors",
@@ -155,14 +141,12 @@
     "winPercentage": 0.5,
     "conference": "West",
     "division": "Pacific",
-    "established": 1946,
-    "primaryColor": "#1D428A",
-    "secondaryColor": "#FFC72C"
+    "established": 1946
   },
   {
     "id": 1610612745,
-    "createdAt": "2021-03-26 04:08:51.228",
-    "updatedAt": "2021-03-26 04:09:29.993",
+    "createdAt": "2021-03-26 04:41:01.356",
+    "updatedAt": "2021-03-26 04:41:01.356",
     "handle": 1610612745,
     "name": "Rockets",
     "slug": "rockets",
@@ -175,14 +159,12 @@
     "winPercentage": 0.27899999999999997,
     "conference": "West",
     "division": "Southwest",
-    "established": 1967,
-    "primaryColor": "#CE1141",
-    "secondaryColor": "#000000"
+    "established": 1967
   },
   {
     "id": 1610612754,
-    "createdAt": "2021-03-26 04:08:51.183",
-    "updatedAt": "2021-03-26 04:09:31.876",
+    "createdAt": "2021-03-26 04:41:01.36",
+    "updatedAt": "2021-03-26 04:41:01.36",
     "handle": 1610612754,
     "name": "Pacers",
     "slug": "pacers",
@@ -195,14 +177,12 @@
     "winPercentage": 0.46499999999999997,
     "conference": "East",
     "division": "Central",
-    "established": 1976,
-    "primaryColor": "#002D62",
-    "secondaryColor": "#FDBB30"
+    "established": 1976
   },
   {
     "id": 1610612746,
-    "createdAt": "2021-03-26 04:08:51.174",
-    "updatedAt": "2021-03-26 04:09:33.473",
+    "createdAt": "2021-03-26 04:41:01.363",
+    "updatedAt": "2021-03-26 04:41:01.363",
     "handle": 1610612746,
     "name": "Clippers",
     "slug": "clippers",
@@ -215,14 +195,12 @@
     "winPercentage": 0.652,
     "conference": "West",
     "division": "Pacific",
-    "established": 1970,
-    "primaryColor": "#C8102E",
-    "secondaryColor": "#1D428A"
+    "established": 1970
   },
   {
     "id": 1610612747,
-    "createdAt": "2021-03-26 04:08:51.221",
-    "updatedAt": "2021-03-26 04:09:36.202",
+    "createdAt": "2021-03-26 04:41:01.366",
+    "updatedAt": "2021-03-26 04:41:01.366",
     "handle": 1610612747,
     "name": "Lakers",
     "slug": "lakers",
@@ -235,14 +213,12 @@
     "winPercentage": 0.636,
     "conference": "West",
     "division": "Pacific",
-    "established": 1948,
-    "primaryColor": "#552583",
-    "secondaryColor": "#FDB927"
+    "established": 1948
   },
   {
     "id": 1610612763,
-    "createdAt": "2021-03-26 04:08:51.165",
-    "updatedAt": "2021-03-26 04:09:37.85",
+    "createdAt": "2021-03-26 04:41:01.369",
+    "updatedAt": "2021-03-26 04:41:01.369",
     "handle": 1610612763,
     "name": "Grizzlies",
     "slug": "grizzlies",
@@ -255,14 +231,12 @@
     "winPercentage": 0.512,
     "conference": "West",
     "division": "Southwest",
-    "established": 1995,
-    "primaryColor": "#5D76A9",
-    "secondaryColor": "#12173F"
+    "established": 1995
   },
   {
     "id": 1610612748,
-    "createdAt": "2021-03-26 04:08:51.16",
-    "updatedAt": "2021-03-26 04:09:39.582",
+    "createdAt": "2021-03-26 04:41:01.372",
+    "updatedAt": "2021-03-26 04:41:01.372",
     "handle": 1610612748,
     "name": "Heat",
     "slug": "heat",
@@ -275,14 +249,12 @@
     "winPercentage": 0.489,
     "conference": "East",
     "division": "Southeast",
-    "established": 1988,
-    "primaryColor": "#98002E",
-    "secondaryColor": "#000000"
+    "established": 1988
   },
   {
     "id": 1610612749,
-    "createdAt": "2021-03-26 04:08:51.218",
-    "updatedAt": "2021-03-26 04:09:40.941",
+    "createdAt": "2021-03-26 04:41:01.377",
+    "updatedAt": "2021-03-26 04:41:01.377",
     "handle": 1610612749,
     "name": "Bucks",
     "slug": "bucks",
@@ -295,14 +267,12 @@
     "winPercentage": 0.6739999999999999,
     "conference": "East",
     "division": "Central",
-    "established": 1968,
-    "primaryColor": "#00471B",
-    "secondaryColor": "#EEE1C6"
+    "established": 1968
   },
   {
     "id": 1610612750,
-    "createdAt": "2021-03-26 04:08:51.205",
-    "updatedAt": "2021-03-26 04:09:42.542",
+    "createdAt": "2021-03-26 04:41:01.381",
+    "updatedAt": "2021-03-26 04:41:01.381",
     "handle": 1610612750,
     "name": "Timberwolves",
     "slug": "timberwolves",
@@ -315,14 +285,12 @@
     "winPercentage": 0.227,
     "conference": "West",
     "division": "Northwest",
-    "established": 1989,
-    "primaryColor": "#0C2340",
-    "secondaryColor": "#236192"
+    "established": 1989
   },
   {
     "id": 1610612740,
-    "createdAt": "2021-03-26 04:08:51.177",
-    "updatedAt": "2021-03-26 04:09:44.481",
+    "createdAt": "2021-03-26 04:41:01.384",
+    "updatedAt": "2021-03-26 04:41:01.384",
     "handle": 1610612740,
     "name": "Pelicans",
     "slug": "pelicans",
@@ -335,14 +303,12 @@
     "winPercentage": 0.442,
     "conference": "West",
     "division": "Southwest",
-    "established": 2002,
-    "primaryColor": "#0C2340",
-    "secondaryColor": "#C8102E"
+    "established": 2002
   },
   {
     "id": 1610612752,
-    "createdAt": "2021-03-26 04:08:51.172",
-    "updatedAt": "2021-03-26 04:09:46.18",
+    "createdAt": "2021-03-26 04:41:01.388",
+    "updatedAt": "2021-03-26 04:41:01.388",
     "handle": 1610612752,
     "name": "Knicks",
     "slug": "knicks",
@@ -355,14 +321,12 @@
     "winPercentage": 0.511,
     "conference": "East",
     "division": "Atlantic",
-    "established": 1946,
-    "primaryColor": "#006BB6",
-    "secondaryColor": "#F58426"
+    "established": 1946
   },
   {
     "id": 1610612760,
-    "createdAt": "2021-03-26 04:08:51.167",
-    "updatedAt": "2021-03-26 04:09:47.861",
+    "createdAt": "2021-03-26 04:41:01.392",
+    "updatedAt": "2021-03-26 04:41:01.392",
     "handle": 1610612760,
     "name": "Thunder",
     "slug": "thunder",
@@ -375,14 +339,12 @@
     "winPercentage": 0.432,
     "conference": "West",
     "division": "Northwest",
-    "established": 1967,
-    "primaryColor": "#007AC1",
-    "secondaryColor": "#EF3B24"
+    "established": 1967
   },
   {
     "id": 1610612753,
-    "createdAt": "2021-03-26 04:08:51.225",
-    "updatedAt": "2021-03-26 04:09:49.702",
+    "createdAt": "2021-03-26 04:41:01.395",
+    "updatedAt": "2021-03-26 04:41:01.395",
     "handle": 1610612753,
     "name": "Magic",
     "slug": "magic",
@@ -395,14 +357,12 @@
     "winPercentage": 0.34099999999999997,
     "conference": "East",
     "division": "Southeast",
-    "established": 1989,
-    "primaryColor": "#0077C0",
-    "secondaryColor": "#C4CED4"
+    "established": 1989
   },
   {
     "id": 1610612755,
-    "createdAt": "2021-03-26 04:08:51.234",
-    "updatedAt": "2021-03-26 04:09:50.931",
+    "createdAt": "2021-03-26 04:41:01.399",
+    "updatedAt": "2021-03-26 04:41:01.399",
     "handle": 1610612755,
     "name": "76ers",
     "slug": "sixers",
@@ -415,14 +375,12 @@
     "winPercentage": 0.705,
     "conference": "East",
     "division": "Atlantic",
-    "established": 1949,
-    "primaryColor": "#006BB6",
-    "secondaryColor": "#D50032"
+    "established": 1949
   },
   {
     "id": 1610612756,
-    "createdAt": "2021-03-26 04:08:51.155",
-    "updatedAt": "2021-03-26 04:09:52.718",
+    "createdAt": "2021-03-26 04:41:01.402",
+    "updatedAt": "2021-03-26 04:41:01.402",
     "handle": 1610612756,
     "name": "Suns",
     "slug": "suns",
@@ -435,14 +393,12 @@
     "winPercentage": 0.6739999999999999,
     "conference": "West",
     "division": "Pacific",
-    "established": 1968,
-    "primaryColor": "#1D1160",
-    "secondaryColor": "#E56020"
+    "established": 1968
   },
   {
     "id": 1610612757,
-    "createdAt": "2021-03-26 04:08:51.215",
-    "updatedAt": "2021-03-26 04:09:54.289",
+    "createdAt": "2021-03-26 04:41:01.405",
+    "updatedAt": "2021-03-26 04:41:01.405",
     "handle": 1610612757,
     "name": "Trail Blazers",
     "slug": "blazers",
@@ -455,14 +411,12 @@
     "winPercentage": 0.591,
     "conference": "West",
     "division": "Northwest",
-    "established": 1970,
-    "primaryColor": "#E03A3E",
-    "secondaryColor": "#000000"
+    "established": 1970
   },
   {
     "id": 1610612758,
-    "createdAt": "2021-03-26 04:08:51.162",
-    "updatedAt": "2021-03-26 04:09:55.966",
+    "createdAt": "2021-03-26 04:41:01.408",
+    "updatedAt": "2021-03-26 04:41:01.408",
     "handle": 1610612758,
     "name": "Kings",
     "slug": "kings",
@@ -475,14 +429,12 @@
     "winPercentage": 0.432,
     "conference": "West",
     "division": "Pacific",
-    "established": 1948,
-    "primaryColor": "#5A2D81",
-    "secondaryColor": "#63727A"
+    "established": 1948
   },
   {
     "id": 1610612759,
-    "createdAt": "2021-03-26 04:08:51.157",
-    "updatedAt": "2021-03-26 04:09:57.845",
+    "createdAt": "2021-03-26 04:41:01.411",
+    "updatedAt": "2021-03-26 04:41:01.411",
     "handle": 1610612759,
     "name": "Spurs",
     "slug": "spurs",
@@ -495,14 +447,12 @@
     "winPercentage": 0.524,
     "conference": "West",
     "division": "Southwest",
-    "established": 1976,
-    "primaryColor": "#C4CED4",
-    "secondaryColor": "#000000"
+    "established": 1976
   },
   {
     "id": 1610612761,
-    "createdAt": "2021-03-26 04:08:51.231",
-    "updatedAt": "2021-03-26 04:09:59.477",
+    "createdAt": "2021-03-26 04:41:01.414",
+    "updatedAt": "2021-03-26 04:41:01.414",
     "handle": 1610612761,
     "name": "Raptors",
     "slug": "raptors",
@@ -515,14 +465,12 @@
     "winPercentage": 0.409,
     "conference": "East",
     "division": "Atlantic",
-    "established": 1995,
-    "primaryColor": "#CE1141",
-    "secondaryColor": "#000000"
+    "established": 1995
   },
   {
     "id": 1610612762,
-    "createdAt": "2021-03-26 04:08:51.151",
-    "updatedAt": "2021-03-26 04:10:01.244",
+    "createdAt": "2021-03-26 04:41:01.417",
+    "updatedAt": "2021-03-26 04:41:01.417",
     "handle": 1610612762,
     "name": "Jazz",
     "slug": "jazz",
@@ -535,14 +483,12 @@
     "winPercentage": 0.744,
     "conference": "West",
     "division": "Northwest",
-    "established": 1974,
-    "primaryColor": "#002B5C",
-    "secondaryColor": "#F9A01B"
+    "established": 1974
   },
   {
     "id": 1610612764,
-    "createdAt": "2021-03-26 04:08:51.066",
-    "updatedAt": "2021-03-26 04:10:03.269",
+    "createdAt": "2021-03-26 04:41:01.42",
+    "updatedAt": "2021-03-26 04:41:01.42",
     "handle": 1610612764,
     "name": "Wizards",
     "slug": "wizards",
@@ -555,14 +501,12 @@
     "winPercentage": 0.349,
     "conference": "East",
     "division": "Southeast",
-    "established": 1961,
-    "primaryColor": "# 002B5C",
-    "secondaryColor": "#E31837"
+    "established": 1961
   },
   {
     "id": 1610612737,
-    "createdAt": "2021-03-26 04:08:51.198",
-    "updatedAt": "2021-03-26 04:09:15.118",
+    "createdAt": "2021-03-26 04:41:01.423",
+    "updatedAt": "2021-03-26 04:41:01.423",
     "handle": 1610612737,
     "name": "Hawks",
     "slug": "hawks",
@@ -575,14 +519,12 @@
     "winPercentage": 0.5,
     "conference": "East",
     "division": "Southeast",
-    "established": 1949,
-    "primaryColor": "#E03A3E",
-    "secondaryColor": "#C1D32F"
+    "established": 1949
   },
   {
     "id": 1610612766,
-    "createdAt": "2021-03-26 04:08:51.186",
-    "updatedAt": "2021-03-26 04:09:20.347",
+    "createdAt": "2021-03-26 04:41:01.426",
+    "updatedAt": "2021-03-26 04:41:01.426",
     "handle": 1610612766,
     "name": "Hornets",
     "slug": "hornets",
@@ -595,8 +537,6 @@
     "winPercentage": 0.512,
     "conference": "East",
     "division": "Southeast",
-    "established": 1988,
-    "primaryColor": "#1D1160",
-    "secondaryColor": "#00788C\n"
+    "established": 1988
   }
 ]

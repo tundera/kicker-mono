@@ -9,29 +9,27 @@
 
 List of fields available in the `Team` type.
 
-| Field          | Scalar Type                     | Unique  | Required (create) |
-| -------------- | ------------------------------- | ------- | ----------------- |
-| id             | Int                             | true    | true              |
-| createdAt      | AWSDateTime                     | _false_ | true              |
-| updatedAt      | AWSDateTime                     | _false_ | true              |
-| handle         | String                          | true    | true              |
-| name           | String                          | true    | true              |
-| slug           | String                          | true    | true              |
-| city           | String                          | _false_ | true              |
-| abbreviation   | String                          | true    | true              |
-| logo           | String                          | true    | true              |
-| logoSlug       | String                          | true    | true              |
-| wins           | Int                             | _false_ | _false_           |
-| losses         | Int                             | _false_ | _false_           |
-| winPercentage  | Float                           | _false_ | _false_           |
-| conference     | String                          | _false_ | true              |
-| division       | String                          | _false_ | true              |
-| established    | String                          | _false_ | true              |
-| primaryColor   | String                          | _false_ | true              |
-| secondaryColor | String                          | _false_ | true              |
-| coaches        | [[Coach!]](./Coach.md)          | _false_ | _false_           |
-| colorScheme    | [ColorScheme](./ColorScheme.md) | _false_ | _false_           |
-| players        | [[Player!]](./Player.md)        | _false_ | _false_           |
+| Field         | Scalar Type                     | Unique  | Required (create) |
+| ------------- | ------------------------------- | ------- | ----------------- |
+| id            | Int                             | true    | true              |
+| createdAt     | AWSDateTime                     | _false_ | true              |
+| updatedAt     | AWSDateTime                     | _false_ | true              |
+| handle        | String                          | true    | true              |
+| name          | String                          | true    | true              |
+| slug          | String                          | true    | true              |
+| city          | String                          | _false_ | true              |
+| abbreviation  | String                          | true    | true              |
+| logo          | String                          | true    | true              |
+| logoSlug      | String                          | true    | true              |
+| wins          | Int                             | _false_ | _false_           |
+| losses        | Int                             | _false_ | _false_           |
+| winPercentage | Float                           | _false_ | _false_           |
+| conference    | String                          | _false_ | true              |
+| division      | String                          | _false_ | true              |
+| established   | String                          | _false_ | true              |
+| coaches       | [[Coach!]](./Coach.md)          | _false_ | _false_           |
+| colorScheme   | [ColorScheme](./ColorScheme.md) | _false_ | _false_           |
+| players       | [[Player!]](./Player.md)        | _false_ | _false_           |
 
 ## Queries
 
@@ -69,8 +67,6 @@ query {
         conference
         division
         established
-        primaryColor
-        secondaryColor
 
         coaches # Relation to many
         colorScheme # Relation to many
@@ -107,8 +103,6 @@ query {
         conference
         division
         established
-        primaryColor
-        secondaryColor
 
         coaches # Relation to many
         colorScheme # Relation to many
@@ -138,8 +132,6 @@ query {
         conference
         division
         established
-        primaryColor
-        secondaryColor
 
         coaches # Relation to many
         colorScheme # Relation to many
@@ -314,26 +306,6 @@ established: String
     established_contains: String
     established_startsWith: String
     established_endsWith: String
-primaryColor: String
-    primaryColor_equals: String
-    primaryColor_not: String
-    primaryColor_lt: String
-    primaryColor_lte: String
-    primaryColor_gt: String
-    primaryColor_gte: String
-    primaryColor_contains: String
-    primaryColor_startsWith: String
-    primaryColor_endsWith: String
-secondaryColor: String
-    secondaryColor_equals: String
-    secondaryColor_not: String
-    secondaryColor_lt: String
-    secondaryColor_lte: String
-    secondaryColor_gt: String
-    secondaryColor_gte: String
-    secondaryColor_contains: String
-    secondaryColor_startsWith: String
-    secondaryColor_endsWith: String
 
 ```
 
@@ -361,8 +333,6 @@ query {
         conference
         division
         established
-        primaryColor
-        secondaryColor
 
         coaches # Relation to many
         colorScheme # Relation to many
@@ -392,8 +362,6 @@ query {
         conference
         division
         established
-        primaryColor
-        secondaryColor
 
         coaches # Relation to many
         colorScheme # Relation to many
@@ -439,8 +407,6 @@ mutation {
             conference: "Foo"
             division: "Foo"
             established: "Foo"
-            primaryColor: "Foo"
-            secondaryColor: "Foo"
         }
     ) {
         id
@@ -459,8 +425,6 @@ mutation {
         conference
         division
         established
-        primaryColor
-        secondaryColor
     }
 }
 ```
@@ -537,8 +501,6 @@ mutation {
             conference: "Foo"
             division: "Foo"
             established: "Foo"
-            primaryColor: "Foo"
-            secondaryColor: "Foo"
         }
     ) {
         id
@@ -557,8 +519,6 @@ mutation {
         conference
         division
         established
-        primaryColor
-        secondaryColor
     }
 }
 ```
@@ -656,8 +616,6 @@ mutation {
         conference
         division
         established
-        primaryColor
-        secondaryColor
     }
 }
 ```
@@ -705,8 +663,6 @@ subscription {
         conference
         division
         established
-        primaryColor
-        secondaryColor
     }
 }
 ```
@@ -732,8 +688,6 @@ subscription {
         conference
         division
         established
-        primaryColor
-        secondaryColor
     }
 }
 ```
@@ -759,8 +713,6 @@ subscription {
         conference
         division
         established
-        primaryColor
-        secondaryColor
     }
 }
 ```

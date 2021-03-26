@@ -57,8 +57,6 @@ type Team {
     conference: String!
     division: String!
     established: String!
-    primaryColor: String!
-    secondaryColor: String!
     coaches: [Coach!]
     colorScheme: ColorScheme
     players: [Player!]
@@ -607,8 +605,6 @@ input TeamCreateInput {
     conference: String!
     division: String!
     established: String!
-    primaryColor: String!
-    secondaryColor: String!
     coaches: TeamCoachesCreateRelations
     colorScheme: TeamColorSchemeCreateRelations
     players: TeamPlayersCreateRelations
@@ -628,8 +624,6 @@ input TeamUpdateInput {
     conference: String
     division: String
     established: String
-    primaryColor: String
-    secondaryColor: String
     coaches: TeamCoachesUpdateRelations
     colorScheme: TeamColorSchemeUpdateRelations
     players: TeamPlayersUpdateRelations
@@ -799,26 +793,6 @@ input TeamWhereInput {
     established_contains: String
     established_startsWith: String
     established_endsWith: String
-    primaryColor: String
-    primaryColor_equals: String
-    primaryColor_not: String
-    primaryColor_lt: String
-    primaryColor_lte: String
-    primaryColor_gt: String
-    primaryColor_gte: String
-    primaryColor_contains: String
-    primaryColor_startsWith: String
-    primaryColor_endsWith: String
-    secondaryColor: String
-    secondaryColor_equals: String
-    secondaryColor_not: String
-    secondaryColor_lt: String
-    secondaryColor_lte: String
-    secondaryColor_gt: String
-    secondaryColor_gte: String
-    secondaryColor_contains: String
-    secondaryColor_startsWith: String
-    secondaryColor_endsWith: String
     coaches: CoachWhereInput
     colorScheme: ColorSchemeWhereInput
     players: PlayerWhereInput
@@ -851,8 +825,6 @@ input TeamOrderByInput {
     conference: OrderByArg
     division: OrderByArg
     established: OrderByArg
-    primaryColor: OrderByArg
-    secondaryColor: OrderByArg
 }
 
 input TeamUpdateUniqueInput {
