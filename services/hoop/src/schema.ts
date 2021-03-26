@@ -27,5 +27,5 @@ export const schema = makeSchema({
       },
     ],
   },
-  prettierConfig: require.resolve('../prettier.config'),
+  prettierConfig: require.resolve('../../../prettier.config'),
 })

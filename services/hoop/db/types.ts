@@ -95,8 +95,6 @@ export interface BackupTeamData {
   conference: string
   division: string
   established: number
-  primaryColor: string
-  secondaryColor: string
 }
 
 export interface BackupPlayerData {
@@ -131,4 +129,9 @@ export interface BackupColorSchemeData {
   primary: string
   secondary: string
   teamId: number
+}
+
+export interface UpdatedTeamData extends TeamInfoCommon {
+  players: PlayerData[]
+  coaches: CoachData[]
 }

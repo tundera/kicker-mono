@@ -3,18 +3,23 @@
 import teams from 'nba/data/teams.json'
 
 import db from '../index'
-import { updateTeamData } from '../lib/teams'
+import { getUpdatedTeamData, updateTeamData } from '../lib/teams'
 
 export async function main() {
   console.log('Start updating ...')
 
-  for (const team of teams) {
-    await updateTeamData(team.teamId)
-    console.log('updated team:', team.teamId)
+  const updatedTeams = []
 
-    setTimeout(() => {
-      console.log('team id:', team.teamId)
-    }, 10000)
+  for (const team of teams) {
+    const data = await getUpdatedTeamData(team.teamId)
+    updatedTeams.push(data)
+
+    console.log('updated team', team.teamId)
+  }
+
+  for (const team of updatedTeams) {
+    await updateTeamData(team)
+    console.log(`Updated team: ${team.teamId} (${team.teamName})`)
   }
 
   console.log('Updates finished.')

@@ -1,7 +1,17 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import nba from 'nba'
 
-import type { BackupTeamData, TeamData, TeamRoster, Team } from '../types'
+import type {
+  BackupTeamData,
+  TeamData,
+  UpdatedTeamData,
+  TeamRoster,
+  Team,
+  TeamInfoCommon,
+  PlayerData,
+  CoachData,
+} from '../types'
 
 import db from '../index'
 import { upsertCoachData } from './coaches'
@@ -15,20 +25,45 @@ function getTeamRoster(teamId: number): Promise<TeamRoster> {
   return nba.stats.commonTeamRoster({ TeamID: teamId })
 }
 
-export const transformTeamData = (team: BackupTeamData) => {
-  return {
-    ...team,
-    createdAt: new Date(team.createdAt),
-    updatedAt: new Date(),
-    handle: team.handle.toString(),
-    established: team.established?.toString(),
-  }
-}
+// export const getUpdatedTeamData = async (teamId: number) => {
+//   const { teamInfoCommon } = await getTeamInfo(teamId)
+//   const [team] = teamInfoCommon
 
-export const updateTeamData = async (teamId: number) => {
+//   const roster = await getTeamRoster(teamId)
+//   const { commonTeamRoster: players, coaches } = roster
+
+//   return {
+//     ...team,
+//     players,
+//     coaches,
+//   }
+// }
+
+export const getUpdatedTeamData = async (teamId: number) => {
   const { teamInfoCommon } = await getTeamInfo(teamId)
   const [team] = teamInfoCommon
 
+  const { commonTeamRoster: players, coaches } = await getTeamRoster(teamId)
+
+  return {
+    ...team,
+    players,
+    coaches,
+  }
+}
+
+export const transformTeamData = (data: BackupTeamData) => {
+  return {
+    ...data,
+    createdAt: new Date(data.createdAt),
+    updatedAt: new Date(),
+    handle: data.handle.toString(),
+    established: data.established?.toString(),
+  }
+}
+
+export const updateTeamData = async (data: UpdatedTeamData) => {
+  const { players, coaches, ...team } = data
   await db.team.update({
     where: { handle: team.teamId.toString() },
     data: {
@@ -45,9 +80,6 @@ export const updateTeamData = async (teamId: number) => {
       division: team.teamDivision,
     },
   })
-
-  const roster = await getTeamRoster(teamId)
-  const { commonTeamRoster: players, coaches } = roster
 
   for (const player of players) {
     await upsertPlayerData(player)

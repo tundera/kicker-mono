@@ -38,7 +38,7 @@ type ColorScheme {
   primary: String!
   secondary: String!
   team: Team
-  teamId: Int!
+  teamId: Int
   updatedAt: DateTime!
 }
 
