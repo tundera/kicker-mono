@@ -2,10 +2,10 @@
 
 import db from '../index'
 
-import rawTeams from '../backups/teams.json'
-import rawPlayers from '../backups/players.json'
-import rawCoaches from '../backups/coaches.json'
-import rawSchemes from '../backups/colors.json'
+import rawTeams from '../backups/documents/teams.json'
+import rawPlayers from '../backups/documents/players.json'
+import rawCoaches from '../backups/documents/coaches.json'
+import rawSchemes from '../backups/documents/colors.json'
 
 import { seedTeamData, transformTeamData } from '../lib/teams'
 import { seedPlayerData, transformPlayerData } from '../lib/players'

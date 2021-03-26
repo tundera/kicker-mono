@@ -9,10 +9,10 @@ type Coach {
     updatedAt: AWSDateTime!
     handle: String!
     name: String!
-    teamId: Int
     type: String
     isAssistant: String
     team: Team
+    teamId: Int
 }
 
 type Player {
@@ -22,12 +22,12 @@ type Player {
     handle: String!
     name: String!
     slug: String!
-    teamId: Int
     height: String!
     weight: String!
     number: String
     position: String
     team: Team
+    teamId: Int
 }
 
 type ColorScheme {
@@ -136,16 +136,6 @@ input CoachWhereInput {
     name_contains: String
     name_startsWith: String
     name_endsWith: String
-    teamId: Int
-    teamId_equals: Int
-    teamId_not: Int
-    teamId_lt: Int
-    teamId_lte: Int
-    teamId_gt: Int
-    teamId_gte: Int
-    teamId_contains: Int
-    teamId_startsWith: Int
-    teamId_endsWith: Int
     type: String
     type_equals: String
     type_not: String
@@ -167,6 +157,16 @@ input CoachWhereInput {
     isAssistant_startsWith: String
     isAssistant_endsWith: String
     team: TeamWhereInput
+    teamId: Int
+    teamId_equals: Int
+    teamId_not: Int
+    teamId_lt: Int
+    teamId_lte: Int
+    teamId_gt: Int
+    teamId_gte: Int
+    teamId_contains: Int
+    teamId_startsWith: Int
+    teamId_endsWith: Int
 }
 
 input CoachWhereUniqueInput {
@@ -182,9 +182,9 @@ input CoachOrderByInput {
     updatedAt: OrderByArg
     handle: OrderByArg
     name: OrderByArg
-    teamId: OrderByArg
     type: OrderByArg
     isAssistant: OrderByArg
+    teamId: OrderByArg
 }
 
 input CoachUpdateUniqueInput {
@@ -323,16 +323,6 @@ input PlayerWhereInput {
     slug_contains: String
     slug_startsWith: String
     slug_endsWith: String
-    teamId: Int
-    teamId_equals: Int
-    teamId_not: Int
-    teamId_lt: Int
-    teamId_lte: Int
-    teamId_gt: Int
-    teamId_gte: Int
-    teamId_contains: Int
-    teamId_startsWith: Int
-    teamId_endsWith: Int
     height: String
     height_equals: String
     height_not: String
@@ -374,6 +364,16 @@ input PlayerWhereInput {
     position_startsWith: String
     position_endsWith: String
     team: TeamWhereInput
+    teamId: Int
+    teamId_equals: Int
+    teamId_not: Int
+    teamId_lt: Int
+    teamId_lte: Int
+    teamId_gt: Int
+    teamId_gte: Int
+    teamId_contains: Int
+    teamId_startsWith: Int
+    teamId_endsWith: Int
 }
 
 input PlayerWhereUniqueInput {
@@ -391,11 +391,11 @@ input PlayerOrderByInput {
     handle: OrderByArg
     name: OrderByArg
     slug: OrderByArg
-    teamId: OrderByArg
     height: OrderByArg
     weight: OrderByArg
     number: OrderByArg
     position: OrderByArg
+    teamId: OrderByArg
 }
 
 input PlayerUpdateUniqueInput {

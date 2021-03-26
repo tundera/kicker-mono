@@ -104,7 +104,6 @@ export interface BackupPlayerData {
   handle: number
   name: string
   slug: string
-  teamId: number
   height: string
   weight: number
   number: number | string
@@ -117,7 +116,6 @@ export interface BackupCoachData {
   updatedAt: string
   handle: number
   name: string
-  teamId: number
   type: string
   isAssistant: number
 }

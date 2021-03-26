@@ -24,10 +24,11 @@ model Coach {
   updatedAt   DateTime
   handle      String   @unique
   name        String   @unique
-  teamId      Int?
   type        String?
   isAssistant String?
   team        Team?    @relation(fields: [teamId], references: [id])
+  teamId      Int?
+
 }
 
 /// NBA player
@@ -38,12 +39,12 @@ model Player {
   handle    String   @unique
   name      String   @unique
   slug      String   @unique
-  teamId    Int?
   height    String
   weight    String
   number    String?
   position  String?
   team      Team?    @relation(fields: [teamId], references: [id])
+  teamId    Int?
 }
 
 /// Team color scheme

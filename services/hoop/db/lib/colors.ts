@@ -7,6 +7,7 @@ export const transformColorSchemeData = (scheme: BackupColorSchemeData) => {
     ...scheme,
     createdAt: new Date(scheme.createdAt),
     updatedAt: new Date(),
+    teamId: Number(scheme.teamId),
   }
 }
 
@@ -30,6 +31,15 @@ export const seedColorSchemes = async (scheme: ColorScheme) => {
           connect: {
             id: scheme.teamId,
           },
+        },
+      },
+    })
+  } else {
+    await db.colorScheme.update({
+      where: { id: scheme.id },
+      data: {
+        team: {
+          disconnect: true,
         },
       },
     })

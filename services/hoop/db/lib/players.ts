@@ -5,6 +5,7 @@ import db from '../index'
 export const transformPlayerData = (player: BackupPlayerData) => {
   return {
     ...player,
+    id: Number(player.id),
     createdAt: new Date(player.createdAt),
     updatedAt: new Date(),
     handle: player.handle.toString(),
@@ -16,7 +17,7 @@ export const transformPlayerData = (player: BackupPlayerData) => {
 
 export const upsertPlayerData = async (player: PlayerData) => {
   await db.player.upsert({
-    where: { handle: player.playerId.toString() },
+    where: { id: player.playerId },
     create: {
       id: player.playerId,
       createdAt: new Date(),
@@ -63,7 +64,7 @@ export const upsertPlayerData = async (player: PlayerData) => {
   }
 }
 
-export const seedPlayerData = async (player: Player) => {
+export const seedPlayerData = async (player: Omit<Player, 'teamId'>) => {
   // Create player in database
   await db.player.create({
     data: {
@@ -73,25 +74,10 @@ export const seedPlayerData = async (player: Player) => {
       handle: player.handle,
       name: player.name,
       slug: player.slug,
-      teamId: player.teamId,
       height: player.height,
       weight: player.weight,
       number: player.number,
       position: player.position,
     },
   })
-
-  // Connect player to respective team if necessary
-  if (player.teamId) {
-    await db.player.update({
-      where: { id: player.id },
-      data: {
-        team: {
-          connect: {
-            id: player.teamId,
-          },
-        },
-      },
-    })
-  }
 }

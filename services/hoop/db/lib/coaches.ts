@@ -15,7 +15,7 @@ export const transformCoachData = (coach: BackupCoachData) => {
 export const upsertCoachData = async (coach: CoachData) => {
   // Update or create coach if not present in database
   await db.coach.upsert({
-    where: { handle: coach.coachId.toString() },
+    where: { id: coach.coachId },
     create: {
       id: coach.coachId,
       createdAt: new Date(),
@@ -57,7 +57,7 @@ export const upsertCoachData = async (coach: CoachData) => {
   }
 }
 
-export const seedCoachData = async (coach: Coach) => {
+export const seedCoachData = async (coach: Omit<Coach, 'teamId'>) => {
   // Create coach in database
   await db.coach.create({
     data: {
@@ -68,21 +68,6 @@ export const seedCoachData = async (coach: Coach) => {
       name: coach.name,
       type: coach.type,
       isAssistant: coach.isAssistant,
-      teamId: coach.teamId,
     },
   })
-
-  // Connect coach to respective team if necessary
-  if (coach.teamId) {
-    await db.coach.update({
-      where: { id: coach.id },
-      data: {
-        team: {
-          connect: {
-            id: coach.teamId,
-          },
-        },
-      },
-    })
-  }
 }

@@ -17,12 +17,12 @@ List of fields available in the `Player` type.
 | handle    | String            | true    | true              |
 | name      | String            | true    | true              |
 | slug      | String            | true    | true              |
-| teamId    | Int               | true    | _false_           |
 | height    | String            | _false_ | true              |
 | weight    | String            | _false_ | true              |
 | number    | String            | _false_ | _false_           |
 | position  | String            | _false_ | _false_           |
 | team      | [Team](./Team.md) | _false_ | _false_           |
+| teamId    | Int               | true    | _false_           |
 
 ## Queries
 
@@ -50,12 +50,12 @@ query {
         handle
         name
         slug
-        teamId
         height
         weight
         number
         position
         team # Relation to one
+        teamId
     }
 }
 ```
@@ -78,12 +78,12 @@ query {
         handle
         name
         slug
-        teamId
         height
         weight
         number
         position
         team # Relation to one
+        teamId
     }
 }
 ```
@@ -99,12 +99,12 @@ query {
         handle
         name
         slug
-        teamId
         height
         weight
         number
         position
         team # Relation to one
+        teamId
     }
 }
 ```
@@ -175,16 +175,6 @@ slug: String
     slug_contains: String
     slug_startsWith: String
     slug_endsWith: String
-teamId: Int
-    teamId_equals: Int
-    teamId_not: Int
-    teamId_lt: Int
-    teamId_lte: Int
-    teamId_gt: Int
-    teamId_gte: Int
-    teamId_contains: Int
-    teamId_startsWith: Int
-    teamId_endsWith: Int
 height: String
     height_equals: String
     height_not: String
@@ -225,6 +215,16 @@ position: String
     position_contains: String
     position_startsWith: String
     position_endsWith: String
+teamId: Int
+    teamId_equals: Int
+    teamId_not: Int
+    teamId_lt: Int
+    teamId_lte: Int
+    teamId_gt: Int
+    teamId_gte: Int
+    teamId_contains: Int
+    teamId_startsWith: Int
+    teamId_endsWith: Int
 
 ```
 
@@ -242,12 +242,12 @@ query {
         handle
         name
         slug
-        teamId
         height
         weight
         number
         position
         team # Relation to one
+        teamId
     }
 }
 ```
@@ -263,12 +263,12 @@ query {
         handle
         name
         slug
-        teamId
         height
         weight
         number
         position
         team # Relation to one
+        teamId
     }
 }
 ```
@@ -300,11 +300,11 @@ mutation {
             handle: "Foo"
             name: "Foo"
             slug: "Foo"
-            teamId: 2
             height: "Foo"
             weight: "Foo"
             number: "Foo"
             position: "Foo"
+            teamId: 2
         }
     ) {
         id
@@ -313,11 +313,11 @@ mutation {
         handle
         name
         slug
-        teamId
         height
         weight
         number
         position
+        teamId
     }
 }
 ```
@@ -372,11 +372,11 @@ mutation {
             handle: "Foo"
             name: "Foo"
             slug: "Foo"
-            teamId: 2
             height: "Foo"
             weight: "Foo"
             number: "Foo"
             position: "Foo"
+            teamId: 2
         }
     ) {
         id
@@ -385,11 +385,11 @@ mutation {
         handle
         name
         slug
-        teamId
         height
         weight
         number
         position
+        teamId
     }
 }
 ```
@@ -448,11 +448,11 @@ mutation {
         handle
         name
         slug
-        teamId
         height
         weight
         number
         position
+        teamId
     }
 }
 ```
@@ -490,11 +490,11 @@ subscription {
         handle
         name
         slug
-        teamId
         height
         weight
         number
         position
+        teamId
     }
 }
 ```
@@ -510,11 +510,11 @@ subscription {
         handle
         name
         slug
-        teamId
         height
         weight
         number
         position
+        teamId
     }
 }
 ```
@@ -530,11 +530,11 @@ subscription {
         handle
         name
         slug
-        teamId
         height
         weight
         number
         position
+        teamId
     }
 }
 ```

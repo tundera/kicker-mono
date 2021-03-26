@@ -16,10 +16,10 @@ List of fields available in the `Coach` type.
 | updatedAt   | AWSDateTime       | _false_ | true              |
 | handle      | String            | true    | true              |
 | name        | String            | true    | true              |
-| teamId      | Int               | true    | _false_           |
 | type        | String            | _false_ | _false_           |
 | isAssistant | String            | _false_ | _false_           |
 | team        | [Team](./Team.md) | _false_ | _false_           |
+| teamId      | Int               | true    | _false_           |
 
 ## Queries
 
@@ -46,10 +46,10 @@ query {
         updatedAt
         handle
         name
-        teamId
         type
         isAssistant
         team # Relation to one
+        teamId
     }
 }
 ```
@@ -71,10 +71,10 @@ query {
         updatedAt
         handle
         name
-        teamId
         type
         isAssistant
         team # Relation to one
+        teamId
     }
 }
 ```
@@ -89,10 +89,10 @@ query {
         updatedAt
         handle
         name
-        teamId
         type
         isAssistant
         team # Relation to one
+        teamId
     }
 }
 ```
@@ -153,16 +153,6 @@ name: String
     name_contains: String
     name_startsWith: String
     name_endsWith: String
-teamId: Int
-    teamId_equals: Int
-    teamId_not: Int
-    teamId_lt: Int
-    teamId_lte: Int
-    teamId_gt: Int
-    teamId_gte: Int
-    teamId_contains: Int
-    teamId_startsWith: Int
-    teamId_endsWith: Int
 type: String
     type_equals: String
     type_not: String
@@ -183,6 +173,16 @@ isAssistant: String
     isAssistant_contains: String
     isAssistant_startsWith: String
     isAssistant_endsWith: String
+teamId: Int
+    teamId_equals: Int
+    teamId_not: Int
+    teamId_lt: Int
+    teamId_lte: Int
+    teamId_gt: Int
+    teamId_gte: Int
+    teamId_contains: Int
+    teamId_startsWith: Int
+    teamId_endsWith: Int
 
 ```
 
@@ -199,10 +199,10 @@ query {
         updatedAt
         handle
         name
-        teamId
         type
         isAssistant
         team # Relation to one
+        teamId
     }
 }
 ```
@@ -217,10 +217,10 @@ query {
         updatedAt
         handle
         name
-        teamId
         type
         isAssistant
         team # Relation to one
+        teamId
     }
 }
 ```
@@ -251,9 +251,9 @@ mutation {
         data: {
             handle: "Foo"
             name: "Foo"
-            teamId: 2
             type: "Foo"
             isAssistant: "Foo"
+            teamId: 2
         }
     ) {
         id
@@ -261,9 +261,9 @@ mutation {
         updatedAt
         handle
         name
-        teamId
         type
         isAssistant
+        teamId
     }
 }
 ```
@@ -317,9 +317,9 @@ mutation {
         data: {
             handle: "Foo"
             name: "Foo"
-            teamId: 2
             type: "Foo"
             isAssistant: "Foo"
+            teamId: 2
         }
     ) {
         id
@@ -327,9 +327,9 @@ mutation {
         updatedAt
         handle
         name
-        teamId
         type
         isAssistant
+        teamId
     }
 }
 ```
@@ -387,9 +387,9 @@ mutation {
         updatedAt
         handle
         name
-        teamId
         type
         isAssistant
+        teamId
     }
 }
 ```
@@ -426,9 +426,9 @@ subscription {
         updatedAt
         handle
         name
-        teamId
         type
         isAssistant
+        teamId
     }
 }
 ```
@@ -443,9 +443,9 @@ subscription {
         updatedAt
         handle
         name
-        teamId
         type
         isAssistant
+        teamId
     }
 }
 ```
@@ -460,9 +460,9 @@ subscription {
         updatedAt
         handle
         name
-        teamId
         type
         isAssistant
+        teamId
     }
 }
 ```
