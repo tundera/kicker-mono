@@ -16,8 +16,8 @@ List of fields available in the `ColorScheme` type.
 | updatedAt | AWSDateTime       | _false_ | true              |
 | primary   | String            | _false_ | true              |
 | secondary | String            | _false_ | true              |
-| team      | [Team](./Team.md) | _false_ | true              |
-| teamId    | Int               | true    | true              |
+| team      | [Team](./Team.md) | _false_ | _false_           |
+| teamId    | Int               | true    | _false_           |
 
 ## Queries
 

@@ -36,8 +36,8 @@ type ColorScheme {
     updatedAt: AWSDateTime!
     primary: String!
     secondary: String!
-    team: Team!
-    teamId: Int!
+    team: Team
+    teamId: Int
 }
 
 type Team {
@@ -453,7 +453,7 @@ input PlayerTeamUpdateRelations {
 input ColorSchemeCreateInput {
     primary: String!
     secondary: String!
-    team: ColorSchemeTeamCreateRelations!
+    team: ColorSchemeTeamCreateRelations
 }
 
 input ColorSchemeUpdateInput {

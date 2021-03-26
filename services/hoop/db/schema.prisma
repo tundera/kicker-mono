@@ -53,8 +53,8 @@ model ColorScheme {
   updatedAt DateTime
   primary   String
   secondary String
-  team      Team     @relation(fields: [teamId], references: [id])
-  teamId    Int
+  team      Team?    @relation(fields: [teamId], references: [id])
+  teamId    Int?
 
 }
 

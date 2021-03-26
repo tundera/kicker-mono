@@ -13,5 +13,5 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "strict": true
   },
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts", "globals.d.ts"]
 }

@@ -1,14 +1,20 @@
+#!/usr/bin/env ts-node-script
+
 import teams from 'nba/data/teams.json'
 
 import db from '../index'
-import { updateTeamData } from './teams'
+import { updateTeamData } from '../lib/teams'
 
-async function main() {
-  console.log('Start seeding ...')
+export async function main() {
+  console.log('Start updating ...')
 
   for (const team of teams) {
     await updateTeamData(team.teamId)
-    console.log(`Updated team with id ${team.teamId} (${team.teamName})`)
+    console.log('updated team:', team.teamId)
+
+    setTimeout(() => {
+      console.log('team id:', team.teamId)
+    }, 10000)
   }
 
   console.log('Updates finished.')

@@ -1,4 +1,6 @@
-export interface TeamInfo {
+export * from '@prisma/client'
+
+export interface TeamData {
   teamInfoCommon: TeamInfoCommon[]
   teamSeasonRanks: TeamSeasonRank[]
   availableSeasons: AvailableSeason[]
@@ -42,11 +44,11 @@ export interface TeamInfoCommon {
 }
 
 export interface TeamRoster {
-  commonTeamRoster: PlayerInfo[]
-  coaches: CoachInfo[]
+  commonTeamRoster: PlayerData[]
+  coaches: CoachData[]
 }
 
-export interface CoachInfo {
+export interface CoachData {
   teamId: number
   season: string
   coachId: number
@@ -59,7 +61,7 @@ export interface CoachInfo {
   subSortSequence: number
 }
 
-export interface PlayerInfo {
+export interface PlayerData {
   teamID: number
   season: string
   leagueID: string
@@ -74,4 +76,59 @@ export interface PlayerInfo {
   exp: string
   school: string
   playerId: number
+}
+
+export interface BackupTeamData {
+  id: number
+  createdAt: string
+  updatedAt: string
+  handle: number
+  name: string
+  slug: string
+  city: string
+  abbreviation: string
+  logo: string
+  logoSlug: string
+  wins: number
+  losses: number
+  winPercentage: number
+  conference: string
+  division: string
+  established: number
+  primaryColor: string
+  secondaryColor: string
+}
+
+export interface BackupPlayerData {
+  id: number
+  createdAt: string
+  updatedAt: string
+  handle: number
+  name: string
+  slug: string
+  teamId: number
+  height: string
+  weight: number
+  number: number | string
+  position: string
+}
+
+export interface BackupCoachData {
+  id: number
+  createdAt: string
+  updatedAt: string
+  handle: number
+  name: string
+  teamId: number
+  type: string
+  isAssistant: number
+}
+
+export interface BackupColorSchemeData {
+  id: number
+  createdAt: string
+  updatedAt: string
+  primary: string
+  secondary: string
+  teamId: number
 }
