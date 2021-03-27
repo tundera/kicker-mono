@@ -1,15 +1,16 @@
 import NextLink from 'next/link'
 import Head from 'next/head'
-import { Team } from '@kicker/hoop'
+import { Team, prepareReactRender } from 'src/gqless'
 
 import DarkModeToggle from 'src/components/dark-mode-toggle'
+import { PropsWithServerCache } from '@gqless/react'
 import { getTeams } from 'src/lib/teams'
 
-interface TeamsPageProps {
+type TeamsPageProps = PropsWithServerCache<{
   teams: Team[]
-}
+}>
 
-export default function TeamsPage({ teams }: TeamsPageProps) {
+export default function TeamsPage({ cacheSnapshot, teams }: TeamsPageProps) {
   return (
     <>
       <Head>
@@ -23,12 +24,18 @@ export default function TeamsPage({ teams }: TeamsPageProps) {
           <NextLink href="/">Home</NextLink>
           <NextLink href="/teams">Teams</NextLink>
         </nav>
+
         <article className="py-4">
           <ul className="space-y-2">
             {teams.map((team) => {
               return (
                 <li key={team.slug} className="space-y-4 dark:text-white">
-                  <NextLink href={`/teams/${team.slug}`}>{team.name}</NextLink>
+                  <NextLink
+                    href={`/teams/${team.id}`}
+                    as={`/teams/${team.slug}`}
+                  >
+                    {team.name}
+                  </NextLink>
                 </li>
               )
             })}
@@ -41,9 +48,13 @@ export default function TeamsPage({ teams }: TeamsPageProps) {
 
 export async function getStaticProps() {
   const { teams } = await getTeams()
+  const { cacheSnapshot } = await prepareReactRender(
+    <TeamsPage teams={teams} />,
+  )
 
   return {
     props: {
+      cacheSnapshot,
       teams,
     },
   }

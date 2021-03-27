@@ -7,7 +7,7 @@ const nextConfig = {
   target: 'experimental-serverless-trace',
   reactStrictMode: true,
   future: {
-    webpack5: true,
+    webpack5: false,
   },
   // experimental: {
   //   reactMode: 'concurrent',

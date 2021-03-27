@@ -72,7 +72,6 @@
     // Allows for the use of imports
     "sourceType": "module",
     // https://blog.geographer.fr/eslint-parser-services, https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
-    "project": ["./tsconfig.json"],
     "extraFileExtensions": [".graphql", ".mdx"]
   }
 }

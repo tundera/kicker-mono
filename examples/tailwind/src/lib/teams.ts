@@ -5,7 +5,7 @@ export const getTeams = async () => {
   return client.request(
     gql`
       {
-        listTeams {
+        teams {
           id
           name
           city
