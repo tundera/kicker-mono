@@ -11,9 +11,9 @@ const nextConfig = {
   future: {
     webpack5: true,
   },
-  //   experimental: {
-  //     reactMode: 'concurrent',
-  //   },
+  experimental: {
+    reactMode: 'concurrent',
+  },
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 }
 

@@ -27,9 +27,9 @@ const nextConfig = {
   future: {
     webpack5: true,
   },
-  // experimental: {
-  //   reactMode: 'concurrent',
-  // },
+  experimental: {
+    reactMode: 'concurrent',
+  },
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
   i18n: {
     defaultLocale: 'en',
@@ -41,7 +41,6 @@ const nextConfig = {
       'upload.wikimedia.org', // Wikipedia images
     ],
   },
-
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {

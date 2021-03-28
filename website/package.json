@@ -18,8 +18,8 @@
     "framer-motion": "4.0.3",
     "next": "latest",
     "next-compose-plugins": "^2.2.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "0.0.0-experimental-a77dd13ed",
+    "react-dom": "0.0.0-experimental-a77dd13ed"
   },
   "devDependencies": {
     "@types/node": "^14.14.37",

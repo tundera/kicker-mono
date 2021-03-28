@@ -27,7 +27,7 @@
     "lint": "eslint src/**/*"
   },
   "peerDependencies": {
-    "react": ">=17"
+    "react": "0.0.0-experimental-a77dd13ed"
   },
   "dependencies": {
     "@babel/preset-env": "7.13.12",
@@ -55,6 +55,6 @@
     "eslint-plugin-react": "^7.23.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
-    "react": "^17.0.1"
+    "react": "0.0.0-experimental-a77dd13ed"
   }
 }

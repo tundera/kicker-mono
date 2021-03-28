@@ -53,6 +53,10 @@
     "release:canary": "yarn build && changeset publish --tag canary",
     "commit": "gacp"
   },
+  "resolutions": {
+    "react": "0.0.0-experimental-a77dd13ed",
+    "react-dom": "0.0.0-experimental-a77dd13ed"
+  },
   "dependencies": {
     "@babel/core": "^7.13.13",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
@@ -119,6 +123,8 @@
     "postinstall-postinstall": "^2.1.0",
     "prettier": "^2.2.1",
     "prettier-plugin-prisma": "^0.6.0",
+    "react": "0.0.0-experimental-a77dd13ed",
+    "react-dom": "0.0.0-experimental-a77dd13ed",
     "storybook-addon-designs": "^6.0.0-alpha.3",
     "storybook-addon-next-router": "^2.0.4",
     "storybook-addon-performance": "^0.14.0",
