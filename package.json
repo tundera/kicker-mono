@@ -34,7 +34,7 @@
     "bootstrap": "yarn install && yarn cli:link",
     "cli:link": "yarn workspace @kicker/cli link",
     "cli:unlink": "yarn workspace @kicker/cli unlink",
-    "postinstall": "preconstruct dev && manypkg check",
+    "postinstall": "patch-package && preconstruct dev && manypkg check",
     "test": "jest",
     "test:watch": "jest --watch",
     "cypress:open": "cypress open",
