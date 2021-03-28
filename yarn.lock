@@ -3386,10 +3386,10 @@
   dependencies:
     purgecss "^3.1.3"
 
-"@gqless/cli@2.0.8":
-  version "2.0.8"
-  resolved "https://registry.npmjs.org/@gqless/cli/-/cli-2.0.8.tgz#f2d7a5ee52e6d2617f7db8e185d393bb1ee8d1b9"
-  integrity sha512-+O/uygQq1LDs4CuyarKu1Kez+tIubyJZozyD53y0cT+WczyfwOvT1iPETlHZ4AUzLXa5ww3WCCXi5Gq6+SH0JA==
+"@gqless/cli@2.0.9":
+  version "2.0.9"
+  resolved "https://registry.npmjs.org/@gqless/cli/-/cli-2.0.9.tgz#23b70a69d5d95eaaed4ed5d5725c0181f25aa831"
+  integrity sha512-VS8VJh4Z3gTmX7a73hYFG02t/pUSirNY+yA0vfHbfBcI4NN5h9R2ufQ3RouE2LC0fMPRnacVXXDemzMfSQ8bgg==
   dependencies:
     "@graphql-codegen/core" "^1.17.9"
     "@graphql-codegen/typescript" "^1.21.1"
@@ -3399,29 +3399,29 @@
     commander "^7.2.0"
     cosmiconfig "^7.0.0"
     cross-fetch "^3.1.2"
-    gqless "^2.0.6"
+    gqless "^2.0.7"
     mkdirp "^1.0.4"
     prettier "^2.2.1"
 
-"@gqless/logger@2.0.6":
-  version "2.0.6"
-  resolved "https://registry.npmjs.org/@gqless/logger/-/logger-2.0.6.tgz#198c39d45680e3959ad38b5738c66a3517283d5c"
-  integrity sha512-1q0bNb86lFooxFpsTn3Dd7AaYHPGFMSYAPAARfr0dbyDkE7OWj65muT8fkpl6whQz615wZarX+vXvAL/9gFzvA==
+"@gqless/logger@2.0.7":
+  version "2.0.7"
+  resolved "https://registry.npmjs.org/@gqless/logger/-/logger-2.0.7.tgz#ab08e1f9f99d4059b9ec10b7a530ea618fd7ecda"
+  integrity sha512-C7Nxu5LPYHidN0Ht/0Oqxdv9qYegFsPLzPJGeGgV0idUt3OfwELalZwU5OL0jH/25561ieo5nc9zugSsTj96Ng==
   dependencies:
     prettier "^2.2.1"
     serialize-error "^8.0.1"
 
-"@gqless/react@2.0.7":
-  version "2.0.7"
-  resolved "https://registry.npmjs.org/@gqless/react/-/react-2.0.7.tgz#881409c7cefc73f10e3220920f5b20198828a9e1"
-  integrity sha512-h1yNZncED/4BB0YUv09RY3OtT9izEwGskNjpLeWLQPFRXqOrxXQVr42SO/SAwNHJiYOxESFvtYrTsRHt4ThnSg==
+"@gqless/react@2.0.8":
+  version "2.0.8"
+  resolved "https://registry.npmjs.org/@gqless/react/-/react-2.0.8.tgz#c1646643b2d66c9761ce530e21fd4b1723d3438d"
+  integrity sha512-KonqdRf5lb0ZJKZh0aS01eVr1KDQlkpctv36CW3L3DCWunmwdGEgjkMsWskw44pLnKBw2AdJMCJXx49koHafOQ==
   dependencies:
     react-ssr-prepass "^1.4.0"
 
-"@gqless/subscriptions@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/@gqless/subscriptions/-/subscriptions-1.0.6.tgz#61c7a2c7de71c05a7f09135b8287001aad3f494d"
-  integrity sha512-ppWcYOiC2hKcH2dYbFpt4Q7ij6o6v1yiZ57z25tFOxZJGn5DqsVArv9MkwGmd6RRMOxo5GSUAdpgc/jUyRb6DA==
+"@gqless/subscriptions@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/@gqless/subscriptions/-/subscriptions-1.0.7.tgz#276bdb58ac70ff7c20f660b6633f5165f7cf239f"
+  integrity sha512-gbYt4p4brt+umg1375zI7TUD/Uf84DXZZbKPz8M3C/RucjIm/pU85pBancbGBsE/Ta/ynrHIRvWJZOHAHB6sPA==
   dependencies:
     isomorphic-ws "^4.0.1"
     ws "^7.4.4"
@@ -7056,10 +7056,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tailwindcss/jit@0.1.12":
-  version "0.1.12"
-  resolved "https://registry.npmjs.org/@tailwindcss/jit/-/jit-0.1.12.tgz#5720edb5c7e356cad42c0ca696cc857d0fc9862f"
-  integrity sha512-55dHdexROeTlI7IhnF0QX0NCRLb3BS4+s4dQgctbiwWGD4Ptx1d2zsDfwcB/7BP9FSZfaglWTOgNUOEtqqHtRw==
+"@tailwindcss/jit@0.1.16":
+  version "0.1.16"
+  resolved "https://registry.npmjs.org/@tailwindcss/jit/-/jit-0.1.16.tgz#536eb028c30fa6e10d35da72664c34b7144e74de"
+  integrity sha512-5uheNmqOe7PFcyUGGQ0Hiuq/enlkZXwzaqChSPjxPyCgcd2an3nqo7Z6AMPiklEs400609IiUxv2eAF8WE/wEw==
   dependencies:
     chokidar "^3.5.1"
     dlv "^1.1.3"
@@ -7598,10 +7598,10 @@
   resolved "https://registry.npmjs.org/@types/minimist/-/minimist-1.2.1.tgz#283f669ff76d7b8260df8ab7a4262cc83d988256"
   integrity sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
 
-"@types/next-auth@^3.7.2":
-  version "3.7.2"
-  resolved "https://registry.npmjs.org/@types/next-auth/-/next-auth-3.7.2.tgz#d8c6a99fd7882fe6b25144f334d10af838b3298b"
-  integrity sha512-04NTYd/eM/pr0YDqXQnaLcFFcmzWgah3oNsEftzbKWzRZ4GjJ1ul4fjOglxvH0bllCKqFhx5fEIorNymD1CPWQ==
+"@types/next-auth@^3.7.4":
+  version "3.7.4"
+  resolved "https://registry.npmjs.org/@types/next-auth/-/next-auth-3.7.4.tgz#bb294b73bd42cb478e34e6140a550ec243215178"
+  integrity sha512-JzU9RJJEJR1UqcN15J8p49SzhLlyFIcDGdxiMAuLqcQKU/145D5uanMxFBi9zakOgYhT/2gDX5UanbfjdmAKAA==
   dependencies:
     "@types/node" "*"
     "@types/react" "*"
@@ -15846,10 +15846,10 @@ got@^9.6.0:
     to-readable-stream "^1.0.0"
     url-parse-lax "^3.0.0"
 
-gqless@2.0.6, gqless@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.npmjs.org/gqless/-/gqless-2.0.6.tgz#8429333a90010c66d73f45725ef79fa27f51d77e"
-  integrity sha512-K0rscR8Ge9bfBFGCbEabMxDoPNmALcB87nzkUOqUJ1zXlzNWP8OXrKMGhLW2eX1ZNELDb+97ktF58YSG8PPqGg==
+gqless@2.0.7, gqless@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.npmjs.org/gqless/-/gqless-2.0.7.tgz#76f5ff2b31e55e282142f6261fdbda24b00b1d16"
+  integrity sha512-kvos6+A7udbJ2xRLkiUlyXXphrrL41qS1eVBQv+fA6a8cLNrEP6WGjRmz5sIJrHJHnbJa/2245VN8tcrOb0+Pw==
   dependencies:
     lodash "^4.17.21"
     lodash-es "^4.17.21"
@@ -16995,10 +16995,10 @@ invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
   dependencies:
     loose-envify "^1.0.0"
 
-ioredis@4.24.4:
-  version "4.24.4"
-  resolved "https://registry.npmjs.org/ioredis/-/ioredis-4.24.4.tgz#2f3cc03c5bfc75e13141459418bb1bd64ba1c7cf"
-  integrity sha512-v28xxBENyTmReC6lVTL7EkAPjVF8cuGtDEjGDi1Z2n7htsC2WdiDceZrCIPeuPiLa6kDFWHb1Y8O0upZROsMgA==
+ioredis@4.24.5:
+  version "4.24.5"
+  resolved "https://registry.npmjs.org/ioredis/-/ioredis-4.24.5.tgz#32f56ccb04d2e9ff00aa935caf348fd4e19867b0"
+  integrity sha512-a1uk8WXM4Xe9bfYUJH17Up9ODEASjYCWiD/BKojPHp5YDDMX/QBOWxgSmrtpRE+ARdLYUoXSLeyGZyegLdHcOg==
   dependencies:
     cluster-key-slot "^1.1.0"
     debug "^4.3.1"
