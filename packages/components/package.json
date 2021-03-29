@@ -25,9 +25,8 @@
   ],
   "scripts": {
     "postinstall": "yarn generate:theme-typings",
-    "start": "tsdx watch --verbose --noClean",
-    "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint src/**/*",
     "generate:theme-typings": "chakra-cli tokens src/theme/index.ts"
   },
   "peerDependencies": {

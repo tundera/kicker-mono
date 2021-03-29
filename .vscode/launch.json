@@ -17,9 +17,23 @@
     },
     {
       "name": "Update database",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["--loader", "ts-node/esm"],
+      "args": ["./db/scripts/update.ts"],
+      "cwd": "${workspaceFolder}/services/hoop",
+      "internalConsoleOptions": "openOnSessionStart",
+      "sourceMaps": true,
+      "skipFiles": ["<node_internals>/**", "node_modules/**"],
+      "env": {
+        "TS_NODE_PROJECT": "${workspaceFolder}/services/hoop/tsconfig.json"
+      }
+    },
+    {
+      "name": "Seed database",
       "type": "pwa-node",
       "request": "launch",
-      "args": ["--loader", "ts-node/esm", "./db/scripts/update.ts"],
+      "args": ["--loader", "ts-node/esm", "./db/scripts/seed.ts"],
       "cwd": "${workspaceFolder}/services/hoop",
       "internalConsoleOptions": "openOnSessionStart",
       "sourceMaps": true,
