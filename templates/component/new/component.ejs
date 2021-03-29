@@ -1,5 +1,5 @@
 ---
-to: "<%= location ? `src/components/${location}` : 'src/components' %>/<%= h.camelizedBaseName(name) %>/index.tsx"
+to: "<%= location ? `src/${location}` : 'src' %>/<%= h.camelizedBaseName(name) %>/<%= h.camelizedBaseName(name) %>.tsx"
 ---
 <% formattedPath = h.camelizedPathName(name) -%>
 <% component = h.camelizedBaseName(name) -%>
@@ -13,7 +13,7 @@ interface Props {
   title: string
 }
 
-const <%= component %>: FC<Props> = ({ title }) => {
+export const <%= component %>: FC<Props> = ({ title }) => {
   const bg = useColorModeValue('gray.800', 'white')
   const color = useColorModeValue('white', 'gray.800')
 
@@ -28,7 +28,5 @@ const <%= component %>: FC<Props> = ({ title }) => {
     </Flex>
   )
 }
-
-export default <%= component %>
 
 export type { Props as <%= component %>Props }

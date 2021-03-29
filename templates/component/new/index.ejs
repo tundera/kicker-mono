@@ -1,0 +1,5 @@
+---
+to: "<%= location ? `src/${location}` : 'src' %>/<%= h.camelizedBaseName(name) %>/index.ts"
+---
+<% component = h.camelizedBaseName(name) -%>
+export * from './<%= component %>'

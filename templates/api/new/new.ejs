@@ -1,5 +1,5 @@
 ---
-to: "<%= location ? `<%= h.workspaceRoot() %>/pages/api/${location}` : '<%= h.workspaceRoot() %>/pages/api' %>/<%= name %>.ts"
+to: "<%= location ? `pages/api/${location}` : 'pages/api' %>/<%= name %>.ts"
 ---
 <% route = h.camelizedBaseName(name) -%>
 import type { NextApiRequest, NextApiResponse } from 'next'

@@ -7,6 +7,6 @@ module.exports = [
   {
     type: 'input',
     name: 'location',
-    message: 'Location (in "src/components")',
+    message: 'Location (in "src")',
   },
 ]

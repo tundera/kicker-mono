@@ -1,0 +1,16 @@
+---
+to: "<%= location ? `src/${location}` : 'src' %>/<%= h.camelizedBaseName(name) %>/<%= h.camelizedBaseName(name) %>.test.tsx"
+---
+<% component = h.camelizedBaseName(name) -%>
+import { composeStories } from '@storybook/testing-react'
+import { render } from 'test/utils'
+
+import * as stories from './<%= component %>.stories'
+
+const { Primary } = composeStories(stories)
+
+test('renders <%= component %> component with title', () => {
+  const { getByText } = render(<Primary title="Primary <%= component %> Title" />)
+  const title = getByText(/<%= component %>/)
+  expect(title).toBeInTheDocument()
+})

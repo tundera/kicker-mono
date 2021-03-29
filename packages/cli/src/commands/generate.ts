@@ -21,9 +21,30 @@ export class Generate extends Command {
     help: flags.help({ char: 'h' }),
   }
 
+  getGeneratePath(resource: string) {
+    switch (resource) {
+      case 'component': {
+        return join(workspaceRoot, 'packages/components')
+      }
+      case 'graphql': {
+        return join(workspaceRoot, 'services/hoop')
+      }
+      case 'page': {
+        return join(workspaceRoot, 'app')
+      }
+      case 'route': {
+        return join(workspaceRoot, 'app')
+      }
+      default: {
+        return join(workspaceRoot, 'app')
+      }
+    }
+  }
+
   async generateFromTemplate(resource: string) {
+    const writeTo = this.getGeneratePath(resource)
     return execa('yarn', ['hygen', resource, 'new'], {
-      cwd: join(workspaceRoot, 'packages/components'),
+      cwd: writeTo,
       env: {
         FORCE_COLOR: 'true',
       },
@@ -35,9 +56,9 @@ export class Generate extends Command {
     const { args, flags } = this.parse(Generate)
 
     try {
-      const child = await this.generateFromTemplate(args.resource)
+      const subprocess = await this.generateFromTemplate(args.resource)
 
-      child?.on('close', (code: number) => {
+      subprocess?.on('close', (code: number) => {
         const message = code
           ? 'Failed to run generate script! ❌'
           : 'Done running generate script! ✅'
@@ -45,11 +66,11 @@ export class Generate extends Command {
         return process.exit(code)
       })
 
-      child?.on('SIGINT', (code: number) => {
+      subprocess?.on('SIGINT', (code: number) => {
         console.log('Interrupted generate script!')
         return process.exit(code)
       })
-      child?.on('SIGTERM', (code: number) => {
+      subprocess?.on('SIGTERM', (code: number) => {
         console.log('Terminated generate script!')
         return process.exit(code)
       })
