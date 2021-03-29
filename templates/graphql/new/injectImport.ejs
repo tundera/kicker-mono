@@ -2,7 +2,7 @@
 inject: true
 to: src/modules/index.ts
 append: true
-skip_if: export * from './<%= name %>'
+skip_if: export * from './<%= h.camelizedBaseName(name) %>'
 ---
 <% model = h.camelizedBaseName(name) -%>
 export * from './<%= model %>';

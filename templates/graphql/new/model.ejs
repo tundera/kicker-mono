@@ -1,5 +1,5 @@
 ---
-to: src/modules/<%= name %>.ts
+to: src/modules/<%= h.camelizedBaseName(name) %>.ts
 ---
 <% camelized = h.inflection.camelize(name) -%>
 <% plural = h.inflection.pluralize(camelized) -%>
