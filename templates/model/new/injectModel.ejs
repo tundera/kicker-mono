@@ -1,0 +1,14 @@
+---
+inject: true
+to: db/schema.prisma
+append: true
+skip_if: 'model <%= model %>'
+sh: 'yarn prisma format'
+---
+<% model = h.camelizedBaseName(name) -%>
+/// <%= model %> description
+model <%= model %> {
+  id            Int      @id @default(autoincrement())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime
+}

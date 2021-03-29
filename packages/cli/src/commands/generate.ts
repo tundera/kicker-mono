@@ -13,7 +13,7 @@ export class Generate extends Command {
       name: 'resource',
       required: true,
       description: 'resource type to generate',
-      options: ['component', 'page', 'api'],
+      options: ['component', 'page', 'api', 'model'],
     },
   ]
 
@@ -26,7 +26,7 @@ export class Generate extends Command {
       case 'component': {
         return join(workspaceRoot, 'packages/components')
       }
-      case 'graphql': {
+      case 'model': {
         return join(workspaceRoot, 'services/hoop')
       }
       case 'page': {
