@@ -32,7 +32,7 @@ export class Generate extends Command {
       case 'page': {
         return join(workspaceRoot, 'app')
       }
-      case 'route': {
+      case 'api': {
         return join(workspaceRoot, 'app')
       }
       default: {

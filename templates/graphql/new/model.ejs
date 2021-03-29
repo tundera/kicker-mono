@@ -1,11 +1,11 @@
 ---
-to: services/graphql/resolvers/<%= name %>.ts
+to: src/modules/<%= name %>.ts
 ---
 <% camelized = h.inflection.camelize(name) -%>
 <% plural = h.inflection.pluralize(camelized) -%>
 import { objectType, extendType } from 'nexus';
 
-// import { isAdmin } from '../services/permissions';
+// import { isAdmin } from '../permissions';
 
 // <%= camelized %> Type
 export const <%= camelized %> = objectType({

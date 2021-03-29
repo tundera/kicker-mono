@@ -1,7 +1,8 @@
 ---
 inject: true
-to: graphql/modules/index.ts
-after: export * from './scalars'
+to: src/modules/index.ts
+append: true
 skip_if: export * from './<%= name %>'
 ---
-export * from './<%= name %>';
+<% model = h.camelizedBaseName(name) -%>
+export * from './<%= model %>';
