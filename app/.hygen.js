@@ -1,6 +1,8 @@
 const inflection = require('inflection')
 const path = require('path')
+import findWorkspaceRoot from 'find-yarn-workspace-root'
 
+const workspaceRoot = () => findWorkspaceRoot(process.cwd()) ?? process.cwd()
 const camelizePath = (name, lower = true) => inflection.camelize(name, lower).replace(/::/g, '/')
 const pluralizeProp = (name) => inflection.pluralize(name)
 
@@ -21,5 +23,6 @@ module.exports = {
 
       return `use${camelized}Query`
     },
+    workspaceRoot,
   },
 }

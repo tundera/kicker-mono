@@ -23,7 +23,7 @@ export class Generate extends Command {
 
   async generateFromTemplate(resource: string) {
     return execa('yarn', ['hygen', resource, 'new'], {
-      cwd: join(workspaceRoot, 'app'),
+      cwd: join(workspaceRoot, 'packages/components'),
       env: {
         FORCE_COLOR: 'true',
       },
