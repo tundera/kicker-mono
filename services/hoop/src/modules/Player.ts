@@ -1,4 +1,4 @@
-import { objectType, inputObjectType, list, intArg, extendType } from 'nexus'
+import { objectType, inputObjectType, list, extendType, stringArg } from 'nexus'
 import { Player } from 'nexus-prisma'
 
 /**
@@ -33,37 +33,6 @@ export const PlayerObject = objectType({
   },
 })
 
-// export const PlayerObject = objectType({
-//   name: 'Player',
-//   definition(t) {
-//     t.nonNull.int('id')
-//     t.nonNull.field('createdAt', {
-//       type: 'DateTime',
-//     })
-//     t.nonNull.field('updatedAt', {
-//       type: 'DateTime',
-//     })
-//     t.nonNull.string('handle')
-//     t.nonNull.string('name')
-//     t.nonNull.string('slug')
-//     t.int('teamId')
-//     t.nonNull.string('height')
-//     t.nonNull.string('weight')
-//     t.string('number')
-//     t.string('position')
-//     t.field('team', {
-//       type: 'Team',
-//       resolve: (parent, _args, ctx) => {
-//         return ctx.db.player
-//           .findUnique({
-//             where: { id: parent.id },
-//           })
-//           .team()
-//       },
-//     })
-//   },
-// })
-
 /**
  * Player Query Types
  */
@@ -80,7 +49,7 @@ export const PlayerQueries = extendType({
     t.field('playersByTeam', {
       type: list('Player'),
       args: {
-        id: intArg(),
+        id: stringArg(),
       },
       resolve: (_parent, args, ctx) => {
         return ctx.db.player.findMany({
@@ -109,14 +78,14 @@ export const PlayerOrderByInput = inputObjectType({
 export const PlayerWhereUniqueInput = inputObjectType({
   name: 'PlayerWhereUniqueInput',
   definition(t) {
-    t.nonNull.int('id')
+    t.nonNull.string('id')
   },
 })
 
 export const PlayerWhereInput = inputObjectType({
   name: 'PlayerWhereInput',
   definition(t) {
-    t.nonNull.int('id')
+    t.nonNull.string('id')
     t.nonNull.field('name', { type: 'StringFilter' })
   },
 })

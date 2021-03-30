@@ -1,7 +1,6 @@
 generator client {
-  provider        = "prisma-client-js"
-  previewFeatures = ["groupBy"]
-  binaryTargets   = ["native", "rhel-openssl-1.0.x"]
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
 }
 
 generator nexusPrisma {
@@ -15,7 +14,7 @@ datasource db {
 
 /// NBA coach
 model Coach {
-  id          Int      @id @default(autoincrement())
+  id          String   @id
   createdAt   DateTime @default(now())
   updatedAt   DateTime
   handle      String   @unique
@@ -23,13 +22,13 @@ model Coach {
   type        String?
   isAssistant String?
   team        Team?    @relation(fields: [teamId], references: [id])
-  teamId      Int?
+  teamId      String?
 
 }
 
 /// NBA player
 model Player {
-  id        Int      @id @default(autoincrement())
+  id        String   @id
   createdAt DateTime @default(now())
   updatedAt DateTime
   handle    String   @unique
@@ -40,24 +39,24 @@ model Player {
   number    String?
   position  String?
   team      Team?    @relation(fields: [teamId], references: [id])
-  teamId    Int?
+  teamId    String?
 }
 
 /// Team color scheme
 model ColorScheme {
-  id        Int      @id @default(autoincrement())
+  id        String   @id
   createdAt DateTime @default(now())
   updatedAt DateTime
   primary   String
   secondary String
   team      Team?    @relation(fields: [teamId], references: [id])
-  teamId    Int?
+  teamId    String?
 
 }
 
 /// NBA team
 model Team {
-  id            Int          @id @default(autoincrement())
+  id            String       @id
   createdAt     DateTime     @default(now())
   updatedAt     DateTime
   handle        String       @unique

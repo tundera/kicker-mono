@@ -2,16 +2,7 @@
 // @ts-ignore
 import nba from 'nba'
 
-import type {
-  BackupTeamData,
-  TeamData,
-  UpdatedTeamData,
-  TeamRoster,
-  Team,
-  TeamInfoCommon,
-  PlayerData,
-  CoachData,
-} from '../types'
+import type { BackupTeamData, TeamData, UpdatedTeamData, TeamRoster, Team } from '../types'
 
 import db from '../index'
 import { upsertCoachData } from './coaches'
@@ -24,20 +15,6 @@ function getTeamInfo(teamId: number): Promise<TeamData> {
 function getTeamRoster(teamId: number): Promise<TeamRoster> {
   return nba.stats.commonTeamRoster({ TeamID: teamId })
 }
-
-// export const getUpdatedTeamData = async (teamId: number) => {
-//   const { teamInfoCommon } = await getTeamInfo(teamId)
-//   const [team] = teamInfoCommon
-
-//   const roster = await getTeamRoster(teamId)
-//   const { commonTeamRoster: players, coaches } = roster
-
-//   return {
-//     ...team,
-//     players,
-//     coaches,
-//   }
-// }
 
 export const getUpdatedTeamData = async (teamId: number) => {
   const { teamInfoCommon } = await getTeamInfo(teamId)
@@ -55,6 +32,7 @@ export const getUpdatedTeamData = async (teamId: number) => {
 export const transformTeamData = (data: BackupTeamData) => {
   return {
     ...data,
+    id: data.id.toString(),
     createdAt: new Date(data.createdAt),
     updatedAt: new Date(),
     handle: data.handle.toString(),
@@ -67,7 +45,7 @@ export const updateTeamData = async (data: UpdatedTeamData) => {
   await db.team.update({
     where: { handle: team.teamId.toString() },
     data: {
-      id: team.teamId,
+      id: team.teamId.toString(),
       updatedAt: new Date(),
       name: team.teamName,
       slug: team.teamSlug,
@@ -93,7 +71,7 @@ export const updateTeamData = async (data: UpdatedTeamData) => {
 export const seedTeamData = async (team: Team) => {
   await db.team.create({
     data: {
-      id: team.id,
+      id: team.id.toString(),
       createdAt: new Date(),
       updatedAt: new Date(),
       handle: team.handle,

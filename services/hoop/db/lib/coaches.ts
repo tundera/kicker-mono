@@ -5,6 +5,7 @@ import db from '../index'
 export const transformCoachData = (coach: BackupCoachData) => {
   return {
     ...coach,
+    id: coach.id.toString(),
     createdAt: new Date(coach.createdAt),
     updatedAt: new Date(),
     handle: coach.handle.toString(),
@@ -15,9 +16,9 @@ export const transformCoachData = (coach: BackupCoachData) => {
 export const upsertCoachData = async (coach: CoachData) => {
   // Update or create coach if not present in database
   await db.coach.upsert({
-    where: { id: coach.coachId },
+    where: { id: coach.coachId.toString() },
     create: {
-      id: coach.coachId,
+      id: coach.coachId.toString(),
       createdAt: new Date(),
       updatedAt: new Date(),
       handle: coach.coachId.toString(),
@@ -26,7 +27,7 @@ export const upsertCoachData = async (coach: CoachData) => {
       isAssistant: coach.isAssistant.toString(),
     },
     update: {
-      id: coach.coachId,
+      id: coach.coachId.toString(),
       updatedAt: new Date(),
       type: coach.coachType,
       isAssistant: coach.isAssistant.toString(),
@@ -36,18 +37,18 @@ export const upsertCoachData = async (coach: CoachData) => {
   // Connect coaches to or remove coaches from teams
   if (coach.teamId) {
     await db.coach.update({
-      where: { id: coach.coachId },
+      where: { id: coach.coachId.toString() },
       data: {
         team: {
           connect: {
-            id: coach.teamId,
+            id: coach.teamId.toString(),
           },
         },
       },
     })
   } else {
     await db.coach.update({
-      where: { id: coach.coachId },
+      where: { id: coach.coachId.toString() },
       data: {
         team: {
           disconnect: true,

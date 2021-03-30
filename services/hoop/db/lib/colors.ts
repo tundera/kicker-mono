@@ -5,9 +5,10 @@ import db from '../index'
 export const transformColorSchemeData = (scheme: BackupColorSchemeData) => {
   return {
     ...scheme,
+    id: scheme.id.toString(),
     createdAt: new Date(scheme.createdAt),
     updatedAt: new Date(),
-    teamId: Number(scheme.teamId),
+    teamId: scheme.teamId.toString(),
   }
 }
 

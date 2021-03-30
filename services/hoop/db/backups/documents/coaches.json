@@ -1,2372 +1,2372 @@
 [
   {
-    "id": 1628807,
-    "createdAt": "2021-03-26 19:04:40.048",
-    "updatedAt": "2021-03-26 19:05:40.926",
-    "handle": 1628807,
-    "name": "Brandon Bailey",
-    "teamId": 1610612738,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
     "id": 202979,
-    "createdAt": "2021-03-26 19:04:40.044",
-    "updatedAt": "2021-03-26 19:05:40.934",
+    "createdAt": "2021-03-30 17:18:05.475",
+    "updatedAt": "2021-03-30 17:19:29.956",
     "handle": 202979,
     "name": "Jamie Young",
-    "teamId": 1610612738,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612738
   },
   {
     "id": 1627329,
-    "createdAt": "2021-03-26 19:04:40.033",
-    "updatedAt": "2021-03-26 19:05:40.941",
+    "createdAt": "2021-03-30 17:18:05.477",
+    "updatedAt": "2021-03-30 17:19:29.982",
     "handle": 1627329,
     "name": "Scott Morrison",
-    "teamId": 1610612738,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612738
   },
   {
     "id": 1628210,
-    "createdAt": "2021-03-26 19:04:40.066",
-    "updatedAt": "2021-03-26 19:05:40.975",
+    "createdAt": "2021-03-30 17:18:05.479",
+    "updatedAt": "2021-03-30 17:19:29.996",
     "handle": 1628210,
     "name": "Joe Mazzulla",
-    "teamId": 1610612738,
     "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 203168,
-    "createdAt": "2021-03-26 19:04:40.043",
-    "updatedAt": "2021-03-26 19:05:40.983",
-    "handle": 203168,
-    "name": "Jay Larranaga",
-    "teamId": 1610612738,
-    "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612738
   },
   {
     "id": 1628765,
-    "createdAt": "2021-03-26 19:04:40.071",
-    "updatedAt": "2021-03-26 19:05:40.99",
+    "createdAt": "2021-03-30 17:18:05.482",
+    "updatedAt": "2021-03-30 17:19:30.028",
     "handle": 1628765,
     "name": "Art Horne",
-    "teamId": 1610612738,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612738
   },
   {
     "id": 959,
-    "createdAt": "2021-03-26 19:04:40.083",
-    "updatedAt": "2021-03-26 19:05:41.198",
+    "createdAt": "2021-03-30 17:18:05.484",
+    "updatedAt": "2021-03-30 17:19:30.247",
     "handle": 959,
     "name": "Steve Nash",
-    "teamId": 1610612751,
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612751
   },
   {
     "id": 202588,
-    "createdAt": "2021-03-26 19:04:40.088",
-    "updatedAt": "2021-03-26 19:05:41.229",
+    "createdAt": "2021-03-30 17:18:05.486",
+    "updatedAt": "2021-03-30 17:19:30.253",
     "handle": 202588,
     "name": "Jacque Vaughn",
-    "teamId": 1610612751,
     "type": "Lead Assistant Coach",
-    "isAssistant": 13
+    "isAssistant": 13,
+    "teamId": 1610612751
   },
   {
     "id": 1783,
-    "createdAt": "2021-03-26 19:04:40.09",
-    "updatedAt": "2021-03-26 19:05:41.238",
+    "createdAt": "2021-03-30 17:18:05.488",
+    "updatedAt": "2021-03-30 17:19:30.278",
     "handle": 1783,
     "name": "Mike D'Antoni",
-    "teamId": 1610612751,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612751
   },
   {
     "id": 203152,
-    "createdAt": "2021-03-26 19:04:40.092",
-    "updatedAt": "2021-03-26 19:05:41.248",
+    "createdAt": "2021-03-30 17:18:05.49",
+    "updatedAt": "2021-03-30 17:19:30.287",
     "handle": 203152,
     "name": "Ime Udoka",
-    "teamId": 1610612751,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612751
   },
   {
     "id": 1627876,
-    "createdAt": "2021-03-26 19:04:40.094",
-    "updatedAt": "2021-03-26 19:05:41.274",
+    "createdAt": "2021-03-30 17:18:05.492",
+    "updatedAt": "2021-03-30 17:19:30.3",
     "handle": 1627876,
     "name": "Adam Harrington",
-    "teamId": 1610612751,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612751
   },
   {
     "id": 202435,
-    "createdAt": "2021-03-26 19:04:40.097",
-    "updatedAt": "2021-03-26 19:05:41.586",
+    "createdAt": "2021-03-30 17:18:05.494",
+    "updatedAt": "2021-03-30 17:19:30.608",
     "handle": 202435,
     "name": "James Borrego",
-    "teamId": 1610612766,
     "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 203753,
-    "createdAt": "2021-03-26 19:04:40.118",
-    "updatedAt": "2021-03-26 19:05:41.593",
-    "handle": 203753,
-    "name": "Ronald Nored",
-    "teamId": 1610612766,
-    "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 1,
+    "teamId": 1610612766
   },
   {
     "id": 2472,
-    "createdAt": "2021-03-26 19:04:40.121",
-    "updatedAt": "2021-03-26 19:05:41.6",
+    "createdAt": "2021-03-30 17:18:05.498",
+    "updatedAt": "2021-03-30 17:19:30.639",
     "handle": 2472,
     "name": "Jay Triano",
-    "teamId": 1610612766,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612766
   },
   {
     "id": 202602,
-    "createdAt": "2021-03-26 19:04:40.177",
-    "updatedAt": "2021-03-26 19:05:41.626",
+    "createdAt": "2021-03-30 17:18:05.5",
+    "updatedAt": "2021-03-30 17:19:30.647",
     "handle": 202602,
     "name": "Chad Iske",
-    "teamId": 1610612766,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612766
   },
   {
     "id": 101278,
-    "createdAt": "2021-03-26 19:04:40.184",
-    "updatedAt": "2021-03-26 19:05:41.633",
+    "createdAt": "2021-03-30 17:18:05.501",
+    "updatedAt": "2021-03-30 17:19:30.654",
     "handle": 101278,
     "name": "Joe Sharpe",
-    "teamId": 1610612766,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612766
   },
   {
     "id": 201666,
-    "createdAt": "2021-03-26 19:04:40.187",
-    "updatedAt": "2021-03-26 19:05:41.639",
+    "createdAt": "2021-03-30 17:18:05.503",
+    "updatedAt": "2021-03-30 17:19:30.681",
     "handle": 201666,
     "name": "Dennis Williams",
-    "teamId": 1610612766,
     "type": "Assistant Trainer",
-    "isAssistant": 4
+    "isAssistant": 4,
+    "teamId": 1610612766
   },
   {
     "id": 1627310,
-    "createdAt": "2021-03-26 19:04:40.124",
-    "updatedAt": "2021-03-26 19:05:41.846",
+    "createdAt": "2021-03-30 17:18:05.505",
+    "updatedAt": "2021-03-30 17:19:30.894",
     "handle": 1627310,
     "name": "Billy Donovan",
-    "teamId": 1610612741,
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612741
   },
   {
     "id": 1627604,
-    "createdAt": "2021-03-26 19:04:40.126",
-    "updatedAt": "2021-03-26 19:05:41.871",
+    "createdAt": "2021-03-30 17:18:05.523",
+    "updatedAt": "2021-03-30 17:19:30.902",
     "handle": 1627604,
     "name": "Chris Fleming",
-    "teamId": 1610612741,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612741
   },
   {
     "id": 2511,
-    "createdAt": "2021-03-26 19:04:40.127",
-    "updatedAt": "2021-03-26 19:05:41.88",
+    "createdAt": "2021-03-30 17:18:05.525",
+    "updatedAt": "2021-03-30 17:19:30.926",
     "handle": 2511,
     "name": "Mike Wilhelm",
-    "teamId": 1610612741,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612741
   },
   {
     "id": 204031,
-    "createdAt": "2021-03-26 19:04:40.179",
-    "updatedAt": "2021-03-26 19:05:41.896",
+    "createdAt": "2021-03-30 17:18:05.527",
+    "updatedAt": "2021-03-30 17:19:30.943",
     "handle": 204031,
     "name": "Joshua Longstaff",
-    "teamId": 1610612741,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612741
   },
   {
     "id": 1312,
-    "createdAt": "2021-03-26 19:04:40.193",
-    "updatedAt": "2021-03-26 19:05:41.922",
+    "createdAt": "2021-03-30 17:18:05.529",
+    "updatedAt": "2021-03-30 17:19:30.951",
     "handle": 1312,
     "name": "Maurice Cheeks",
-    "teamId": 1610612741,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612741
   },
   {
     "id": 2394,
-    "createdAt": "2021-03-26 19:04:40.195",
-    "updatedAt": "2021-03-26 19:05:41.93",
+    "createdAt": "2021-03-30 17:18:05.531",
+    "updatedAt": "2021-03-30 17:19:30.957",
     "handle": 2394,
     "name": "Pete Myers",
-    "teamId": 1610612741,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612741
   },
   {
     "id": 1629710,
-    "createdAt": "2021-03-26 19:04:40.131",
-    "updatedAt": "2021-03-26 19:05:42.18",
+    "createdAt": "2021-03-30 17:18:05.533",
+    "updatedAt": "2021-03-30 17:19:31.194",
     "handle": 1629710,
     "name": "Lindsay Gottlieb",
-    "teamId": 1610612739,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612739
   },
   {
     "id": 204238,
-    "createdAt": "2021-03-26 19:04:40.132",
-    "updatedAt": "2021-03-26 19:05:42.193",
+    "createdAt": "2021-03-30 17:18:05.534",
+    "updatedAt": "2021-03-30 17:19:31.207",
     "handle": 204238,
     "name": "Antonio Lang",
-    "teamId": 1610612739,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612739
   },
   {
     "id": 1629110,
-    "createdAt": "2021-03-26 19:04:40.134",
-    "updatedAt": "2021-03-26 19:05:42.2",
+    "createdAt": "2021-03-30 17:18:05.536",
+    "updatedAt": "2021-03-30 17:19:31.234",
     "handle": 1629110,
     "name": "Dan Geriot",
-    "teamId": 1610612739,
     "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 202565,
-    "createdAt": "2021-03-26 19:04:40.197",
-    "updatedAt": "2021-03-26 19:05:42.227",
-    "handle": 202565,
-    "name": "Mike Gerrity",
-    "teamId": 1610612739,
-    "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612739
   },
   {
     "id": 204286,
-    "createdAt": "2021-03-26 19:04:40.22",
-    "updatedAt": "2021-03-26 19:05:42.234",
+    "createdAt": "2021-03-30 17:18:05.54",
+    "updatedAt": "2021-03-30 17:19:31.248",
     "handle": 204286,
     "name": "Stephen Spiro",
-    "teamId": 1610612739,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612739
   },
   {
     "id": 1320,
-    "createdAt": "2021-03-26 19:04:40.136",
-    "updatedAt": "2021-03-26 19:05:42.449",
+    "createdAt": "2021-03-30 17:18:05.542",
+    "updatedAt": "2021-03-30 17:19:31.478",
     "handle": 1320,
     "name": "Rick Carlisle",
-    "teamId": 1610612742,
     "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 202427,
-    "createdAt": "2021-03-26 19:04:40.138",
-    "updatedAt": "2021-03-26 19:05:42.484",
-    "handle": 202427,
-    "name": "Jamahl Mosley",
-    "teamId": 1610612742,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1628782,
-    "createdAt": "2021-03-26 19:04:40.217",
-    "updatedAt": "2021-03-26 19:05:42.499",
-    "handle": 1628782,
-    "name": "Mike Weinar",
-    "teamId": 1610612742,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 2868,
-    "createdAt": "2021-03-26 19:04:40.229",
-    "updatedAt": "2021-03-26 19:05:42.526",
-    "handle": 2868,
-    "name": "Casey Smith",
-    "teamId": 1610612742,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 2871,
-    "createdAt": "2021-03-26 19:04:40.23",
-    "updatedAt": "2021-03-26 19:05:42.534",
-    "handle": 2871,
-    "name": "Dionne Calhoun",
-    "teamId": 1610612742,
-    "type": "Assistant Trainer",
-    "isAssistant": 4
-  },
-  {
-    "id": 2610,
-    "createdAt": "2021-03-26 19:04:40.141",
-    "updatedAt": "2021-03-26 19:05:42.746",
-    "handle": 2610,
-    "name": "Michael Malone",
-    "teamId": 1610612743,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 203391,
-    "createdAt": "2021-03-26 19:04:40.143",
-    "updatedAt": "2021-03-26 19:05:42.771",
-    "handle": 203391,
-    "name": "Ryan Bowen",
-    "teamId": 1610612743,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 202894,
-    "createdAt": "2021-03-26 19:04:40.145",
-    "updatedAt": "2021-03-26 19:05:42.78",
-    "handle": 202894,
-    "name": "Charles Klask",
-    "teamId": 1610612743,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 203165,
-    "createdAt": "2021-03-26 19:04:40.147",
-    "updatedAt": "2021-03-26 19:05:42.786",
-    "handle": 203165,
-    "name": "Bob Weiss",
-    "teamId": 1610612743,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 203600,
-    "createdAt": "2021-03-26 19:04:40.227",
-    "updatedAt": "2021-03-26 19:05:42.794",
-    "handle": 203600,
-    "name": "David Adelman",
-    "teamId": 1610612743,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 203759,
-    "createdAt": "2021-03-26 19:04:40.235",
-    "updatedAt": "2021-03-26 19:05:42.8",
-    "handle": 203759,
-    "name": "Jordi Fernandez",
-    "teamId": 1610612743,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1018,
-    "createdAt": "2021-03-26 19:04:40.237",
-    "updatedAt": "2021-03-26 19:05:42.827",
-    "handle": 1018,
-    "name": "Wes Unseld",
-    "teamId": 1610612743,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1627167,
-    "createdAt": "2021-03-26 19:04:40.241",
-    "updatedAt": "2021-03-26 19:05:42.834",
-    "handle": 1627167,
-    "name": "Dan Shimensky",
-    "teamId": 1610612743,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 204230,
-    "createdAt": "2021-03-26 19:04:40.168",
-    "updatedAt": "2021-03-26 19:05:43.071",
-    "handle": 204230,
-    "name": "Tim Hardaway",
-    "teamId": 1610612765,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1336,
-    "createdAt": "2021-03-26 19:04:40.17",
-    "updatedAt": "2021-03-26 19:05:43.079",
-    "handle": 1336,
-    "name": "Tim Grgurich",
-    "teamId": 1610612765,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 202101,
-    "createdAt": "2021-03-26 19:04:40.239",
-    "updatedAt": "2021-03-26 19:05:43.086",
-    "handle": 202101,
-    "name": "Micah Nori",
-    "teamId": 1610612765,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 204085,
-    "createdAt": "2021-03-26 19:04:40.244",
-    "updatedAt": "2021-03-26 19:05:43.092",
-    "handle": 204085,
-    "name": "Sean Sweeney",
-    "teamId": 1610612765,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1226,
-    "createdAt": "2021-03-26 19:04:40.247",
-    "updatedAt": "2021-03-26 19:05:43.098",
-    "handle": 1226,
-    "name": "Sidney Lowe",
-    "teamId": 1610612765,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 201678,
-    "createdAt": "2021-03-26 19:04:40.242",
-    "updatedAt": "2021-03-26 19:05:43.125",
-    "handle": 201678,
-    "name": "Jim Scholler",
-    "teamId": 1610612765,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 204239,
-    "createdAt": "2021-03-26 19:04:40.275",
-    "updatedAt": "2021-03-26 19:05:43.33",
-    "handle": 204239,
-    "name": "Jarron Collins",
-    "teamId": 1610612744,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1658,
-    "createdAt": "2021-03-26 19:04:40.174",
-    "updatedAt": "2021-03-26 19:05:43.337",
-    "handle": 1658,
-    "name": "Mike Brown",
-    "teamId": 1610612744,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 204260,
-    "createdAt": "2021-03-26 19:04:40.246",
-    "updatedAt": "2021-03-26 19:05:43.343",
-    "handle": 204260,
-    "name": "Bruce Fraser",
-    "teamId": 1610612744,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1796,
-    "createdAt": "2021-03-26 19:04:40.267",
-    "updatedAt": "2021-03-26 19:05:43.35",
-    "handle": 1796,
-    "name": "Ron Adams",
-    "teamId": 1610612744,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1627666,
-    "createdAt": "2021-03-26 19:04:40.269",
-    "updatedAt": "2021-03-26 19:05:43.375",
-    "handle": 1627666,
-    "name": "Chris DeMarco",
-    "teamId": 1610612744,
-    "type": "Assistant Coach for Player Development",
-    "isAssistant": 12
-  },
-  {
-    "id": 2152,
-    "createdAt": "2021-03-26 19:04:40.271",
-    "updatedAt": "2021-03-26 19:05:43.594",
-    "handle": 2152,
-    "name": "Stephen Silas",
-    "teamId": 1610612745,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 1786,
-    "createdAt": "2021-03-26 19:04:40.276",
-    "updatedAt": "2021-03-26 19:05:43.627",
-    "handle": 1786,
-    "name": "John Lucas",
-    "teamId": 1610612745,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 201675,
-    "createdAt": "2021-03-26 19:04:40.28",
-    "updatedAt": "2021-03-26 19:05:43.945",
-    "handle": 201675,
-    "name": "Carl Eaton",
-    "teamId": 1610612754,
-    "type": "Assistant Trainer",
-    "isAssistant": 4
-  },
-  {
-    "id": 202978,
-    "createdAt": "2021-03-26 19:04:40.283",
-    "updatedAt": "2021-03-26 19:05:44.144",
-    "handle": 202978,
-    "name": "Tyronn Lue",
-    "teamId": 1610612746,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 2630,
-    "createdAt": "2021-03-26 19:04:40.29",
-    "updatedAt": "2021-03-26 19:05:45.792",
-    "handle": 2630,
-    "name": "Bob Beyer",
-    "teamId": 1610612740,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 203375,
-    "createdAt": "2021-03-26 19:04:40.041",
-    "updatedAt": "2021-03-26 19:05:46.092",
-    "handle": 203375,
-    "name": "Darren Erman",
-    "teamId": 1610612752,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1629450,
-    "createdAt": "2021-03-26 19:04:40.273",
-    "updatedAt": "2021-03-26 19:05:46.099",
-    "handle": 1629450,
-    "name": "Larry Greer",
-    "teamId": 1610612752,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1370,
-    "createdAt": "2021-03-26 19:04:40.278",
-    "updatedAt": "2021-03-26 19:05:46.139",
-    "handle": 1370,
-    "name": "Roger Hinds",
-    "teamId": 1610612752,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 1629758,
-    "createdAt": "2021-03-26 19:04:40.281",
-    "updatedAt": "2021-03-26 19:05:46.349",
-    "handle": 1629758,
-    "name": "Dave Bliss",
-    "teamId": 1610612760,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 203758,
-    "createdAt": "2021-03-26 19:04:40.046",
-    "updatedAt": "2021-03-26 19:05:46.376",
-    "handle": 203758,
-    "name": "Mike Miller",
-    "teamId": 1610612760,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 2366,
-    "createdAt": "2021-03-26 19:04:40.286",
-    "updatedAt": "2021-03-26 19:05:46.383",
-    "handle": 2366,
-    "name": "Mike Wilks",
-    "teamId": 1610612760,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 202859,
-    "createdAt": "2021-03-26 19:04:40.285",
-    "updatedAt": "2021-03-26 19:05:46.396",
-    "handle": 202859,
-    "name": "David Akinyooye",
-    "teamId": 1610612760,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 204013,
-    "createdAt": "2021-03-26 19:04:40.291",
-    "updatedAt": "2021-03-26 19:05:46.676",
-    "handle": 204013,
-    "name": "Pat Delany",
-    "teamId": 1610612753,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1629169,
-    "createdAt": "2021-03-26 19:04:40.075",
-    "updatedAt": "2021-03-26 19:05:46.924",
-    "handle": 1629169,
-    "name": "Brian Adams",
-    "teamId": 1610612755,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1629427,
-    "createdAt": "2021-03-26 19:04:40.076",
-    "updatedAt": "2021-03-26 19:05:47.182",
-    "handle": 1629427,
-    "name": "Brian Randle",
-    "teamId": 1610612756,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1865,
-    "createdAt": "2021-03-26 19:04:40.078",
-    "updatedAt": "2021-03-26 19:05:47.188",
-    "handle": 1865,
-    "name": "Randy Ayers",
-    "teamId": 1610612756,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 201046,
-    "createdAt": "2021-03-26 19:04:40.08",
-    "updatedAt": "2021-03-26 19:05:47.739",
-    "handle": 201046,
-    "name": "Lindsey Harding",
-    "teamId": 1610612758,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1627564,
-    "createdAt": "2021-03-26 19:04:40.081",
-    "updatedAt": "2021-03-26 19:05:47.77",
-    "handle": 1627564,
-    "name": "Jonah Herscu",
-    "teamId": 1610612758,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 278,
-    "createdAt": "2021-03-26 19:04:40.086",
-    "updatedAt": "2021-03-26 19:05:47.799",
-    "handle": 278,
-    "name": "Stacey Augmon",
-    "teamId": 1610612758,
-    "type": "Assistant Coach for Player Development",
-    "isAssistant": 12
-  },
-  {
-    "id": 202743,
-    "createdAt": "2021-03-26 19:04:40.379",
-    "updatedAt": "2021-03-26 19:05:41.887",
-    "handle": 202743,
-    "name": "John Bryant",
-    "teamId": 1610612741,
-    "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 1,
+    "teamId": 1610612742
   },
   {
     "id": 1628785,
-    "createdAt": "2021-03-26 19:04:40.494",
-    "updatedAt": "2021-03-26 19:05:42.476",
+    "createdAt": "2021-03-30 17:18:05.677",
+    "updatedAt": "2021-03-30 17:19:31.486",
     "handle": 1628785,
     "name": "Zach Guthrie",
-    "teamId": 1610612742,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612742
+  },
+  {
+    "id": 202427,
+    "createdAt": "2021-03-30 17:18:05.544",
+    "updatedAt": "2021-03-30 17:19:31.493",
+    "handle": 202427,
+    "name": "Jamahl Mosley",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612742
+  },
+  {
+    "id": 2868,
+    "createdAt": "2021-03-30 17:18:05.548",
+    "updatedAt": "2021-03-30 17:19:31.534",
+    "handle": 2868,
+    "name": "Casey Smith",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612742
+  },
+  {
+    "id": 2871,
+    "createdAt": "2021-03-30 17:18:05.549",
+    "updatedAt": "2021-03-30 17:19:31.541",
+    "handle": 2871,
+    "name": "Dionne Calhoun",
+    "type": "Assistant Trainer",
+    "isAssistant": 4,
+    "teamId": 1610612742
+  },
+  {
+    "id": 2610,
+    "createdAt": "2021-03-30 17:18:05.551",
+    "updatedAt": "2021-03-30 17:19:31.751",
+    "handle": 2610,
+    "name": "Michael Malone",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612743
+  },
+  {
+    "id": 203391,
+    "createdAt": "2021-03-30 17:18:05.553",
+    "updatedAt": "2021-03-30 17:19:31.758",
+    "handle": 203391,
+    "name": "Ryan Bowen",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612743
+  },
+  {
+    "id": 202894,
+    "createdAt": "2021-03-30 17:18:05.555",
+    "updatedAt": "2021-03-30 17:19:31.782",
+    "handle": 202894,
+    "name": "Charles Klask",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612743
+  },
+  {
+    "id": 203165,
+    "createdAt": "2021-03-30 17:18:05.573",
+    "updatedAt": "2021-03-30 17:19:31.789",
+    "handle": 203165,
+    "name": "Bob Weiss",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612743
+  },
+  {
+    "id": 203759,
+    "createdAt": "2021-03-30 17:18:05.577",
+    "updatedAt": "2021-03-30 17:19:31.802",
+    "handle": 203759,
+    "name": "Jordi Fernandez",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612743
+  },
+  {
+    "id": 1018,
+    "createdAt": "2021-03-30 17:18:05.579",
+    "updatedAt": "2021-03-30 17:19:31.808",
+    "handle": 1018,
+    "name": "Wes Unseld",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612743
+  },
+  {
+    "id": 1627167,
+    "createdAt": "2021-03-30 17:18:05.581",
+    "updatedAt": "2021-03-30 17:19:31.831",
+    "handle": 1627167,
+    "name": "Dan Shimensky",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612743
+  },
+  {
+    "id": 204230,
+    "createdAt": "2021-03-30 17:18:05.583",
+    "updatedAt": "2021-03-30 17:19:32.048",
+    "handle": 204230,
+    "name": "Tim Hardaway",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612765
+  },
+  {
+    "id": 1336,
+    "createdAt": "2021-03-30 17:18:05.584",
+    "updatedAt": "2021-03-30 17:19:32.054",
+    "handle": 1336,
+    "name": "Tim Grgurich",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612765
+  },
+  {
+    "id": 202101,
+    "createdAt": "2021-03-30 17:18:05.586",
+    "updatedAt": "2021-03-30 17:19:32.078",
+    "handle": 202101,
+    "name": "Micah Nori",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612765
+  },
+  {
+    "id": 1226,
+    "createdAt": "2021-03-30 17:18:05.591",
+    "updatedAt": "2021-03-30 17:19:32.093",
+    "handle": 1226,
+    "name": "Sidney Lowe",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612765
+  },
+  {
+    "id": 201678,
+    "createdAt": "2021-03-30 17:18:05.592",
+    "updatedAt": "2021-03-30 17:19:32.099",
+    "handle": 201678,
+    "name": "Jim Scholler",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612765
+  },
+  {
+    "id": 204239,
+    "createdAt": "2021-03-30 17:18:05.594",
+    "updatedAt": "2021-03-30 17:19:32.303",
+    "handle": 204239,
+    "name": "Jarron Collins",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612744
+  },
+  {
+    "id": 1658,
+    "createdAt": "2021-03-30 17:18:05.596",
+    "updatedAt": "2021-03-30 17:19:32.327",
+    "handle": 1658,
+    "name": "Mike Brown",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612744
+  },
+  {
+    "id": 204260,
+    "createdAt": "2021-03-30 17:18:05.598",
+    "updatedAt": "2021-03-30 17:19:32.337",
+    "handle": 204260,
+    "name": "Bruce Fraser",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612744
+  },
+  {
+    "id": 1796,
+    "createdAt": "2021-03-30 17:18:05.6",
+    "updatedAt": "2021-03-30 17:19:32.344",
+    "handle": 1796,
+    "name": "Ron Adams",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612744
+  },
+  {
+    "id": 2152,
+    "createdAt": "2021-03-30 17:18:05.603",
+    "updatedAt": "2021-03-30 17:19:32.577",
+    "handle": 2152,
+    "name": "Stephen Silas",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612745
+  },
+  {
+    "id": 1786,
+    "createdAt": "2021-03-30 17:18:05.622",
+    "updatedAt": "2021-03-30 17:19:32.592",
+    "handle": 1786,
+    "name": "John Lucas",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612745
   },
   {
     "id": 201765,
-    "createdAt": "2021-03-26 19:04:40.32",
-    "updatedAt": "2021-03-26 19:05:43.887",
+    "createdAt": "2021-03-30 17:18:05.679",
+    "updatedAt": "2021-03-30 17:19:32.836",
     "handle": 201765,
     "name": "Nate Bjorkgren",
-    "teamId": 1610612754,
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612754
   },
   {
     "id": 201696,
-    "createdAt": "2021-03-26 19:04:40.373",
-    "updatedAt": "2021-03-26 19:05:43.901",
+    "createdAt": "2021-03-30 17:18:05.681",
+    "updatedAt": "2021-03-30 17:19:32.85",
     "handle": 201696,
     "name": "Kaleb Canales",
-    "teamId": 1610612754,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612754
   },
   {
     "id": 101200,
-    "createdAt": "2021-03-26 19:04:40.398",
-    "updatedAt": "2021-03-26 19:05:43.939",
+    "createdAt": "2021-03-30 17:18:05.683",
+    "updatedAt": "2021-03-30 17:19:32.89",
     "handle": 101200,
     "name": "Josh Corbeil",
-    "teamId": 1610612754,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612754
   },
   {
-    "id": 2814,
-    "createdAt": "2021-03-26 19:04:40.332",
-    "updatedAt": "2021-03-26 19:05:44.232",
-    "handle": 2814,
-    "name": "Brendan O'Connor",
-    "teamId": 1610612746,
-    "type": "Assistant Coach",
-    "isAssistant": 2
+    "id": 201675,
+    "createdAt": "2021-03-30 17:18:05.625",
+    "updatedAt": "2021-03-30 17:19:32.897",
+    "handle": 201675,
+    "name": "Carl Eaton",
+    "type": "Assistant Trainer",
+    "isAssistant": 4,
+    "teamId": 1610612754
+  },
+  {
+    "id": 202978,
+    "createdAt": "2021-03-30 17:18:05.627",
+    "updatedAt": "2021-03-30 17:19:33.079",
+    "handle": 202978,
+    "name": "Tyronn Lue",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612746
   },
   {
     "id": 2345,
-    "createdAt": "2021-03-26 19:04:40.346",
-    "updatedAt": "2021-03-26 19:05:44.433",
+    "createdAt": "2021-03-30 17:18:05.687",
+    "updatedAt": "2021-03-30 17:19:33.352",
     "handle": 2345,
     "name": "Frank Vogel",
-    "teamId": 1610612747,
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612747
   },
   {
     "id": 1629748,
-    "createdAt": "2021-03-26 19:04:40.387",
-    "updatedAt": "2021-03-26 19:05:44.44",
+    "createdAt": "2021-03-30 17:18:05.689",
+    "updatedAt": "2021-03-30 17:19:33.358",
     "handle": 1629748,
     "name": "Quinton Crawford",
-    "teamId": 1610612747,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612747
   },
   {
     "id": 1353,
-    "createdAt": "2021-03-26 19:04:40.529",
-    "updatedAt": "2021-03-26 19:05:44.447",
+    "createdAt": "2021-03-30 17:18:05.691",
+    "updatedAt": "2021-03-30 17:19:33.381",
     "handle": 1353,
     "name": "Lionel Hollins",
-    "teamId": 1610612747,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612747
   },
   {
     "id": 203456,
-    "createdAt": "2021-03-26 19:04:40.431",
-    "updatedAt": "2021-03-26 19:05:44.474",
+    "createdAt": "2021-03-30 17:18:05.693",
+    "updatedAt": "2021-03-30 17:19:33.388",
     "handle": 203456,
     "name": "Jason Kidd",
-    "teamId": 1610612747,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612747
   },
   {
     "id": 203597,
-    "createdAt": "2021-03-26 19:04:40.442",
-    "updatedAt": "2021-03-26 19:05:44.482",
+    "createdAt": "2021-03-30 17:18:05.695",
+    "updatedAt": "2021-03-30 17:19:33.395",
     "handle": 203597,
     "name": "Phil Handy",
-    "teamId": 1610612747,
     "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 2130,
-    "createdAt": "2021-03-26 19:04:40.44",
-    "updatedAt": "2021-03-26 19:05:44.496",
-    "handle": 2130,
-    "name": "Mike Penberthy",
-    "teamId": 1610612747,
-    "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612747
   },
   {
     "id": 203624,
-    "createdAt": "2021-03-26 19:04:40.348",
-    "updatedAt": "2021-03-26 19:05:44.734",
+    "createdAt": "2021-03-30 17:18:05.699",
+    "updatedAt": "2021-03-30 17:19:33.631",
     "handle": 203624,
     "name": "Taylor Jenkins",
-    "teamId": 1610612763,
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612763
   },
   {
     "id": 2086,
-    "createdAt": "2021-03-26 19:04:40.481",
-    "updatedAt": "2021-03-26 19:05:44.771",
+    "createdAt": "2021-03-30 17:18:05.701",
+    "updatedAt": "2021-03-30 17:19:33.651",
     "handle": 2086,
     "name": "Scoonie Penn",
-    "teamId": 1610612763,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612763
   },
   {
     "id": 1628234,
-    "createdAt": "2021-03-26 19:04:40.421",
-    "updatedAt": "2021-03-26 19:05:44.792",
+    "createdAt": "2021-03-30 17:18:05.703",
+    "updatedAt": "2021-03-30 17:19:33.69",
     "handle": 1628234,
     "name": "David McClure",
-    "teamId": 1610612763,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612763
   },
   {
     "id": 1630018,
-    "createdAt": "2021-03-26 19:04:40.445",
-    "updatedAt": "2021-03-26 19:05:44.827",
+    "createdAt": "2021-03-30 17:18:05.705",
+    "updatedAt": "2021-03-30 17:19:33.704",
     "handle": 1630018,
     "name": "Eric Oetter",
-    "teamId": 1610612763,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612763
   },
   {
     "id": 1787,
-    "createdAt": "2021-03-26 19:04:40.532",
-    "updatedAt": "2021-03-26 19:05:45.02",
+    "createdAt": "2021-03-30 17:18:05.723",
+    "updatedAt": "2021-03-30 17:19:33.892",
     "handle": 1787,
     "name": "Erik Spoelstra",
-    "teamId": 1610612748,
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612748
   },
   {
-    "id": 204229,
-    "createdAt": "2021-03-26 19:04:40.368",
-    "updatedAt": "2021-03-26 19:05:45.033",
-    "handle": 204229,
-    "name": "Malik Allen",
-    "teamId": 1610612748,
+    "id": 2630,
+    "createdAt": "2021-03-30 17:18:05.629",
+    "updatedAt": "2021-03-30 17:19:34.652",
+    "handle": 2630,
+    "name": "Bob Beyer",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612740
   },
   {
-    "id": 204226,
-    "createdAt": "2021-03-26 19:04:40.391",
-    "updatedAt": "2021-03-26 19:05:45.046",
-    "handle": 204226,
-    "name": "Chris Quinn",
-    "teamId": 1610612748,
+    "id": 1629450,
+    "createdAt": "2021-03-30 17:18:05.633",
+    "updatedAt": "2021-03-30 17:19:34.951",
+    "handle": 1629450,
+    "name": "Larry Greer",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612752
   },
   {
-    "id": 1281,
-    "createdAt": "2021-03-26 19:04:40.447",
-    "updatedAt": "2021-03-26 19:05:45.077",
-    "handle": 1281,
-    "name": "Jay Sabol",
-    "teamId": 1610612748,
+    "id": 1370,
+    "createdAt": "2021-03-30 17:18:05.635",
+    "updatedAt": "2021-03-30 17:19:34.989",
+    "handle": 1370,
+    "name": "Roger Hinds",
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612752
   },
   {
-    "id": 1628784,
-    "createdAt": "2021-03-26 19:04:40.338",
-    "updatedAt": "2021-03-26 19:05:45.27",
-    "handle": 1628784,
-    "name": "Pat St. Andrews",
-    "teamId": 1610612749,
+    "id": 1629758,
+    "createdAt": "2021-03-30 17:18:05.636",
+    "updatedAt": "2021-03-30 17:19:35.192",
+    "handle": 1629758,
+    "name": "Dave Bliss",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612760
   },
   {
-    "id": 2649,
-    "createdAt": "2021-03-26 19:04:40.484",
-    "updatedAt": "2021-03-26 19:05:45.278",
-    "handle": 2649,
-    "name": "Chad Forcier",
-    "teamId": 1610612749,
+    "id": 203758,
+    "createdAt": "2021-03-30 17:18:05.638",
+    "updatedAt": "2021-03-30 17:19:35.199",
+    "handle": 203758,
+    "name": "Mike Miller",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612760
   },
   {
-    "id": 203005,
-    "createdAt": "2021-03-26 19:04:40.467",
-    "updatedAt": "2021-03-26 19:05:45.285",
-    "handle": 203005,
-    "name": "Darvin Ham",
-    "teamId": 1610612749,
+    "id": 2366,
+    "createdAt": "2021-03-30 17:18:05.641",
+    "updatedAt": "2021-03-30 17:19:35.206",
+    "handle": 2366,
+    "name": "Mike Wilks",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612760
   },
   {
-    "id": 201692,
-    "createdAt": "2021-03-26 19:04:40.469",
-    "updatedAt": "2021-03-26 19:05:45.332",
-    "handle": 201692,
-    "name": "Scott Faust",
-    "teamId": 1610612749,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 202896,
-    "createdAt": "2021-03-26 19:04:40.486",
-    "updatedAt": "2021-03-26 19:05:45.525",
-    "handle": 202896,
-    "name": "Chris Finch",
-    "teamId": 1610612750,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 203150,
-    "createdAt": "2021-03-26 19:04:40.434",
-    "updatedAt": "2021-03-26 19:05:45.533",
-    "handle": 203150,
-    "name": "David Vanterpool",
-    "teamId": 1610612750,
-    "type": "Associate Head Coach",
-    "isAssistant": 9
-  },
-  {
-    "id": 1628772,
-    "createdAt": "2021-03-26 19:04:40.471",
-    "updatedAt": "2021-03-26 19:05:45.54",
-    "handle": 1628772,
-    "name": "Kevin Burleson",
-    "teamId": 1610612750,
+    "id": 202859,
+    "createdAt": "2021-03-30 17:18:05.642",
+    "updatedAt": "2021-03-30 17:19:35.239",
+    "handle": 202859,
+    "name": "David Akinyooye",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612760
   },
   {
-    "id": 974,
-    "createdAt": "2021-03-26 19:04:40.34",
-    "updatedAt": "2021-03-26 19:05:45.546",
-    "handle": 974,
-    "name": "Joseph Blair",
-    "teamId": 1610612750,
+    "id": 204013,
+    "createdAt": "2021-03-30 17:18:05.644",
+    "updatedAt": "2021-03-30 17:19:35.483",
+    "handle": 204013,
+    "name": "Pat Delany",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612753
   },
   {
-    "id": 202109,
-    "createdAt": "2021-03-26 19:04:40.517",
-    "updatedAt": "2021-03-26 19:05:45.581",
-    "handle": 202109,
-    "name": "Bryan Gates",
-    "teamId": 1610612750,
+    "id": 1629427,
+    "createdAt": "2021-03-30 17:18:05.648",
+    "updatedAt": "2021-03-30 17:19:35.977",
+    "handle": 1629427,
+    "name": "Brian Randle",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612756
   },
   {
-    "id": 2146,
-    "createdAt": "2021-03-26 19:04:40.535",
-    "updatedAt": "2021-03-26 19:05:45.588",
-    "handle": 2146,
-    "name": "Gregg Farnam",
-    "teamId": 1610612750,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 203243,
-    "createdAt": "2021-03-26 19:04:40.37",
-    "updatedAt": "2021-03-26 19:05:45.824",
-    "handle": 203243,
-    "name": "Casey Hill",
-    "teamId": 1610612740,
+    "id": 1865,
+    "createdAt": "2021-03-30 17:18:05.65",
+    "updatedAt": "2021-03-30 17:19:35.985",
+    "handle": 1865,
+    "name": "Randy Ayers",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612756
   },
   {
-    "id": 1301,
-    "createdAt": "2021-03-26 19:04:40.479",
-    "updatedAt": "2021-03-26 19:05:46.05",
-    "handle": 1301,
-    "name": "Tom Thibodeau",
-    "teamId": 1610612752,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 204008,
-    "createdAt": "2021-03-26 19:04:40.482",
-    "updatedAt": "2021-03-26 19:05:46.072",
-    "handle": 204008,
-    "name": "Johnnie Bryant",
-    "teamId": 1610612752,
-    "type": "Associate Head Coach",
-    "isAssistant": 9
-  },
-  {
-    "id": 1630161,
-    "createdAt": "2021-03-26 19:04:40.492",
-    "updatedAt": "2021-03-26 19:05:46.079",
-    "handle": 1630161,
-    "name": "Kenny Payne",
-    "teamId": 1610612752,
-    "type": "Lead Assistant Coach",
-    "isAssistant": 13
-  },
-  {
-    "id": 2519,
-    "createdAt": "2021-03-26 19:04:40.497",
-    "updatedAt": "2021-03-26 19:05:46.125",
-    "handle": 2519,
-    "name": "Andy Greer",
-    "teamId": 1610612752,
+    "id": 201046,
+    "createdAt": "2021-03-30 17:18:05.652",
+    "updatedAt": "2021-03-30 17:19:36.501",
+    "handle": 201046,
+    "name": "Lindsey Harding",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612758
   },
   {
-    "id": 101269,
-    "createdAt": "2021-03-26 19:04:40.525",
-    "updatedAt": "2021-03-26 19:05:46.132",
-    "handle": 101269,
-    "name": "Anthony Goenaga",
-    "teamId": 1610612752,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 1627327,
-    "createdAt": "2021-03-26 19:04:40.527",
-    "updatedAt": "2021-03-26 19:05:46.342",
-    "handle": 1627327,
-    "name": "Mark Daigneault",
-    "teamId": 1610612760,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 1628178,
-    "createdAt": "2021-03-26 19:04:40.53",
-    "updatedAt": "2021-03-26 19:05:46.39",
-    "handle": 1628178,
-    "name": "Vin Bhavnani",
-    "teamId": 1610612760,
+    "id": 1627564,
+    "createdAt": "2021-03-30 17:18:05.654",
+    "updatedAt": "2021-03-30 17:19:36.531",
+    "handle": 1627564,
+    "name": "Jonah Herscu",
     "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1629423,
-    "createdAt": "2021-03-26 19:04:40.533",
-    "updatedAt": "2021-03-26 19:05:46.42",
-    "handle": 1629423,
-    "name": "Donnie Strack",
-    "teamId": 1610612760,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 2168,
-    "createdAt": "2021-03-26 19:04:40.541",
-    "updatedAt": "2021-03-26 19:05:46.63",
-    "handle": 2168,
-    "name": "Steve Clifford",
-    "teamId": 1610612753,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 2821,
-    "createdAt": "2021-03-26 19:04:40.296",
-    "updatedAt": "2021-03-26 19:05:46.643",
-    "handle": 2821,
-    "name": "Ty Corbin",
-    "teamId": 1610612753,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 204004,
-    "createdAt": "2021-03-26 19:04:40.54",
-    "updatedAt": "2021-03-26 19:05:46.65",
-    "handle": 204004,
-    "name": "Steve Hetzel",
-    "teamId": 1610612753,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 2720,
-    "createdAt": "2021-03-26 19:04:40.295",
-    "updatedAt": "2021-03-26 19:05:46.695",
-    "handle": 2720,
-    "name": "Ernest Eugene",
-    "teamId": 1610612753,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 2515,
-    "createdAt": "2021-03-26 19:04:40.334",
-    "updatedAt": "2021-03-26 19:05:46.932",
-    "handle": 2515,
-    "name": "Dan Burke",
-    "teamId": 1610612755,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 202108,
-    "createdAt": "2021-03-26 19:04:40.336",
-    "updatedAt": "2021-03-26 19:05:46.939",
-    "handle": 202108,
-    "name": "Sam Cassell",
-    "teamId": 1610612755,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 202434,
-    "createdAt": "2021-03-26 19:04:40.345",
-    "updatedAt": "2021-03-26 19:05:46.945",
-    "handle": 202434,
-    "name": "Popeye Jones",
-    "teamId": 1610612755,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 201220,
-    "createdAt": "2021-03-26 19:04:40.325",
-    "updatedAt": "2021-03-26 19:05:46.971",
-    "handle": 201220,
-    "name": "David Joerger",
-    "teamId": 1610612755,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1360,
-    "createdAt": "2021-03-26 19:04:40.329",
-    "updatedAt": "2021-03-26 19:05:46.979",
-    "handle": 1360,
-    "name": "Kevin Johnson",
-    "teamId": 1610612755,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 101273,
-    "createdAt": "2021-03-26 19:04:40.371",
-    "updatedAt": "2021-03-26 19:05:47.175",
-    "handle": 101273,
-    "name": "Monty Williams",
-    "teamId": 1610612756,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 202111,
-    "createdAt": "2021-03-26 19:04:40.366",
-    "updatedAt": "2021-03-26 19:05:47.195",
-    "handle": 202111,
-    "name": "Kevin Young",
-    "teamId": 1610612756,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1337,
-    "createdAt": "2021-03-26 19:04:40.298",
-    "updatedAt": "2021-03-26 19:05:47.424",
-    "handle": 1337,
-    "name": "Terry Stotts",
-    "teamId": 1610612757,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 203170,
-    "createdAt": "2021-03-26 19:04:40.341",
-    "updatedAt": "2021-03-26 19:05:47.445",
-    "handle": 203170,
-    "name": "Dale Osbourne",
-    "teamId": 1610612757,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 2457,
-    "createdAt": "2021-03-26 19:04:40.381",
-    "updatedAt": "2021-03-26 19:05:47.475",
-    "handle": 2457,
-    "name": "Jannero Pargo",
-    "teamId": 1610612757,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 101272,
-    "createdAt": "2021-03-26 19:04:40.377",
-    "updatedAt": "2021-03-26 19:05:47.482",
-    "handle": 101272,
-    "name": "Geoff Clark",
-    "teamId": 1610612757,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 1243,
-    "createdAt": "2021-03-26 19:04:40.343",
-    "updatedAt": "2021-03-26 19:05:47.725",
-    "handle": 1243,
-    "name": "Alvin Gentry",
-    "teamId": 1610612758,
-    "type": "Associate Head Coach",
-    "isAssistant": 9
-  },
-  {
-    "id": 1672,
-    "createdAt": "2021-03-26 19:04:40.389",
-    "updatedAt": "2021-03-26 19:05:47.732",
-    "handle": 1672,
-    "name": "Rex Kalamian",
-    "teamId": 1610612758,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1629711,
-    "createdAt": "2021-03-26 19:04:40.384",
-    "updatedAt": "2021-03-26 19:05:47.778",
-    "handle": 1629711,
-    "name": "Roy Rana",
-    "teamId": 1610612758,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1627331,
-    "createdAt": "2021-03-26 19:04:40.393",
-    "updatedAt": "2021-03-26 19:05:47.826",
-    "handle": 1627331,
-    "name": "Will Scott",
-    "teamId": 1610612758,
-    "type": "Assistant Coach for Player Development",
-    "isAssistant": 12
-  },
-  {
-    "id": 203167,
-    "createdAt": "2021-03-26 19:04:40.382",
-    "updatedAt": "2021-03-26 19:05:47.833",
-    "handle": 203167,
-    "name": "Joe Resendez",
-    "teamId": 1610612758,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 873,
-    "createdAt": "2021-03-26 19:04:40.396",
-    "updatedAt": "2021-03-26 19:05:48.03",
-    "handle": 873,
-    "name": "Gregg Popovich",
-    "teamId": 1610612759,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 1628188,
-    "createdAt": "2021-03-26 19:04:40.418",
-    "updatedAt": "2021-03-26 19:05:48.036",
-    "handle": 1628188,
-    "name": "Mitch Johnson",
-    "teamId": 1610612759,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 2443,
-    "createdAt": "2021-03-26 19:04:40.424",
-    "updatedAt": "2021-03-26 19:05:48.043",
-    "handle": 2443,
-    "name": "Darius Songaila",
-    "teamId": 1610612759,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 2887,
-    "createdAt": "2021-03-26 19:04:40.488",
-    "updatedAt": "2021-03-26 19:05:48.049",
-    "handle": 2887,
-    "name": "Chip Engelland",
-    "teamId": 1610612759,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 203606,
-    "createdAt": "2021-03-26 19:04:40.52",
-    "updatedAt": "2021-03-26 19:05:48.271",
-    "handle": 203606,
-    "name": "Nick Nurse",
-    "teamId": 1610612761,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 1629821,
-    "createdAt": "2021-03-26 19:04:40.522",
-    "updatedAt": "2021-03-26 19:05:48.279",
-    "handle": 1629821,
-    "name": "Jon Goodwillie",
-    "teamId": 1610612761,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 203604,
-    "createdAt": "2021-03-26 19:04:40.428",
-    "updatedAt": "2021-03-26 19:05:48.285",
-    "handle": 203604,
-    "name": "Jama Mahlalela",
-    "teamId": 1610612761,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1356,
-    "createdAt": "2021-03-26 19:04:40.426",
-    "updatedAt": "2021-03-26 19:05:48.329",
-    "handle": 1356,
-    "name": "Scott McCullough",
-    "teamId": 1610612761,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 202439,
-    "createdAt": "2021-03-26 19:04:40.495",
-    "updatedAt": "2021-03-26 19:05:48.537",
-    "handle": 202439,
-    "name": "Quin Snyder",
-    "teamId": 1610612762,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 101203,
-    "createdAt": "2021-03-26 19:04:40.43",
-    "updatedAt": "2021-03-26 19:05:48.643",
-    "handle": 101203,
-    "name": "Eric Waters",
-    "teamId": 1610612762,
-    "type": "Trainer",
-    "isAssistant": 3
-  },
-  {
-    "id": 1627328,
-    "createdAt": "2021-03-26 19:04:40.524",
-    "updatedAt": "2021-03-26 19:05:48.933",
-    "handle": 1627328,
-    "name": "Jarell Christian",
-    "teamId": 1610612764,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 2607,
-    "createdAt": "2021-03-26 19:04:40.628",
-    "updatedAt": "2021-03-26 19:05:40.6",
-    "handle": 2607,
-    "name": "Chris Jent",
-    "teamId": 1610612737,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 2384,
-    "createdAt": "2021-03-26 19:04:40.746",
-    "updatedAt": "2021-03-26 19:05:40.626",
-    "handle": 2384,
-    "name": "Melvin Hunt",
-    "teamId": 1610612737,
-    "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612758
   },
   {
     "id": 1628770,
-    "createdAt": "2021-03-26 19:04:40.684",
-    "updatedAt": "2021-03-26 19:05:40.635",
+    "createdAt": "2021-03-30 17:18:05.891",
+    "updatedAt": "2021-03-30 17:19:29.681",
     "handle": 1628770,
     "name": "Matt Hill",
-    "teamId": 1610612737,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612737
   },
   {
     "id": 1831,
-    "createdAt": "2021-03-26 19:04:40.687",
-    "updatedAt": "2021-03-26 19:05:40.642",
+    "createdAt": "2021-03-30 17:18:05.893",
+    "updatedAt": "2021-03-30 17:19:29.689",
     "handle": 1831,
     "name": "Marlon Garnett",
-    "teamId": 1610612737,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612737
   },
   {
     "id": 1628764,
-    "createdAt": "2021-03-26 19:04:40.629",
-    "updatedAt": "2021-03-26 19:05:40.649",
+    "createdAt": "2021-03-30 17:18:05.895",
+    "updatedAt": "2021-03-30 17:19:29.697",
     "handle": 1628764,
     "name": "Scottie Parker",
-    "teamId": 1610612737,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612737
   },
   {
     "id": 1627877,
-    "createdAt": "2021-03-26 19:04:40.694",
-    "updatedAt": "2021-03-26 19:05:41.283",
+    "createdAt": "2021-03-30 17:18:05.897",
+    "updatedAt": "2021-03-30 17:19:30.327",
     "handle": 1627877,
     "name": "Jordan Ott",
-    "teamId": 1610612751,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612751
   },
   {
     "id": 1628803,
-    "createdAt": "2021-03-26 19:04:40.695",
-    "updatedAt": "2021-03-26 19:05:41.322",
+    "createdAt": "2021-03-30 17:18:05.899",
+    "updatedAt": "2021-03-30 17:19:30.343",
     "handle": 1628803,
     "name": "Ryan Forehan-Kelly",
-    "teamId": 1610612751,
     "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 201168,
-    "createdAt": "2021-03-26 19:04:40.747",
-    "updatedAt": "2021-03-26 19:05:41.332",
-    "handle": 201168,
-    "name": "Tiago Splitter",
-    "teamId": 1610612751,
-    "type": "Assistant Coach for Player Development",
-    "isAssistant": 12
+    "isAssistant": 2,
+    "teamId": 1610612751
   },
   {
     "id": 203550,
-    "createdAt": "2021-03-26 19:04:40.766",
-    "updatedAt": "2021-03-26 19:05:41.339",
+    "createdAt": "2021-03-30 17:18:05.903",
+    "updatedAt": "2021-03-30 17:19:30.377",
     "handle": 203550,
     "name": "Sebastien Poirier",
-    "teamId": 1610612751,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612751
   },
   {
     "id": 203811,
-    "createdAt": "2021-03-26 19:04:40.769",
-    "updatedAt": "2021-03-26 19:05:42.187",
+    "createdAt": "2021-03-30 17:18:05.922",
+    "updatedAt": "2021-03-30 17:19:31.201",
     "handle": 203811,
     "name": "Greg Buckner",
-    "teamId": 1610612739,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612739
   },
   {
     "id": 1628227,
-    "createdAt": "2021-03-26 19:04:40.771",
-    "updatedAt": "2021-03-26 19:05:43.383",
+    "createdAt": "2021-03-30 17:18:05.925",
+    "updatedAt": "2021-03-30 17:19:32.358",
     "handle": 1628227,
     "name": "Drew Yoder",
-    "teamId": 1610612744,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612744
   },
   {
     "id": 1630277,
-    "createdAt": "2021-03-26 19:04:40.774",
-    "updatedAt": "2021-03-26 19:05:43.618",
+    "createdAt": "2021-03-30 17:18:05.927",
+    "updatedAt": "2021-03-30 17:19:32.585",
     "handle": 1630277,
     "name": "Rick Higgins",
-    "teamId": 1610612745,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612745
   },
   {
     "id": 202898,
-    "createdAt": "2021-03-26 19:04:40.78",
-    "updatedAt": "2021-03-26 19:05:43.64",
+    "createdAt": "2021-03-30 17:18:05.929",
+    "updatedAt": "2021-03-30 17:19:32.606",
     "handle": 202898,
     "name": "Jeff Hornacek",
-    "teamId": 1610612745,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612745
   },
   {
     "id": 1627657,
-    "createdAt": "2021-03-26 19:04:40.782",
-    "updatedAt": "2021-03-26 19:05:43.647",
+    "createdAt": "2021-03-30 17:18:05.931",
+    "updatedAt": "2021-03-30 17:19:32.631",
     "handle": 1627657,
     "name": "Will Weaver",
-    "teamId": 1610612745,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612745
   },
   {
     "id": 1257,
-    "createdAt": "2021-03-26 19:04:40.783",
-    "updatedAt": "2021-03-26 19:05:43.671",
+    "createdAt": "2021-03-30 17:18:05.932",
+    "updatedAt": "2021-03-30 17:19:32.639",
     "handle": 1257,
     "name": "Keith Jones",
-    "teamId": 1610612745,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612745
   },
   {
     "id": 202431,
-    "createdAt": "2021-03-26 19:04:40.569",
-    "updatedAt": "2021-03-26 19:05:43.68",
+    "createdAt": "2021-03-30 17:18:05.934",
+    "updatedAt": "2021-03-30 17:19:32.645",
     "handle": 202431,
     "name": "Jason Biles",
-    "teamId": 1610612745,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612745
   },
   {
     "id": 203785,
-    "createdAt": "2021-03-26 19:04:40.631",
-    "updatedAt": "2021-03-26 19:05:43.894",
+    "createdAt": "2021-03-30 17:18:05.936",
+    "updatedAt": "2021-03-30 17:19:32.843",
     "handle": 203785,
     "name": "Greg Foster",
-    "teamId": 1610612754,
     "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 384,
-    "createdAt": "2021-03-26 19:04:40.785",
-    "updatedAt": "2021-03-26 19:05:43.925",
-    "handle": 384,
-    "name": "Calbert Cheaney",
-    "teamId": 1610612754,
-    "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612754
   },
   {
     "id": 203764,
-    "createdAt": "2021-03-26 19:04:40.787",
-    "updatedAt": "2021-03-26 19:05:43.932",
+    "createdAt": "2021-03-30 17:18:05.94",
+    "updatedAt": "2021-03-30 17:19:32.883",
     "handle": 203764,
     "name": "Tyler Marsh",
-    "teamId": 1610612754,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612754
   },
   {
     "id": 1271,
-    "createdAt": "2021-03-26 19:04:40.57",
-    "updatedAt": "2021-03-26 19:05:44.223",
+    "createdAt": "2021-03-30 17:18:05.943",
+    "updatedAt": "2021-03-30 17:19:33.138",
     "handle": 1271,
     "name": "Larry Drew",
-    "teamId": 1610612746,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612746
   },
   {
     "id": 2010,
-    "createdAt": "2021-03-26 19:04:40.633",
-    "updatedAt": "2021-03-26 19:05:44.239",
+    "createdAt": "2021-03-30 17:18:05.945",
+    "updatedAt": "2021-03-30 17:19:33.153",
     "handle": 2010,
     "name": "Jasen Powell",
-    "teamId": 1610612746,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612746
   },
   {
     "id": 203797,
-    "createdAt": "2021-03-26 19:04:40.575",
-    "updatedAt": "2021-03-26 19:05:44.779",
+    "createdAt": "2021-03-30 17:18:05.947",
+    "updatedAt": "2021-03-30 17:19:33.658",
     "handle": 203797,
     "name": "Brad Jones",
-    "teamId": 1610612763,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612763
   },
   {
     "id": 204011,
-    "createdAt": "2021-03-26 19:04:40.636",
-    "updatedAt": "2021-03-26 19:05:44.786",
+    "createdAt": "2021-03-30 17:18:05.949",
+    "updatedAt": "2021-03-30 17:19:33.683",
     "handle": 204011,
     "name": "Darko Rajakovic",
-    "teamId": 1610612763,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612763
+  },
+  {
+    "id": 204229,
+    "createdAt": "2021-03-30 17:18:05.726",
+    "updatedAt": "2021-03-30 17:19:33.899",
+    "handle": 204229,
+    "name": "Malik Allen",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612748
   },
   {
     "id": 2406,
-    "createdAt": "2021-03-26 19:04:40.697",
-    "updatedAt": "2021-03-26 19:05:45.04",
+    "createdAt": "2021-03-30 17:18:05.951",
+    "updatedAt": "2021-03-30 17:19:33.906",
     "handle": 2406,
     "name": "Caron Butler",
-    "teamId": 1610612748,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612748
+  },
+  {
+    "id": 1281,
+    "createdAt": "2021-03-30 17:18:05.73",
+    "updatedAt": "2021-03-30 17:19:33.946",
+    "handle": 1281,
+    "name": "Jay Sabol",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612748
+  },
+  {
+    "id": 1628784,
+    "createdAt": "2021-03-30 17:18:05.732",
+    "updatedAt": "2021-03-30 17:19:34.14",
+    "handle": 1628784,
+    "name": "Pat St. Andrews",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612749
+  },
+  {
+    "id": 2649,
+    "createdAt": "2021-03-30 17:18:05.734",
+    "updatedAt": "2021-03-30 17:19:34.146",
+    "handle": 2649,
+    "name": "Chad Forcier",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612749
+  },
+  {
+    "id": 203005,
+    "createdAt": "2021-03-30 17:18:05.737",
+    "updatedAt": "2021-03-30 17:19:34.153",
+    "handle": 203005,
+    "name": "Darvin Ham",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612749
   },
   {
     "id": 204224,
-    "createdAt": "2021-03-26 19:04:40.578",
-    "updatedAt": "2021-03-26 19:05:45.292",
+    "createdAt": "2021-03-30 17:18:05.953",
+    "updatedAt": "2021-03-30 17:19:34.177",
     "handle": 204224,
     "name": "Ben Sullivan",
-    "teamId": 1610612749,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612749
   },
   {
     "id": 204225,
-    "createdAt": "2021-03-26 19:04:40.639",
-    "updatedAt": "2021-03-26 19:05:45.299",
+    "createdAt": "2021-03-30 17:18:05.955",
+    "updatedAt": "2021-03-30 17:19:34.185",
     "handle": 204225,
     "name": "Charles Lee",
-    "teamId": 1610612749,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612749
   },
   {
     "id": 452,
-    "createdAt": "2021-03-26 19:04:40.641",
-    "updatedAt": "2021-03-26 19:05:45.325",
+    "createdAt": "2021-03-30 17:18:05.973",
+    "updatedAt": "2021-03-30 17:19:34.193",
     "handle": 452,
     "name": "Vin Baker",
-    "teamId": 1610612749,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612749
+  },
+  {
+    "id": 202896,
+    "createdAt": "2021-03-30 17:18:05.741",
+    "updatedAt": "2021-03-30 17:19:34.391",
+    "handle": 202896,
+    "name": "Chris Finch",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612750
+  },
+  {
+    "id": 203150,
+    "createdAt": "2021-03-30 17:18:05.744",
+    "updatedAt": "2021-03-30 17:19:34.398",
+    "handle": 203150,
+    "name": "David Vanterpool",
+    "type": "Associate Head Coach",
+    "isAssistant": 9,
+    "teamId": 1610612750
+  },
+  {
+    "id": 1628772,
+    "createdAt": "2021-03-30 17:18:05.746",
+    "updatedAt": "2021-03-30 17:19:34.404",
+    "handle": 1628772,
+    "name": "Kevin Burleson",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612750
+  },
+  {
+    "id": 974,
+    "createdAt": "2021-03-30 17:18:05.748",
+    "updatedAt": "2021-03-30 17:19:34.428",
+    "handle": 974,
+    "name": "Joseph Blair",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612750
+  },
+  {
+    "id": 2146,
+    "createdAt": "2021-03-30 17:18:05.752",
+    "updatedAt": "2021-03-30 17:19:34.45",
+    "handle": 2146,
+    "name": "Gregg Farnam",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612750
   },
   {
     "id": 1277,
-    "createdAt": "2021-03-26 19:04:40.582",
-    "updatedAt": "2021-03-26 19:05:45.779",
+    "createdAt": "2021-03-30 17:18:05.976",
+    "updatedAt": "2021-03-30 17:19:34.638",
     "handle": 1277,
     "name": "Stan Van Gundy",
-    "teamId": 1610612740,
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612740
   },
   {
     "id": 201676,
-    "createdAt": "2021-03-26 19:04:40.646",
-    "updatedAt": "2021-03-26 19:05:45.785",
+    "createdAt": "2021-03-30 17:18:05.978",
+    "updatedAt": "2021-03-30 17:19:34.645",
     "handle": 201676,
     "name": "Fred Vinson",
-    "teamId": 1610612740,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612740
   },
   {
     "id": 100101,
-    "createdAt": "2021-03-26 19:04:40.727",
-    "updatedAt": "2021-03-26 19:05:45.798",
+    "createdAt": "2021-03-30 17:18:05.979",
+    "updatedAt": "2021-03-30 17:19:34.676",
     "handle": 100101,
     "name": "Teresa Weatherspoon",
-    "teamId": 1610612740,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612740
+  },
+  {
+    "id": 203243,
+    "createdAt": "2021-03-30 17:18:05.754",
+    "updatedAt": "2021-03-30 17:19:34.686",
+    "handle": 203243,
+    "name": "Casey Hill",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612740
   },
   {
     "id": 777,
-    "createdAt": "2021-03-26 19:04:40.729",
-    "updatedAt": "2021-03-26 19:05:45.831",
+    "createdAt": "2021-03-30 17:18:05.981",
+    "updatedAt": "2021-03-30 17:19:34.693",
     "handle": 777,
     "name": "Rex Walters",
-    "teamId": 1610612740,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612740
   },
   {
     "id": 1630382,
-    "createdAt": "2021-03-26 19:04:40.731",
-    "updatedAt": "2021-03-26 19:05:45.837",
+    "createdAt": "2021-03-30 17:18:05.983",
+    "updatedAt": "2021-03-30 17:19:34.7",
     "handle": 1630382,
     "name": "Tom Maystadt",
-    "teamId": 1610612740,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612740
+  },
+  {
+    "id": 204008,
+    "createdAt": "2021-03-30 17:18:05.775",
+    "updatedAt": "2021-03-30 17:19:34.903",
+    "handle": 204008,
+    "name": "Johnnie Bryant",
+    "type": "Associate Head Coach",
+    "isAssistant": 9,
+    "teamId": 1610612752
+  },
+  {
+    "id": 1630161,
+    "createdAt": "2021-03-30 17:18:05.777",
+    "updatedAt": "2021-03-30 17:19:34.928",
+    "handle": 1630161,
+    "name": "Kenny Payne",
+    "type": "Lead Assistant Coach",
+    "isAssistant": 13,
+    "teamId": 1610612752
   },
   {
     "id": 1285,
-    "createdAt": "2021-03-26 19:04:40.679",
-    "updatedAt": "2021-03-26 19:05:46.085",
+    "createdAt": "2021-03-30 17:18:05.985",
+    "updatedAt": "2021-03-30 17:19:34.936",
     "handle": 1285,
     "name": "Mike Woodson",
-    "teamId": 1610612752,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612752
+  },
+  {
+    "id": 2519,
+    "createdAt": "2021-03-30 17:18:05.78",
+    "updatedAt": "2021-03-30 17:19:34.958",
+    "handle": 2519,
+    "name": "Andy Greer",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612752
+  },
+  {
+    "id": 101269,
+    "createdAt": "2021-03-30 17:18:05.782",
+    "updatedAt": "2021-03-30 17:19:34.982",
+    "handle": 101269,
+    "name": "Anthony Goenaga",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612752
+  },
+  {
+    "id": 1627327,
+    "createdAt": "2021-03-30 17:18:05.784",
+    "updatedAt": "2021-03-30 17:19:35.185",
+    "handle": 1627327,
+    "name": "Mark Daigneault",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612760
+  },
+  {
+    "id": 1629423,
+    "createdAt": "2021-03-30 17:18:05.788",
+    "updatedAt": "2021-03-30 17:19:35.246",
+    "handle": 1629423,
+    "name": "Donnie Strack",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612760
+  },
+  {
+    "id": 2168,
+    "createdAt": "2021-03-30 17:18:05.791",
+    "updatedAt": "2021-03-30 17:19:35.437",
+    "handle": 2168,
+    "name": "Steve Clifford",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612753
   },
   {
     "id": 1627341,
-    "createdAt": "2021-03-26 19:04:40.565",
-    "updatedAt": "2021-03-26 19:05:46.637",
+    "createdAt": "2021-03-30 17:18:05.987",
+    "updatedAt": "2021-03-30 17:19:35.443",
     "handle": 1627341,
     "name": "Mike Batiste",
-    "teamId": 1610612753,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612753
   },
   {
-    "id": 1627164,
-    "createdAt": "2021-03-26 19:04:40.567",
-    "updatedAt": "2021-03-26 19:05:46.682",
-    "handle": 1627164,
-    "name": "Bruce Kreutzer",
-    "teamId": 1610612753,
+    "id": 2821,
+    "createdAt": "2021-03-30 17:18:05.793",
+    "updatedAt": "2021-03-30 17:19:35.449",
+    "handle": 2821,
+    "name": "Ty Corbin",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612753
   },
   {
-    "id": 1628228,
-    "createdAt": "2021-03-26 19:04:40.543",
-    "updatedAt": "2021-03-26 19:05:47.219",
-    "handle": 1628228,
-    "name": "Willie Green",
-    "teamId": 1610612756,
+    "id": 204004,
+    "createdAt": "2021-03-30 17:18:05.795",
+    "updatedAt": "2021-03-30 17:19:35.455",
+    "handle": 204004,
+    "name": "Steve Hetzel",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612753
   },
   {
-    "id": 101173,
-    "createdAt": "2021-03-26 19:04:40.577",
-    "updatedAt": "2021-03-26 19:05:47.228",
-    "handle": 101173,
-    "name": "Mark Bryant",
-    "teamId": 1610612756,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1628240,
-    "createdAt": "2021-03-26 19:04:40.58",
-    "updatedAt": "2021-03-26 19:05:47.438",
-    "handle": 1628240,
-    "name": "John McCullough",
-    "teamId": 1610612757,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1627471,
-    "createdAt": "2021-03-26 19:04:40.585",
-    "updatedAt": "2021-03-26 19:05:47.469",
-    "handle": 1627471,
-    "name": "Jim Moran",
-    "teamId": 1610612757,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 204012,
-    "createdAt": "2021-03-26 19:04:40.545",
-    "updatedAt": "2021-03-26 19:05:47.699",
-    "handle": 204012,
-    "name": "Luke Walton",
-    "teamId": 1610612758,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 203605,
-    "createdAt": "2021-03-26 19:04:40.587",
-    "updatedAt": "2021-03-26 19:05:47.745",
-    "handle": 203605,
-    "name": "Jesse Mermuys",
-    "teamId": 1610612758,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 202985,
-    "createdAt": "2021-03-26 19:04:40.589",
-    "updatedAt": "2021-03-26 19:05:47.785",
-    "handle": 202985,
-    "name": "Bobby Jackson",
-    "teamId": 1610612758,
-    "type": "Assistant Coach for Player Development",
-    "isAssistant": 12
-  },
-  {
-    "id": 204019,
-    "createdAt": "2021-03-26 19:04:40.591",
-    "updatedAt": "2021-03-26 19:05:48.073",
-    "handle": 204019,
-    "name": "Becky Hammon",
-    "teamId": 1610612759,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1628181,
-    "createdAt": "2021-03-26 19:04:40.596",
-    "updatedAt": "2021-03-26 19:05:48.079",
-    "handle": 1628181,
-    "name": "Will Hardy",
-    "teamId": 1610612759,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1264,
-    "createdAt": "2021-03-26 19:04:40.592",
-    "updatedAt": "2021-03-26 19:05:48.086",
-    "handle": 1264,
-    "name": "Will Sevening",
-    "teamId": 1610612759,
+    "id": 2720,
+    "createdAt": "2021-03-30 17:18:05.797",
+    "updatedAt": "2021-03-30 17:19:35.504",
+    "handle": 2720,
+    "name": "Ernest Eugene",
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612753
   },
   {
-    "id": 1629761,
-    "createdAt": "2021-03-26 19:04:40.622",
-    "updatedAt": "2021-03-26 19:05:48.297",
-    "handle": 1629761,
-    "name": "Fab Flournoy",
-    "teamId": 1610612761,
+    "id": 2515,
+    "createdAt": "2021-03-30 17:18:05.798",
+    "updatedAt": "2021-03-30 17:19:35.737",
+    "handle": 2515,
+    "name": "Dan Burke",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612755
   },
   {
-    "id": 201878,
-    "createdAt": "2021-03-26 19:04:40.597",
-    "updatedAt": "2021-03-26 19:05:48.321",
-    "handle": 201878,
-    "name": "Adrian Griffin",
-    "teamId": 1610612761,
+    "id": 202108,
+    "createdAt": "2021-03-30 17:18:05.8",
+    "updatedAt": "2021-03-30 17:19:35.744",
+    "handle": 202108,
+    "name": "Sam Cassell",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612755
   },
   {
-    "id": 1630282,
-    "createdAt": "2021-03-26 19:04:40.547",
-    "updatedAt": "2021-03-26 19:05:48.544",
-    "handle": 1630282,
-    "name": "Sergi Oliva",
-    "teamId": 1610612762,
+    "id": 202434,
+    "createdAt": "2021-03-30 17:18:05.802",
+    "updatedAt": "2021-03-30 17:19:35.751",
+    "handle": 202434,
+    "name": "Popeye Jones",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612755
   },
   {
-    "id": 2039,
-    "createdAt": "2021-03-26 19:04:40.62",
-    "updatedAt": "2021-03-26 19:05:48.55",
-    "handle": 2039,
-    "name": "Keyon Dooling",
-    "teamId": 1610612762,
+    "id": 201220,
+    "createdAt": "2021-03-30 17:18:05.804",
+    "updatedAt": "2021-03-30 17:19:35.757",
+    "handle": 201220,
+    "name": "David Joerger",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612755
   },
   {
-    "id": 725,
-    "createdAt": "2021-03-26 19:04:40.626",
-    "updatedAt": "2021-03-26 19:05:48.576",
-    "handle": 725,
-    "name": "Dell Demps",
-    "teamId": 1610612762,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 204007,
-    "createdAt": "2021-03-26 19:04:40.673",
-    "updatedAt": "2021-03-26 19:05:48.583",
-    "handle": 204007,
-    "name": "Alex Jensen",
-    "teamId": 1610612762,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1626233,
-    "createdAt": "2021-03-26 19:04:40.647",
-    "updatedAt": "2021-03-26 19:05:48.59",
-    "handle": 1626233,
-    "name": "Jeff Watkinson",
-    "teamId": 1610612762,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1628216,
-    "createdAt": "2021-03-26 19:04:40.676",
-    "updatedAt": "2021-03-26 19:05:48.596",
-    "handle": 1628216,
-    "name": "Bryan Bailey",
-    "teamId": 1610612762,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1630281,
-    "createdAt": "2021-03-26 19:04:40.681",
-    "updatedAt": "2021-03-26 19:05:48.631",
-    "handle": 1630281,
-    "name": "Lamar Skeeter",
-    "teamId": 1610612762,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1997,
-    "createdAt": "2021-03-26 19:04:40.671",
-    "updatedAt": "2021-03-26 19:05:48.637",
-    "handle": 1997,
-    "name": "Mike Wells",
-    "teamId": 1610612762,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 101277,
-    "createdAt": "2021-03-26 19:04:40.674",
-    "updatedAt": "2021-03-26 19:05:48.65",
-    "handle": 101277,
-    "name": "Brian Zettler",
-    "teamId": 1610612762,
+    "id": 1360,
+    "createdAt": "2021-03-30 17:18:05.824",
+    "updatedAt": "2021-03-30 17:19:35.78",
+    "handle": 1360,
+    "name": "Kevin Johnson",
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612755
   },
   {
-    "id": 2623,
-    "createdAt": "2021-03-26 19:04:40.736",
-    "updatedAt": "2021-03-26 19:05:48.873",
-    "handle": 2623,
-    "name": "Scott Brooks",
-    "teamId": 1610612764,
+    "id": 101273,
+    "createdAt": "2021-03-30 17:18:05.826",
+    "updatedAt": "2021-03-30 17:19:35.953",
+    "handle": 101273,
+    "name": "Monty Williams",
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612756
   },
   {
-    "id": 1655,
-    "createdAt": "2021-03-26 19:04:40.737",
-    "updatedAt": "2021-03-26 19:05:48.88",
-    "handle": 1655,
-    "name": "Tony Brown",
-    "teamId": 1610612764,
+    "id": 202111,
+    "createdAt": "2021-03-30 17:18:05.827",
+    "updatedAt": "2021-03-30 17:19:35.992",
+    "handle": 202111,
+    "name": "Kevin Young",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612756
+  },
+  {
+    "id": 1337,
+    "createdAt": "2021-03-30 17:18:05.829",
+    "updatedAt": "2021-03-30 17:19:36.193",
+    "handle": 1337,
+    "name": "Terry Stotts",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612757
+  },
+  {
+    "id": 203170,
+    "createdAt": "2021-03-30 17:18:05.831",
+    "updatedAt": "2021-03-30 17:19:36.234",
+    "handle": 203170,
+    "name": "Dale Osbourne",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612757
+  },
+  {
+    "id": 2457,
+    "createdAt": "2021-03-30 17:18:05.833",
+    "updatedAt": "2021-03-30 17:19:36.248",
+    "handle": 2457,
+    "name": "Jannero Pargo",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612757
+  },
+  {
+    "id": 101272,
+    "createdAt": "2021-03-30 17:18:05.835",
+    "updatedAt": "2021-03-30 17:19:36.254",
+    "handle": 101272,
+    "name": "Geoff Clark",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612757
+  },
+  {
+    "id": 1243,
+    "createdAt": "2021-03-30 17:18:05.837",
+    "updatedAt": "2021-03-30 17:19:36.487",
+    "handle": 1243,
+    "name": "Alvin Gentry",
     "type": "Associate Head Coach",
-    "isAssistant": 9
+    "isAssistant": 9,
+    "teamId": 1610612758
   },
   {
-    "id": 1630364,
-    "createdAt": "2021-03-26 19:04:40.739",
-    "updatedAt": "2021-03-26 19:05:48.886",
-    "handle": 1630364,
-    "name": "David Atkins",
-    "teamId": 1610612764,
+    "id": 1629711,
+    "createdAt": "2021-03-30 17:18:05.841",
+    "updatedAt": "2021-03-30 17:19:36.494",
+    "handle": 1629711,
+    "name": "Roy Rana",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612758
   },
   {
-    "id": 201665,
-    "createdAt": "2021-03-26 19:04:40.741",
-    "updatedAt": "2021-03-26 19:05:48.893",
-    "handle": 201665,
-    "name": "MIke Longabardi",
-    "teamId": 1610612764,
-    "type": "Assistant Coach",
-    "isAssistant": 2
+    "id": 1627331,
+    "createdAt": "2021-03-30 17:18:05.843",
+    "updatedAt": "2021-03-30 17:19:36.576",
+    "handle": 1627331,
+    "name": "Will Scott",
+    "type": "Assistant Coach for Player Development",
+    "isAssistant": 12,
+    "teamId": 1610612758
   },
   {
-    "id": 202105,
-    "createdAt": "2021-03-26 19:04:40.768",
-    "updatedAt": "2021-03-26 19:05:48.9",
-    "handle": 202105,
-    "name": "Robert Pack",
-    "teamId": 1610612764,
-    "type": "Assistant Coach",
-    "isAssistant": 2
+    "id": 203167,
+    "createdAt": "2021-03-30 17:18:05.845",
+    "updatedAt": "2021-03-30 17:19:36.592",
+    "handle": 203167,
+    "name": "Joe Resendez",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612758
   },
   {
-    "id": 1630363,
-    "createdAt": "2021-03-26 19:04:40.773",
-    "updatedAt": "2021-03-26 19:05:48.939",
-    "handle": 1630363,
-    "name": "Dean Oliver",
-    "teamId": 1610612764,
-    "type": "Assistant Coach",
-    "isAssistant": 2
-  },
-  {
-    "id": 1778,
-    "createdAt": "2021-03-26 19:04:40.683",
-    "updatedAt": "2021-03-26 19:05:40.589",
-    "handle": 1778,
-    "name": "Nate McMillan",
-    "teamId": 1610612737,
+    "id": 873,
+    "createdAt": "2021-03-30 17:18:05.847",
+    "updatedAt": "2021-03-30 17:19:36.793",
+    "handle": 873,
+    "name": "Gregg Popovich",
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612759
   },
   {
-    "id": 1630017,
-    "createdAt": "2021-03-26 19:04:40.688",
-    "updatedAt": "2021-03-26 19:05:40.677",
-    "handle": 1630017,
-    "name": "John Dusel",
-    "teamId": 1610612737,
-    "type": "Assistant Trainer",
-    "isAssistant": 4
+    "id": 1628188,
+    "createdAt": "2021-03-30 17:18:05.849",
+    "updatedAt": "2021-03-30 17:19:36.8",
+    "handle": 1628188,
+    "name": "Mitch Johnson",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612759
   },
   {
-    "id": 203535,
-    "createdAt": "2021-03-26 19:04:40.039",
-    "updatedAt": "2021-03-26 19:05:40.899",
-    "handle": 203535,
-    "name": "Brad Stevens",
-    "teamId": 1610612738,
+    "id": 2887,
+    "createdAt": "2021-03-30 17:18:05.854",
+    "updatedAt": "2021-03-30 17:19:36.832",
+    "handle": 2887,
+    "name": "Chip Engelland",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612759
+  },
+  {
+    "id": 203606,
+    "createdAt": "2021-03-30 17:18:05.873",
+    "updatedAt": "2021-03-30 17:19:37.038",
+    "handle": 203606,
+    "name": "Nick Nurse",
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612761
   },
   {
-    "id": 1627590,
-    "createdAt": "2021-03-26 19:04:40.073",
-    "updatedAt": "2021-03-26 19:05:40.948",
-    "handle": 1627590,
-    "name": "Jerome Allen",
-    "teamId": 1610612738,
+    "id": 1629821,
+    "createdAt": "2021-03-30 17:18:05.875",
+    "updatedAt": "2021-03-30 17:19:37.045",
+    "handle": 1629821,
+    "name": "Jon Goodwillie",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612761
   },
   {
-    "id": 1628179,
-    "createdAt": "2021-03-26 19:04:40.293",
-    "updatedAt": "2021-03-26 19:05:41.293",
-    "handle": 1628179,
-    "name": "Royal Ivey",
-    "teamId": 1610612751,
+    "id": 203604,
+    "createdAt": "2021-03-30 17:18:05.877",
+    "updatedAt": "2021-03-30 17:19:37.051",
+    "handle": 203604,
+    "name": "Jama Mahlalela",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612761
+  },
+  {
+    "id": 1356,
+    "createdAt": "2021-03-30 17:18:05.879",
+    "updatedAt": "2021-03-30 17:19:37.093",
+    "handle": 1356,
+    "name": "Scott McCullough",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612761
+  },
+  {
+    "id": 202439,
+    "createdAt": "2021-03-30 17:18:05.881",
+    "updatedAt": "2021-03-30 17:19:37.289",
+    "handle": 202439,
+    "name": "Quin Snyder",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612762
+  },
+  {
+    "id": 1627328,
+    "createdAt": "2021-03-30 17:18:05.885",
+    "updatedAt": "2021-03-30 17:19:37.656",
+    "handle": 1627328,
+    "name": "Jarell Christian",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612764
   },
   {
     "id": 1629412,
-    "createdAt": "2021-03-26 19:04:40.096",
-    "updatedAt": "2021-03-26 19:05:41.346",
+    "createdAt": "2021-03-30 17:18:06.097",
+    "updatedAt": "2021-03-30 17:19:30.386",
     "handle": 1629412,
     "name": "Dan Liburd",
-    "teamId": 1610612751,
     "type": "Strength and Conditioning Coach",
-    "isAssistant": 5
+    "isAssistant": 5,
+    "teamId": 1610612751
+  },
+  {
+    "id": 1778,
+    "createdAt": "2021-03-30 17:18:06.084",
+    "updatedAt": "2021-03-30 17:19:29.636",
+    "handle": 1778,
+    "name": "Nate McMillan",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612737
+  },
+  {
+    "id": 2607,
+    "createdAt": "2021-03-30 17:18:05.886",
+    "updatedAt": "2021-03-30 17:19:29.648",
+    "handle": 2607,
+    "name": "Chris Jent",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612737
+  },
+  {
+    "id": 2384,
+    "createdAt": "2021-03-30 17:18:05.889",
+    "updatedAt": "2021-03-30 17:19:29.657",
+    "handle": 2384,
+    "name": "Melvin Hunt",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612737
+  },
+  {
+    "id": 203753,
+    "createdAt": "2021-03-30 17:18:05.496",
+    "updatedAt": "2021-03-30 17:19:30.632",
+    "handle": 203753,
+    "name": "Ronald Nored",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612766
+  },
+  {
+    "id": 1630017,
+    "createdAt": "2021-03-30 17:18:06.086",
+    "updatedAt": "2021-03-30 17:19:29.705",
+    "handle": 1630017,
+    "name": "John Dusel",
+    "type": "Assistant Trainer",
+    "isAssistant": 4,
+    "teamId": 1610612737
+  },
+  {
+    "id": 202743,
+    "createdAt": "2021-03-30 17:18:05.675",
+    "updatedAt": "2021-03-30 17:19:30.936",
+    "handle": 202743,
+    "name": "John Bryant",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612741
+  },
+  {
+    "id": 203535,
+    "createdAt": "2021-03-30 17:18:06.089",
+    "updatedAt": "2021-03-30 17:19:29.941",
+    "handle": 203535,
+    "name": "Brad Stevens",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612738
+  },
+  {
+    "id": 1628807,
+    "createdAt": "2021-03-30 17:18:05.455",
+    "updatedAt": "2021-03-30 17:19:29.949",
+    "handle": 1628807,
+    "name": "Brandon Bailey",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612738
+  },
+  {
+    "id": 1627666,
+    "createdAt": "2021-03-30 17:18:05.602",
+    "updatedAt": "2021-03-30 17:19:32.351",
+    "handle": 1627666,
+    "name": "Chris DeMarco",
+    "type": "Assistant Coach for Player Development",
+    "isAssistant": 12,
+    "teamId": 1610612744
+  },
+  {
+    "id": 1627590,
+    "createdAt": "2021-03-30 17:18:06.091",
+    "updatedAt": "2021-03-30 17:19:29.989",
+    "handle": 1627590,
+    "name": "Jerome Allen",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612738
+  },
+  {
+    "id": 203168,
+    "createdAt": "2021-03-30 17:18:05.48",
+    "updatedAt": "2021-03-30 17:19:30.004",
+    "handle": 203168,
+    "name": "Jay Larranaga",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612738
   },
   {
     "id": 2794,
-    "createdAt": "2021-03-26 19:04:40.129",
-    "updatedAt": "2021-03-26 19:05:42.171",
+    "createdAt": "2021-03-30 17:18:06.099",
+    "updatedAt": "2021-03-30 17:19:31.186",
     "handle": 2794,
     "name": "JB Bickerstaff",
-    "teamId": 1610612739,
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612739
   },
   {
-    "id": 202599,
-    "createdAt": "2021-03-26 19:04:40.139",
-    "updatedAt": "2021-03-26 19:05:42.492",
-    "handle": 202599,
-    "name": "Darrell Armstrong",
-    "teamId": 1610612742,
+    "id": 1628179,
+    "createdAt": "2021-03-30 17:18:06.094",
+    "updatedAt": "2021-03-30 17:19:30.335",
+    "handle": 1628179,
+    "name": "Royal Ivey",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612751
+  },
+  {
+    "id": 201168,
+    "createdAt": "2021-03-30 17:18:05.901",
+    "updatedAt": "2021-03-30 17:19:30.353",
+    "handle": 201168,
+    "name": "Tiago Splitter",
+    "type": "Assistant Coach for Player Development",
+    "isAssistant": 12,
+    "teamId": 1610612751
   },
   {
     "id": 1335,
-    "createdAt": "2021-03-26 19:04:40.166",
-    "updatedAt": "2021-03-26 19:05:43.047",
+    "createdAt": "2021-03-30 17:18:06.102",
+    "updatedAt": "2021-03-30 17:19:32.041",
     "handle": 1335,
     "name": "Dwane Casey",
-    "teamId": 1610612765,
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612765
   },
   {
-    "id": 204005,
-    "createdAt": "2021-03-26 19:04:40.172",
-    "updatedAt": "2021-03-26 19:05:43.321",
-    "handle": 204005,
-    "name": "Steve Kerr",
-    "teamId": 1610612744,
-    "type": "Head Coach",
-    "isAssistant": 1
-  },
-  {
-    "id": 2205,
-    "createdAt": "2021-03-26 19:04:40.777",
-    "updatedAt": "2021-03-26 19:05:43.633",
-    "handle": 2205,
-    "name": "DeSagana Diop",
-    "teamId": 1610612745,
+    "id": 202565,
+    "createdAt": "2021-03-30 17:18:05.538",
+    "updatedAt": "2021-03-30 17:19:31.241",
+    "handle": 202565,
+    "name": "Mike Gerrity",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612739
   },
   {
-    "id": 203599,
-    "createdAt": "2021-03-26 19:04:40.327",
-    "updatedAt": "2021-03-26 19:05:44.15",
-    "handle": 203599,
-    "name": "Dan Craig",
-    "teamId": 1610612746,
-    "type": "Associate Head Coach",
-    "isAssistant": 9
+    "id": 204085,
+    "createdAt": "2021-03-30 17:18:05.588",
+    "updatedAt": "2021-03-30 17:19:32.086",
+    "handle": 204085,
+    "name": "Sean Sweeney",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612765
+  },
+  {
+    "id": 202599,
+    "createdAt": "2021-03-30 17:18:06.1",
+    "updatedAt": "2021-03-30 17:19:31.5",
+    "handle": 202599,
+    "name": "Darrell Armstrong",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612742
+  },
+  {
+    "id": 1628782,
+    "createdAt": "2021-03-30 17:18:05.546",
+    "updatedAt": "2021-03-30 17:19:31.507",
+    "handle": 1628782,
+    "name": "Mike Weinar",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612742
+  },
+  {
+    "id": 203600,
+    "createdAt": "2021-03-30 17:18:05.575",
+    "updatedAt": "2021-03-30 17:19:31.796",
+    "handle": 203600,
+    "name": "David Adelman",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612743
   },
   {
     "id": 1497,
-    "createdAt": "2021-03-26 19:04:40.789",
-    "updatedAt": "2021-03-26 19:05:44.177",
+    "createdAt": "2021-03-30 17:18:06.127",
+    "updatedAt": "2021-03-30 17:19:33.094",
     "handle": 1497,
     "name": "Chauncey Billups",
-    "teamId": 1610612746,
     "type": "Lead Assistant Coach",
-    "isAssistant": 13
+    "isAssistant": 13,
+    "teamId": 1610612746
+  },
+  {
+    "id": 204005,
+    "createdAt": "2021-03-30 17:18:06.104",
+    "updatedAt": "2021-03-30 17:19:32.295",
+    "handle": 204005,
+    "name": "Steve Kerr",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612744
+  },
+  {
+    "id": 2205,
+    "createdAt": "2021-03-30 17:18:06.123",
+    "updatedAt": "2021-03-30 17:19:32.599",
+    "handle": 2205,
+    "name": "DeSagana Diop",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612745
+  },
+  {
+    "id": 384,
+    "createdAt": "2021-03-30 17:18:05.938",
+    "updatedAt": "2021-03-30 17:19:32.856",
+    "handle": 384,
+    "name": "Calbert Cheaney",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612754
+  },
+  {
+    "id": 203599,
+    "createdAt": "2021-03-30 17:18:06.126",
+    "updatedAt": "2021-03-30 17:19:33.087",
+    "handle": 203599,
+    "name": "Dan Craig",
+    "type": "Associate Head Coach",
+    "isAssistant": 9,
+    "teamId": 1610612746
   },
   {
     "id": 1630361,
-    "createdAt": "2021-03-26 19:04:40.791",
-    "updatedAt": "2021-03-26 19:05:44.184",
+    "createdAt": "2021-03-30 17:18:06.129",
+    "updatedAt": "2021-03-30 17:19:33.102",
     "handle": 1630361,
     "name": "Jeremy Castleberry",
-    "teamId": 1610612746,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612746
   },
   {
     "id": 201689,
-    "createdAt": "2021-03-26 19:04:40.793",
-    "updatedAt": "2021-03-26 19:05:44.19",
+    "createdAt": "2021-03-30 17:18:06.131",
+    "updatedAt": "2021-03-30 17:19:33.108",
     "handle": 201689,
     "name": "Roy Rogers",
-    "teamId": 1610612746,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612746
   },
   {
     "id": 201690,
-    "createdAt": "2021-03-26 19:04:40.794",
-    "updatedAt": "2021-03-26 19:05:44.197",
+    "createdAt": "2021-03-30 17:18:06.133",
+    "updatedAt": "2021-03-30 17:19:33.131",
     "handle": 201690,
     "name": "Kenny Atkinson",
-    "teamId": 1610612746,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612746
+  },
+  {
+    "id": 2814,
+    "createdAt": "2021-03-30 17:18:05.685",
+    "updatedAt": "2021-03-30 17:19:33.145",
+    "handle": 2814,
+    "name": "Brendan O'Connor",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612746
+  },
+  {
+    "id": 2130,
+    "createdAt": "2021-03-30 17:18:05.697",
+    "updatedAt": "2021-03-30 17:19:33.408",
+    "handle": 2130,
+    "name": "Mike Penberthy",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612747
   },
   {
     "id": 1628472,
-    "createdAt": "2021-03-26 19:04:40.433",
-    "updatedAt": "2021-03-26 19:05:44.489",
+    "createdAt": "2021-03-30 17:18:06.135",
+    "updatedAt": "2021-03-30 17:19:33.402",
     "handle": 1628472,
     "name": "Miles Simon",
-    "teamId": 1610612747,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612747
+  },
+  {
+    "id": 204226,
+    "createdAt": "2021-03-30 17:18:05.728",
+    "updatedAt": "2021-03-30 17:19:33.931",
+    "handle": 204226,
+    "name": "Chris Quinn",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612748
   },
   {
     "id": 201766,
-    "createdAt": "2021-03-26 19:04:40.634",
-    "updatedAt": "2021-03-26 19:05:44.522",
+    "createdAt": "2021-03-30 17:18:06.136",
+    "updatedAt": "2021-03-30 17:19:33.432",
     "handle": 201766,
     "name": "Nina Hsieh",
-    "teamId": 1610612747,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612747
   },
   {
     "id": 1630290,
-    "createdAt": "2021-03-26 19:04:40.796",
-    "updatedAt": "2021-03-26 19:05:44.741",
+    "createdAt": "2021-03-30 17:18:06.139",
+    "updatedAt": "2021-03-30 17:19:33.638",
     "handle": 1630290,
     "name": "Sonia Raman",
-    "teamId": 1610612763,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612763
   },
   {
     "id": 202433,
-    "createdAt": "2021-03-26 19:04:40.798",
-    "updatedAt": "2021-03-26 19:05:44.747",
+    "createdAt": "2021-03-30 17:18:06.141",
+    "updatedAt": "2021-03-30 17:19:33.645",
     "handle": 202433,
     "name": "Vitaly Potapenko",
-    "teamId": 1610612763,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612763
   },
   {
     "id": 201336,
-    "createdAt": "2021-03-26 19:04:40.817",
-    "updatedAt": "2021-03-26 19:05:44.798",
+    "createdAt": "2021-03-30 17:18:06.143",
+    "updatedAt": "2021-03-30 17:19:33.697",
     "handle": 201336,
     "name": "Blake Ahearn",
-    "teamId": 1610612763,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612763
   },
   {
     "id": 201682,
-    "createdAt": "2021-03-26 19:04:40.465",
-    "updatedAt": "2021-03-26 19:05:45.069",
+    "createdAt": "2021-03-30 17:18:06.144",
+    "updatedAt": "2021-03-30 17:19:33.939",
     "handle": 201682,
     "name": "Octavio De La Grana",
-    "teamId": 1610612748,
     "type": "Assistant Coach for Player Development",
-    "isAssistant": 12
+    "isAssistant": 12,
+    "teamId": 1610612748
   },
   {
     "id": 1371,
-    "createdAt": "2021-03-26 19:04:40.288",
-    "updatedAt": "2021-03-26 19:05:45.246",
+    "createdAt": "2021-03-30 17:18:06.146",
+    "updatedAt": "2021-03-30 17:19:34.134",
     "handle": 1371,
     "name": "Mike Budenholzer",
-    "teamId": 1610612749,
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612749
+  },
+  {
+    "id": 201692,
+    "createdAt": "2021-03-30 17:18:05.739",
+    "updatedAt": "2021-03-30 17:19:34.2",
+    "handle": 201692,
+    "name": "Scott Faust",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612749
+  },
+  {
+    "id": 202109,
+    "createdAt": "2021-03-30 17:18:05.75",
+    "updatedAt": "2021-03-30 17:19:34.443",
+    "handle": 202109,
+    "name": "Bryan Gates",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612750
   },
   {
     "id": 203143,
-    "createdAt": "2021-03-26 19:04:40.718",
-    "updatedAt": "2021-03-26 19:05:45.572",
+    "createdAt": "2021-03-30 17:18:06.148",
+    "updatedAt": "2021-03-30 17:19:34.436",
     "handle": 203143,
     "name": "Pablo Prigioni",
-    "teamId": 1610612750,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612750
+  },
+  {
+    "id": 1301,
+    "createdAt": "2021-03-30 17:18:05.773",
+    "updatedAt": "2021-03-30 17:19:34.895",
+    "handle": 1301,
+    "name": "Tom Thibodeau",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612752
   },
   {
     "id": 1629432,
-    "createdAt": "2021-03-26 19:04:40.474",
-    "updatedAt": "2021-03-26 19:05:45.844",
+    "createdAt": "2021-03-30 17:18:06.15",
+    "updatedAt": "2021-03-30 17:19:34.707",
     "handle": 1629432,
     "name": "Todd Campbell",
-    "teamId": 1610612740,
     "type": "Assistant Trainer",
-    "isAssistant": 4
-  },
-  {
-    "id": 1627336,
-    "createdAt": "2021-03-26 19:04:40.069",
-    "updatedAt": "2021-03-26 19:05:46.689",
-    "handle": 1627336,
-    "name": "Dylan Murphy",
-    "teamId": 1610612753,
-    "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 4,
+    "teamId": 1610612740
   },
   {
     "id": 1941,
-    "createdAt": "2021-03-26 19:04:40.331",
-    "updatedAt": "2021-03-26 19:05:46.898",
+    "createdAt": "2021-03-30 17:18:06.154",
+    "updatedAt": "2021-03-30 17:19:35.706",
     "handle": 1941,
     "name": "Doc Rivers",
-    "teamId": 1610612755,
     "type": "Head Coach",
-    "isAssistant": 1
+    "isAssistant": 1,
+    "teamId": 1610612755
+  },
+  {
+    "id": 101173,
+    "createdAt": "2021-03-30 17:18:05.995",
+    "updatedAt": "2021-03-30 17:19:36.006",
+    "handle": 101173,
+    "name": "Mark Bryant",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612756
   },
   {
     "id": 1629410,
-    "createdAt": "2021-03-26 19:04:40.574",
-    "updatedAt": "2021-03-26 19:05:47.235",
+    "createdAt": "2021-03-30 17:18:06.172",
+    "updatedAt": "2021-03-30 17:19:36.03",
     "handle": 1629410,
     "name": "David Crewe",
-    "teamId": 1610612756,
     "type": "Trainer",
-    "isAssistant": 3
+    "isAssistant": 3,
+    "teamId": 1610612756
   },
   {
     "id": 202891,
-    "createdAt": "2021-03-26 19:04:40.538",
-    "updatedAt": "2021-03-26 19:05:47.431",
+    "createdAt": "2021-03-30 17:18:06.175",
+    "updatedAt": "2021-03-30 17:19:36.2",
     "handle": 202891,
     "name": "Nate Tibbetts",
-    "teamId": 1610612757,
     "type": "Associate Head Coach",
-    "isAssistant": 9
+    "isAssistant": 9,
+    "teamId": 1610612757
+  },
+  {
+    "id": 1628240,
+    "createdAt": "2021-03-30 17:18:05.997",
+    "updatedAt": "2021-03-30 17:19:36.207",
+    "handle": 1628240,
+    "name": "John McCullough",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612757
+  },
+  {
+    "id": 1627471,
+    "createdAt": "2021-03-30 17:18:06",
+    "updatedAt": "2021-03-30 17:19:36.241",
+    "handle": 1627471,
+    "name": "Jim Moran",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612757
+  },
+  {
+    "id": 204012,
+    "createdAt": "2021-03-30 17:18:06.002",
+    "updatedAt": "2021-03-30 17:19:36.478",
+    "handle": 204012,
+    "name": "Luke Walton",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612758
+  },
+  {
+    "id": 202985,
+    "createdAt": "2021-03-30 17:18:06.023",
+    "updatedAt": "2021-03-30 17:19:36.544",
+    "handle": 202985,
+    "name": "Bobby Jackson",
+    "type": "Assistant Coach for Player Development",
+    "isAssistant": 12,
+    "teamId": 1610612758
   },
   {
     "id": 1627971,
-    "createdAt": "2021-03-26 19:04:40.394",
-    "updatedAt": "2021-03-26 19:05:47.792",
+    "createdAt": "2021-03-30 17:18:06.177",
+    "updatedAt": "2021-03-30 17:19:36.585",
     "handle": 1627971,
     "name": "Rico Hines",
-    "teamId": 1610612758,
     "type": "Assistant Coach for Player Development",
-    "isAssistant": 12
+    "isAssistant": 12,
+    "teamId": 1610612758
   },
   {
-    "id": 1629144,
-    "createdAt": "2021-03-26 19:04:40.617",
-    "updatedAt": "2021-03-26 19:05:48.291",
-    "handle": 1629144,
-    "name": "Sergio Scariolo",
-    "teamId": 1610612761,
+    "id": 204019,
+    "createdAt": "2021-03-30 17:18:06.026",
+    "updatedAt": "2021-03-30 17:19:36.839",
+    "handle": 204019,
+    "name": "Becky Hammon",
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612759
+  },
+  {
+    "id": 1628181,
+    "createdAt": "2021-03-30 17:18:06.027",
+    "updatedAt": "2021-03-30 17:19:36.846",
+    "handle": 1628181,
+    "name": "Will Hardy",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612759
+  },
+  {
+    "id": 1264,
+    "createdAt": "2021-03-30 17:18:06.029",
+    "updatedAt": "2021-03-30 17:19:36.853",
+    "handle": 1264,
+    "name": "Will Sevening",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612759
+  },
+  {
+    "id": 1629761,
+    "createdAt": "2021-03-30 17:18:06.031",
+    "updatedAt": "2021-03-30 17:19:37.08",
+    "handle": 1629761,
+    "name": "Fab Flournoy",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612761
+  },
+  {
+    "id": 201878,
+    "createdAt": "2021-03-30 17:18:06.033",
+    "updatedAt": "2021-03-30 17:19:37.087",
+    "handle": 201878,
+    "name": "Adrian Griffin",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612761
+  },
+  {
+    "id": 1630282,
+    "createdAt": "2021-03-30 17:18:06.035",
+    "updatedAt": "2021-03-30 17:19:37.296",
+    "handle": 1630282,
+    "name": "Sergi Oliva",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612762
+  },
+  {
+    "id": 2039,
+    "createdAt": "2021-03-30 17:18:06.036",
+    "updatedAt": "2021-03-30 17:19:37.302",
+    "handle": 2039,
+    "name": "Keyon Dooling",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612762
+  },
+  {
+    "id": 725,
+    "createdAt": "2021-03-30 17:18:06.038",
+    "updatedAt": "2021-03-30 17:19:37.326",
+    "handle": 725,
+    "name": "Dell Demps",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612762
+  },
+  {
+    "id": 204007,
+    "createdAt": "2021-03-30 17:18:06.041",
+    "updatedAt": "2021-03-30 17:19:37.333",
+    "handle": 204007,
+    "name": "Alex Jensen",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612762
+  },
+  {
+    "id": 1628216,
+    "createdAt": "2021-03-30 17:18:06.045",
+    "updatedAt": "2021-03-30 17:19:37.346",
+    "handle": 1628216,
+    "name": "Bryan Bailey",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612762
   },
   {
     "id": 1630280,
-    "createdAt": "2021-03-26 19:04:40.678",
-    "updatedAt": "2021-03-26 19:05:48.622",
+    "createdAt": "2021-03-30 17:18:06.18",
+    "updatedAt": "2021-03-30 17:19:37.352",
     "handle": 1630280,
     "name": "Vince Legarza",
-    "teamId": 1610612762,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612762
+  },
+  {
+    "id": 1630281,
+    "createdAt": "2021-03-30 17:18:06.047",
+    "updatedAt": "2021-03-30 17:19:37.358",
+    "handle": 1630281,
+    "name": "Lamar Skeeter",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612762
+  },
+  {
+    "id": 1997,
+    "createdAt": "2021-03-30 17:18:06.049",
+    "updatedAt": "2021-03-30 17:19:37.38",
+    "handle": 1997,
+    "name": "Mike Wells",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612762
+  },
+  {
+    "id": 101277,
+    "createdAt": "2021-03-30 17:18:06.051",
+    "updatedAt": "2021-03-30 17:19:37.394",
+    "handle": 101277,
+    "name": "Brian Zettler",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612762
+  },
+  {
+    "id": 1655,
+    "createdAt": "2021-03-30 17:18:06.054",
+    "updatedAt": "2021-03-30 17:19:37.604",
+    "handle": 1655,
+    "name": "Tony Brown",
+    "type": "Associate Head Coach",
+    "isAssistant": 9,
+    "teamId": 1610612764
+  },
+  {
+    "id": 1630364,
+    "createdAt": "2021-03-30 17:18:06.074",
+    "updatedAt": "2021-03-30 17:19:37.628",
+    "handle": 1630364,
+    "name": "David Atkins",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612764
+  },
+  {
+    "id": 201665,
+    "createdAt": "2021-03-30 17:18:06.077",
+    "updatedAt": "2021-03-30 17:19:37.635",
+    "handle": 201665,
+    "name": "MIke Longabardi",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612764
+  },
+  {
+    "id": 202105,
+    "createdAt": "2021-03-30 17:18:06.08",
+    "updatedAt": "2021-03-30 17:19:37.642",
+    "handle": 202105,
+    "name": "Robert Pack",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612764
   },
   {
     "id": 203601,
-    "createdAt": "2021-03-26 19:04:40.318",
-    "updatedAt": "2021-03-26 19:05:48.926",
+    "createdAt": "2021-03-30 17:18:06.182",
+    "updatedAt": "2021-03-30 17:19:37.649",
     "handle": 203601,
     "name": "Mike Terpstra",
-    "teamId": 1610612764,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612764
   },
   {
     "id": 200744,
-    "createdAt": "2021-03-26 19:04:40.778",
-    "updatedAt": "2021-03-26 19:05:48.945",
+    "createdAt": "2021-03-30 17:18:06.184",
+    "updatedAt": "2021-03-30 17:19:37.69",
     "handle": 200744,
     "name": "Corey Gaines",
-    "teamId": 1610612764,
     "type": "Assistant Coach",
-    "isAssistant": 2
+    "isAssistant": 2,
+    "teamId": 1610612764
+  },
+  {
+    "id": 203375,
+    "createdAt": "2021-03-30 17:18:05.631",
+    "updatedAt": "2021-03-30 17:19:34.943",
+    "handle": 203375,
+    "name": "Darren Erman",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612752
+  },
+  {
+    "id": 1628178,
+    "createdAt": "2021-03-30 17:18:05.786",
+    "updatedAt": "2021-03-30 17:19:35.232",
+    "handle": 1628178,
+    "name": "Vin Bhavnani",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612760
+  },
+  {
+    "id": 1627164,
+    "createdAt": "2021-03-30 17:18:05.989",
+    "updatedAt": "2021-03-30 17:19:35.49",
+    "handle": 1627164,
+    "name": "Bruce Kreutzer",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612753
+  },
+  {
+    "id": 1627336,
+    "createdAt": "2021-03-30 17:18:06.152",
+    "updatedAt": "2021-03-30 17:19:35.497",
+    "handle": 1627336,
+    "name": "Dylan Murphy",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612753
+  },
+  {
+    "id": 1629169,
+    "createdAt": "2021-03-30 17:18:05.646",
+    "updatedAt": "2021-03-30 17:19:35.73",
+    "handle": 1629169,
+    "name": "Brian Adams",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612755
+  },
+  {
+    "id": 1628228,
+    "createdAt": "2021-03-30 17:18:05.992",
+    "updatedAt": "2021-03-30 17:19:35.999",
+    "handle": 1628228,
+    "name": "Willie Green",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612756
+  },
+  {
+    "id": 203605,
+    "createdAt": "2021-03-30 17:18:06.004",
+    "updatedAt": "2021-03-30 17:19:36.509",
+    "handle": 203605,
+    "name": "Jesse Mermuys",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612758
+  },
+  {
+    "id": 1672,
+    "createdAt": "2021-03-30 17:18:05.839",
+    "updatedAt": "2021-03-30 17:19:36.537",
+    "handle": 1672,
+    "name": "Rex Kalamian",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612758
+  },
+  {
+    "id": 278,
+    "createdAt": "2021-03-30 17:18:05.673",
+    "updatedAt": "2021-03-30 17:19:36.552",
+    "handle": 278,
+    "name": "Stacey Augmon",
+    "type": "Assistant Coach for Player Development",
+    "isAssistant": 12,
+    "teamId": 1610612758
+  },
+  {
+    "id": 2443,
+    "createdAt": "2021-03-30 17:18:05.852",
+    "updatedAt": "2021-03-30 17:19:36.808",
+    "handle": 2443,
+    "name": "Darius Songaila",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612759
+  },
+  {
+    "id": 1629144,
+    "createdAt": "2021-03-30 17:18:06.179",
+    "updatedAt": "2021-03-30 17:19:37.057",
+    "handle": 1629144,
+    "name": "Sergio Scariolo",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612761
+  },
+  {
+    "id": 1626233,
+    "createdAt": "2021-03-30 17:18:06.043",
+    "updatedAt": "2021-03-30 17:19:37.34",
+    "handle": 1626233,
+    "name": "Jeff Watkinson",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612762
+  },
+  {
+    "id": 101203,
+    "createdAt": "2021-03-30 17:18:05.883",
+    "updatedAt": "2021-03-30 17:19:37.387",
+    "handle": 101203,
+    "name": "Eric Waters",
+    "type": "Trainer",
+    "isAssistant": 3,
+    "teamId": 1610612762
+  },
+  {
+    "id": 2623,
+    "createdAt": "2021-03-30 17:18:06.052",
+    "updatedAt": "2021-03-30 17:19:37.595",
+    "handle": 2623,
+    "name": "Scott Brooks",
+    "type": "Head Coach",
+    "isAssistant": 1,
+    "teamId": 1610612764
+  },
+  {
+    "id": 1630363,
+    "createdAt": "2021-03-30 17:18:06.082",
+    "updatedAt": "2021-03-30 17:19:37.683",
+    "handle": 1630363,
+    "name": "Dean Oliver",
+    "type": "Assistant Coach",
+    "isAssistant": 2,
+    "teamId": 1610612764
   }
 ]

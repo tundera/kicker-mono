@@ -5,7 +5,7 @@ import db from '../index'
 export const transformPlayerData = (player: BackupPlayerData) => {
   return {
     ...player,
-    id: Number(player.id),
+    id: player.id.toString(),
     createdAt: new Date(player.createdAt),
     updatedAt: new Date(),
     handle: player.handle.toString(),
@@ -17,9 +17,9 @@ export const transformPlayerData = (player: BackupPlayerData) => {
 
 export const upsertPlayerData = async (player: PlayerData) => {
   await db.player.upsert({
-    where: { id: player.playerId },
+    where: { id: player.playerId.toString() },
     create: {
-      id: player.playerId,
+      id: player.playerId.toString(),
       createdAt: new Date(),
       updatedAt: new Date(),
       handle: player.playerId.toString(),
@@ -31,7 +31,7 @@ export const upsertPlayerData = async (player: PlayerData) => {
       position: player.position,
     },
     update: {
-      id: player.playerId,
+      id: player.playerId.toString(),
       updatedAt: new Date(),
       height: player.height,
       weight: player.weight,
@@ -43,18 +43,18 @@ export const upsertPlayerData = async (player: PlayerData) => {
   // Connect players to or remove players from teams
   if (player.teamID) {
     await db.player.update({
-      where: { id: player.playerId },
+      where: { id: player.playerId.toString() },
       data: {
         team: {
           connect: {
-            id: player.teamID,
+            id: player.teamID.toString(),
           },
         },
       },
     })
   } else {
     await db.player.update({
-      where: { id: player.playerId },
+      where: { id: player.playerId.toString() },
       data: {
         team: {
           disconnect: true,

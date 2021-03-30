@@ -1,49 +1,49 @@
 -- CreateTable
 CREATE TABLE "Coach" (
-    "id" SERIAL NOT NULL,
+    "id" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "handle" TEXT NOT NULL,
     "name" TEXT NOT NULL,
-    "teamId" INTEGER,
     "type" TEXT,
     "isAssistant" TEXT,
+    "teamId" TEXT,
 
     PRIMARY KEY ("id")
 );
 
 -- CreateTable
 CREATE TABLE "Player" (
-    "id" SERIAL NOT NULL,
+    "id" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "handle" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "slug" TEXT NOT NULL,
-    "teamId" INTEGER,
     "height" TEXT NOT NULL,
     "weight" TEXT NOT NULL,
     "number" TEXT,
     "position" TEXT,
+    "teamId" TEXT,
 
     PRIMARY KEY ("id")
 );
 
 -- CreateTable
 CREATE TABLE "ColorScheme" (
-    "id" SERIAL NOT NULL,
+    "id" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "primary" TEXT NOT NULL,
     "secondary" TEXT NOT NULL,
-    "teamId" INTEGER,
+    "teamId" TEXT,
 
     PRIMARY KEY ("id")
 );
 
 -- CreateTable
 CREATE TABLE "Team" (
-    "id" SERIAL NOT NULL,
+    "id" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "handle" TEXT NOT NULL,

@@ -1,4 +1,4 @@
-import { objectType, inputObjectType, extendType, list, intArg } from 'nexus'
+import { objectType, inputObjectType, extendType, list, intArg, stringArg } from 'nexus'
 import { Coach } from 'nexus-prisma'
 /**
  * Coach Object Type
@@ -29,34 +29,6 @@ export const CoachObject = objectType({
   },
 })
 
-// export const CoachObject = objectType({
-//   name: 'Coach',
-//   definition(t) {
-//     t.nonNull.int('id')
-//     t.nonNull.field('createdAt', {
-//       type: 'DateTime',
-//     })
-//     t.nonNull.field('updatedAt', {
-//       type: 'DateTime',
-//     })
-//     t.nonNull.string('handle')
-//     t.nonNull.string('name')
-//     t.int('teamId')
-//     t.string('type')
-//     t.string('isAssistant')
-//     t.field('team', {
-//       type: 'Team',
-//       resolve: (parent, _args, ctx) => {
-//         return ctx.db.coach
-//           .findUnique({
-//             where: { id: parent.id },
-//           })
-//           .team()
-//       },
-//     })
-//   },
-// })
-
 /**
  * Coach Query Types
  */
@@ -73,7 +45,7 @@ export const CoachQueries = extendType({
     t.field('coachesByTeam', {
       type: list('Coach'),
       args: {
-        id: intArg(),
+        id: stringArg(),
       },
       resolve(_parent, args, ctx) {
         return ctx.db.coach.findMany({
@@ -102,14 +74,14 @@ export const CoachOrderByInput = inputObjectType({
 export const CoachWhereUniqueInput = inputObjectType({
   name: 'CoachWhereUniqueInput',
   definition(t) {
-    t.nonNull.int('id')
+    t.nonNull.string('id')
   },
 })
 
 export const CoachWhereInput = inputObjectType({
   name: 'CoachWhereInput',
   definition(t) {
-    t.nonNull.int('id')
+    t.nonNull.string('id')
     t.nonNull.field('name', { type: 'StringFilter' })
   },
 })
