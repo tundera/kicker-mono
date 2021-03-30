@@ -1,21 +1,13 @@
-const cwd = process.cwd()
+import findWorkspaceRoot from 'find-yarn-workspace-root'
+
+export const workspaceRoot = findWorkspaceRoot(process.cwd()) ?? process.cwd()
 
 module.exports = {
-  presets: [
-    '@babel/preset-env',
-    [
-      '@babel/preset-react',
-      {
-        runtime: 'automatic',
-      },
-    ],
-    '@babel/preset-typescript',
-  ],
   plugins: [
     [
       'module-resolver',
       {
-        root: cwd,
+        root: workspaceRoot,
         alias: {
           // resolve modules here
           test: './packages/components/test',
