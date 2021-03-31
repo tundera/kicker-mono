@@ -1,7 +1,7 @@
 ---
-to: <%= h.createApiPath(`${name}.ts`) %>
+to: <%= h.createApiPath(`${h.changeCase.param(name)}.ts`) %>
 ---
-<% route = h.camelizedBaseName(name) -%>
+<% route = h.changeCase.pascal(name) -%>
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type <%= route %>Data = {

@@ -2,7 +2,6 @@
 inject: true
 to: <%= h.prependComponentsPath('src/index.ts') %>
 append: true
-skip_if: export * from './<%= name %>'
+skip_if: export * from './<%= h.changeCase.pascal(name) %>'
 ---
-<% component = h.camelizedBaseName(name) -%>
-export * from './<%= component %>'
+export * from './<%= h.changeCase.pascal(name) %>'

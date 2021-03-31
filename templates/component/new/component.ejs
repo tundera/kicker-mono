@@ -1,8 +1,7 @@
 ---
-to: <%= h.createComponentPath(`src/${h.camelizedBaseName(name)}/${h.camelizedBaseName(name)}.tsx`) %>
+to: <%= h.createComponentPath(`src/${h.changeCase.pascal(name)}/${h.changeCase.pascal(name)}.tsx`) %>
 ---
-<% formattedPath = h.camelizedPathName(name) -%>
-<% component = h.camelizedBaseName(name) -%>
+<% component = h.changeCase.pascal(name) -%>
 import { FC } from 'react'
 
 // import NextLink from 'next/link'

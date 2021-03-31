@@ -1,8 +1,7 @@
 ---
-to: <%= h.prependComponentsPath(`src/${h.camelizedBaseName(name)}/${h.camelizedBaseName(name)}.stories.tsx`) %>
+to: <%= h.prependComponentsPath(`src/${h.changeCase.pascal(name)}/${h.changeCase.pascal(name)}.stories.tsx`) %>
 ---
-<% component = h.camelizedBaseName(name) -%>
-<% storyProps = `${component}Props` -%>
+<% component = h.changeCase.pascal(name) -%>
 import { Story, Meta } from '@storybook/react'
 
 import { <%= component %>, <%= component %>Props } from './<%= component %>'

@@ -1,26 +1,23 @@
 ---
-to: <%= h.createPagePath(`${name}.tsx`) %>
+to: <%= h.createPagePath(`${h.changeCase.param(name)}.tsx`) %>
 ---
-<% formattedPath = h.camelizedPathName(name).replace('/','') -%>
-<% formattedBaseName = h.camelizedBaseName(name) -%>
-<% pageName = `${formattedBaseName}Page` -%>
-<% base = h.camelizedBaseName(name) -%>
+<% page = h.changeCase.pascal(name) -%>
 import type { CustomNextPage } from 'types'
 
 import { Flex, Heading } from '@chakra-ui/react'
 
 import { getLayout } from 'src/components/layouts/SiteLayout'
 
-const <%= pageName %>: CustomNextPage = () => {
+const <%= page %>Page: CustomNextPage = () => {
   return (
     <>
       <Flex flexDir="column" alignItems="center">
-        <Heading as="h1"><%= formattedBaseName %> Page</Heading>
+        <Heading as="h1"><%= page %> Page</Heading>
       </Flex>
     </>
   )
 }
 
-<%= pageName %>.getLayout = getLayout
+<%= page %>.getLayout = getLayout
 
-export default <%= pageName %>
+export default <%= page %>

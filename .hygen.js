@@ -12,7 +12,7 @@ const pluralizeQuery = (name) => inflection.pluralize(name)
 // Specify paths for projects
 const componentsPath = path.join(workspaceRoot, 'packages', 'components')
 const modelsPath = path.join(workspaceRoot, 'services', 'hoop')
-const pagesPath = path.join(workspaceRoot, 'app/pages')
+const pagesPath = path.join(workspaceRoot, 'app', 'pages')
 const apiPath = path.join(pagesPath, 'api')
 
 module.exports = {

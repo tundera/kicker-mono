@@ -2,8 +2,7 @@
 to: <%= h.createModelPath(`src/modules/${name}.ts`) %>
 sh: "yarn --cwd <%= h.modelsPath %> generate"
 ---
-<% model = h.camelizedBaseName(name) -%>
-<% plural = h.inflection.pluralize(model) -%>
+<% model = h.changeCase.pascal(name) -%>
 import { objectType, extendType, list, stringArg, nonNull } from 'nexus'
 import { <%= model %> } from 'nexus-prisma'
 
@@ -26,7 +25,7 @@ export const <%= model %>Object = objectType({
 export const <%= model %>Queries = extendType({
   type: 'Query',
   definition(t) {
-    t.field('<%= plural.toLowerCase() %>', {
+    t.field('<%= h.inflection.pluralize(name) %>', {
       type: list('<%= model %>'),
       resolve(_parent, _args, ctx) {
         return ctx.db.<%= name %>.findMany({})

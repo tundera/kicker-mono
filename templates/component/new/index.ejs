@@ -1,5 +1,5 @@
 ---
-to: <%= h.prependComponentsPath(`src/${h.camelizedBaseName(name)}/index.ts`) %>
+to: <%= h.prependComponentsPath(`src/${h.changeCase.pascal(name)}/index.ts`) %>
 ---
-<% component = h.camelizedBaseName(name) -%>
+<% component = h.changeCase.pascal(name) -%>
 export * from './<%= component %>'
