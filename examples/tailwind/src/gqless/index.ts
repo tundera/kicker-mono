@@ -3,12 +3,11 @@
  */
 
 import { createReactClient } from '@gqless/react'
-
 import { createClient, QueryFetcher } from 'gqless'
 import {
+  GeneratedSchema,
   generatedSchema,
   scalarsEnumsHash,
-  GeneratedSchema,
   SchemaObjectTypes,
   SchemaObjectTypesNames,
 } from './schema.generated'

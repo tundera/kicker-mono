@@ -1,8 +1,8 @@
-import path from 'path'
-import execa from 'execa'
-import { readJSON } from 'fs-extra'
 import { getPackages } from '@monorepo-utils/package-utils'
+import execa from 'execa'
 import findWorkspaceRoot from 'find-yarn-workspace-root'
+import { readJSON } from 'fs-extra'
+import path from 'path'
 
 export const workspaceRoot = findWorkspaceRoot(process.cwd()) ?? process.cwd()
 
@@ -31,7 +31,7 @@ export const getWorkspaceNames = () => {
   return workspaces.map(({ packageJSON }) => packageJSON.name.split(path.sep).pop())
 }
 
-export const startWorkspaces = async (workspaces: string[], development = false) => {
+export const startWorkspaces = (workspaces: string[], development = false) => {
   let args = ['wsrun']
 
   workspaces.forEach((workspace) => {
@@ -49,7 +49,7 @@ export const startWorkspaces = async (workspaces: string[], development = false)
   })
 }
 
-export const buildWorkspaces = async (workspaces: string[]) => {
+export const buildWorkspaces = (workspaces: string[]) => {
   let args = ['wsrun']
 
   workspaces.forEach((workspace) => {
@@ -67,7 +67,7 @@ export const buildWorkspaces = async (workspaces: string[]) => {
   })
 }
 
-export const devPackages = async () => {
+export const devPackages = () => {
   return execa('yarn', ['preconstruct', 'dev'], {
     cwd: workspaceRoot,
     env: {
@@ -77,7 +77,7 @@ export const devPackages = async () => {
   })
 }
 
-export const buildPackages = async () => {
+export const buildPackages = () => {
   return execa('yarn', ['preconstruct', 'build'], {
     cwd: workspaceRoot,
     env: {

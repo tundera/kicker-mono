@@ -1,18 +1,18 @@
-import { FC } from 'react'
-import { signIn } from 'next-auth/client'
-import { useForm } from 'react-hook-form'
-import { Mail } from 'react-feather'
 import {
-  chakra,
+  Box,
   Button,
+  chakra,
   Flex,
   FormControl,
   FormErrorMessage,
-  VisuallyHidden,
   FormLabel,
   Input,
-  Box,
+  VisuallyHidden,
 } from '@chakra-ui/react'
+import { signIn } from 'next-auth/client'
+import { FC } from 'react'
+import { Mail } from 'react-feather'
+import { useForm } from 'react-hook-form'
 
 interface Inputs {
   email: string

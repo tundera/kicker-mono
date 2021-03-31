@@ -1,6 +1,5 @@
-import { FC } from 'react'
-
 import { Box, Heading } from '@chakra-ui/react'
+import { FC } from 'react'
 
 interface Props {
   id: string

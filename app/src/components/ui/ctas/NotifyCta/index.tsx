@@ -1,6 +1,5 @@
+import { Box, chakra, Heading, Text,useColorModeValue } from '@chakra-ui/react'
 import { FC } from 'react'
-
-import { useColorModeValue, chakra, Heading, Box, Text } from '@chakra-ui/react'
 
 const NotifyCta: FC = () => {
   const bg = useColorModeValue('purple.700', 'gray.800')

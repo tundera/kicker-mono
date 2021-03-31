@@ -1,9 +1,8 @@
-import NextLink from 'next/link'
-import Head from 'next/head'
-import { Team, prepareReactRender } from 'src/gqless'
-
-import DarkModeToggle from 'src/components/dark-mode-toggle'
 import { PropsWithServerCache } from '@gqless/react'
+import Head from 'next/head'
+import NextLink from 'next/link'
+import DarkModeToggle from 'src/components/dark-mode-toggle'
+import { prepareReactRender,Team } from 'src/gqless'
 import { getTeams } from 'src/lib/teams'
 
 type TeamsPageProps = PropsWithServerCache<{

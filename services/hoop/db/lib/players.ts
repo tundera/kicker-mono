@@ -1,6 +1,5 @@
-import type { PlayerData, Player, BackupPlayerData } from '../types'
-
 import db from '../index'
+import type { BackupPlayerData,Player, PlayerData } from '../types'
 
 export const transformPlayerData = (player: BackupPlayerData) => {
   return {

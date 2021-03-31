@@ -1,9 +1,9 @@
 #!/usr/bin/env ts-node-script
 
 import { promises as fs } from 'fs'
+import matter from 'gray-matter'
 import path from 'path'
 import RSS from 'rss'
-import matter from 'gray-matter'
 
 const generateRssFeed = async () => {
   const feed = new RSS({

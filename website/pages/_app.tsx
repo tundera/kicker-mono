@@ -1,9 +1,8 @@
-import type { AppProps } from 'next/app'
-
-import { DokzProvider, GithubLink, ColorModeSwitch } from 'dokz'
-import Head from 'next/head'
-import { useColorModeValue, ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider,useColorModeValue } from '@chakra-ui/react'
 import { createBrandLogoIcon } from '@kicker/components'
+import { ColorModeSwitch,DokzProvider, GithubLink } from 'dokz'
+import type { AppProps } from 'next/app'
+import Head from 'next/head'
 
 export default function App({ Component, pageProps }: AppProps) {
   const logoColor = useColorModeValue('#000000', '#FFFFFF')

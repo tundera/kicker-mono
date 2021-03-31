@@ -1,6 +1,6 @@
-import { FC } from 'react'
-import { useColorModeValue, LinkBox, LinkOverlay, Box, Image, Text } from '@chakra-ui/react'
+import { Box, Image, LinkBox, LinkOverlay, Text,useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { FC } from 'react'
 
 export interface SimpleCardProps {
   title: string

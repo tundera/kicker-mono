@@ -1,4 +1,4 @@
-import { objectType, inputObjectType, list, extendType, stringArg } from 'nexus'
+import { extendType, inputObjectType, list, objectType, stringArg } from 'nexus'
 import { Player } from 'nexus-prisma'
 
 /**

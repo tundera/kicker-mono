@@ -1,6 +1,5 @@
+import { Box, chakra, Flex, Heading, Image, Link,Text, useColorModeValue } from '@chakra-ui/react'
 import { FC } from 'react'
-
-import { useColorModeValue, chakra, Heading, Flex, Box, Image, Text, Link } from '@chakra-ui/react'
 
 const WatchCta: FC = () => {
   const bg = useColorModeValue('white', 'gray.800')

@@ -1,19 +1,18 @@
-import { FC } from 'react'
-import type { Post } from 'types'
-
-import NextLink from 'next/link'
 import {
-  useColorModeValue,
   Box,
-  LinkBox,
-  Image,
-  Link,
-  LinkOverlay,
-  Text,
   Flex,
   HStack,
+  Image,
+  Link,
+  LinkBox,
+  LinkOverlay,
   Tag,
+  Text,
+  useColorModeValue,
 } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import { FC } from 'react'
+import type { Post } from 'types'
 
 interface Props {
   post: Post

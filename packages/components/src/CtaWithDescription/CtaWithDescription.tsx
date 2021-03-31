@@ -1,5 +1,5 @@
+import { Box, Button,chakra, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { useColorModeValue, chakra, Box, Heading, Text, Flex, Button } from '@chakra-ui/react'
 
 export interface CtaWithDescriptionProps {
   title: string

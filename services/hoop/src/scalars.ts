@@ -1,5 +1,5 @@
-import { asNexusMethod } from 'nexus'
 import { GraphQLUpload } from 'graphql-upload'
+import { asNexusMethod } from 'nexus'
 
 export * from 'nexus-prisma/scalars'
 

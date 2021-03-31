@@ -1,7 +1,6 @@
 #!/usr/bin/env ts-node-script
 
 import teams from 'nba/data/teams.json'
-
 import db from '../index'
 import { getUpdatedTeamData, updateTeamData } from '../lib/teams'
 

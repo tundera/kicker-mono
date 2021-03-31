@@ -1,12 +1,11 @@
-import type { CustomNextPage } from 'types'
-
-import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
+import { Box,Flex, Heading, Text } from '@chakra-ui/react'
 import { gql } from 'graphql-request'
-import { Heading, Text, Flex, Box } from '@chakra-ui/react'
-import { graphCmsClient } from 'src/lib/graphcms/client'
-import OrderSummary from 'src/components/ui/commerce/OrderSummary'
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 import { getLayout } from 'src/components/layouts/SiteLayout'
+import OrderSummary from 'src/components/ui/commerce/OrderSummary'
+import { graphCmsClient } from 'src/lib/graphcms/client'
+import type { CustomNextPage } from 'types'
 
 const SuccessPage: CustomNextPage = () => {
   const router = useRouter()

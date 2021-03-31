@@ -1,7 +1,6 @@
-import type { FC } from 'react'
-
+import { Box, chakra, Flex, Link,Stack, useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { chakra, Box, Stack, Flex, useColorModeValue, Link } from '@chakra-ui/react'
+import type { FC } from 'react'
 
 export const SimpleCTA: FC = () => {
   return (

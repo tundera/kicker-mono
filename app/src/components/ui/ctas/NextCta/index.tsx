@@ -1,6 +1,5 @@
+import { Box, Flex, Heading, Image, Link,useColorModeValue } from '@chakra-ui/react'
 import { FC } from 'react'
-
-import { useColorModeValue, Heading, Flex, Box, Image, Link } from '@chakra-ui/react'
 
 const NextCta: FC = () => {
   const bg = useColorModeValue('white', 'gray.800')

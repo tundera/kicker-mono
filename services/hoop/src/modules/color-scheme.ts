@@ -1,4 +1,4 @@
-import { objectType, extendType, list, intArg, stringArg } from 'nexus'
+import { extendType, list, objectType, stringArg } from 'nexus'
 import { ColorScheme } from 'nexus-prisma'
 
 /**

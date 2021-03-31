@@ -1,16 +1,14 @@
 #!/usr/bin/env ts-node-script
 
-import db from '../index'
-
-import rawTeams from '../backups/documents/teams.json'
-import rawPlayers from '../backups/documents/players.json'
 import rawCoaches from '../backups/documents/coaches.json'
 import rawSchemes from '../backups/documents/colors.json'
-
-import { seedTeamData, transformTeamData } from '../lib/teams'
-import { seedPlayerData, transformPlayerData } from '../lib/players'
+import rawPlayers from '../backups/documents/players.json'
+import rawTeams from '../backups/documents/teams.json'
+import db from '../index'
 import { seedCoachData, transformCoachData } from '../lib/coaches'
 import { seedColorSchemes, transformColorSchemeData } from '../lib/colors'
+import { seedPlayerData, transformPlayerData } from '../lib/players'
+import { seedTeamData, transformTeamData } from '../lib/teams'
 
 async function main() {
   console.log('Start seeding ...')

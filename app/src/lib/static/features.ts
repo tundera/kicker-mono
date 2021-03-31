@@ -1,11 +1,11 @@
+import CypressLogo from 'assets/logos/cypress.svg'
+import EslintLogo from 'assets/logos/eslint.svg'
+import FormspreeLogo from 'assets/logos/formspree.svg'
+import JestLogo from 'assets/logos/jest.svg'
 import MdxLogo from 'assets/logos/mdx.svg'
 import PrismaLogo from 'assets/logos/prisma.svg'
-import TypeScriptLogo from 'assets/logos/typescript.svg'
-import CypressLogo from 'assets/logos/cypress.svg'
-import JestLogo from 'assets/logos/jest.svg'
-import FormspreeLogo from 'assets/logos/formspree.svg'
-import EslintLogo from 'assets/logos/eslint.svg'
 import ReactQueryLogo from 'assets/logos/react-query.svg'
+import TypeScriptLogo from 'assets/logos/typescript.svg'
 import VsCodeLogo from 'assets/logos/vscode.svg'
 
 export const mainFeatures = [

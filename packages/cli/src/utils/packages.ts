@@ -1,5 +1,4 @@
 import execa from 'execa'
-
 import { workspaceRoot } from './workspaces'
 
 export const watchPackages = async () => {

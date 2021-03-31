@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react'
 import { NextSeo } from 'next-seo'
+import React, { FunctionComponent } from 'react'
 
 type LayoutProps = {
   meta: any

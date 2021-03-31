@@ -1,6 +1,5 @@
-import { FC } from 'react'
-
 import { Flex, useColorModeValue } from '@chakra-ui/react'
+import { FC } from 'react'
 
 const Container: FC = ({ children }) => {
   const bg = useColorModeValue('whiteAlpha.900', 'blackAlpha.900')

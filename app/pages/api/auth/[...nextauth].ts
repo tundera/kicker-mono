@@ -1,9 +1,8 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
-
-import NextAuth from 'next-auth'
-import Providers from 'next-auth/providers'
-import Adapters from 'next-auth/adapters'
 import db from 'db'
+import type { NextApiRequest, NextApiResponse } from 'next'
+import NextAuth from 'next-auth'
+import Adapters from 'next-auth/adapters'
+import Providers from 'next-auth/providers'
 
 export default (req: NextApiRequest, res: NextApiResponse) =>
   NextAuth(req, res, {

@@ -1,6 +1,5 @@
+import { Box,chakra, Flex, Heading, useColorModeValue } from '@chakra-ui/react'
 import type { FC } from 'react'
-
-import { useColorModeValue, chakra, Heading, Flex, Box } from '@chakra-ui/react'
 
 export const TimerEventCta: FC = () => {
   const bg = useColorModeValue('indigo.500', 'gray.800')

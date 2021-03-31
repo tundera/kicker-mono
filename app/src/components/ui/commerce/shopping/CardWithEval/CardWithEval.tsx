@@ -1,9 +1,7 @@
-import { FC } from 'react'
-
+import { Box, Button,Flex, Heading, Icon, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
 import NextLink from 'next/link'
-
+import { FC } from 'react'
 import { Star } from 'react-feather'
-import { Icon, LinkBox, LinkOverlay, Heading, Text, Box, Flex, Button } from '@chakra-ui/react'
 
 interface Props {
   title: string

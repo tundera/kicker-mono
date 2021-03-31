@@ -1,15 +1,13 @@
+import { chakra, Flex, Text } from '@chakra-ui/react'
+import Highlight, { defaultProps, Language } from 'prism-react-renderer'
+import shadesOfPurple from 'prism-react-renderer/themes/shadesOfPurple'
 import { FC } from 'react'
-
 import { useState } from 'react'
 import Confetti from 'react-dom-confetti'
-import Highlight, { defaultProps, Language } from 'prism-react-renderer'
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
-import shadesOfPurple from 'prism-react-renderer/themes/shadesOfPurple'
-import { chakra, Flex, Text } from '@chakra-ui/react'
-
+import { LiveEditor, LiveError, LivePreview, LiveProvider } from 'react-live'
 import CopyButton from 'src/components/ui/buttons/CopyButton'
 import { copyToClipboard } from 'src/utils/copyToClipboard'
-import confetti from 'styles/animations/confetti'
+import { confettiConfig } from 'styles/animations/confetti'
 
 interface Props {
   codeString: string
@@ -70,7 +68,7 @@ const CodeBlock: FC<Props> = ({ codeString, language, ...props }) => {
       </Highlight>
 
       <ConfettiWrapper>
-        <Confetti active={isCopied} config={confetti} />
+        <Confetti active={isCopied} config={confettiConfig} />
       </ConfettiWrapper>
     </Wrapper>
   )

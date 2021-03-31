@@ -1,11 +1,9 @@
 import { makeSchema } from 'nexus'
 import { join } from 'path'
-
+import prettierConfig from '../../../prettier.config'
+import * as inputTypes from './inputs'
 import * as moduleTypes from './modules'
 import * as scalarTypes from './scalars'
-import * as inputTypes from './inputs'
-
-import prettierConfig from '../../../prettier.config'
 
 const cwd = process.cwd()
 

@@ -1,6 +1,6 @@
 import { flags } from '@oclif/command'
 import { Command } from '../command'
-import { buildWorkspace, buildAllWorkspaces, getWorkspaceNames } from '../utils/workspaces'
+import { buildAllWorkspaces, getWorkspaceNames } from '../utils/workspaces'
 
 export class Build extends Command {
   static description = 'Creates a production build'
@@ -20,11 +20,12 @@ export class Build extends Command {
   }
 
   async run() {
-    const { args, flags } = this.parse(Build)
+    const { args } = this.parse(Build)
 
     try {
       if (args.workspace) {
-        await buildWorkspace(args.workspace)
+        console.log('need to add a build command for single workspace')
+        // await buildWorkspace(args.workspace)
       } else {
         await buildAllWorkspaces()
       }

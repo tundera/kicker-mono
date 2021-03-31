@@ -1,12 +1,10 @@
-import type { FC, ReactNode } from 'react'
-
+import { Flex,useColorModeValue } from '@chakra-ui/react'
 import NProgress from 'next-nprogress-emotion'
-import { useColorModeValue, Flex } from '@chakra-ui/react'
-
+import type { FC, ReactNode } from 'react'
+import Container from 'src/components/sections/Container'
+import Footer from 'src/components/sections/Footer'
 import Header from 'src/components/sections/Header'
 import Subheader from 'src/components/sections/Header/SubHeader'
-import Footer from 'src/components/sections/Footer'
-import Container from 'src/components/sections/Container'
 
 const AccountLayout: FC = ({ children, ...props }) => {
   const color = useColorModeValue('whiteAlpha.900', 'brand.500')

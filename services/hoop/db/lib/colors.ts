@@ -1,5 +1,4 @@
-import type { ColorScheme, BackupColorSchemeData } from '../../src/types'
-
+import type { BackupColorSchemeData,ColorScheme } from '../../src/types'
 import db from '../index'
 
 export const transformColorSchemeData = (scheme: BackupColorSchemeData) => {

@@ -1,6 +1,5 @@
-import { FC } from 'react'
-
 import { FormspreeProvider } from '@formspree/react'
+import { FC } from 'react'
 
 const FormProvider: FC = ({ children }) => {
   return (

@@ -1,5 +1,5 @@
-import c from 'chalk'
 import { flags } from '@oclif/command'
+import c from 'chalk'
 import execa from 'execa'
 import { join } from 'path'
 import { Command } from '../command'
@@ -29,7 +29,7 @@ export class Run extends Command {
     }),
   }
 
-  async runScript(name: string) {
+  runScript(name: string) {
     console.log(`Running script at "scripts/src/${name}"`)
     return execa('node', ['--loader', 'ts-node/esm', `src/${name}.ts`], {
       cwd: join(workspaceRoot, 'scripts'),
@@ -40,14 +40,14 @@ export class Run extends Command {
   }
 
   async run() {
-    const { args, flags } = this.parse(Run)
+    const { args } = this.parse(Run)
 
     try {
       const child = await this.runScript(args.name)
 
       child?.on('close', (code: number) => {
         const message = code
-          ? 'Failed to run script ${c.blueBright`${args.name}`} ❌'
+          ? `Failed to run script ${c.blueBright`${args.name}`} ❌`
           : `Done running script ${c.blueBright`${args.name}`} ✅`
         console.log(message)
         return process.exit(code)

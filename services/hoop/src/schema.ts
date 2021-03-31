@@ -1,9 +1,8 @@
-import { join } from 'path'
 import { makeSchema } from 'nexus'
-
+import { join } from 'path'
+import * as inputTypes from './inputs'
 import * as moduleTypes from './modules'
 import * as scalarTypes from './scalars'
-import * as inputTypes from './inputs'
 
 const cwd = process.cwd()
 

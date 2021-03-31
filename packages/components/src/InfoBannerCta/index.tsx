@@ -1,6 +1,5 @@
+import { Box, chakra, Flex, Heading, Text,useColorModeValue } from '@chakra-ui/react'
 import type { FC } from 'react'
-
-import { useColorModeValue, chakra, Heading, Flex, Box, Text } from '@chakra-ui/react'
 
 export const InfoBannerCta: FC = () => {
   const bg = useColorModeValue('green.500', 'gray.800')

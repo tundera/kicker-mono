@@ -1,6 +1,6 @@
 import { ApolloServer } from 'apollo-server'
-import { schema } from './schema'
 import { createContext } from './context'
+import { schema } from './schema'
 import { ServerConfig } from './types'
 
 export * from '../db'

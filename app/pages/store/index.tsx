@@ -1,15 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import type { GetStaticProps } from 'next'
-import type { CustomNextPage } from 'types'
-
-import { useState } from 'react'
-import { getLayout } from 'src/components/layouts/SiteLayout'
+import { Box,Flex, HStack, Icon, Input, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import { ProductsGrid } from '@kicker/components'
-import { formatCurrencyValue } from 'src/lib/graphcms/helpers'
-import { graphCmsClient } from 'src/lib/graphcms/client'
+import type { GetStaticProps } from 'next'
+import { useState } from 'react'
 import { Search } from 'react-feather'
-
-import { useColorModeValue, Stack, HStack, Input, Icon, Flex, Text, Box } from '@chakra-ui/react'
+import { getLayout } from 'src/components/layouts/SiteLayout'
+import { graphCmsClient } from 'src/lib/graphcms/client'
+import { formatCurrencyValue } from 'src/lib/graphcms/helpers'
+import type { CustomNextPage } from 'types'
 
 interface Props {
   products: any

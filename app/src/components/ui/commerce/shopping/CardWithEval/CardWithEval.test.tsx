@@ -1,5 +1,4 @@
-import { render } from 'test/utils'
-
+import { render } from '../../../../../../test/utils'
 import CardWithEval from './CardWithEval'
 
 test('renders CardWithEval component with title', () => {

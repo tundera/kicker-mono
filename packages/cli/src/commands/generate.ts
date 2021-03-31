@@ -53,7 +53,7 @@ export class Generate extends Command {
   }
 
   async run() {
-    const { args, flags } = this.parse(Generate)
+    const { args } = this.parse(Generate)
 
     try {
       const subprocess = await this.generateFromTemplate(args.resource)

@@ -1,17 +1,16 @@
-import { FC } from 'react'
-
 import {
   Flex,
-  useColorModeValue,
-  Tab,
-  Tabs,
-  TabList,
-  Spacer,
   HStack,
   Input,
-  InputLeftElement,
   InputGroup,
+  InputLeftElement,
+  Spacer,
+  Tab,
+  TabList,
+  Tabs,
+  useColorModeValue,
 } from '@chakra-ui/react'
+import { FC } from 'react'
 import { Search } from 'react-feather'
 
 const Subheader: FC = ({ ...props }) => {

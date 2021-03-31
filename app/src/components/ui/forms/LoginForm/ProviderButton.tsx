@@ -1,7 +1,7 @@
-import { FC } from 'react'
-import { AppProvider } from 'next-auth/providers'
-import { signIn } from 'next-auth/client'
 import { Button } from '@chakra-ui/react'
+import { signIn } from 'next-auth/client'
+import { AppProvider } from 'next-auth/providers'
+import { FC } from 'react'
 
 interface Props {
   provider: AppProvider

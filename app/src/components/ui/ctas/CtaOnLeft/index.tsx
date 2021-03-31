@@ -1,6 +1,5 @@
+import { Box, chakra, Heading,useColorModeValue } from '@chakra-ui/react'
 import { FC } from 'react'
-
-import { useColorModeValue, chakra, Box, Heading } from '@chakra-ui/react'
 
 const CtaOnLeft: FC = () => {
   const bg = useColorModeValue('white', 'gray.800')

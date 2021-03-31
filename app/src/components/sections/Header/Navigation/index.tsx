@@ -1,22 +1,20 @@
-import { FC } from 'react'
-import { Session } from 'next-auth'
-
-import NextLink from 'next/link'
-import { Menu } from 'react-feather'
 import {
-  useColorModeValue,
-  Slide,
-  useDisclosure,
-  HStack,
   Box,
-  IconButton,
   Button,
-  VStack,
   CloseButton,
+  HStack,
+  IconButton,
+  Slide,
+  useColorModeValue,
+  useDisclosure,
+  VStack,
 } from '@chakra-ui/react'
-
-import SettingsButton from 'src/components/ui/buttons/SettingsButton'
+import NextLink from 'next/link'
+import { Session } from 'next-auth'
+import { FC } from 'react'
+import { Menu } from 'react-feather'
 import NavButton from 'src/components/ui/buttons/NavButton'
+import SettingsButton from 'src/components/ui/buttons/SettingsButton'
 import DarkModeToggle from 'src/components/utility/DarkModeToggle'
 import LocaleButton from 'src/components/utility/LocaleButton'
 

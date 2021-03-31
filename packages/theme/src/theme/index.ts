@@ -1,9 +1,8 @@
 import { extendTheme, ThemeOverride } from '@chakra-ui/react'
-
-// import config from './config'
-import styles from './styles'
 import colors from './colors'
 import fonts from './fonts'
+// import config from './config'
+import styles from './styles'
 
 // Foundational style overrides
 // import borders from './foundations/borders'

@@ -1,5 +1,4 @@
-import { render } from 'test/utils'
-
+import { render } from '../../../../../test/utils'
 import { SimpleList } from './SimpleList'
 
 test('renders SimpleList component with title', () => {

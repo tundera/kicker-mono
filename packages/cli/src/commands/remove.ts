@@ -28,7 +28,7 @@ export class Remove extends Command {
     }),
   }
 
-  async watchPackages() {
+  watchPackages() {
     return execa('yarn', ['preconstruct', 'watch'], {
       cwd: this.project.root,
       env: {
@@ -37,7 +37,7 @@ export class Remove extends Command {
     }).stdout?.pipe(process.stdout)
   }
 
-  async runRemove(module: string, workspace: string) {
+  runRemove(module: string, workspace: string) {
     const args = ['workspace', `@kicker/${workspace}`, 'remove', module]
 
     return execa('yarn', args, {
@@ -49,7 +49,7 @@ export class Remove extends Command {
   }
 
   async run() {
-    const { args, flags } = this.parse(Remove)
+    const { args } = this.parse(Remove)
 
     try {
       const subprocess = await this.runRemove(args.module, args.workspace)

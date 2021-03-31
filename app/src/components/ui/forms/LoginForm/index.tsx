@@ -1,10 +1,8 @@
-import { FC } from 'react'
-
+import { Box, Divider, Flex, Stack, Text,useColorModeValue } from '@chakra-ui/react'
 import { AppProvider } from 'next-auth/providers'
-import { useColorModeValue, Divider, Flex, Box, Stack, Text } from '@chakra-ui/react'
-
-import OAuthLogins from './OAuthLogins'
+import { FC } from 'react'
 import EmailLogin from './EmailLogin'
+import OAuthLogins from './OAuthLogins'
 
 interface Props {
   providers: AppProvider[]

@@ -1,9 +1,9 @@
-import React from 'react'
+import '../styles/globals.css'
 import { AppProps } from 'next/app'
 import { DefaultSeo } from 'next-seo'
 import { ThemeProvider } from 'next-themes'
+import React from 'react'
 import SEO from '../../next-seo.json'
-import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

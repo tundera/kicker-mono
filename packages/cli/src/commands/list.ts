@@ -42,7 +42,7 @@ export class List extends Command {
   }
 
   async run() {
-    const { args, flags } = this.parse(List)
+    // const { args, flags } = this.parse(List)
 
     try {
       // const workspaces = getProjectWorkspaces()

@@ -1,15 +1,5 @@
-import { useColorModeValue, Box, Grid, GridItem, Text } from '@chakra-ui/react'
+import { Box, Grid, GridItem, Text,useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-
-export interface SlideGridProps {
-  title: string
-  excerpt: string
-  slug: string
-  image: {
-    alt: string
-    src: string
-  }
-}
 
 const GridBox = styled(GridItem)`
   width: 8rem;
@@ -19,10 +9,8 @@ const GridBox = styled(GridItem)`
   align-items: center;
 `
 
-export const SlideGrid = ({ title, excerpt, image }: SlideGridProps) => {
+export const SlideGrid = () => {
   const bg = useColorModeValue('white', 'gray.800')
-  const titleColor = useColorModeValue('gray.800', 'white')
-  const excerptColor = useColorModeValue('gray.400', 'gray.300')
 
   return (
     <Box bg={bg} p="8" borderRadius="4" shadow="dark-lg" w="full">

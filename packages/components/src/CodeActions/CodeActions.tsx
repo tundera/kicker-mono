@@ -1,11 +1,10 @@
+import { Box, Flex, useClipboard,useColorModeValue } from '@chakra-ui/react'
 import type { FC } from 'react'
-
-import { Flex, useColorModeValue, Box, useClipboard } from '@chakra-ui/react'
+import Confetti from 'react-dom-confetti'
 import { IoIosCopy } from 'react-icons/io'
 import { IoCheckmarkDoneSharp } from 'react-icons/io5'
-import Confetti from 'react-dom-confetti'
-import { ActionButton } from './ActionButton'
 import confettiConfig from '../animations/confetti'
+import { ActionButton } from './ActionButton'
 
 interface Props {
   code: string

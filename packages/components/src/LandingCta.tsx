@@ -1,6 +1,5 @@
+import { Box, Button,chakra, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import type { FC } from 'react'
-
-import { useColorModeValue, chakra, Box, Heading, Flex, Text, Button } from '@chakra-ui/react'
 
 export const LandingCta: FC = () => {
   const bg = useColorModeValue('white', 'gray.800')

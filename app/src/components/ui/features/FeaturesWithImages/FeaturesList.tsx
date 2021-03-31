@@ -1,6 +1,5 @@
+import { Box, Flex, Heading, Icon,List, ListItem, Text, useColorModeValue } from '@chakra-ui/react'
 import { FC } from 'react'
-
-import { useColorModeValue, Box, Flex, ListItem, List, Text, Heading, Icon } from '@chakra-ui/react'
 
 const EditIcon = (props) => (
   <Icon viewBox="0 0 1792 1792" {...props}>

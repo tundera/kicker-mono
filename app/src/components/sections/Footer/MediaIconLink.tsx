@@ -1,6 +1,5 @@
+import { IconButton, Link, useColorModeValue } from '@chakra-ui/react'
 import type { ReactElement } from 'react'
-
-import { Link, IconButton, useColorModeValue } from '@chakra-ui/react'
 
 interface Props {
   title: string

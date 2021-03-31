@@ -1,8 +1,6 @@
-import { FC } from 'react'
-
-import { useColorModeValue, Container } from '@chakra-ui/react'
+import { Container,useColorModeValue } from '@chakra-ui/react'
 import { MDXProvider } from '@mdx-js/react'
-
+import { FC } from 'react'
 import SiteLayout from 'src/components/layouts/SiteLayout'
 import { mdxComponents } from 'src/components/mdx'
 

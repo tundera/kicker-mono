@@ -1,10 +1,8 @@
-import type { FC } from 'react'
-
 import { ChakraProvider } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
-
-import { theme } from '../theme'
+import type { FC } from 'react'
 import fonts from '../font-face'
+import { theme } from '../theme'
 
 export const ThemeProvider: FC = ({ children }) => {
   return (

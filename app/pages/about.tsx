@@ -1,11 +1,10 @@
-import type { CustomNextPage as NextPage } from 'types'
-
-import { Flex, Box, useColorModeValue } from '@chakra-ui/react'
+import { Box, Flex, useColorModeValue } from '@chakra-ui/react'
 import { getLayout } from 'src/components/layouts/SiteLayout'
-import FeaturesWithCards from 'src/components/ui/features/FeaturesWithCards'
 import CallToAction from 'src/components/ui/ctas/CtaWithDescription'
 import FeaturesGrid from 'src/components/ui/features/FeaturesGrid'
+import FeaturesWithCards from 'src/components/ui/features/FeaturesWithCards'
 import { mainFeatures } from 'src/lib/static/features'
+import type { CustomNextPage as NextPage } from 'types'
 
 const AboutPage: NextPage = () => {
   const bg = useColorModeValue('gray.800', 'indigo.700')

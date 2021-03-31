@@ -1,15 +1,13 @@
-import type { CustomAppProps } from 'types'
-
-import { useEffect, useRef } from 'react'
-import { QueryClient, useQueryErrorResetBoundary } from 'react-query'
-import { ErrorBoundary } from 'react-error-boundary'
-import { Provider as AuthProvider } from 'next-auth/client'
 import splitbee from '@splitbee/web'
-
+import { Provider as AuthProvider } from 'next-auth/client'
+import { useEffect, useRef } from 'react'
+import { ErrorBoundary } from 'react-error-boundary'
+import { QueryClient, useQueryErrorResetBoundary } from 'react-query'
 import FormProvider from 'src/components/providers/FormProvider'
 import QueryProvider from 'src/components/providers/QueryProvider'
 import ThemeProvider from 'src/components/providers/ThemeProvider'
 import RootErrorFallback from 'src/components/utility/RootErrorFallback'
+import type { CustomAppProps } from 'types'
 
 function MyApp({ Component, pageProps, router }: CustomAppProps) {
   const { reset } = useQueryErrorResetBoundary()

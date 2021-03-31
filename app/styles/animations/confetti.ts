@@ -1,4 +1,4 @@
-const confetti = {
+export const confettiConfig = {
   angle: 90,
   spread: 360,
   startVelocity: 40,
@@ -10,5 +10,3 @@ const confetti = {
   height: '10px',
   colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a'],
 }
-
-export default confetti

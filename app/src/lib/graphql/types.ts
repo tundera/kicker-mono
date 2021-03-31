@@ -1,6 +1,5 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
-
 import type { PrismaClient } from 'db'
+import type { NextApiRequest, NextApiResponse } from 'next'
 
 export interface Context {
   db: PrismaClient

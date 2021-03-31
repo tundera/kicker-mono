@@ -1,5 +1,5 @@
+import { Box, chakra, Flex, Icon,SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import { FC } from 'react'
-import { chakra, Box, SimpleGrid, Flex, useColorModeValue, Icon } from '@chakra-ui/react'
 
 type Feature = {
   title: string

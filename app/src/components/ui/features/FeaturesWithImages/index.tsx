@@ -1,6 +1,5 @@
+import { Box, Heading,Image, useColorModeValue } from '@chakra-ui/react'
 import { FC } from 'react'
-
-import { useColorModeValue, Box, Image, Heading } from '@chakra-ui/react'
 import FeaturesList from 'src/components/ui/features/FeaturesWithImages/FeaturesList'
 
 const FeaturesWithImages: FC = () => {

@@ -9,6 +9,6 @@ generates:
     config:
       fetcher: graphql-request
       useTypeImports: true
-hooks:
-  afterAllFileWrite:
-    - eslint --fix
+# hooks:
+#   afterAllFileWrite:
+#     - eslint --fix

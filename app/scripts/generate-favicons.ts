@@ -1,9 +1,8 @@
 #!/usr/bin/env ts-node-script
 
+import favicons from 'favicons'
 import fs from 'fs'
 import path from 'path'
-import favicons from 'favicons'
-
 import siteConfig from '../site-config'
 
 const generateFavicons = async () => {

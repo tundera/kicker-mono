@@ -1,15 +1,13 @@
-import type { CustomNextPage } from 'types'
-import type { GetStaticProps, GetStaticPaths } from 'next'
-
-import { useState } from 'react'
-import Image from 'next/image'
-import { gql } from 'graphql-request'
+import { Box, Button, Flex, Grid, GridItem, Heading,Text } from '@chakra-ui/react'
 import { loadStripe } from '@stripe/stripe-js'
-import { Flex, Button, Box, Grid, GridItem, Text, Heading } from '@chakra-ui/react'
-
-import { formatCurrencyValue } from 'src/lib/graphcms/helpers'
-import { graphCmsClient } from 'src/lib/graphcms/client'
+import { gql } from 'graphql-request'
+import type { GetStaticPaths,GetStaticProps } from 'next'
+import Image from 'next/image'
+import { useState } from 'react'
 import { getLayout } from 'src/components/layouts/SiteLayout'
+import { graphCmsClient } from 'src/lib/graphcms/client'
+import { formatCurrencyValue } from 'src/lib/graphcms/helpers'
+import type { CustomNextPage } from 'types'
 
 interface Props {
   product: any

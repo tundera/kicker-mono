@@ -1,5 +1,4 @@
-import { Story, Meta } from '@storybook/react'
-
+import { Meta,Story } from '@storybook/react'
 import { BlogCard, BlogCardProps } from './BlogCard'
 
 export default {

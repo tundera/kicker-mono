@@ -1,18 +1,17 @@
 import {
-  chakra,
-  useColorModeValue,
   Button,
+  chakra,
   Menu,
   MenuButton,
   MenuGroup,
   MenuItem,
   MenuList,
   Tooltip,
+  useColorModeValue,
 } from '@chakra-ui/react'
-
-import i18n from 'src/i18n'
-import { useRouter } from 'next/router'
 import Emoji from 'a11y-react-emoji'
+import { useRouter } from 'next/router'
+import i18n from 'src/i18n'
 
 const LocaleEmoji = chakra(Emoji)
 

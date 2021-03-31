@@ -1,8 +1,7 @@
 import type { BoxProps } from '@chakra-ui/react'
-import type { MotionProps } from 'framer-motion'
-
 import { Box, forwardRef } from '@chakra-ui/react'
-import { motion, isValidMotionProp } from 'framer-motion'
+import type { MotionProps } from 'framer-motion'
+import { isValidMotionProp,motion } from 'framer-motion'
 
 type CombinedProps = BoxProps & MotionProps
 

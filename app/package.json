@@ -20,7 +20,9 @@
     "generate:favicons": "ts-node --compiler-options '{\"module\": \"CommonJS\"}' --transpile-only scripts/generate-favicons.ts",
     "generate:rss": "ts-node --compiler-options '{\"module\": \"CommonJS\"}' --transpile-only scripts/generate-favicons.ts",
     "generate:sitemap": "ts-node --compiler-options '{\"module\": \"CommonJS\"}' --transpile-only scripts/generate-favicons.ts",
-    "forms:deploy": "formspree deploy -k $FORMSPREE_DEPLOY_KEY"
+    "forms:deploy": "formspree deploy -k $FORMSPREE_DEPLOY_KEY",
+    "test": "prisma generate && yarn test:jest",
+    "test:jest": "jest"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.8",

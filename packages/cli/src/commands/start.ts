@@ -1,14 +1,12 @@
 import { flags } from '@oclif/command'
-import execa from 'execa'
 import c from 'chalk'
 import ora from 'ora'
-import { watchPackages } from '../utils/packages'
 import { Command } from '../command'
 import {
   buildPackages,
   buildWorkspaces,
-  startWorkspaces,
   getWorkspaceNames,
+  startWorkspaces,
 } from '../utils/workspaces'
 
 export class Start extends Command {
@@ -45,7 +43,7 @@ export class Start extends Command {
   }
 
   async run() {
-    const { argv, flags } = this.parse(Start)
+    const { argv } = this.parse(Start)
 
     try {
       const spinner = ora({

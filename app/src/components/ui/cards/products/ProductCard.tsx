@@ -1,7 +1,6 @@
-import { FC } from 'react'
-
+import { Box, chakra, Flex, useColorModeValue } from '@chakra-ui/react'
 import Image from 'next/image'
-import { chakra, Box, Flex, useColorModeValue } from '@chakra-ui/react'
+import { FC } from 'react'
 
 interface Props {
   name: string

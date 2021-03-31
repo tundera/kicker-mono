@@ -1,5 +1,4 @@
-import { Story, Meta } from '@storybook/react'
-
+import { Meta,Story } from '@storybook/react'
 import ColorfulCard, { ColorfulCardProps } from 'src/components/ui/commerce/shopping/ColorfulCard'
 
 export default {

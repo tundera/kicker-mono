@@ -1,6 +1,5 @@
-import type { FC, ReactElement, ReactEventHandler } from 'react'
-
 import { IconButton, Tooltip } from '@chakra-ui/react'
+import type { FC, ReactElement, ReactEventHandler } from 'react'
 
 interface Props {
   color?: string

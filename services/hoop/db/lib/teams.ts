@@ -1,10 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import nba from 'nba'
-
-import type { BackupTeamData, TeamData, UpdatedTeamData, TeamRoster, Team } from '../types'
-
 import db from '../index'
+import type { BackupTeamData, Team,TeamData, TeamRoster, UpdatedTeamData } from '../types'
 import { upsertCoachData } from './coaches'
 import { upsertPlayerData } from './players'
 

@@ -1,6 +1,5 @@
-import { FC } from 'react'
-
 import { chakra, useColorModeValue } from '@chakra-ui/react'
+import { FC } from 'react'
 
 interface Props {
   p?: boolean

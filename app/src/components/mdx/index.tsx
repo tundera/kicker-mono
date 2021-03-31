@@ -1,12 +1,11 @@
 /* eslint-disable react/display-name */
-import Image from 'next/image'
+import { Heading, ListItem,Text, UnorderedList } from '@chakra-ui/react'
 import { preToCodeBlock } from 'mdx-utils'
-import { Heading, Text, UnorderedList, ListItem } from '@chakra-ui/react'
-
-import Header from 'src/components/sections/Header'
+import Image from 'next/image'
 import CodeBlock from 'src/components/mdx/CodeBlock'
-import NextMdxLink from 'src/components/mdx/NextLink'
 import ContentHeading from 'src/components/mdx/ContentHeading'
+import NextMdxLink from 'src/components/mdx/NextLink'
+import Header from 'src/components/sections/Header'
 
 export const mdxComponents = {
   pre: (preProps) => {

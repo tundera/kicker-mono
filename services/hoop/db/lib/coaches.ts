@@ -1,6 +1,5 @@
-import type { CoachData, Coach, BackupCoachData } from '../types'
-
 import db from '../index'
+import type { BackupCoachData,Coach, CoachData } from '../types'
 
 export const transformCoachData = (coach: BackupCoachData) => {
   return {

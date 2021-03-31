@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import type { NextPage, NextComponentType, NextPageContext } from 'next'
+import type { NextComponentType, NextPage, NextPageContext } from 'next'
 import type { AppProps } from 'next/app'
 import { MdxNode } from 'next-mdx/server'
 
@@ -19,10 +19,9 @@ export declare type CustomNextPage<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (component: JSX.Element) => JSX.Element
 }
 
-export interface Category
-  extends MdxNode<{
+export type Category = MdxNode<{
     name: string
-  }> {}
+  }>
 
 export interface Post
   extends MdxNode<{

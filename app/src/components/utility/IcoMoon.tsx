@@ -1,8 +1,7 @@
-import { FC } from 'react'
-
 import { chakra } from '@chakra-ui/react'
-import iconSet from 'selection.json'
 import IcomoonReact from 'icomoon-react'
+import { FC } from 'react'
+import iconSet from 'selection.json'
 
 const IcoMoon: FC<{
   color?: string

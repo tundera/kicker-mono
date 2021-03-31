@@ -1,10 +1,8 @@
-import { FC } from 'react'
-
-import { useColorModeValue, Icon, Heading, Text, Box, Flex } from '@chakra-ui/react'
-
-import NodeJSIcon from 'assets/logos/nodejs.svg'
+import { Box, Flex,Heading, Icon, Text, useColorModeValue } from '@chakra-ui/react'
 import GraphQLIcon from 'assets/logos/graphql.svg'
 import NextJSIcon from 'assets/logos/nextjs.svg'
+import NodeJSIcon from 'assets/logos/nodejs.svg'
+import { FC } from 'react'
 
 const FeaturesWithCards: FC = () => {
   const bg = useColorModeValue('white', 'gray.800')

@@ -1,12 +1,10 @@
-import type { GetServerSideProps } from 'next'
-import type { CustomNextPage } from 'types'
-import type { Session } from 'next-auth'
-
 import { Flex, Heading } from '@chakra-ui/react'
-
+import type { GetServerSideProps } from 'next'
+import type { Session } from 'next-auth'
+import { getSession } from 'next-auth/client'
 import { getLayout } from 'src/components/layouts/AccountLayout'
 import { SimpleList } from 'src/components/ui/lists/SimpleList'
-import { getSession } from 'next-auth/client'
+import type { CustomNextPage } from 'types'
 
 interface AccountPageProps {
   session: Session

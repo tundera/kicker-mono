@@ -1,6 +1,5 @@
+import { chakra, Flex, Grid, GridItem,Heading, Text } from '@chakra-ui/react'
 import { FC } from 'react'
-
-import { chakra, Heading, Flex, Text, Grid, GridItem } from '@chakra-ui/react'
 
 const NumbersBannerCta: FC = () => {
   return (

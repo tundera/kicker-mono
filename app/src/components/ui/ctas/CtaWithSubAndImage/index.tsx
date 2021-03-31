@@ -1,18 +1,17 @@
-import { FC } from 'react'
-
-import { useForm } from 'react-hook-form'
 import {
-  useColorModeValue,
-  Heading,
-  Button,
   Box,
+  Button,
   FormControl,
   FormErrorMessage,
+  Heading,
+  HStack,
   Image,
   Input,
   Text,
-  HStack,
+  useColorModeValue,
 } from '@chakra-ui/react'
+import { FC } from 'react'
+import { useForm } from 'react-hook-form'
 
 type Inputs = {
   email: string

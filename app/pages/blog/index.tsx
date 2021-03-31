@@ -1,24 +1,24 @@
-import { CustomNextPage, Post } from 'types'
-import { getAllMdxNodes } from 'next-mdx'
-import { useState } from 'react'
 import {
-  useColorModeValue,
-  Stack,
-  Flex,
-  HStack,
-  Input,
   Box,
+  Flex,
   Heading,
+  HStack,
+  Icon,
+  Input,
+  Link,
   List,
   ListItem,
-  Link,
+  Stack,
   Text,
-  Icon,
+  useColorModeValue,
 } from '@chakra-ui/react'
-import { mdxComponents } from 'src/components/mdx'
-import { getLayout } from 'src/components/layouts/SiteLayout'
-import PostsList from 'src/components/ui/lists/PostsList'
+import { getAllMdxNodes } from 'next-mdx'
+import { useState } from 'react'
 import { Search } from 'react-feather'
+import { getLayout } from 'src/components/layouts/SiteLayout'
+import { mdxComponents } from 'src/components/mdx'
+import PostsList from 'src/components/ui/lists/PostsList'
+import { CustomNextPage, Post } from 'types'
 
 export interface BlogPageProps {
   posts: Post[]

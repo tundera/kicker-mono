@@ -1,8 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
-
-import theme from 'styles/theme'
 import fonts from 'styles/font-face'
+import theme from 'styles/theme'
 
 const ThemeProvider = ({ children }) => {
   return (

@@ -1,7 +1,6 @@
-import type { FC } from 'react'
-
+import { Box, Image, LinkBox, LinkOverlay, Text,useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { useColorModeValue, Box, LinkBox, LinkOverlay, Image, Text } from '@chakra-ui/react'
+import type { FC } from 'react'
 
 export const BlogCardWithCategory: FC = () => {
   const bg = useColorModeValue('white', 'gray.800')

@@ -1,19 +1,17 @@
-import { FC } from 'react'
-
 // import NextLink from 'next/link'
-
 import {
-  useColorModeValue,
-  Heading,
-  Text,
-  Image,
-  Link,
   Box,
   Flex,
+  Heading,
+  IconButton,
+  Image,
+  Link,
   List,
   ListItem,
-  IconButton,
+  Text,
+  useColorModeValue,
 } from '@chakra-ui/react'
+import { FC } from 'react'
 import { ChevronRight } from 'react-feather'
 
 type ListItemType = {

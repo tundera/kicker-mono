@@ -1,12 +1,9 @@
-import type { FC } from 'react'
-import type { Session } from 'next-auth'
-
-import { useSession } from 'next-auth/client'
-import { chakra, Flex, useColorModeValue, VisuallyHidden, useDisclosure } from '@chakra-ui/react'
+import { chakra, Flex, useColorModeValue, useDisclosure,VisuallyHidden } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-
+import type { Session } from 'next-auth'
+import { useSession } from 'next-auth/client'
+import type { FC } from 'react'
 import Navigation from 'src/components/sections/Header/Navigation'
-
 import { createBrandLogoIcon } from 'src/utils/createBrandIcons'
 
 const StickyFlex = styled(chakra.header)`

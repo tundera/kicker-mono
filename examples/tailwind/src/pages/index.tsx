@@ -1,5 +1,5 @@
-import NextLink from 'next/link'
 import Head from 'next/head'
+import NextLink from 'next/link'
 import DarkModeToggle from '../components/dark-mode-toggle'
 
 export default function HomePage() {

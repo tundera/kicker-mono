@@ -1,12 +1,12 @@
-import { CustomNextPage } from 'types'
+import { Box, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import Image from 'next/image'
 import { useHydrate } from 'next-mdx/client'
 import { getMdxNode, getMdxPaths } from 'next-mdx/server'
-import { Post } from 'types'
-import { Heading, Text, Flex, Box, useColorModeValue } from '@chakra-ui/react'
+import { NextSeo } from 'next-seo'
 import { getLayout } from 'src/components/layouts/SiteLayout'
 import { mdxComponents } from 'src/components/mdx'
-import { NextSeo } from 'next-seo'
+import { CustomNextPage } from 'types'
+import { Post } from 'types'
 
 export interface PostPageProps {
   post: Post

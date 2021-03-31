@@ -1,6 +1,6 @@
+import { ThemeProvider } from '@kicker/theme'
 import { render as defaultRender } from '@testing-library/react'
 import { renderHook as defaultRenderHook } from '@testing-library/react-hooks'
-import { ThemeProvider } from '@kicker/theme'
 
 export * from '@testing-library/react'
 

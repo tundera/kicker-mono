@@ -1,21 +1,20 @@
-import { FC } from 'react'
-
 import {
-  useColorModeValue,
+  Avatar,
   Button,
+  Flex,
   IconButton,
   Menu,
   MenuButton,
   MenuGroup,
   MenuItem,
   MenuList,
-  Avatar,
   Text,
   Tooltip,
-  Flex,
+  useColorModeValue,
 } from '@chakra-ui/react'
-import { useSession, signOut } from 'next-auth/client'
 import { useRouter } from 'next/router'
+import { signOut,useSession } from 'next-auth/client'
+import { FC } from 'react'
 import { Settings } from 'react-feather'
 
 const SettingsButton: FC = () => {

@@ -1,4 +1,4 @@
-import { objectType, inputObjectType, arg, extendType, list, intArg, stringArg } from 'nexus'
+import { arg, extendType, inputObjectType, intArg, list, objectType, stringArg } from 'nexus'
 
 /**
  * User Object Type

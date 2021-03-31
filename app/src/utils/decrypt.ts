@@ -1,5 +1,4 @@
 import crypto from 'crypto'
-
 import { encrypted } from 'graphcms-tokens.enc'
 
 const algorithm = 'aes-128-cbc'

@@ -1,4 +1,4 @@
-import { objectType, inputObjectType, extendType, list, intArg, stringArg } from 'nexus'
+import { extendType, inputObjectType, list, objectType, stringArg } from 'nexus'
 import { Coach } from 'nexus-prisma'
 /**
  * Coach Object Type

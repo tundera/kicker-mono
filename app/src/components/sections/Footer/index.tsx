@@ -1,8 +1,7 @@
-import { FC } from 'react'
-
-import { Flex, useColorModeValue, Text, Box } from '@chakra-ui/react'
-import { Twitter, GitHub, Youtube, Mail } from 'react-feather'
+import { Box,Flex, Text, useColorModeValue } from '@chakra-ui/react'
 import Emoji from 'a11y-react-emoji'
+import { FC } from 'react'
+import { GitHub, Mail,Twitter, Youtube } from 'react-feather'
 import MediaIconLink from 'src/components/sections/Footer/MediaIconLink'
 
 const Footer: FC = () => {

@@ -1,11 +1,9 @@
 import { flags } from '@oclif/command'
-import execa from 'execa'
 import ora from 'ora'
-import Listr from 'listr'
-import { watchPackages } from '../utils/packages'
 import { Command } from '../command'
-import { devPackages, getWorkspaceNames, workspaceRoot } from '../utils/workspaces'
-import { buildPackages, startWorkspaces } from '../utils/workspaces'
+import { watchPackages } from '../utils/packages'
+import { devPackages, getWorkspaceNames } from '../utils/workspaces'
+import { startWorkspaces } from '../utils/workspaces'
 
 export class Dev extends Command {
   static strict = false
@@ -34,7 +32,7 @@ export class Dev extends Command {
   }
 
   async run() {
-    const { argv, flags } = this.parse(Dev)
+    const { argv } = this.parse(Dev)
 
     try {
       const spinner = ora().start('Preparing packages for development')

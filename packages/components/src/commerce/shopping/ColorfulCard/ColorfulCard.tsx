@@ -1,4 +1,4 @@
-import { chakra, Box, Flex, Image, Text, Link, List, ListItem, Grid, GridItem } from '@chakra-ui/react'
+import { Box, chakra, Flex, Grid, GridItem,Image, Link, List, ListItem, Text } from '@chakra-ui/react'
 
 export interface ColorfulCardProps {
   title: string

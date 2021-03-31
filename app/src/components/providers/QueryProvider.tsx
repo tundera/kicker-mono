@@ -1,8 +1,7 @@
 import { FC } from 'react'
-
 import { QueryClient, QueryClientProvider } from 'react-query'
-import { Hydrate } from 'react-query/hydration'
 import { ReactQueryDevtools } from 'react-query/devtools'
+import { Hydrate } from 'react-query/hydration'
 
 interface Props {
   client: QueryClient

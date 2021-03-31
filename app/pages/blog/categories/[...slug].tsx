@@ -1,7 +1,7 @@
-import SiteLayout from 'src/components/layouts/SiteLayout'
-import { getAllMdxNodes, getMdxNode, getMdxPaths } from 'next-mdx'
+import { Box, Heading, Link, List, ListItem, Text } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { Box, Heading, List, ListItem, Link, Text } from '@chakra-ui/react'
+import { getAllMdxNodes, getMdxNode, getMdxPaths } from 'next-mdx'
+import SiteLayout from 'src/components/layouts/SiteLayout'
 import { Category, Post } from 'types'
 
 export interface CategoryPageProps {

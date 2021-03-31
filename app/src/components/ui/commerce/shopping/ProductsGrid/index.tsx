@@ -1,6 +1,5 @@
-import { FC } from 'react'
-
 import { Grid, GridItem } from '@chakra-ui/react'
+import { FC } from 'react'
 import SimpleCard from 'src/components/ui/commerce/shopping/SimpleCard'
 
 interface Props {

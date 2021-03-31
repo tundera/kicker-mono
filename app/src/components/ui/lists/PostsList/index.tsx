@@ -1,8 +1,7 @@
-import { FC } from 'react'
-import type { Post } from 'types'
-
 import { Grid } from '@chakra-ui/react'
+import { FC } from 'react'
 import BlogPostCard from 'src/components/ui/cards/BlogWithAuthor'
+import type { Post } from 'types'
 
 interface Props {
   posts?: Post[]

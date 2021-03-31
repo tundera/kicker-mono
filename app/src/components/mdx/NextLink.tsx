@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import { FC } from 'react'
-import type { LinkProps } from 'next/link'
-
-import NextLink from 'next/link'
 import { chakra } from '@chakra-ui/react'
+import type { LinkProps } from 'next/link'
+import NextLink from 'next/link'
+import { FC } from 'react'
 
 const CustomLink: FC<LinkProps> = ({ as, href, ...props }) => {
   return (
