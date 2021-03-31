@@ -1,5 +1,5 @@
 ---
-to: <%= h.createComponentPath(`${location ? `src/${location}` : "src"}/${h.camelizedBaseName(name)}/${h.camelizedBaseName(name)}.tsx`) %>
+to: <%= h.createComponentPath(`src/${h.camelizedBaseName(name)}/${h.camelizedBaseName(name)}.tsx`) %>
 ---
 <% formattedPath = h.camelizedPathName(name) -%>
 <% component = h.camelizedBaseName(name) -%>

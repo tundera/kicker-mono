@@ -5,4 +5,4 @@ append: true
 skip_if: export * from './<%= name %>'
 ---
 <% component = h.camelizedBaseName(name) -%>
-export * from '<%= location ? `../${location}` : '.' %>/<%= component %>'
+export * from './<%= component %>'
