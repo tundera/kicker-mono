@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/globals.css'
 import { AppProps } from 'next/app'
 import { DefaultSeo } from 'next-seo'
 import { ThemeProvider } from 'next-themes'

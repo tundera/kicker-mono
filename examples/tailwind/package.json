@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "NODE_ENV=production next build",
     "postbuild": "NODE_ENV=production next-sitemap",
+    "lint": "yarn eslint --ignore-path '../../.eslintignore' --ext '.js,.ts,.tsx' .",
     "generate": "gqless generate",
     "start": "next start",
     "test": "jest --watch"

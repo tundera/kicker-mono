@@ -1,7 +1,7 @@
 import execa from 'execa'
 import { workspaceRoot } from './workspaces'
 
-export const watchPackages = async () => {
+export const watchPackages = () => {
   return execa('yarn', ['preconstruct', 'watch'], {
     cwd: workspaceRoot,
     env: {

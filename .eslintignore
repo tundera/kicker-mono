@@ -10,6 +10,8 @@ tsconfig.tsbuildinfo
 **/dist/**
 **/.vercel/**
 **/.test*
+**/generated/**
+**/codegen.ts
 
 prettier.config.*
 jest.config.*

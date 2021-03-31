@@ -1,7 +1,7 @@
 import { gql } from 'graphql-request'
 import { client } from './graphql'
 
-export const getTeams = async () => {
+export const getTeams = () => {
   return client.request(
     gql`
       {
@@ -17,7 +17,7 @@ export const getTeams = async () => {
   )
 }
 
-export const getTeamBySlug = async (slug: string) => {
+export const getTeamBySlug = (slug: string) => {
   return client.request(
     gql`
       query TeamBySlug($slug: String!) {

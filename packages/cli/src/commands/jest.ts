@@ -16,7 +16,7 @@ export class Jest extends Command {
     }),
   }
 
-  async runJestTests(watch: boolean) {
+  runJestTests(watch: boolean) {
     const opts = ['--passWithNoTests']
 
     if (watch) {

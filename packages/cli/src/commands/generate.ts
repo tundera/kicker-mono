@@ -1,6 +1,5 @@
 import { flags } from '@oclif/command'
 import execa from 'execa'
-import { join } from 'path'
 import { Command } from '../command'
 import { workspaceRoot } from '../utils/workspaces'
 

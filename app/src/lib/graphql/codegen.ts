@@ -1,12 +1,12 @@
-import type { GraphQLClient } from 'graphql-request';
-import { useQuery, UseQueryOptions } from 'react-query';
+import type { GraphQLClient } from 'graphql-request'
+import { useQuery, UseQueryOptions } from 'react-query'
 export type Maybe<T> = T | null;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
 export type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]?: Maybe<T[SubKey]> };
 export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]: Maybe<T[SubKey]> };
 
 function fetcher<TData, TVariables>(client: GraphQLClient, query: string, variables?: TVariables) {
-  return async (): Promise<TData> => client.request<TData, TVariables>(query, variables);
+  return async (): Promise<TData> => client.request<TData, TVariables>(query, variables)
 }
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
@@ -121,7 +121,7 @@ export const UserByEmailDocument = `
     email
   }
 }
-    `;
+    `
 export const useUserByEmailQuery = <
       TData = UserByEmailQuery,
       TError = unknown
@@ -134,7 +134,7 @@ export const useUserByEmailQuery = <
       ['UserByEmail', variables],
       fetcher<UserByEmailQuery, UserByEmailQueryVariables>(client, UserByEmailDocument, variables),
       options
-    );
+    )
 export const UsersDocument = `
     query Users {
   users {
@@ -143,7 +143,7 @@ export const UsersDocument = `
     email
   }
 }
-    `;
+    `
 export const useUsersQuery = <
       TData = UsersQuery,
       TError = unknown
@@ -156,4 +156,4 @@ export const useUsersQuery = <
       ['Users', variables],
       fetcher<UsersQuery, UsersQueryVariables>(client, UsersDocument, variables),
       options
-    );
+    )

@@ -98,7 +98,9 @@ const Subheader: FC = ({ ...props }) => {
       <Spacer />
       <HStack spacing={3} alignItems="center">
         <InputGroup display={{ base: 'none', lg: 'block' }} ml="auto">
-          <InputLeftElement pointerEvents="none" children={<Search size="20" />} />
+          <InputLeftElement pointerEvents="none">
+            <Search size="20" />
+          </InputLeftElement>
           <Input type="tel" placeholder="Search..." />
         </InputGroup>
       </HStack>

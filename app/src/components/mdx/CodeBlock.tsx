@@ -1,4 +1,4 @@
-import { chakra, Flex, Text } from '@chakra-ui/react'
+import { chakra, Flex } from '@chakra-ui/react'
 import Highlight, { defaultProps, Language } from 'prism-react-renderer'
 import shadesOfPurple from 'prism-react-renderer/themes/shadesOfPurple'
 import { FC } from 'react'

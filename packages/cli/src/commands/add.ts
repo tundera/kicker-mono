@@ -36,7 +36,7 @@ export class Add extends Command {
     }),
   }
 
-  async addModule(module: string, workspace: string, options: string[]) {
+  addModule(module: string, workspace: string, options: string[]) {
     let args = ['workspace', `@kicker/${workspace}`, 'add', module]
 
     args = args.concat(options)

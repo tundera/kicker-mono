@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Box,Flex, HStack, Icon, Input, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Flex, HStack, Icon, Input, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import { ProductsGrid } from '@kicker/components'
 import type { GetStaticProps } from 'next'
 import { useState } from 'react'
@@ -44,7 +44,6 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 const StorePage: CustomNextPage<Props> = ({ products }) => {
-  const headingColor = useColorModeValue('black', 'white')
   const resultsColor = useColorModeValue('gray.600', 'gray.400')
   const iconColor = useColorModeValue('gray.400', 'gray.300')
   const borderColor = useColorModeValue('gray.300', 'gray.900')

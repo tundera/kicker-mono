@@ -9,6 +9,7 @@ const plugins = [withMDX]
 
 const nextConfig = {
   target: 'experimental-serverless-trace',
+  // eslint-disable-next-line require-await
   async redirects() {
     return [
       {

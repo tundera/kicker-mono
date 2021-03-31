@@ -26,7 +26,7 @@
   "scripts": {
     "postinstall": "yarn generate:theme-typings",
     "test": "jest --passWithNoTests",
-    "lint": "eslint src/**/*",
+    "lint": "yarn eslint --ignore-path '../../.eslintignore' --ext '.js,.ts,.tsx' src/**/*",
     "generate:theme-typings": "chakra-cli tokens src/theme/index.ts"
   },
   "peerDependencies": {

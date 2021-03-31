@@ -1,4 +1,4 @@
-import { Box, chakra, Flex, Icon,SimpleGrid, useColorModeValue } from '@chakra-ui/react'
+import { Box, chakra, Flex, Icon, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import { FC } from 'react'
 
 type Feature = {
@@ -15,6 +15,7 @@ interface Props {
 const FeaturesGrid: FC<Props> = ({ title, subtitle, features }) => {
   const bg = useColorModeValue('white', 'gray.800')
   const titleColor = useColorModeValue('gray.900', 'whiteAlpha.900')
+  const textColor = useColorModeValue('gray.500', 'gray.400')
 
   return (
     <Flex p={20} w="auto" justifyContent="center" alignItems="center" bg={bg}>
@@ -47,7 +48,7 @@ const FeaturesGrid: FC<Props> = ({ title, subtitle, features }) => {
           mt={6}
         >
           {features.map(({ icon, title, description }) => (
-            <Box>
+            <Box key="title">
               <Flex align="center" justify="center" mb={8} rounded="full">
                 <Icon as={icon} w="24" h="24" />
               </Flex>
@@ -60,7 +61,7 @@ const FeaturesGrid: FC<Props> = ({ title, subtitle, features }) => {
               >
                 {title}
               </chakra.h3>
-              <chakra.p fontSize="sm" color={useColorModeValue('gray.500', 'gray.400')}>
+              <chakra.p fontSize="sm" color={textColor}>
                 {description}
               </chakra.p>
             </Box>

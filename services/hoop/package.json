@@ -26,6 +26,7 @@
     "dev": "ts-node-dev --no-notify --respawn --transpile-only src/index",
     "start": "node dist/kicker-hoop.cjs",
     "build": "yarn generate && tsc",
+    "lint": "yarn eslint --ignore-path '../../.eslintignore' --ext '.js,.ts,.tsx' .",
     "generate": "yarn generate:prisma && yarn generate:nexus",
     "generate:prisma": "prisma generate",
     "generate:nexus": "ts-node --transpile-only src/schema"
@@ -54,7 +55,7 @@
     "eslint-plugin-simple-import-sort": "7.0.0",
     "postinstall-postinstall": "^2.1.0",
     "prettier": "^2.2.1",
-    "prettier-plugin-prisma": "^0.6.0",
+    "prettier-plugin-prisma": "^0.7.0",
     "prisma": "^2.18.0",
     "prisma-appsync": "1.0.0-beta.49",
     "rimraf": "^3.0.2",

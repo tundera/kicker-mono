@@ -1,17 +1,4 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  HStack,
-  Icon,
-  Input,
-  Link,
-  List,
-  ListItem,
-  Stack,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react'
+import { Box, Flex, HStack, Icon, Input, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import { getAllMdxNodes } from 'next-mdx'
 import { useState } from 'react'
 import { Search } from 'react-feather'
@@ -25,7 +12,6 @@ export interface BlogPageProps {
 }
 
 const BlogPage: CustomNextPage<BlogPageProps> = ({ posts }) => {
-  const headingColor = useColorModeValue('black', 'white')
   const resultsColor = useColorModeValue('gray.600', 'gray.400')
   const iconColor = useColorModeValue('gray.400', 'gray.300')
   const borderColor = useColorModeValue('gray.300', 'gray.900')

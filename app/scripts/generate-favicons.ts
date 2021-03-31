@@ -5,7 +5,7 @@ import fs from 'fs'
 import path from 'path'
 import siteConfig from '../site-config'
 
-const generateFavicons = async () => {
+const generateFavicons = () => {
   return new Promise<void>((resolve, reject) => {
     favicons(
       path.resolve(process.cwd(), 'assets', 'images', 'kicker-logo.png'),
@@ -36,7 +36,7 @@ const generateFavicons = async () => {
         }
 
         await Promise.all(
-          [...images, ...files].map(async ({ name, contents }) => {
+          [...images, ...files].map(({ name, contents }) => {
             fs.writeFile(path.resolve(process.cwd(), 'public/favicons', name), contents, reject)
           }),
         )

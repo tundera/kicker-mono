@@ -1,6 +1,5 @@
 import {
   Avatar,
-  Button,
   Flex,
   IconButton,
   Menu,
@@ -13,7 +12,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
-import { signOut,useSession } from 'next-auth/client'
+import { signOut, useSession } from 'next-auth/client'
 import { FC } from 'react'
 import { Settings } from 'react-feather'
 

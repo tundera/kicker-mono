@@ -15,6 +15,7 @@ const nextConfig = {
   images: {
     domains: ['res.cloudinary.com'],
   },
+  // eslint-disable-next-line require-await
   async redirects() {
     return []
   },

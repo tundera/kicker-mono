@@ -32,7 +32,7 @@ export class List extends Command {
     }),
   }
 
-  async listWorkspaces(module: string, workspace: string, options: string[]) {
+  listWorkspaces(module: string, workspace: string, options: string[]) {
     return execa('yarn', ['workspace', `@kicker/${workspace}`, 'add', module].concat(options), {
       cwd: this.project.root,
       env: {
@@ -47,7 +47,7 @@ export class List extends Command {
     try {
       // const workspaces = getProjectWorkspaces()
 
-      const workspaces = getProjectWorkspaces()
+      const workspaces = await getProjectWorkspaces()
 
       console.dir(
         workspaces.map((workspace) => workspace.packageJSON.name),

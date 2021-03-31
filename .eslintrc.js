@@ -1,4 +1,5 @@
 module.exports = {
+  // Ignore nested eslint configs in favor of root
   root: true,
   parser: 'babel-eslint',
   env: {
@@ -20,15 +21,10 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'import/first': 'off',
-    'import/no-default-export': 'error',
+    'import/no-default-export': 'off',
+    'import/no-anonymous-default-export': 'off',
     'require-await': 'error',
     'no-async-promise-executor': 'error',
-    'unicorn/filename-case': [
-      'error',
-      {
-        case: 'kebabCase',
-      },
-    ],
     'simple-import-sort/imports': [
       'warn',
       {
@@ -138,20 +134,6 @@ module.exports = {
         react: {
           version: 'detect',
         },
-      },
-    },
-    {
-      files: ['**.*tsx'],
-      rules: {
-        'unicorn/filename-case': [
-          'error',
-          {
-            cases: {
-              pascalCase: true,
-            },
-            ignore: ['^\\[[a-z]+\\]\\.[jt]sx?$', '^_[a-z]+\\.[jt]sx?$'],
-          },
-        ],
       },
     },
   ],

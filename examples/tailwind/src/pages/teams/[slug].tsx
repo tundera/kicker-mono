@@ -1,17 +1,11 @@
 import { PropsWithServerCache } from '@gqless/react'
-import { GetStaticPaths,GetStaticProps } from 'next'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
 import NextImage from 'next/image'
 import NextLink from 'next/link'
 import DarkModeToggle from 'src/components/dark-mode-toggle'
-import {
-  Player,
-  prepareReactRender,
-  Team,
-  useHydrateCache,
-  useQuery,
-} from 'src/gqless'
-import { getTeamBySlug,getTeams } from 'src/lib/teams'
+import { Player, prepareReactRender, Team, useHydrateCache } from 'src/gqless'
+import { getTeamBySlug, getTeams } from 'src/lib/teams'
 
 type TeamPageProps = PropsWithServerCache<{
   team: Team & {
