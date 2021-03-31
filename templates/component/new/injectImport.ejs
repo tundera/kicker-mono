@@ -1,6 +1,6 @@
 ---
 inject: true
-to: 'src/index.ts'
+to: <%= h.prependComponentsPath('src/index.ts') %>
 append: true
 skip_if: export * from './<%= name %>'
 ---

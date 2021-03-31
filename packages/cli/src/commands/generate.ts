@@ -21,30 +21,9 @@ export class Generate extends Command {
     help: flags.help({ char: 'h' }),
   }
 
-  getGeneratePath(resource: string) {
-    switch (resource) {
-      case 'component': {
-        return join(workspaceRoot, 'packages/components')
-      }
-      case 'model': {
-        return join(workspaceRoot, 'services/hoop')
-      }
-      case 'page': {
-        return join(workspaceRoot, 'app')
-      }
-      case 'api': {
-        return join(workspaceRoot, 'app')
-      }
-      default: {
-        return join(workspaceRoot, 'app')
-      }
-    }
-  }
-
-  async generateFromTemplate(resource: string) {
-    const writeTo = this.getGeneratePath(resource)
+  generateFromTemplate(resource: string) {
     return execa('yarn', ['hygen', resource, 'new'], {
-      cwd: writeTo,
+      cwd: workspaceRoot,
       env: {
         FORCE_COLOR: 'true',
       },

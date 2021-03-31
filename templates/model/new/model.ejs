@@ -1,5 +1,5 @@
 ---
-to: src/modules/<%= h.camelizedBaseName(name) %>.ts
+to: <%= h.prependModelsPath('src/modules/<%= h.camelizedBaseName(name) %>.ts')
 sh: 'yarn generate'
 ---
 <% model = h.camelizedBaseName(name) -%>

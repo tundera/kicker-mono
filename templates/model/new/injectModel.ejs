@@ -1,6 +1,6 @@
 ---
 inject: true
-to: db/schema.prisma
+to: <%= h.prependModelsPath('db/schema.prisma') %>
 append: true
 skip_if: 'model <%= model %>'
 sh: 'yarn prisma format'

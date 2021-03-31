@@ -9,6 +9,12 @@ const pluralizeProp = (name) => inflection.pluralize(name)
 const camelizeQuery = (name, lower = false) => inflection.camelize(name, lower).replace(/::/g, '/')
 const pluralizeQuery = (name) => inflection.pluralize(name)
 
+// Specify paths for projects
+const componentsPath = path.join(workspaceRoot, 'packages', 'components')
+const modelsPath = path.join(workspaceRoot, 'services', 'hoop')
+const pagesPath = path.join(workspaceRoot, 'app/pages')
+const apiPath = path.join(pagesPath, 'api')
+
 module.exports = {
   templates: `${__dirname}/templates`,
   helpers: {
@@ -24,5 +30,9 @@ module.exports = {
       return `use${camelized}Query`
     },
     workspaceRoot,
+    prependPagesPath: (path) => path.join(pagesPath, path),
+    prependApiPath: (path) => path.join(apiPath, path),
+    prependComponentsPath: (path) => path.join(componentsPath, path),
+    prependModelsPath: (path) => path.join(modelsPath, path),
   },
 }

@@ -1,5 +1,5 @@
 ---
-to: "<%= location ? `src/${location}` : 'src' %>/<%= h.camelizedBaseName(name) %>/<%= h.camelizedBaseName(name) %>.test.tsx"
+to: <%= h.prependComponentsPath("<%= location ? `src/${location}` : 'src' %>/<%= h.camelizedBaseName(name) %>/<%= h.camelizedBaseName(name) %>.test.tsx") %>
 ---
 <% component = h.camelizedBaseName(name) -%>
 import { composeStories } from '@storybook/testing-react'

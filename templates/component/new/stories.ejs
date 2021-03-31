@@ -1,5 +1,5 @@
 ---
-to: "<%= location ? `src/${location}` : 'src' %>/<%= h.camelizedBaseName(name) %>/<%= h.camelizedBaseName(name) %>.stories.tsx"
+to: <%= h.prependComponentsPath("<%= location ? `src/${location}` : 'src' %>/<%= h.camelizedBaseName(name) %>/<%= h.camelizedBaseName(name) %>.stories.tsx") %>
 ---
 <% component = h.camelizedBaseName(name) -%>
 <% storyProps = `${component}Props` -%>
