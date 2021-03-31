@@ -15,14 +15,31 @@ export class Generate extends Command {
       description: 'resource type to generate',
       options: ['component', 'page', 'api', 'model'],
     },
+    {
+      name: 'name',
+      required: false,
+      description: 'name of resource to generate',
+    },
   ]
 
   static flags = {
     help: flags.help({ char: 'h' }),
+    variant: flags.string({
+      char: 'v',
+      helpLabel: 'Resource variant',
+      required: false,
+    }),
   }
 
-  generateFromTemplate(resource: string) {
-    return execa('yarn', ['hygen', resource, 'new'], {
+  generateFromTemplate(resource: string, name?: string, variant?: string) {
+    const target = variant ? `${variant}:new` : 'new'
+    const args = ['hygen', resource, target]
+
+    if (name) {
+      args.push('--name', name)
+    }
+
+    return execa('yarn', args, {
       cwd: workspaceRoot,
       env: {
         FORCE_COLOR: 'true',
@@ -32,10 +49,10 @@ export class Generate extends Command {
   }
 
   async run() {
-    const { args } = this.parse(Generate)
+    const { args, flags } = this.parse(Generate)
 
     try {
-      const subprocess = await this.generateFromTemplate(args.resource)
+      const subprocess = await this.generateFromTemplate(args.resource, args.name, flags.variant)
 
       subprocess?.on('close', (code: number) => {
         const message = code

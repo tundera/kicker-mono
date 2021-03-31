@@ -35,13 +35,6 @@ export class Start extends Command {
     }),
   }
 
-  async logStatus(url: string) {
-    console.log(`\
-🚀 Server ready at: ${url}
-⭐️ See sample queries: http://pris.ly/e/ts/graphql#using-the-graphql-api
-  `)
-  }
-
   async run() {
     const { argv } = this.parse(Start)
 

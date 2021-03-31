@@ -2,7 +2,6 @@
 inject: true
 to: <%= h.prependModelsPath('src/modules/index.ts') %>
 append: true
-skip_if: export * from './<%= h.camelizedBaseName(name) %>'
+skip_if: export * from './<%= name %>'
 ---
-<% model = h.camelizedBaseName(name) -%>
-export * from './<%= model %>'
+export * from './<%= name %>'

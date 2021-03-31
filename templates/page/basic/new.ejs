@@ -1,5 +1,5 @@
 ---
-to: <%= h.prependPagesPath("<%= name %>.tsx") %>
+to: <%= h.createPagePath(`${name}.tsx`) %>
 ---
 <% formattedPath = h.camelizedPathName(name).replace('/','') -%>
 <% formattedBaseName = h.camelizedBaseName(name) -%>
@@ -11,7 +11,7 @@ import { Flex, Heading } from '@chakra-ui/react'
 
 import { getLayout } from 'src/components/layouts/SiteLayout'
 
-function <%= pageName %>: CustomNextPage = () => {
+const <%= pageName %>: CustomNextPage = () => {
   return (
     <>
       <Flex flexDir="column" alignItems="center">

@@ -2,7 +2,7 @@ const inflection = require('inflection')
 const path = require('path')
 const findWorkspaceRoot = require('find-yarn-workspace-root')
 
-const workspaceRoot = () => findWorkspaceRoot(process.cwd()) ?? process.cwd()
+const workspaceRoot = findWorkspaceRoot(process.cwd()) ?? process.cwd()
 const camelizePath = (name, lower = true) => inflection.camelize(name, lower).replace(/::/g, '/')
 const pluralizeProp = (name) => inflection.pluralize(name)
 
@@ -30,9 +30,15 @@ module.exports = {
       return `use${camelized}Query`
     },
     workspaceRoot,
-    prependPagesPath: (path) => path.join(pagesPath, path),
-    prependApiPath: (path) => path.join(apiPath, path),
-    prependComponentsPath: (path) => path.join(componentsPath, path),
-    prependModelsPath: (path) => path.join(modelsPath, path),
+    pagesPath,
+    apiPath,
+    componentsPath,
+    modelsPath,
+    createPagePath: (name) => path.join(pagesPath, name),
+    createApiPath: (name) => path.join(apiPath, name),
+    createComponentPath: (name) => path.join(componentsPath, name),
+    createModelPath: (name) => path.join(modelsPath, name),
+    prependComponentsPath: (location) => path.join(componentsPath, location),
+    prependModelsPath: (location) => path.join(modelsPath, location),
   },
 }

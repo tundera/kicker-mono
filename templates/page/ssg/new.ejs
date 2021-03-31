@@ -1,5 +1,5 @@
 ---
-to: <%= h.prependPagesPath("<%= name %>.tsx") %>
+to: <%= h.createPagePath(`${name}.tsx`) %>
 ---
 <% formattedPath = h.camelizedPathName(name).replace('/','') -%>
 <% formattedBaseName = h.camelizedBaseName(name) -%>
