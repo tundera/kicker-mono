@@ -10,6 +10,7 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "react-jsx",
@@ -20,6 +21,11 @@
     "isolatedModules": true,
     "incremental": true
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["*.test.ts", "*.test.tsx", "**/generated", "**/node_modules"]
+  "include": [
+    "types/**/*",
+    "packages/cli/src/**/*",
+    "packages/components/src/**/*",
+    "packages/theme/src/**/*"
+  ],
+  "exclude": ["**/*.test.ts", "**/*.test.tsx", "**/generated"]
 }
