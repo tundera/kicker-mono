@@ -43,7 +43,8 @@
     "graphql-upload": "^11.0.0",
     "nba": "4.15.0",
     "nexus": "^1.0.0",
-    "nexus-prisma": "0.25.0"
+    "nexus-prisma": "0.25.0",
+    "prettier-plugin-prisma": "^0.7.0"
   },
   "devDependencies": {
     "@types/graphql-upload": "8.0.4",
@@ -55,7 +56,6 @@
     "eslint-plugin-simple-import-sort": "7.0.0",
     "postinstall-postinstall": "^2.1.0",
     "prettier": "^2.2.1",
-    "prettier-plugin-prisma": "^0.7.0",
     "prisma": "^2.18.0",
     "prisma-appsync": "1.0.0-beta.49",
     "rimraf": "^3.0.2",

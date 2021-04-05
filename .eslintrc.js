@@ -1,6 +1,5 @@
 module.exports = {
-  // Ignore nested eslint configs in favor of root
-  root: true,
+  root: false,
   parser: 'babel-eslint',
   env: {
     browser: true,
