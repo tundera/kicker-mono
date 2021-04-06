@@ -23,8 +23,8 @@
   },
   "scripts": {
     "postinstall": "yarn generate:prisma",
-    "dev": "ts-node-dev --no-notify --respawn --transpile-only src/index",
-    "start": "node dist/kicker-hoop.cjs",
+    "dev": "dotenv -e .env.development -- ts-node-dev --no-notify --respawn --transpile-only src/index",
+    "start": "dotenv -e .env.production node dist/kicker-hoop.cjs",
     "build": "yarn generate && tsc",
     "lint": "yarn eslint --ignore-path '../../.eslintignore' --ext '.js,.ts,.tsx' .",
     "generate": "yarn generate:prisma && yarn generate:nexus",
@@ -38,6 +38,7 @@
     "@prisma/client": "^2.18.0",
     "apollo-server": "2.22.2",
     "babel-plugin-module-resolver": "^4.1.0",
+    "dotenv-cli": "^4.0.0",
     "eslint": "7.23.0",
     "graphql": "^15.5.0",
     "graphql-upload": "^11.0.0",
