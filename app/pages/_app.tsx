@@ -9,6 +9,10 @@ import ThemeProvider from 'src/components/providers/ThemeProvider'
 import RootErrorFallback from 'src/components/utility/RootErrorFallback'
 import type { CustomAppProps } from 'types'
 
+// if (process.env.NEXT_PUBLIC_API_MOCKING === 'enabled') {
+//   require('../test/mocks')
+// }
+
 function MyApp({ Component, pageProps, router }: CustomAppProps) {
   const { reset } = useQueryErrorResetBoundary()
   const getLayout = Component.getLayout || ((page) => page)

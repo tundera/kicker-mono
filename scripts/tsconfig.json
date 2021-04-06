@@ -10,7 +10,8 @@
     "isolatedModules": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": "."
   },
   "include": ["src", "types"]
 }

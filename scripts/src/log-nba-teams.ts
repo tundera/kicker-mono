@@ -1,7 +1,6 @@
 #!/usr/bin/env ts-node-script
 
 import nba from 'nba'
-
 import { TeamInfo } from '../types'
 
 const logTeamData = async (teamId: number) => {

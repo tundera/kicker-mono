@@ -29,38 +29,23 @@ export class Run extends Command {
     }),
   }
 
-  runScript(name: string) {
-    console.log(`Running script at "scripts/src/${name}"`)
+  runScript(name: string, inspect = false) {
+    console.log('INSPECT:', inspect)
+    console.log(c`Running script at {blueBright "scripts/src/${name}" }`)
     return execa('node', ['--loader', 'ts-node/esm', `src/${name}.ts`], {
       cwd: join(workspaceRoot, 'scripts'),
       env: {
         FORCE_COLOR: 'true',
+        NODE_OPTIONS: inspect ? '--inspect' : '',
       },
     }).stdout?.pipe(process.stdout)
   }
 
   async run() {
-    const { args } = this.parse(Run)
+    const { args, flags } = this.parse(Run)
 
     try {
-      const child = await this.runScript(args.name)
-
-      child?.on('close', (code: number) => {
-        const message = code
-          ? `Failed to run script ${c.blueBright`${args.name}`} ❌`
-          : `Done running script ${c.blueBright`${args.name}`} ✅`
-        console.log(message)
-        return process.exit(code)
-      })
-
-      child?.on('SIGINT', (code: number) => {
-        console.log('Interrupted run command!')
-        return process.exit(code)
-      })
-      child?.on('SIGTERM', (code: number) => {
-        console.log('Terminated run command!')
-        return process.exit(code)
-      })
+      await this.runScript(args.name, flags.inspect)
     } catch (err) {
       console.error(err)
       process.exit(1)

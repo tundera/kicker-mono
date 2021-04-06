@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@kicker/theme'
 import { render as defaultRender } from '@testing-library/react'
 import { renderHook as defaultRenderHook } from '@testing-library/react-hooks'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
 export * from '@testing-library/react'
 
@@ -12,6 +13,24 @@ export * from '@testing-library/react'
 //
 // This is the place to add any other context providers you need while testing.
 // --------------------------------------------------------------------------------
+
+const createWrapper = () => {
+  // creates a new QueryClient for each test
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        // turns retries off
+        retry: false,
+      },
+    },
+  })
+
+  return ({ children }) => (
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider>{children}</ThemeProvider>
+    </QueryClientProvider>
+  )
+}
 
 // --------------------------------------------------
 // render()
@@ -27,7 +46,7 @@ export * from '@testing-library/react'
 export function render(ui: RenderUI, { wrapper, ...options }: RenderOptions = {}) {
   if (!wrapper) {
     // Add a default context wrapper if one isn't supplied from the test
-    wrapper = ({ children }) => <ThemeProvider>{children}</ThemeProvider>
+    wrapper = createWrapper()
   }
   return defaultRender(ui, { wrapper, ...options })
 }
@@ -46,8 +65,9 @@ export function render(ui: RenderUI, { wrapper, ...options }: RenderOptions = {}
 export function renderHook(hook: RenderHook, { wrapper, ...options }: RenderHookOptions = {}) {
   if (!wrapper) {
     // Add a default context wrapper if one isn't supplied from the test
-    wrapper = ({ children }) => <ThemeProvider>{children}</ThemeProvider>
+    wrapper = createWrapper()
   }
+
   return defaultRenderHook(hook, { wrapper, ...options })
 }
 

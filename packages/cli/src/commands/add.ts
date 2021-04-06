@@ -3,6 +3,7 @@ import execa from 'execa'
 import { Command } from '../command'
 
 export class Add extends Command {
+  static strict = false
   static description = 'Add dependency to project'
 
   static aliases = ['a']
@@ -46,7 +47,8 @@ export class Add extends Command {
       env: {
         FORCE_COLOR: 'true',
       },
-    }).stdout?.pipe(process.stdout)
+      stdio: 'inherit',
+    })
   }
 
   async run() {
@@ -59,24 +61,7 @@ export class Add extends Command {
     if (flags.peer) options.push('--peer')
 
     try {
-      const subprocess = await this.addModule(args.module, args.workspace, options)
-
-      subprocess?.on('close', (code: number) => {
-        const message = code
-          ? `Failed to add module ${args.module}! ❌`
-          : `Added module ${args.module} to workspace ${args.workspace}! ✅`
-        console.log(message)
-        return process.exit(code)
-      })
-
-      subprocess?.on('SIGINT', (code: number) => {
-        console.log('Interrupted add script!')
-        return process.exit(code)
-      })
-      subprocess?.on('SIGTERM', (code: number) => {
-        console.log('Terminated add script!')
-        return process.exit(code)
-      })
+      await this.addModule(args.module, args.workspace, options)
     } catch (err) {
       console.error(err)
       process.exit(1)
