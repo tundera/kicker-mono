@@ -12,6 +12,7 @@ import { Sun, Moon } from 'react-feather'
 
 import { ThemeProvider } from '@kicker/theme'
 import { StorySortMethod } from '@storybook/addons'
+import { FC } from 'react'
 
 // Adapted from https://github.com/UnlyEd/next-right-now/blob/e5aba8eaf02918d9506008ee1f11c38954fedc86/.storybook/preview.js
 
@@ -47,7 +48,7 @@ export const globalTypes = {
   },
 }
 
-const ColorModeToggleBar = () => {
+const ColorModeToggleBar: FC = () => {
   const { toggleColorMode } = useColorMode()
   const iconColor = useColorModeValue('white', 'gray.800')
   const SwitchIcon = useColorModeValue(Moon, Sun)

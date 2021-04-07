@@ -3,12 +3,13 @@
   "compilerOptions": {
     "strict": false,
     "target": "es5",
+    "isolatedModules": false,
     "lib": ["es5", "dom"],
     "types": ["node", "cypress", "@testing-library/cypress"],
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@kicker/components": ["../packages/components/src"]
+      "@kicker/components": ["../../packages/components/src"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],

@@ -20,12 +20,6 @@
  */
 
 // const preprocessor = require('@cypress/react/plugins/next')
-const { GitHubSocialLogin } = require('cypress-social-logins').plugins
-
-module.exports = (on, config) => {
-  on('task', {
-    GitHubSocialLogin: GitHubSocialLogin,
-  })
-
+module.exports = (_on, config) => {
   return config
 }
