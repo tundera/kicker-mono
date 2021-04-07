@@ -18,6 +18,7 @@
     "sourceMap": true,
     "noEmit": true,
     "rootDir": ".",
+    "baseUrl": ".",
     "isolatedModules": true,
     "incremental": true
   },
