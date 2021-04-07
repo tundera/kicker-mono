@@ -37,12 +37,20 @@ export class Add extends Command {
     }),
   }
 
-  addModule(module: string, workspace: string, options: string[]) {
+  async addModule(module: string, workspace: string, options: string[]) {
     let args = ['workspace', `@kicker/${workspace}`, 'add', module]
 
     args = args.concat(options)
 
-    return execa('yarn', args, {
+    await execa('yarn', args, {
+      cwd: this.project.root,
+      env: {
+        FORCE_COLOR: 'true',
+      },
+      stdio: 'inherit',
+    })
+
+    await execa('yarn', {
       cwd: this.project.root,
       env: {
         FORCE_COLOR: 'true',

@@ -48,6 +48,7 @@ export default function TeamPage({ cacheSnapshot, team }: TeamPageProps) {
             width="250px"
             height="auto"
             layout="responsive"
+            objectFit="contain"
             alt={`${team.name} team logo`}
           />
         </section>
@@ -87,9 +88,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps<TeamPageProps> = async ({
-  params,
-}) => {
+export const getStaticProps: GetStaticProps<TeamPageProps> = async ({ params }) => {
   const slug = params?.slug as string
 
   const { team } = await getTeamBySlug(slug)

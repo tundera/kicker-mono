@@ -7,11 +7,11 @@ const nextConfig = {
   target: 'experimental-serverless-trace',
   reactStrictMode: true,
   future: {
-    webpack5: false,
+    webpack5: true,
   },
-  // experimental: {
-  //   reactMode: 'concurrent',
-  // },
+  experimental: {
+    reactMode: 'concurrent',
+  },
   images: {
     domains: ['res.cloudinary.com'],
   },
