@@ -1,5 +1,7 @@
 import { flags } from '@oclif/command'
 import execa from 'execa'
+import c from 'chalk'
+import ora from 'ora'
 import { Command } from '../command'
 
 export class Add extends Command {
@@ -47,15 +49,17 @@ export class Add extends Command {
       env: {
         FORCE_COLOR: 'true',
       },
-      stdio: 'inherit',
+      stdio: ['ignore', 'pipe', 'pipe'],
     })
+  }
 
+  async updateLockfile() {
     await execa('yarn', {
       cwd: this.project.root,
       env: {
         FORCE_COLOR: 'true',
       },
-      stdio: 'inherit',
+      stdio: ['ignore', 'pipe', 'pipe'],
     })
   }
 
@@ -69,7 +73,16 @@ export class Add extends Command {
     if (flags.peer) options.push('--peer')
 
     try {
+      const spinner = ora({
+        text: c.blue`Adding ${args.module} to workspace ${args.workspace}`,
+      }).start()
+
       await this.addModule(args.module, args.workspace, options)
+      spinner.succeed()
+
+      spinner.start(`Updating lockfile`)
+      await this.updateLockfile()
+      spinner.succeed()
     } catch (err) {
       console.error(err)
       process.exit(1)

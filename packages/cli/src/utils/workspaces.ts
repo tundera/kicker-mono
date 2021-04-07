@@ -45,25 +45,7 @@ export const startWorkspaces = (workspaces: string[], development = false) => {
     env: {
       FORCE_COLOR: 'true',
     },
-    stdio: 'inherit',
-  })
-}
-
-export const buildWorkspaces = (workspaces: string[]) => {
-  let args = ['wsrun']
-
-  workspaces.forEach((workspace) => {
-    args = args.concat(['-p', `@kicker/${workspace}`])
-  })
-
-  args = args.concat(['-c', 'build'])
-
-  return execa('yarn', args, {
-    cwd: workspaceRoot,
-    env: {
-      FORCE_COLOR: 'true',
-    },
-    stdio: 'ignore',
+    stdio: ['ignore', 'inherit', 'inherit'],
   })
 }
 
@@ -73,7 +55,7 @@ export const devPackages = () => {
     env: {
       FORCE_COLOR: 'true',
     },
-    stdio: 'ignore',
+    stdio: ['ignore', 'pipe', 'inherit'],
   })
 }
 
@@ -83,8 +65,22 @@ export const buildPackages = () => {
     env: {
       FORCE_COLOR: 'true',
     },
-    stdio: 'ignore',
+    stdio: ['ignore', 'pipe', 'inherit'],
   })
+}
+
+export const typeCheck = async () => {
+  try {
+    await execa('yarn', ['tsc'], {
+      cwd: workspaceRoot,
+      env: {
+        FORCE_COLOR: 'true',
+      },
+      stdio: ['ignore', 'pipe', 'inherit'],
+    })
+  } catch (err) {
+    throw new Error(err)
+  }
 }
 
 export const buildAllWorkspaces = async () => {
@@ -93,6 +89,8 @@ export const buildAllWorkspaces = async () => {
     env: {
       FORCE_COLOR: 'true',
     },
-    stdio: 'inherit',
+    stdio: ['ignore', 'pipe', 'inherit'],
   })
+
+  await typeCheck()
 }

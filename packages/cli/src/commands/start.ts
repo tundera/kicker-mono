@@ -2,12 +2,7 @@ import { flags } from '@oclif/command'
 import c from 'chalk'
 import ora from 'ora'
 import { Command } from '../command'
-import {
-  buildPackages,
-  buildWorkspaces,
-  getWorkspaceNames,
-  startWorkspaces,
-} from '../utils/workspaces'
+import { buildPackages, getWorkspaceNames, startWorkspaces, typeCheck } from '../utils/workspaces'
 
 export class Start extends Command {
   static strict = false
@@ -44,19 +39,13 @@ export class Start extends Command {
       }).start()
 
       await buildPackages()
+      spinner.succeed()
 
-      spinner
-        .stopAndPersist({
-          symbol: '✅',
-        })
-        .start(c.blue`Building workspaces`)
+      spinner.start(c.blue`Running typecheck`)
+      await typeCheck()
+      spinner.succeed()
 
-      await buildWorkspaces(argv)
-
-      spinner.stopAndPersist({
-        symbol: '✅',
-      })
-
+      spinner.stopAndPersist({ text: 'Starting workspaces...', symbol: '🚀' })
       await startWorkspaces(argv, false)
     } catch (err) {
       console.error(err)
