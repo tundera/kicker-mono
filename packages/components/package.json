@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "main": "dist/kicker-components.cjs.js",
   "module": "dist/kicker-components.esm.js",
-  "typings": "dist/kicker-components.d.ts",
+  "typings": "dist/kicker-components.cjs.d.ts",
   "license": "MIT",
   "author": {
     "name": "Philip Johnston",

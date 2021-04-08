@@ -1,4 +1,4 @@
-import { Box, Button,chakra, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Button, chakra, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 export interface CtaWithDescriptionProps {

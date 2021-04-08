@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "main": "dist/kicker-theme.cjs.js",
   "module": "dist/kicker-theme.esm.js",
-  "typings": "dist/kicker-theme.d.ts",
+  "typings": "dist/kicker-theme.cjs.d.ts",
   "license": "MIT",
   "author": {
     "name": "Philip Johnston",

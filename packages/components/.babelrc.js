@@ -4,14 +4,14 @@ const workspaceRoot = findWorkspaceRoot(process.cwd()) || process.cwd()
 
 module.exports = {
   presets: [
-    '@babel/preset-typescript',
+    '@babel/preset-env',
     [
       '@babel/preset-react',
       {
         runtime: 'automatic',
       },
     ],
-    '@babel/preset-env',
+    '@babel/preset-typescript',
   ],
   plugins: [
     [

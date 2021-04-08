@@ -50,7 +50,9 @@ export class Add extends Command {
 
     try {
       const spinner = ora({
-        text: c.blue`Adding ${args.module} to workspace ${args.workspace}`,
+        text: c.blue`Adding ${c.cyanBright(args.module)} to workspace ${c.cyanBright(
+          `@kicker/${args.workspace}`,
+        )}`,
       }).start()
 
       await addModule(args.module, args.workspace, options)

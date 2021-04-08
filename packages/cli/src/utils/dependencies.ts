@@ -11,7 +11,7 @@ export const addModule = async (module: string, workspace: string, options: stri
     env: {
       FORCE_COLOR: 'true',
     },
-    stdio: 'pipe',
+    stdio: ['ignore', 'pipe', 'pipe'],
   })
 }
 
@@ -21,6 +21,6 @@ export const updateLockfile = async () => {
     env: {
       FORCE_COLOR: 'true',
     },
-    stdio: 'pipe',
+    stdio: ['ignore', 'pipe', 'pipe'],
   })
 }

@@ -49,6 +49,7 @@
     "change-case": "^4.1.2",
     "deepmerge": "^4.2.2",
     "favicons": "^6.2.1",
+    "graphql": "^15.5.0",
     "graphql-iso-date": "3.6.1",
     "gray-matter": "^4.0.2",
     "icomoon-react": "^2.0.19",
