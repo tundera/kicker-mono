@@ -10,10 +10,10 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { FC } from 'react'
-import { useForm } from 'react-hook-form'
+import type { FC } from 'react'
+import { SubmitHandler, useForm, Validate } from 'react-hook-form'
 
-type Inputs = {
+type FormData = {
   email: string
 }
 
@@ -21,15 +21,15 @@ const CtaWithSubAndImage: FC = () => {
   const bg = useColorModeValue('white', 'gray.800')
   const headingColor = useColorModeValue('black', 'white')
 
-  const { handleSubmit, errors, register, formState } = useForm<Inputs>()
+  const { handleSubmit, register, formState } = useForm<FormData>()
 
-  function validateEmail(value) {
+  const validateEmail: Validate<string> = (value) => {
     if (!value) {
       return 'Email is required'
     } else return true
   }
 
-  function onSubmit(values) {
+  const onSubmit: SubmitHandler<FormData> = (values) => {
     return new Promise<void>((resolve) => {
       setTimeout(() => {
         alert(JSON.stringify(values, null, 2))
@@ -66,9 +66,7 @@ const CtaWithSubAndImage: FC = () => {
                 <FormControl id="email">
                   <Input
                     type="email"
-                    name="email"
                     placeholder="Email"
-                    ref={register({ validate: validateEmail })}
                     rounded="lg"
                     appearance="none"
                     borderColor="gray.300"
@@ -103,8 +101,11 @@ const CtaWithSubAndImage: FC = () => {
                         'var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)',
                     }}
                     _placeholder={{ color: 'gray.400' }}
+                    {...register('email', { validate: validateEmail })}
                   />
-                  <FormErrorMessage>{errors.email && errors.email.message}</FormErrorMessage>
+                  <FormErrorMessage>
+                    {formState.errors.email && formState.errors.email.message}
+                  </FormErrorMessage>
                 </FormControl>
               </Box>
               <Button

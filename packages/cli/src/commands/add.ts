@@ -1,5 +1,4 @@
 import { flags } from '@oclif/command'
-import execa from 'execa'
 import c from 'chalk'
 import ora from 'ora'
 import { Command } from '../command'

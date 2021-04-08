@@ -17,10 +17,10 @@
     "importHelpers": true,
     "sourceMap": true,
     "noEmit": true,
-    "rootDir": ".",
-    "baseUrl": ".",
     "isolatedModules": true,
-    "incremental": true
+    "incremental": true,
+    "rootDir": ".",
+    "baseUrl": "."
   },
   "include": [
     "types/**/*",

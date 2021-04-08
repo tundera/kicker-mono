@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react'
 import { signIn } from 'next-auth/client'
 import { FC } from 'react'
-import { Lock,Mail } from 'react-feather'
+import { Lock, Mail } from 'react-feather'
 import { useForm } from 'react-hook-form'
 
 interface Inputs {
@@ -25,7 +25,7 @@ const CredentialsLogin: FC = () => {
   const linkColor = useColorModeValue('gray.500', 'gray.100')
   const linkHoverColor = useColorModeValue('gray.700', 'white')
 
-  const { handleSubmit, errors, register, formState } = useForm<Inputs>()
+  const { handleSubmit, register, formState } = useForm<Inputs>()
 
   function validateUserId(value) {
     if (!value) {
@@ -50,7 +50,7 @@ const CredentialsLogin: FC = () => {
   return (
     <form action="#" autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
       <Flex direction="column" mb="2">
-        <FormControl isInvalid={!!errors.userId}>
+        <FormControl isInvalid={!!formState.errors.userId}>
           <VisuallyHidden>
             <FormLabel htmlFor="userId">User ID</FormLabel>
           </VisuallyHidden>
@@ -74,8 +74,6 @@ const CredentialsLogin: FC = () => {
             <Input
               type="text"
               id="sign-in-user-id"
-              name="userId"
-              ref={register({ validate: validateUserId })}
               roundedRight="lg"
               roundedLeft="none"
               flex="1 1 0%"
@@ -108,17 +106,20 @@ const CredentialsLogin: FC = () => {
               }}
               placeholder="Your User ID"
               _placeholder={{ color: 'gray.400' }}
+              {...register('userId', { validate: validateUserId })}
             />
           </Flex>
-          {errors.userId && formState.touched.userId && (
+          {formState.errors.userId && formState.touchedFields.userId && (
             <Box display="flex" justifyContent="center">
-              <FormErrorMessage>{errors.userId && errors.userId.message}</FormErrorMessage>
+              <FormErrorMessage>
+                {formState.errors.userId && formState.errors.userId.message}
+              </FormErrorMessage>
             </Box>
           )}
         </FormControl>
       </Flex>
       <Flex direction="column" mb="6">
-        <FormControl isInvalid={!!errors.password}>
+        <FormControl isInvalid={!!formState.errors.password}>
           <VisuallyHidden>
             <FormLabel htmlFor="password">Password</FormLabel>
           </VisuallyHidden>
@@ -142,8 +143,6 @@ const CredentialsLogin: FC = () => {
             <Input
               type="password"
               id="sign-in-password"
-              name="password"
-              ref={register({ validate: validatePassword })}
               roundedRight="lg"
               roundedLeft="none"
               flex="1 1 0%"
@@ -176,11 +175,14 @@ const CredentialsLogin: FC = () => {
               }}
               placeholder="Your password"
               _placeholder={{ color: 'gray.400' }}
+              {...register('password', { validate: validatePassword })}
             />
           </Flex>
-          {errors.password && formState.touched.password && (
+          {formState.errors.password && formState.touchedFields.password && (
             <Box display="flex" justifyContent="center">
-              <FormErrorMessage>{errors.password && errors.password.message}</FormErrorMessage>
+              <FormErrorMessage>
+                {formState.errors.password && formState.errors.password.message}
+              </FormErrorMessage>
             </Box>
           )}
         </FormControl>

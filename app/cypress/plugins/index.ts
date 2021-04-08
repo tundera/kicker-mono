@@ -20,6 +20,6 @@
  */
 
 // const preprocessor = require('@cypress/react/plugins/next')
-module.exports = (_on, config) => {
+export default (_on, config) => {
   return config
 }

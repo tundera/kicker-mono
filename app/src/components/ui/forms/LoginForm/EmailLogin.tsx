@@ -19,7 +19,7 @@ interface Inputs {
 }
 
 const EmailLogin: FC = () => {
-  const { handleSubmit, errors, register, formState } = useForm<Inputs>()
+  const { handleSubmit, register, formState } = useForm<Inputs>()
 
   function validateEmail(value) {
     if (!value) {
@@ -39,7 +39,7 @@ const EmailLogin: FC = () => {
       onSubmit={handleSubmit(onSubmit)}
     >
       <Flex direction="column" mb="2">
-        <FormControl isInvalid={!!errors.email}>
+        <FormControl isInvalid={!!formState.errors.email}>
           <VisuallyHidden>
             <FormLabel htmlFor="email">Email Address</FormLabel>
           </VisuallyHidden>
@@ -63,8 +63,6 @@ const EmailLogin: FC = () => {
             <Input
               type="text"
               id="sign-in-email"
-              name="email"
-              ref={register({ validate: validateEmail })}
               roundedRight="lg"
               roundedLeft="none"
               flex="1 1 0%"
@@ -97,11 +95,14 @@ const EmailLogin: FC = () => {
               }}
               placeholder="Your email"
               _placeholder={{ color: 'gray.400' }}
+              {...register('email', { validate: validateEmail })}
             />
           </Flex>
-          {errors.email && formState.touched.email && (
+          {formState.errors.email && formState.touchedFields.email && (
             <Box display="flex" justifyContent="center">
-              <FormErrorMessage>{errors.email && errors.email.message}</FormErrorMessage>
+              <FormErrorMessage>
+                {formState.errors.email && formState.errors.email.message}
+              </FormErrorMessage>
             </Box>
           )}
         </FormControl>

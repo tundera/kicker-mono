@@ -1,6 +1,6 @@
 import { makeSchema } from 'nexus'
 import { join } from 'path'
-import prettierConfig from '../../../prettier.config'
+import prettierConfig from '../../../../prettier.config'
 import * as inputTypes from './inputs'
 import * as moduleTypes from './modules'
 import * as scalarTypes from './scalars'

@@ -1,12 +1,12 @@
-import type { GraphQLClient } from 'graphql-request'
-import { useQuery, UseQueryOptions } from 'react-query'
+import type { GraphQLClient } from 'graphql-request';
+import { useQuery, UseQueryOptions } from 'react-query';
 export type Maybe<T> = T | null;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
 export type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]?: Maybe<T[SubKey]> };
 export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]: Maybe<T[SubKey]> };
 
 function fetcher<TData, TVariables>(client: GraphQLClient, query: string, variables?: TVariables) {
-  return async (): Promise<TData> => client.request<TData, TVariables>(query, variables)
+  return async (): Promise<TData> => client.request<TData, TVariables>(query, variables);
 }
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
@@ -17,6 +17,8 @@ export type Scalars = {
   Float: number;
   /** A date-time string at UTC, such as 2007-12-03T10:15:30Z, compliant with the `date-time` format outlined in section 5.6 of the RFC 3339 profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar. */
   DateTime: any;
+  /** The `JSONObject` scalar type represents JSON objects as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf). */
+  Json: any;
   /** The `Upload` scalar type represents a file upload. */
   Upload: any;
 };
@@ -34,6 +36,7 @@ export type IntFilter = {
   notIn: Array<Scalars['Int']>;
   startsWith: Scalars['Int'];
 };
+
 
 export type Query = {
   __typename?: 'Query';
@@ -121,7 +124,7 @@ export const UserByEmailDocument = `
     email
   }
 }
-    `
+    `;
 export const useUserByEmailQuery = <
       TData = UserByEmailQuery,
       TError = unknown
@@ -134,7 +137,7 @@ export const useUserByEmailQuery = <
       ['UserByEmail', variables],
       fetcher<UserByEmailQuery, UserByEmailQueryVariables>(client, UserByEmailDocument, variables),
       options
-    )
+    );
 export const UsersDocument = `
     query Users {
   users {
@@ -143,7 +146,7 @@ export const UsersDocument = `
     email
   }
 }
-    `
+    `;
 export const useUsersQuery = <
       TData = UsersQuery,
       TError = unknown
@@ -156,4 +159,4 @@ export const useUsersQuery = <
       ['Users', variables],
       fetcher<UsersQuery, UsersQueryVariables>(client, UsersDocument, variables),
       options
-    )
+    );

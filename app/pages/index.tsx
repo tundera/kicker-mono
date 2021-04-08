@@ -1,4 +1,4 @@
-import { Box,Flex } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import { CtaWithDescription } from '@kicker/components'
 import { getLayout } from 'src/components/layouts/SiteLayout'
 import type { CustomNextPage as NextPage } from 'types'
