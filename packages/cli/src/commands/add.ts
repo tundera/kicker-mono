@@ -3,6 +3,7 @@ import execa from 'execa'
 import c from 'chalk'
 import ora from 'ora'
 import { Command } from '../command'
+import { addModule, updateLockfile } from '../utils/dependencies'
 
 export class Add extends Command {
   static strict = false
@@ -39,30 +40,6 @@ export class Add extends Command {
     }),
   }
 
-  async addModule(module: string, workspace: string, options: string[]) {
-    let args = ['workspace', `@kicker/${workspace}`, 'add', module]
-
-    args = args.concat(options)
-
-    await execa('yarn', args, {
-      cwd: this.project.root,
-      env: {
-        FORCE_COLOR: 'true',
-      },
-      stdio: ['ignore', 'pipe', 'pipe'],
-    })
-  }
-
-  async updateLockfile() {
-    await execa('yarn', {
-      cwd: this.project.root,
-      env: {
-        FORCE_COLOR: 'true',
-      },
-      stdio: ['ignore', 'pipe', 'pipe'],
-    })
-  }
-
   async run() {
     const { args, flags } = this.parse(Add)
 
@@ -77,11 +54,11 @@ export class Add extends Command {
         text: c.blue`Adding ${args.module} to workspace ${args.workspace}`,
       }).start()
 
-      await this.addModule(args.module, args.workspace, options)
+      await addModule(args.module, args.workspace, options)
       spinner.succeed()
 
-      spinner.start(`Updating lockfile`)
-      await this.updateLockfile()
+      spinner.start(c.blue`Updating lockfile`)
+      await updateLockfile()
       spinner.succeed()
     } catch (err) {
       console.error(err)

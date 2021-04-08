@@ -8144,6 +8144,13 @@ axe-core@^4.0.2, axe-core@^4.1.1:
   resolved "https://registry.npmjs.org/axe-core/-/axe-core-4.1.4.tgz#f19cd99a84ee32a318b9c5b5bb8ed373ad94f143"
   integrity sha512-Pdgfv6iP0gNx9ejRGa3zE7Xgkj/iclXqLfe7BnatdZz0QnLZ3jrRHUVH8wNSdN68w05Sk3ShGTb3ydktMTooig==
 
+axios@^0.19.2:
+  version "0.19.2"
+  resolved "https://registry.npmjs.org/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
+  dependencies:
+    follow-redirects "1.5.10"
+
 axobject-query@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/axobject-query/-/axobject-query-2.2.0.tgz#943d47e10c0b704aa42275e20edf3722648989be"
@@ -10694,6 +10701,13 @@ debug@4.3.2:
   dependencies:
     ms "2.1.2"
 
+debug@=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
+  dependencies:
+    ms "2.0.0"
+
 debug@^3.0.0, debug@^3.1.0, debug@^3.2.6:
   version "3.2.7"
   resolved "https://registry.npmjs.org/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
@@ -12843,6 +12857,13 @@ focus-lock@^0.8.1:
   dependencies:
     tslib "^1.9.3"
 
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
+  dependencies:
+    debug "=3.1.0"
+
 for-each@^0.3.3:
   version "0.3.3"
   resolved "https://registry.npmjs.org/for-each/-/for-each-0.3.3.tgz#69b447e88a0a5d32c3e7084f3f1710034b21376e"
@@ -13606,11 +13627,6 @@ graphql-extensions@^0.13.0:
     "@apollographql/apollo-tools" "^0.4.3"
     apollo-server-env "^3.0.0"
     apollo-server-types "^0.7.0"
-
-graphql-iso-date@^3.6.1:
-  version "3.6.1"
-  resolved "https://registry.npmjs.org/graphql-iso-date/-/graphql-iso-date-3.6.1.tgz#bd2d0dc886e0f954cbbbc496bbf1d480b57ffa96"
-  integrity sha512-AwFGIuYMJQXOEAgRlJlFL4H1ncFM8n8XmoVDTNypNOZyQ8LFDG2ppMFlsS862BSTCDcSUfHp8PD3/uJhv7t59Q==
 
 graphql-request@3.4.0, graphql-request@^3.3.0:
   version "3.4.0"
@@ -18169,6 +18185,13 @@ nba-client-template@4.5.0:
   version "4.5.0"
   resolved "https://registry.npmjs.org/nba-client-template/-/nba-client-template-4.5.0.tgz#664809d7fb6f864cefbc53953dd7815bf632d231"
   integrity sha512-7g2BWC4JhwhTyxBM6HAoAV4+Ax1dcO4MSiaZFWstTaaphM/17X+H1lS8q3YkctIW1h4QlGc+NS96C5/ZeyLsuQ==
+
+nba-stats-client@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/nba-stats-client/-/nba-stats-client-1.0.2.tgz#da43a6ea5efc0edd5ace1f3cbe66a532030c1dd7"
+  integrity sha512-HCG9G2Ogust4QWnzjAKqWHPNzssd2+1Q6H0ccz5SNO7UOytwvHMfyZAz6jL3EKQhurFGi1bpKVo3kiEu5d4WCQ==
+  dependencies:
+    axios "^0.19.2"
 
 nba@4.15.0:
   version "4.15.0"
