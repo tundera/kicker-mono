@@ -1,5 +1,5 @@
 import { Grid } from '@chakra-ui/react'
-import { SimpleCard } from '../SimpleCard/SimpleCard'
+import { SimpleCard } from '../SimpleCard'
 
 export interface ProductsGridProps {
   products: any

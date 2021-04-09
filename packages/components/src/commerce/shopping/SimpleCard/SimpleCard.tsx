@@ -1,6 +1,6 @@
-import { Box, Image, LinkBox, LinkOverlay, Text,useColorModeValue } from '@chakra-ui/react'
+import { Box, Image, LinkBox, LinkOverlay, Text, useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
-
+import { MotionBox } from '../../../MotionBox'
 export interface SimpleCardProps {
   title: string
   description: string
@@ -17,7 +17,7 @@ export const SimpleCard = ({ title, description, price, image, href }: SimpleCar
 
   return (
     <LinkBox as="article">
-      <Box
+      <MotionBox
         shadow="lg"
         rounded="2xl"
         w="64"
@@ -26,10 +26,13 @@ export const SimpleCard = ({ title, description, price, image, href }: SimpleCar
         bg="white"
         position="relative"
         overflow="hidden"
-        transition="background-color, border-color, color, fill, stroke, opacity, box-shadow, transform"
-        transitionTimingFunction="ease-in"
-        transitionDuration="200ms"
-        _hover={{ bg: hoverBg }}
+        whileHover={{ scale: 1.1, speed: 2.0 }}
+        whileTap={{ scale: 0.9 }}
+        sx={{
+          transition: 'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform',
+          transitionTimingFunction: 'ease-in',
+          transitionDuration: '200ms',
+        }}
       >
         <Image alt={image.alt} src={image.url} position="absolute" right="-20" bottom="-8" h="40" w="40" mb="4" />
         <NextLink href={href} passHref>
@@ -45,7 +48,7 @@ export const SimpleCard = ({ title, description, price, image, href }: SimpleCar
             </Text>
           </Box>
         </NextLink>
-      </Box>
+      </MotionBox>
     </LinkBox>
   )
 }

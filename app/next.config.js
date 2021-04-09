@@ -1,13 +1,15 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const withPlugins = require('next-compose-plugins')
-const withPreconstruct = require('@preconstruct/next')
-// const withTM = require('next-transpile-modules')(['@kicker/components', '@kicker/theme'])
+// const withPreconstruct = require('@preconstruct/next')
+const withTM = require('next-transpile-modules')(['@kicker/components', '@kicker/theme'], {
+  resolveSymlinks: true,
+})
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
 })
 
-const plugins = [withMDX]
-// const plugins = [withTM, withMDX]
+// const plugins = [withMDX]
+const plugins = [withTM, withMDX]
 
 const nextConfig = {
   target: 'experimental-serverless-trace',
@@ -71,5 +73,5 @@ const nextConfig = {
   },
 }
 
-module.exports = withPreconstruct(withPlugins([...plugins], nextConfig))
-// module.exports = withPlugins([...plugins], nextConfig)
+// module.exports = withPreconstruct(withPlugins([...plugins], nextConfig))
+module.exports = withPlugins([...plugins], nextConfig)

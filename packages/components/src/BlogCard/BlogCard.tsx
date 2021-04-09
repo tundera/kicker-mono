@@ -1,4 +1,4 @@
-import { Box, Image, LinkBox, LinkOverlay, Text,useColorModeValue } from '@chakra-ui/react'
+import { Box, Image, LinkBox, LinkOverlay, Text, useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 export interface BlogCardProps {

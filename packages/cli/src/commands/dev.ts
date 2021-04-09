@@ -37,13 +37,12 @@ export class Dev extends Command {
     try {
       const spinner = ora().start('Preparing packages for development')
 
-      // await devPackages()
+      await devPackages()
 
       spinner.stopAndPersist({
         symbol: '✅',
       })
 
-      await Promise.all([watchPackages(), startWorkspaces(argv, true)])
       await startWorkspaces(argv, true)
     } catch (err) {
       console.error(err)
