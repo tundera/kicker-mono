@@ -26,7 +26,7 @@ export const SimpleCard = ({ title, description, price, image, href }: SimpleCar
         bg="white"
         position="relative"
         overflow="hidden"
-        whileHover={{ scale: 1.1, speed: 2.0 }}
+        whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         sx={{
           transition: 'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform',
